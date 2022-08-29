@@ -40,18 +40,13 @@ const Header = () => {
           cName: 'dropdown-link',
         },
         {
-          title: 'Cabinate Members',
-          path: '/cabinateMembers',
+          title: 'Executive Ambassador',
+          path: '/exAmbassador',
           cName: 'dropdown-link',
         },
         {
-          title: 'Cabinate Members',
-          path: '/cabinateMembers',
-          cName: 'dropdown-link',
-        },
-        {
-          title: 'Cabinate Members',
-          path: '/cabinateMembers',
+          title: 'Advisory Council',
+          path: '/adCouncil',
           cName: 'dropdown-link',
         },
       ],
