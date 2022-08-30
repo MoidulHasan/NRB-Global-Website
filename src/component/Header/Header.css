@@ -1,5 +1,6 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+    background: #FFFFFF;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -8,7 +9,8 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    /* color: #5F6C7A; */
+    color: #1D354F;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -39,20 +41,21 @@
   }
   
   .nav-links {
-    color: white;
+    color: #5F6C7A; 
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: .9rem;
   }
   
   .nav-links:hover {
-    background-color: #1888ff;
+    color: #242222;
+    background-color: #B6DAFF;
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
   
   .fa-bars {
-    color: #fff;
+    color: #242222;
   }
   
   .nav-links-mobile {
@@ -104,7 +107,7 @@
     }
   
     .nav-links:hover {
-      background-color: #1888ff;
+      background-color: #B6DAFF;
       border-radius: 0;
     }
   
@@ -126,7 +129,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #242222;
       font-size: 2rem;
     }
   
