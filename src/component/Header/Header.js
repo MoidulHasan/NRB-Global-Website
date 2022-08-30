@@ -230,7 +230,7 @@ const Header = () => {
           </li>
           <li className='nav-item'>
             <Link to='/blogs' className='nav-links' onClick={closeMobileMenu}>
-              Contact
+              Contact Info
             </Link>
           </li>
         </ul>
