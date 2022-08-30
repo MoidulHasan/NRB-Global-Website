@@ -28,27 +28,24 @@ const MenuList = ({ menu, closeMobileMenu }) => {
   };
 
   return (
-    <>
-      <li
-        className='nav-item'
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      >
-        {menu?.path === '/gallery' ? (
-          <Link to={menu.path} className='nav-links'>
-            {menu.title} <i className='fas fa-caret-down' />
-          </Link>
-        ) : (
-          <span className='nav-links'>
-            {menu.title} <i className='fas fa-caret-down' />
-          </span>
-        )}
-        {dropdown && (
-          <Dropdown field={menu.subMenu} closeMobileMenu={closeMobileMenu} />
-        )}
-      </li>
-      {/* <li>Hello</li> */}
-    </>
+    <li
+      className='nav-item'
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      {menu?.path === '/gallery' ? (
+        <Link to={menu.path} className='nav-links'>
+          {menu.title} <i className='fas fa-caret-down' />
+        </Link>
+      ) : (
+        <span className='nav-links'>
+          {menu.title} <i className='fas fa-caret-down' />
+        </span>
+      )}
+      {dropdown && (
+        <Dropdown field={menu.subMenu} closeMobileMenu={closeMobileMenu} />
+      )}
+    </li>
   );
 };
 
