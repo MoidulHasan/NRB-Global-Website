@@ -35,24 +35,24 @@ const PhotoCarousel = () => {
             'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
         }
         alt={item.alt}
-        style={{ width: '100%', display: 'block', height: '88vh' }}
+        style={{ width: '100%', display: 'block', height: '75vh' }}
       />
     );
   };
 
-  const thumbnailTemplate = (item) => {
-    return (
-      <img
-        src={item.thumbnailImageSrc}
-        onError={(e) =>
-          (e.target.src =
-            'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
-        }
-        alt={item.alt}
-        style={{ display: 'block', height: '100px' }}
-      />
-    );
-  };
+  // const thumbnailTemplate = (item) => {
+  //   return (
+  //     <img
+  //       src={item.thumbnailImageSrc}
+  //       onError={(e) =>
+  //         (e.target.src =
+  //           'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
+  //       }
+  //       alt={item.alt}
+  //       style={{ display: 'block', height: '100px' }}
+  //     />
+  //   );
+  // };
 
   return (
     <div>
