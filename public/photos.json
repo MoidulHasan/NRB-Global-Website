@@ -1,33 +1,44 @@
 {
     "data": [
         {
-            "itemImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria1.jpg",
-            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria1.jpg",
+            "itemImageSrc": "https://i.ibb.co/4KPqszh/Blue-Group-Banner-Active-Club-Exercise-Activity-People-Facebook-Cover.png",
+            "thumbnailImageSrc": "https://i.ibb.co/4KPqszh/Blue-Group-Banner-Active-Club-Exercise-Activity-People-Facebook-Cover.png",
             "alt": "Description for Image 1",
             "title": "Title 1"
         },
         {
-            "itemImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria2.jpg",
+            "itemImageSrc": "https://i.ibb.co/0mtTpYh/Blue-Teal-Yellow-Hopeful-Community-Facebook-Cover.png",
             "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria2.jpg",
             "alt": "Description for Image 2",
             "title": "Title 2"
         },
         {
-            "itemImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria3.jpg",
-            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria3.jpg",
+            "itemImageSrc": "https://i.ibb.co/RCjNTRN/Colorful-Culture-and-Communication-Presentation.png",
+            "thumbnailImageSrc": "https://i.ibb.co/RCjNTRN/Colorful-Culture-and-Communication-Presentation.png",
             "alt": "Description for Image 3",
             "title": "Title 3"
         },
         {
-            "itemImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria4.jpg",
-            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria4.jpg",
+            "itemImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
+            "thumbnailImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
             "alt": "Description for Image 4",
             "title": "Title 4"
         },
         {
-            "itemImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria5.jpg",
-            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria5.jpg",
+            "itemImageSrc": "https://i.ibb.co/DfXdq3M/Creative-United-People-as-a-Community-membership-or-Audience-Facebook-Cover.png",
+            "thumbnailImageSrc": "https://i.ibb.co/DfXdq3M/Creative-United-People-as-a-Community-membership-or-Audience-Facebook-Cover.png",
             "alt": "Description for Image 5",
+            "title": "Title 5"
+        },
+        {
+            "itemImageSrc": "https://i.ibb.co/Hq4gGV6/Dark-Green-Cultural-Diversity-Facebook-Cover.png",
+            "thumbnailImageSrc": "https://i.ibb.co/Hq4gGV6/Dark-Green-Cultural-Diversity-Facebook-Cover.png",
+            "alt": "Description for Image 5",
+            "title": "Title 5"
+        },
+        {
+            "itemImageSrc": "https://i.ibb.co/5Y8t550/White-Facebook-Cover-for-Creative-People-Community-Membership-or-Audience.png",
+            "thumbnailImageSrc": "https://i.ibb.co/5Y8t550/White-Facebook-Cover-for-Creative-People-Community-Membership-or-Audience.png",
             "title": "Title 5"
         }
     ]

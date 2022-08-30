@@ -2,3 +2,10 @@
     position: relative;
     top: -55px;
 }
+
+.p-galleria-item-prev-icon{
+ color: gray;
+}
+.p-galleria-item-next-icon{
+    color: gray;
+}
