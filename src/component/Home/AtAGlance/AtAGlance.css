@@ -2,16 +2,20 @@
  background-color: #FFFFFF;
  border-radius: 10px;
  margin: 20px 0px;
+ padding-bottom: 3rem;
 }
 .textGlance{
     color: var(--primeBLue);
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-top: 4rem;
     padding: 2rem 2rem 1.2rem 2rem;
     margin-bottom: 0 !important;
+    /* font-family: 'DynaPuff', cursive; */
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .miniTextGlance{
     font-weight: 500;
+    font-size: 1.5rem;
     color: var(--primeHalka);
     margin-bottom: 1rem;
 }

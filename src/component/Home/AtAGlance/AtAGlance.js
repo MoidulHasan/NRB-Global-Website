@@ -4,7 +4,7 @@ import './AtAGlance.css';
 const AtAGlance = () => {
   return (
     <div className='text-center ataglance'>
-      <div className='flex flex-column align-items-center justify-content-center'>
+      <div className='flex flex-column align-items-center justify-content-center mb-3 md:mb-5'>
         <h1 className='font-bold textGlance'>
           Decentralized Bangladesh for a better tomorrow
         </h1>
@@ -12,7 +12,7 @@ const AtAGlance = () => {
           Join NRB Global, Make a change, Make Bangladesh great.
         </span>
       </div>
-      <div className='grid gap-1 mx-1 md:mx-3'>
+      <div className='grid mx-1 md:mx-3'>
         <div className='col-12 md:col-4'>
           <div className='flex flex-column align-items-center justify-content-center mx-3 my-2 p-4 stats'>
             <svg
@@ -73,7 +73,7 @@ const AtAGlance = () => {
               ></path>
             </svg>
             <h1 className='text-6xl font-bold my-1'>4500+</h1>
-            <p className='mt-1'>College & University Students</p>
+            <p className='mt-1'>College & University </p>
           </div>
         </div>
       </div>

@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div>
       {/* carousel section  */}
-      <section>
+      {/* <section>
         <PhotoCarousel />
-      </section>
+      </section> */}
       <section className='p-container'>
         <AtAGlance />
       </section>
