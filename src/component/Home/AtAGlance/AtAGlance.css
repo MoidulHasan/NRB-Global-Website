@@ -1,0 +1,22 @@
+.ataglance{
+ background-color: #FFFFFF;
+ border-radius: 10px;
+ margin: 20px 0px;
+}
+.textGlance{
+    color: var(--primeBLue);
+    font-size: 3rem;
+    margin-top: 4rem;
+    padding: 2rem 2rem 1.2rem 2rem;
+    margin-bottom: 0 !important;
+}
+.miniTextGlance{
+    font-weight: 500;
+    color: var(--primeHalka);
+    margin-bottom: 1rem;
+}
+.stats{
+    background-color: #2B2B2B;
+    color: #F2F3F7;
+    border-radius: 18px;
+}
