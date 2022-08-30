@@ -31,7 +31,7 @@ const Header = () => {
   const menuList = [
     {
       title: 'Committee',
-      path: '/services',
+      path: '/',
       cName: 'nav-links',
       subMenu: [
         {
@@ -53,7 +53,7 @@ const Header = () => {
     },
     {
       title: 'Young Congress',
-      path: '/services',
+      path: '/',
       cName: 'nav-links',
       subMenu: [
         {
@@ -80,7 +80,7 @@ const Header = () => {
     },
     {
       title: 'Membership',
-      path: '/services',
+      path: '/',
       cName: 'nav-links',
       subMenu: [
         {
@@ -122,7 +122,7 @@ const Header = () => {
     },
     {
       title: 'Services',
-      path: '/services',
+      path: '/',
       cName: 'nav-links',
       subMenu: [
         {
@@ -169,156 +169,22 @@ const Header = () => {
     },
     {
       title: 'Gallery',
-      path: '/services',
+      path: '/gallery',
       cName: 'nav-links',
       subMenu: [
         {
           title: 'Photo Gallery',
-          path: '/photoGallery',
+          path: '/gallery/photoGallery',
           cName: 'dropdown-link',
         },
         {
           title: 'Video Gallery',
-          path: '/videoGallery',
+          path: '/gallery/videoGallery',
           cName: 'dropdown-link',
         },
       ],
     },
   ];
-  //   {
-  //     title: 'Cabinate Members',
-  //     path: '/cabinateMembers',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Cabinate Members',
-  //     path: '/cabinateMembers',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Cabinate Members',
-  //     path: '/cabinateMembers',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Cabinate Members',
-  //     path: '/cabinateMembers',
-  //     cName: 'dropdown-link',
-  //   },
-  // ];
-  // const youngCongress = [
-  //   {
-  //     title: 'About Young Congress',
-  //     path: '/YCAbout',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Programs',
-  //     path: '/YCPrograms',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Activities',
-  //     path: '/YCActivities',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Members',
-  //     path: '/YCMembers',
-  //     cName: 'dropdown-link',
-  //   },
-  // ];
-  // const membership = [
-  //   {
-  //     title: 'Member List',
-  //     path: '/memberList',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Member Services',
-  //     path: '/memberservices',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'General Members',
-  //     path: '/generalMembers',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'General Member Registration',
-  //     path: '/gmRegistration',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Executive Member (Individual) Registration',
-  //     path: '/emIndividualRegistration',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Executing Member (Organization) Registration',
-  //     path: '/emOrganizationRegistration',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Membership Process',
-  //     path: '/membershipProcess',
-  //     cName: 'dropdown-link',
-  //   },
-  // ];
-  // const services = [
-  //   {
-  //     title: 'All Services',
-  //     path: '/allservices',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Consultant Service',
-  //     path: '/consultant',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Job Support',
-  //     path: '/jobsupport',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Business Support',
-  //     path: '/bussinessSupport',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'E-Doctor Support',
-  //     path: '/eedoctor',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Dead Body Support',
-  //     path: '/deadbodySupport',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Law Support',
-  //     path: '/lawsupport',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Relief Support',
-  //     path: '/relief',
-  //     cName: 'dropdown-link',
-  //   },
-  // ];
-  // const gallery = [
-  //   {
-  //     title: 'Photo Gallery',
-  //     path: '/photoGallery',
-  //     cName: 'dropdown-link',
-  //   },
-  //   {
-  //     title: 'Video Gallery',
-  //     path: '/videoGallery',
-  //     cName: 'dropdown-link',
-  //   },
-  // ];
 
   return (
     <>

@@ -34,9 +34,15 @@ const MenuList = ({ menu, closeMobileMenu }) => {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       >
-        <Link to={menu.path} className='nav-links'>
-          {menu.title} <i className='fas fa-caret-down' />
-        </Link>
+        {menu?.path === '/gallery' ? (
+          <Link to={menu.path} className='nav-links'>
+            {menu.title} <i className='fas fa-caret-down' />
+          </Link>
+        ) : (
+          <span className='nav-links'>
+            {menu.title} <i className='fas fa-caret-down' />
+          </span>
+        )}
         {dropdown && (
           <Dropdown field={menu.subMenu} closeMobileMenu={closeMobileMenu} />
         )}
