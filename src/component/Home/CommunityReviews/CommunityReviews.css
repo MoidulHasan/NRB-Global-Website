@@ -1,0 +1,22 @@
+.communityReviewContainer{
+            /* padding: 2rem;
+    background-color: #FFFFFF; */
+    /* background-color: #FAF6F7;
+    border-radius: 10px; */
+    /* margin: 20px 0px; */
+    padding-bottom: 3rem;
+}
+.textReview{
+    color: #002C53;
+    margin-left: 160px;
+    position: relative;
+    top: 110px;
+}
+.revImgContainer img{
+    width: 100%;
+    object-fit: cover;
+}
+.singleReview{
+    background-color: #FAF6F7;
+    border-radius: 10px;
+}

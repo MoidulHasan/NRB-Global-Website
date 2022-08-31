@@ -1,5 +1,6 @@
 import React from 'react';
 import AtAGlance from '../../component/Home/AtAGlance/AtAGlance';
+import CommunityReviews from '../../component/Home/CommunityReviews/CommunityReviews';
 import ExclusiveEvent from '../../component/Home/ExclusiveEvent/ExclusiveEvent';
 import MembersInOrganizations from '../../component/Home/MembersInOrganizations/MembersInOrganizations';
 import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
@@ -27,6 +28,9 @@ const Home = () => {
       </section>
       <section>
         <WhyJoinNRB />
+      </section>
+      <section>
+        <CommunityReviews />
       </section>
     </div>
   );
