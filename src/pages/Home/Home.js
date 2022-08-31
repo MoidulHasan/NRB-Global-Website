@@ -4,6 +4,7 @@ import ExclusiveEvent from '../../component/Home/ExclusiveEvent/ExclusiveEvent';
 import MembersInOrganizations from '../../component/Home/MembersInOrganizations/MembersInOrganizations';
 import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
 import TopBanner from '../../component/Home/TopBanner/TopBanner';
+import WhyJoinNRB from '../../component/Home/WhyJoinNRB/WhyJoinNRB';
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       </section>
       <section>
         <ExclusiveEvent />
+      </section>
+      <section>
+        <WhyJoinNRB />
       </section>
     </div>
   );
