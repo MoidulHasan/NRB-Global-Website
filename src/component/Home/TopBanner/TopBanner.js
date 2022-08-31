@@ -5,7 +5,7 @@ const TopBanner = () => {
   return (
     <div className='p-container flex flex-column-reverse justify-content-end gap-4 md:flex-row md:justify-content-between heightCalc mb-4 md:mb-8'>
       <div className='basis-auto md:basis-half mt-4 md:mt-7'>
-        <h1 className='mx-auto mb-2 text-2xl font-semibold md:text-6xl'>
+        <h1 className='mx-auto mb-2 text-2xl font-bold md:text-6xl'>
           Bangladesh's most active non residential comminity with{' '}
           <span className='text-orange-700'>15,000K+</span> members.
         </h1>

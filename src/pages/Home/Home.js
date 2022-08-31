@@ -1,5 +1,6 @@
 import React from 'react';
 import AtAGlance from '../../component/Home/AtAGlance/AtAGlance';
+import MembersInOrganizations from '../../component/Home/MembersInOrganizations/MembersInOrganizations';
 import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
 import TopBanner from '../../component/Home/TopBanner/TopBanner';
 
@@ -15,6 +16,9 @@ const Home = () => {
       </section>
       <section className='p-container'>
         <AtAGlance />
+      </section>
+      <section>
+        <MembersInOrganizations />
       </section>
     </div>
   );
