@@ -13,6 +13,9 @@
     /* width: 126px;
     height:70px ; */
 }
+.orangeTextOrg{
+    color: tomato
+}
 
 @media (max-width: 960px){
     .imgOrg{
