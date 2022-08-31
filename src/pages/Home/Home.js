@@ -1,5 +1,6 @@
 import React from 'react';
 import AtAGlance from '../../component/Home/AtAGlance/AtAGlance';
+import ExclusiveEvent from '../../component/Home/ExclusiveEvent/ExclusiveEvent';
 import MembersInOrganizations from '../../component/Home/MembersInOrganizations/MembersInOrganizations';
 import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
 import TopBanner from '../../component/Home/TopBanner/TopBanner';
@@ -19,6 +20,9 @@ const Home = () => {
       </section>
       <section>
         <MembersInOrganizations />
+      </section>
+      <section>
+        <ExclusiveEvent />
       </section>
     </div>
   );

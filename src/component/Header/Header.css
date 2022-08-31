@@ -107,6 +107,7 @@
     }
   
     .nav-links {
+      color: #d2d7dd; 
       text-align: center;
       padding: 1rem;
       width: 100%;
