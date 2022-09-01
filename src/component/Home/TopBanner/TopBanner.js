@@ -3,7 +3,7 @@ import './TopBanner.css';
 
 const TopBanner = () => {
   return (
-    <div className='p-container flex flex-column-reverse justify-content-end gap-4 md:flex-row md:justify-content-between heightCalc mb-4 md:mb-8'>
+    <div className='p-container flex flex-column-reverse justify-content-end gap-4 md:flex-row md:justify-content-between heightCalc mb-4 md:mb-8 topBannerContainer'>
       <div className='basis-auto md:basis-half mt-4 md:mt-7 fadeinleft animation-duration-1000 animation-iteration-1'>
         <h1 className='mx-auto mb-2 text-2xl font-bold md:text-6xl'>
           Bangladesh's most active non residential comminity with{' '}
@@ -32,7 +32,7 @@ const TopBanner = () => {
         </div>
       </div>
       <div class='mx-auto -mt-6 w-full max-w-xl basis-auto md:mt-0 md:w-11'>
-        <div style={{ width: '100%', height: '100%' }}>
+        <div className='imageTop' style={{ width: '100%', height: '100%' }}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 588 457'
