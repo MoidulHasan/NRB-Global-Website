@@ -14,6 +14,7 @@ import About from './pages/About/About';
 import Header from './component/Header/Header';
 import Contact from './pages/Contact/Contact';
 import BlogPage from './pages/Blogs/BlogPage/BlogPage';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
           <Route path='events' element={}/> */}
             <Route path='blogs' element={<BlogPage />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </ContextProvider>
     </div>
