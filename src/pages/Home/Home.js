@@ -8,6 +8,7 @@ import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
 import TopBanner from '../../component/Home/TopBanner/TopBanner';
 import TopServices from '../../component/Home/TopServices/TopServices';
 import WhyJoinNRB from '../../component/Home/WhyJoinNRB/WhyJoinNRB';
+import TopBlogs from '../../component/Home/TopBlogs/TopBlogs';
 
 const Home = () => {
   return (
@@ -39,6 +40,9 @@ const Home = () => {
       </section>
       <section>
         <TopServices />
+      </section>
+      <section>
+        <TopBlogs />
       </section>
     </div>
   );

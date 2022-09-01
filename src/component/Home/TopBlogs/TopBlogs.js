@@ -1,23 +1,28 @@
 import { Button } from 'primereact/button';
 import React from 'react';
+import BlogCarousel from './BlogCarousel/BlogCarousel';
+import './TopBlogs.css';
 
 const TopBlogs = () => {
   return (
-    <div className='p-container my-4'>
-      <div className='topServiceContainer py-5 px-4'>
-        <h3 className='orangeTextOrg text-xl text-center'>
-          Our Featured Members
-        </h3>
-        <h1 className='mt-1 mb-2 textPrimeMembers text-4xl md:text-5xl'>
-          People we are proud of for being with us!
-        </h1>
-        <span className='block text-gray-600 text-xl my-1 font-semibold text-center'>
-          There are many variations of people in our community, who is best in
-          his/her own position.
-        </span>
-        <div className='flex justify-content-center mt-4 mb-6'>
+    <div className='p-container mb-4'>
+      <div className='BlogSummery  py-5 px-4'>
+        <h2 className='my-3 text-5xl text-center'>
+          {' '}
+          <span className='orangeTextOrg'>Exclusive Blogs</span> for NRB Global
+          Memebers{' '}
+        </h2>
+        <p className='text-center text-2xl mb-6'>
+          Join our NRB GLobal community absolutely free and get access to
+          valuable events by industry experts.
+        </p>
+        {/* carousel section  */}
+        <section>
+          <BlogCarousel />
+        </section>
+        <div className='flex justify-content-center mt-3'>
           <Button
-            label='View All Services'
+            label='Explore more blogs'
             className='p-button-rounded p-button-help p-button-outlined'
             icon='pi pi-angle-right'
             iconPos='right'

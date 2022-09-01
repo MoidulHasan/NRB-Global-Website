@@ -12,7 +12,7 @@ const TopServices = () => {
     <div className='p-container my-4'>
       <div className='topServiceContainer py-5 px-4'>
         <h3 className='orangeTextOrg text-xl text-center'>
-          Services Our Members get
+          Services Our Members Get
         </h3>
         <h1 className='mt-1 mb-2 textPrimeMembers text-4xl md:text-5xl'>
           NRB Global is a family to serve our non residential Bangladesh
@@ -24,7 +24,7 @@ const TopServices = () => {
         </span>
 
         <div className='grid mt-6'>
-          <div className='col-6 md:col-3'>
+          <div className='col-12 md:col-3'>
             <div className='flex justify-content-center flex-column serviceContent'>
               <div className='imgServiceContainer'>
                 <img src={support1} alt='' className='imgService' />
@@ -33,13 +33,13 @@ const TopServices = () => {
                 <h2 className='text-2xl textPrimeService mt-2'>
                   Relief Support
                 </h2>
-                <p className='ml-8 textPrimeService flex align-items-center'>
+                <p className=' ml-4 md:ml-8 textPrimeService flex align-items-center'>
                   <span class='material-icons-sharp mr-2'>info</span>See Details
                 </p>
               </Link>
             </div>
           </div>
-          <div className='col-6 md:col-3'>
+          <div className='col-12 md:col-3'>
             <div className='flex justify-content-center flex-column serviceContent'>
               <div className='imgServiceContainer'>
                 <img src={support2} alt='' className='imgService' />
@@ -48,13 +48,13 @@ const TopServices = () => {
                 <h2 className='text-2xl textPrimeService mt-2'>
                   Business Support
                 </h2>
-                <p className='ml-8 textPrimeService flex align-items-center'>
+                <p className=' ml-4 md:ml-8 textPrimeService flex align-items-center'>
                   <span class='material-icons-sharp mr-2'>info</span>See Details
                 </p>
               </Link>
             </div>
           </div>
-          <div className='col-6 md:col-3'>
+          <div className='col-12 md:col-3'>
             <div className='flex justify-content-center flex-column serviceContent'>
               <div className='imgServiceContainer'>
                 <img src={support3} alt='' className='imgService' />
@@ -63,20 +63,20 @@ const TopServices = () => {
                 <h2 className='text-2xl textPrimeService mt-2'>
                   Consultant Support
                 </h2>
-                <p className='ml-8 textPrimeService flex align-items-center'>
+                <p className=' ml-4 md:ml-8 textPrimeService flex align-items-center'>
                   <span class='material-icons-sharp mr-2'>info</span>See Details
                 </p>
               </Link>
             </div>
           </div>
-          <div className='col-6 md:col-3'>
+          <div className='col-12 md:col-3'>
             <div className='flex justify-content-center flex-column serviceContent'>
               <div className='imgServiceContainer'>
                 <img src={support4} alt='' className='imgService' />
               </div>
               <Link to='/services' className='toLinkText'>
                 <h2 className='text-2xl textPrimeService mt-2'>Law Support</h2>
-                <p className='ml-8 textPrimeService flex align-items-center'>
+                <p className=' ml-4 md:ml-8 textPrimeService flex align-items-center'>
                   <span class='material-icons-sharp mr-2'>info</span>See Details
                 </p>
               </Link>
