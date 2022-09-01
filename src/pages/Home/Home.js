@@ -6,6 +6,7 @@ import FeaturedMembers from '../../component/Home/FeaturedMembers/FeaturedMember
 import MembersInOrganizations from '../../component/Home/MembersInOrganizations/MembersInOrganizations';
 import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
 import TopBanner from '../../component/Home/TopBanner/TopBanner';
+import TopServices from '../../component/Home/TopServices/TopServices';
 import WhyJoinNRB from '../../component/Home/WhyJoinNRB/WhyJoinNRB';
 
 const Home = () => {
@@ -35,6 +36,9 @@ const Home = () => {
       </section>
       <section>
         <FeaturedMembers />
+      </section>
+      <section>
+        <TopServices />
       </section>
     </div>
   );
