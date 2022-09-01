@@ -5,11 +5,11 @@ import kajkamLogo from '../../assets/image/kajkamlogo.png';
 
 const Footer = () => {
   return (
-    <div className='p-container mt-6 mb-4'>
+    <div className='p-container mt-6 mb-0'>
       <div className='grid mb-4'>
         <div className='col-12 md:col-3 pr-4 md:pr-8'>
           <h1 className='text-3xl orangeTextOrg'>NRB Global</h1>
-          <span className='my-4 text-xs font-semibold'>
+          <span className='my-4 text-sm font-semibold detailColor'>
             NRb Global is one of the Bangladesh's largest non residential
             community that provides a one-stop platform for students, youth,
             businessmen, job holders to cope up in foreign, learn new
@@ -69,15 +69,49 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='copywrite my-2 flex align-items-center justify-content-between'>
+      <div className='hidden md:flex copywrite mt-2 mb-0 align-items-center justify-content-between'>
         <h4 className='text-bold text-xl flex align-items-center '>
           <span class='material-icons-sharp mr-2'>copyright</span> 2022,
-          <span className='orangeTextOrg ml-2 mr-1'>
-            KajKam Initiative Ltd.{' '}
-          </span>{' '}
-          All rights reserved.
+          <span className='orangeTextOrg ml-2 mr-1'>NRB Global. </span> All
+          rights reserved.
         </h4>
-        <img src={kajkamLogo} alt='kajkaminitiative.com' width='200px' />
+        <a
+          className='linkKajkam flex align-items-center'
+          href='https://kajkaminitiative.com/'
+          target='_blanck'
+        >
+          <span className='font-bold'>Developed By</span>
+          <img
+            src={kajkamLogo}
+            alt='kajkaminitiative.com'
+            width='180px'
+            //   className=''
+          />
+        </a>
+      </div>
+      <div className='grid md:hidden copywrite mt-2 mb-0'>
+        <div className='col-12'>
+          <h4 className='text-bold text-base flex align-items-center justify-content-center'>
+            <span class='material-icons-sharp mr-1'>copyright</span> 2022,
+            <span className='orangeTextOrg ml-2 mr-1'>NRB Global. </span> All
+            rights reserved.
+          </h4>
+        </div>
+        <div className='col-12'>
+          <a
+            className='linkKajkam flex align-items-center justify-content-center'
+            href='https://kajkaminitiative.com/'
+            target='_blanck'
+          >
+            <span className='font-bold'>Developed By</span>
+            <img
+              src={kajkamLogo}
+              alt='kajkaminitiative.com'
+              width='180px'
+              //   className=''
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

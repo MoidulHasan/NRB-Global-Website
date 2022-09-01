@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import img1 from '../../../assets/image/headerback.png';
 import './CommunityReviews.css';
-import imgrev1 from '../../../assets/image/commReviews/comRev1.jpg';
-import imgrev11 from '../../../assets/image/commReviews/comRev11.jpg';
-import imgrev2 from '../../../assets/image/commReviews/comriv2.jpg';
-import imgrev22 from '../../../assets/image/commReviews/comriv22.jpg';
-import imgrev3 from '../../../assets/image/commReviews/comriv3.jpg';
-import imgrev33 from '../../../assets/image/commReviews/comriv33.jpg';
+import imgrev1 from '../../../assets/image/commReviews/review1.png';
+import imgrev11 from '../../../assets/image/commReviews/review11.png';
+import imgrev2 from '../../../assets/image/commReviews/review2.png';
+import imgrev22 from '../../../assets/image/commReviews/review22.png';
+import imgrev3 from '../../../assets/image/commReviews/review3.png';
+import imgrev33 from '../../../assets/image/commReviews/review33.png';
 
 const CommunityReviews = () => {
   const [picChange1, setPicChange1] = useState(false);
@@ -61,7 +61,7 @@ const CommunityReviews = () => {
                   onMouseEnter={() => onMouseEnter(1)}
                   onMouseLeave={() => onMouseLeave(1)}
                 >
-                  <img src={picChange1 ? imgrev11 : imgrev1} alt='' />
+                  <img src={picChange1 ? imgrev1 : imgrev11} alt='' />
                 </div>
                 <div className='reviewTextSec'>
                   <div className='flex gap-3'>
@@ -100,7 +100,7 @@ const CommunityReviews = () => {
                   onMouseEnter={() => onMouseEnter(2)}
                   onMouseLeave={() => onMouseLeave(2)}
                 >
-                  <img src={picChange2 ? imgrev22 : imgrev2} alt='' />
+                  <img src={picChange2 ? imgrev3 : imgrev33} alt='' />
                 </div>
                 <div className='reviewTextSec'>
                   <div className='flex gap-3'>
@@ -138,7 +138,7 @@ const CommunityReviews = () => {
                   onMouseEnter={() => onMouseEnter(3)}
                   onMouseLeave={() => onMouseLeave(3)}
                 >
-                  <img src={picChange3 ? imgrev3 : imgrev33} alt='' />
+                  <img src={picChange3 ? imgrev2 : imgrev22} alt='' />
                 </div>
                 <div className='reviewTextSec'>
                   <div className='flex gap-3'>
