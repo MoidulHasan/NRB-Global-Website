@@ -1,0 +1,21 @@
+.memberContainer{
+    /* padding: 2rem;
+background-color: #FFFFFF; */
+background-color: #FAF6F7;
+border-radius: 10px;
+/* margin: 20px 0px; */
+padding-bottom: 3rem;
+background-image: url(/public/assets/image/about/imgAbout.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 50vh;
+}
+
+.textDiv{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* @media screen and (max-width: 960px) {
+    
+} */

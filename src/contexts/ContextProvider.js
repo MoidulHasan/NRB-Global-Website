@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react';
+import useNrbMembers from '../hooks/useNrbMembers';
 
 export const ContextApi = createContext();
 
@@ -9,8 +10,9 @@ const ContextProvider = ({ children }) => {
      then members will be in data.
     */
   const [hoverMenu, setHoverMenu] = useState(false);
+  const { nrbMembers } = useNrbMembers();
 
-  const data = { hoverMenu, setHoverMenu };
+  const data = { hoverMenu, setHoverMenu, nrbMembers };
 
   return <ContextApi.Provider value={data}>{children}</ContextApi.Provider>;
 };

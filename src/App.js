@@ -7,6 +7,11 @@ import 'primereact/resources/primereact.min.css'; //core css
 import 'primeicons/primeicons.css'; //icons
 import 'primeflex/primeflex.css';
 
+// flag icon
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+
+import { ScrollTop } from 'primereact/scrolltop';
+
 import ContextProvider from './contexts/ContextProvider';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
@@ -15,6 +20,7 @@ import Header from './component/Header/Header';
 import Contact from './pages/Contact/Contact';
 import BlogPage from './pages/Blogs/BlogPage/BlogPage';
 import Footer from './component/Footer/Footer';
+import MemberList from './pages/Membership/Members/MemberList/MemberList';
 
 function App() {
   return (
@@ -22,26 +28,28 @@ function App() {
       <ContextProvider>
         <BrowserRouter>
           <Header />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='contact' element={<Contact />} />
-            {/* committee  */}
+          <div className='mainApp'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='about' element={<About />} />
+              <Route path='contact' element={<Contact />} />
+              {/* committee  */}
 
-            {/* <Route path='cabinateMembers' element={}/>
+              {/* <Route path='cabinateMembers' element={}/>
             <Route path='exAmbassador' element={}/>
             <Route path='adCouncil' element={}/> */}
 
-            {/* Young Congress  */}
+              {/* Young Congress  */}
 
-            {/* <Route path='YCAbout' element={}/>
+              {/* <Route path='YCAbout' element={}/>
             <Route path='YCPrograms' element={}/>
             <Route path='YCActivities' element={}/>
             <Route path='YCMembers' element={}/> */}
 
-            {/* members  */}
+              {/* members  */}
+              <Route path='memberList' element={<MemberList />} />
 
-            {/* <Route path='memberList' element={}/>
+              {/* <Route path='memberList' element={}/>
             <Route path='memberservices' element={}/>
             <Route path='generalMembers' element={}/>
             <Route path='gmRegistration' element={}/>
@@ -49,9 +57,9 @@ function App() {
             <Route path='emOrganizationRegistration' element={}/>
             <Route path='membershipProcess' element={}/> */}
 
-            {/* services  */}
+              {/* services  */}
 
-            {/* <Route path='allservices' element={}/>
+              {/* <Route path='allservices' element={}/>
             <Route path='consultant' element={}/>
             <Route path='jobsupport' element={}/>
             <Route path='bussinessSupport' element={}/>
@@ -60,15 +68,17 @@ function App() {
             <Route path='lawsupport' element={}/>
             <Route path='relief' element={}/> */}
 
-            {/* gallery  */}
+              {/* gallery  */}
 
-            {/* <Route path='gallery' element={}>
+              {/* <Route path='gallery' element={}>
                 <Route path='photoGallery' element={}/>
                 <Route path='videoGallery'/>
             </Route>
           <Route path='events' element={}/> */}
-            <Route path='blogs' element={<BlogPage />} />
-          </Routes>
+              <Route path='blogs' element={<BlogPage />} />
+            </Routes>
+          </div>
+          <ScrollTop />
           <Footer />
         </BrowserRouter>
       </ContextProvider>
