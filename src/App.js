@@ -13,6 +13,8 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Header from './component/Header/Header';
 import Contact from './pages/Contact/Contact';
+import BlogPage from './pages/Blogs/BlogPage/BlogPage';
+import Footer from './component/Footer/Footer';
 import YCAbout from './pages/YoungCongress/YCAbout/YCAbout';
 import YCMembers from './pages/YoungCongress/YCMembers/YCMembers';
 import YCProgram from './pages/YoungCongress/YCProgram/YCProgram';
@@ -66,9 +68,10 @@ function App() {
                 <Route path='photoGallery' element={}/>
                 <Route path='videoGallery'/>
             </Route>
-            <Route path='events' element={}/>
-            <Route path='blogs' element={}/> */}
+          <Route path='events' element={}/> */}
+            <Route path='blogs' element={<BlogPage />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </ContextProvider>
     </div>

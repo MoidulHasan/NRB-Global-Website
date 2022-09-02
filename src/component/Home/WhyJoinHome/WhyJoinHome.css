@@ -1,0 +1,92 @@
+.sectionWhyContainer{
+    /* padding: 2rem;
+background-color: #FFFFFF; */
+background-color: #FAF6F7;
+border-radius: 10px;
+/* margin: 20px 0px; */
+padding-bottom: 3rem;
+}
+
+.whyGrid{
+    border-top: 7px solid var(--primeBLue);
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.fontDesc{
+font-size: 1.15rem;
+}
+.fontDesc, .textWhy{
+color: #002C53;
+}
+
+/* .whyContents{
+height: 370px;
+}
+.imgContainerJoin{
+max-width: 350px;
+max-height: 250px;
+} */
+.imgContainerJoin img{
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+}
+
+.whyJoinColText{
+    background-color: #144E62;
+}
+
+.whyColumnBlue{
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 9rem 3rem 4rem 15rem;
+}
+.whyPhotoColumn{
+    padding: 2rem 0 1rem 0;
+}
+.whyPhotoColumn img{
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    left: 200px;
+}
+.whyPoints{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+@media screen and (min-width: 960px) {
+    .columnWhy{
+        border-right: 1px solid gainsboro;
+    }
+    
+}
+@media screen and (max-width: 960px) {
+    .columnWhy{
+            border-bottom: 1px solid gainsboro;
+        }
+        .whyColumnBlue{
+            padding: 1rem 2rem 2rem 2rem;
+        }
+        .whyPhotoColumn{
+            padding: 2rem 0 1rem 0;
+        }
+        .whyPhotoColumn img{
+            width: 100%;
+            border-radius: 12px;
+            position: relative;
+            left: 0;
+        }
+        .whyJoinColText{
+            background-color: transparent;
+            height: 280px;
+        }
+        .columnForMobile{
+            border-radius: 10px;
+                background-color: #144E62;
+                margin: 1rem;
+                padding: 1rem;
+                position: relative;
+                top: -200px;
+        }
+}

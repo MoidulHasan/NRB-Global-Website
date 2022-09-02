@@ -1,3 +1,12 @@
+:root {
+ --primeBLue : #1D354F;
+ --btnColor : #6A55EA;
+ --primeHalka : #274463;
+}
+
+/* to implement color from root , follow below example: 
+color: var(--primeBlue) */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #BCDFFF;
 }
 
 code {

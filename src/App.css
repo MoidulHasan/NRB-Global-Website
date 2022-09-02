@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&display=swap');
+
 /* css made for container  */
 .p-container,
 .p-container-fluid,
@@ -32,6 +34,7 @@
 
 @media (min-width: 1200px) {
   .p-container, .p-container-sm, .p-container-md, .p-container-lg, .p-container-xl {
-    max-width: 1140px;
+    max-width: 1340px; 
+    /* 1140  */
   }
 }

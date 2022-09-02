@@ -1,0 +1,26 @@
+.companyMembers{
+    color: var(--primeBLue);
+}
+.organization{
+    /* padding: 2rem;
+    background-color: #FFFFFF; */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    /* margin: 20px 0px; */
+    padding-bottom: 3rem;
+}
+.imgOrg{
+    /* width: 126px;
+    height:70px ; */
+}
+.orangeTextOrg{
+    color: tomato
+}
+
+@media (max-width: 960px){
+    .imgOrg{
+        width: 106px;
+        height:30px ;
+    }
+
+}

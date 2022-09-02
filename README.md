@@ -14,6 +14,7 @@
 
 - React,
 - React Hook Form,
+- React Reveal
 - NodeJs,
 - Express JS,
 - MondoDB,
@@ -46,3 +47,15 @@ npm start
 or
 yarn start
 ```
+
+## For Developers
+
+to use React Reveal, please use the doc!
+
+# Shortcuts
+
+- PROPS:
+- duration
+- delay
+- cascade
+- count (for repeat)
