@@ -1,17 +1,52 @@
 import React from 'react';
+import AtAGlance from '../../component/Home/AtAGlance/AtAGlance';
+import CommunityReviews from '../../component/Home/CommunityReviews/CommunityReviews';
+import ExclusiveEvent from '../../component/Home/ExclusiveEvent/ExclusiveEvent';
+import FeaturedMembers from '../../component/Home/FeaturedMembers/FeaturedMembers';
+import MembersInOrganizations from '../../component/Home/MembersInOrganizations/MembersInOrganizations';
 import PhotoCarousel from '../../component/Home/PhotoCarousel/PhotoCarousel';
+import TopBanner from '../../component/Home/TopBanner/TopBanner';
+import TopServices from '../../component/Home/TopServices/TopServices';
+import WhyJoinNRB from '../../component/Home/WhyJoinNRB/WhyJoinNRB';
+import TopBlogs from '../../component/Home/TopBlogs/TopBlogs';
+import WhyJoinHome from '../../component/Home/WhyJoinHome/WhyJoinHome';
 
 const Home = () => {
   return (
     <div>
       {/* carousel section  */}
-      <section>
+      {/* <section>
         <PhotoCarousel />
+      </section> */}
+      <section>
+        <TopBanner />
       </section>
       <section className='p-container'>
-        <h2>Kuddus MIya </h2>
-        <h5>We all are here </h5>
-        <h3>This is onError</h3>
+        <AtAGlance />
+      </section>
+      <section>
+        <MembersInOrganizations />
+      </section>
+      <section>
+        <ExclusiveEvent />
+      </section>
+      <section>
+        <WhyJoinHome />
+      </section>
+      {/* <section>
+        <WhyJoinNRB />
+      </section> */}
+      <section>
+        <CommunityReviews />
+      </section>
+      <section>
+        <FeaturedMembers />
+      </section>
+      <section>
+        <TopServices />
+      </section>
+      <section>
+        <TopBlogs />
       </section>
     </div>
   );

@@ -1,11 +1,16 @@
 .navbar {
     /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
-    background: #FFFFFF;
+    background: #cde3f5;
+    /* color: #cde3f5; */
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    -moz-box-shadow: 0 1px 2px rgba(90, 90, 90, 0.4);
+    -webkit-box-shadow: 0 1px 2px rgba(90, 90, 90, 0.4);
+    box-shadow: 0 1px 2px rgba(90, 90, 90, 0.4);
+
   }
   
   .navbar-logo {
@@ -41,16 +46,18 @@
   }
   
   .nav-links {
-    color: #5F6C7A; 
+    /* color: #5F6C7A;  */
+    color: #242222;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: .9rem;
   }
   
   .nav-links:hover {
-    color: #242222;
+    color: #000000;
     background-color: #B6DAFF;
-    border-radius: 4px;
+    padding: 1.9rem 1rem;
+    border-radius: 0px;
     transition: all 0.2s ease-out;
   }
   
@@ -69,6 +76,11 @@
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
+    }
+    .logoNRB{
+      position: relative;
+      top: -20px;
+      left: -60px;
     }
 
     .navbar > ul {
@@ -100,6 +112,7 @@
     }
   
     .nav-links {
+      color: #d2d7dd; 
       text-align: center;
       padding: 1rem;
       width: 100%;
@@ -109,6 +122,7 @@
     .nav-links:hover {
       background-color: #B6DAFF;
       border-radius: 0;
+      padding: 0.5rem 1rem;
     }
   
     .navbar-logo {

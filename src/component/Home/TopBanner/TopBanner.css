@@ -1,0 +1,33 @@
+.heightCalc{
+    min-height: calc(100vh - 250px);
+}
+.basis-auto{
+    flex-basis: auto;
+}
+.basis-half{
+    flex-basis: 50%;
+}
+.joinButton{
+    white-space: nowrap;
+    border: none !important;
+    background-color: #292929;
+    border-radius: 10px;
+}
+.joinButton:hover{
+    background-color: #3E3F3F;
+    color: #D8DEFF !important;
+
+}
+
+@media (min-width: 960px){
+    .basis-auto {
+        flex-basis: 50%;
+    }
+    .topBannerContainer{
+        height: 530px !important;
+    }
+    .imageTop{
+        max-height: 520px !important;
+    }
+
+}

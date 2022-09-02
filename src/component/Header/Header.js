@@ -3,6 +3,7 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import Dropdown from './MenuList/Dropdown/Dropdown';
 import MenuList from './MenuList/MenuList';
+import nrbLogo from '../../assets/image/nrblogo.png';
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -190,8 +191,15 @@ const Header = () => {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          NRB GLobal
-          <i class='fab fa-firstdraft' />
+          {/* NRB GLobal
+          <i class='fab fa-firstdraft' /> */}
+          <img
+            src={nrbLogo}
+            alt='logo of NRB'
+            height='55px'
+            width='200px'
+            className='logoNRB'
+          />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

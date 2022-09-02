@@ -1,0 +1,18 @@
+.footerContainer{
+
+}
+.detailColor{
+    color: var(--primeBLue);
+}
+.linkDecoration{
+    text-decoration: none;
+    color: var(--primeBLue);
+}
+.listContainer {
+    list-style-type: none;
+}
+.linkKajkam{
+    text-decoration: none;
+    color: var(--primeBLue);
+    cursor: pointer;
+}

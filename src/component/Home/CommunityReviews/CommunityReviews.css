@@ -1,0 +1,40 @@
+.communityReviewContainer{
+            /* padding: 2rem;
+    background-color: #FFFFFF; */
+    /* background-color: #FAF6F7;
+    border-radius: 10px; */
+    /* margin: 20px 0px; */
+    padding-bottom: 3rem;
+}
+.textReview{
+    color: #002C53;
+    margin-left: 160px;
+    position: relative;
+    top: 110px;
+}
+.revImgContainer img{
+    width: 100%;
+    object-fit: cover;
+}
+.singleReview{
+    background-color: #FAF6F7;
+    border-radius: 10px;
+}
+
+.fill-orange-600 {
+    fill: #fe6c3e;
+    margin-top: 20px;
+}
+
+.flex-shrink-0, .shrink-0 {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .textReview{
+        color: #002C53;
+        margin-left: 70px;
+        position: relative;
+        top: 40px;
+    }
+}
