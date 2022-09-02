@@ -15,6 +15,7 @@
 - React,
 - React Hook Form,
 - React Reveal
+- Flag Icon
 - NodeJs,
 - Express JS,
 - MondoDB,

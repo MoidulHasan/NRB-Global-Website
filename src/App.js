@@ -7,6 +7,9 @@ import 'primereact/resources/primereact.min.css'; //core css
 import 'primeicons/primeicons.css'; //icons
 import 'primeflex/primeflex.css';
 
+// flag icon
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+
 import { ScrollTop } from 'primereact/scrolltop';
 
 import ContextProvider from './contexts/ContextProvider';
