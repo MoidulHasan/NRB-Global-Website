@@ -1,4 +1,5 @@
 import React from 'react';
+import MemberServiceList from '../../../../component/Membership/Members/MemberServices/MemberServicesHeader/MemberServiceList';
 import MemberServicesHeader from '../../../../component/Membership/Members/MemberServices/MemberServicesHeader/MemberServicesHeader';
 import './MemberServices.css';
 
@@ -8,7 +9,9 @@ const MemberServices = () => {
       <section>
         <MemberServicesHeader />
       </section>
-      <section></section>
+      <section>
+        <MemberServiceList />
+      </section>
     </div>
   );
 };
