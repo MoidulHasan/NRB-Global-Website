@@ -170,4 +170,13 @@
       display: none;
     }
   }
+
+  @media screen  and (max-width: 400px){
+    .logoNRB{
+      width: 130px;
+      height: 50px;
+      left: -35px
+    }
+    
+  }
   
