@@ -13,6 +13,9 @@
   margin-right: auto;
   margin-left: auto;
 }
+.mainApp{
+  min-height: 50vh;
+}
 
 @media (min-width: 576px) {
   .p-container, .p-container-sm {
