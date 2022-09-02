@@ -12,6 +12,10 @@ background-size: cover;
 height: 50vh;
 }
 
-@media screen and (max-width: 960px) {
-    
+.textDiv{
+    font-family: 'Rubik', sans-serif;
 }
+
+/* @media screen and (max-width: 960px) {
+    
+} */

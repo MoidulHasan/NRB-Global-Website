@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&family=Rubik:wght@400;700&display=swap');
 
 /* css made for container  */
 .p-container,
@@ -15,6 +15,13 @@
 }
 .mainApp{
   min-height: 50vh;
+}
+
+.mainApp:after{
+  content: '';
+  display: block;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--primeBLue);
 }
 
 @media (min-width: 576px) {
@@ -37,7 +44,8 @@
 
 @media (min-width: 1200px) {
   .p-container, .p-container-sm, .p-container-md, .p-container-lg, .p-container-xl {
-    max-width: 1340px; 
+    max-width: 1280px; 
+    /* 1340  */
     /* 1140  */
   }
 }
