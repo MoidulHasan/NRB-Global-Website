@@ -1,0 +1,241 @@
+.ycativity-container{
+    margin-top: 200px;
+}
+.ycativity-header h1{
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.ycativity-header h1 span{
+    font-size: 35px;
+    font-weight: bold;
+ border-bottom: 2px solid rgb(224, 226, 74);
+}
+.ycativity-parent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;    
+    } 
+    .ycativity-bloodImg {
+        background-image: url('../../../assets/image/YCAbout/bloodDonation.jpg');
+        width: 100%;
+        height: 400px;       
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;      
+        position: relative;
+        border-radius: 10px;
+    }
+    .ycativity-blood-bg-bottom{
+        position: absolute;
+        background: rgb(230, 5, 5);
+        opacity: .3;
+        width: 100%;   
+        height: 120px !important;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 20px 30px;
+        bottom: 0;
+    }
+    .ycativity-bloodTxt{           
+        position: absolute;
+        opacity: 1;
+        width: 100%;   
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;       
+        padding: 10px;
+        bottom: 0;
+        }
+    
+    .ycativity-bloodTxt h1{
+        position: relative;
+        color: #ffffff;   
+        font-size: 20px;
+        opacity: 1 !important;    
+        letter-spacing: 1px;
+    }
+    .ycativity-bloodTxt p{   
+        font-size: 15px;
+        font-weight: 100;
+        text-align: start;
+        opacity: 1 !important;     
+        font-size: 15px;
+      letter-spacing: 1px;
+     color: #ffffff;   
+
+    }
+    .ycativity-foodImg {     
+        background-image: url('../../../assets/image/YCAbout/foodDistribution.jpg');  
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        position: relative;
+    }
+    .ycativity-food-bg-bottom{
+        position: absolute;
+        background: rgb(230, 208, 5);
+        opacity: .3;
+        width: 100%;   
+        /* height: 150px !important; */
+        height: 120px;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* padding: 20px 30px; */
+        bottom: 0;
+    }
+  .ycativity-sample-foodTxt{
+    color:rgb(230, 208, 5) ;
+  }
+     .ycativity-foodTxt{           
+        position: absolute;
+        opacity: 1;
+        width: 100%;   
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;       
+        padding: 10px;
+        bottom: 0;
+        color:#ffffff;
+        }
+    
+     .ycativity-foodTxt h1{
+        position: relative;
+        font-size: 20px;
+        opacity: 1 !important;    
+        letter-spacing: 1px;
+    }
+     .ycativity-foodTxt p{   
+        font-size: 15px;
+        font-weight: 100;
+        text-align: start;
+        opacity: 1 !important;     
+        font-size: 15px;
+      letter-spacing: 1px;
+
+    }
+    .ycativity-naturaldisasterImg {
+        background-image: url('../../../assets/image/YCAbout/naturalDisaster.jpg');  
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        position: relative;
+    }
+    .ycativity-naturaldisaster-bg-bottom{
+        position: absolute;
+        background: rgb(31, 230, 5);
+        opacity: .3;
+        width: 100%;   
+        height: 120px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; 
+        bottom: 0;
+    }
+  .ycativity-sample-naturaldisasterTxt{
+color:rgb(31, 230, 5);
+display: none;
+  }
+     .ycativity-naturaldisasterTxt{           
+        position: absolute;
+        color: #ffffff;
+        opacity: 1;
+        width: 100%;   
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;       
+        padding: 10px;
+        bottom: 0;
+        }
+    
+     .ycativity-naturaldisasterTxt h1{
+        position: relative;
+        font-size: 20px;
+        opacity: 1 !important;    
+        letter-spacing: 1px;
+    }
+     .ycativity-naturaldisasterTxt p{   
+        font-size: 15px;
+        font-weight: 100;
+        text-align: start;
+        opacity: 1 !important;     
+        font-size: 15px;
+      letter-spacing: 1px;
+
+    }
+    .ycativity-floodImg {
+        background-image: url('../../../assets/image/YCAbout/the\ flood.jpeg');  
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    .ycativity-flood-bg-bottom{
+        position: absolute;
+        background: rgb(176, 18, 216);
+        opacity: .3;
+        width: 100%;   
+        height: 120px !important;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 20px 30px;
+        bottom: 0;
+    }
+  
+     .ycativity-floodTxt{           
+        position: absolute;
+        color: #ffffff;
+        opacity: 1;
+        width: 100%;   
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;       
+        padding: 10px;
+        bottom: 0;
+        }
+    
+     .ycativity-floodTxt h1{
+        position: relative;
+        font-size: 20px;
+        opacity: 1 !important;    
+        letter-spacing: 1px;
+    }
+     .ycativity-floodTxt p{   
+        font-size: 15px;
+        font-weight: 100;
+        text-align: start;
+        opacity: 1 !important;     
+        font-size: 15px;
+      letter-spacing: 1px;
+
+    }
+/* @media  */
+@media screen and (max-width:700px){
+    .ycativity-parent-grid { 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;    
+        }
+     
+}
+
+    /* .ycativity-bloodImg img{
+        width: 400px;
+        height: 400px;
+    }
+    .ycativity-foodImg img{
+        width: 400px;
+        height: 400px;
+    }
+    .ycativity-naturaldisasterImg img{
+        width: 400px;
+        height: 400px;
+    }
+    .ycativity-floodImg img{
+        width: 400px;
+        height: 400px;
+    } */

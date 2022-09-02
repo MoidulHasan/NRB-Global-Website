@@ -1,0 +1,12 @@
+.yca-container{
+    /* margin: 20px 150px;  */
+    padding: 5%;
+}
+.yca-mvo{
+    padding-top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 50px;
+    flex-wrap: wrap;
+     }

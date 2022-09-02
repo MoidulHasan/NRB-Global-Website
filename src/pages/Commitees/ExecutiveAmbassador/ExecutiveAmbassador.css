@@ -1,0 +1,16 @@
+.executivecontainer{
+    padding: 15px;
+    overflow-x: hidden;
+}
+  p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family:serif;
+} 
+.memberBtn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}

@@ -13,7 +13,14 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Header from './component/Header/Header';
 import Contact from './pages/Contact/Contact';
-
+import YCAbout from './pages/YoungCongress/YCAbout/YCAbout';
+import YCMembers from './pages/YoungCongress/YCMembers/YCMembers';
+import YCProgram from './pages/YoungCongress/YCProgram/YCProgram';
+import YCAtivities from './pages/YoungCongress/YCActivities/YCAtivities';
+import CabinateMembers from './pages/Commitees/CabinateMembers/CabinateMembers';
+import ExecutiveAbassador from './pages/Commitees/ExecutiveAmbassador/ExecutiveAbassador';
+import AdvisorCouncil from './pages/Commitees/AdvisoryCouncil/AdvisorCouncil';
+import Service from './pages/Services/Service';
 function App() {
   return (
     <div className='App'>
@@ -25,20 +32,15 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
             {/* committee  */}
-
-            {/* <Route path='cabinateMembers' element={}/>
-            <Route path='exAmbassador' element={}/>
-            <Route path='adCouncil' element={}/> */}
-
+            <Route path='cabinateMembers' element={<CabinateMembers />} />
+            <Route path='exAmbassador' element={<ExecutiveAbassador />} />
+            <Route path='adCouncil' element={<AdvisorCouncil />} />
             {/* Young Congress  */}
-
-            {/* <Route path='YCAbout' element={}/>
-            <Route path='YCPrograms' element={}/>
-            <Route path='YCActivities' element={}/>
-            <Route path='YCMembers' element={}/> */}
-
+            <Route path='YCAbout' element={<YCAbout />} />
+            <Route path='YCPrograms' element={<YCProgram />} />
+            <Route path='YCActivities' element={<YCAtivities />} />
+            <Route path='YCMembers' element={<YCMembers />} />
             {/* members  */}
-
             {/* <Route path='memberList' element={}/>
             <Route path='memberservices' element={}/>
             <Route path='generalMembers' element={}/>
@@ -49,14 +51,14 @@ function App() {
 
             {/* services  */}
 
-            {/* <Route path='allservices' element={}/>
-            <Route path='consultant' element={}/>
-            <Route path='jobsupport' element={}/>
-            <Route path='bussinessSupport' element={}/>
-            <Route path='edoctor' element={}/>
-            <Route path='deadbodySupport' element={}/>
-            <Route path='lawsupport' element={}/>
-            <Route path='relief' element={}/> */}
+            <Route path='allservices' element={<Service />} />
+            {/* <Route path='consultant' element={ } />
+            <Route path='jobsupport' element={ } />
+            <Route path='bussinessSupport' element={ } />
+            <Route path='edoctor' element={ } />
+            <Route path='deadbodySupport' element={ } />
+            <Route path='lawsupport' element={ } />
+            <Route path='relief' element={ } /> */}
 
             {/* gallery  */}
 

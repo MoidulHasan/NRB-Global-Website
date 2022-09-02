@@ -1,0 +1,83 @@
+ .ycm-container{
+ margin: 50px 100px;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ }
+ 
+ .ycm-header{
+    padding: 10px 100px;   
+background: #f3f7f5;
+border-radius: 10px;
+ }
+ .ycm-header h2, span {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+ }
+ .ycm-header  span {
+     font-family:'Times New Roman', Times, serif;
+     font-style: italic;
+ }
+ .ycm-header p{
+    line-height: 30px;
+    font-size: 20px;
+    text-align: start;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+ .ycm{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-around; */
+    justify-content: center;
+    flex-wrap: wrap;   
+ }
+
+ .ycm-profile{
+    /* padding: 20px; */
+     box-shadow: none;
+     /* margin-top: 30px; */
+     padding: 0px !important;
+     margin: 0px !important;
+ }
+ .ycm-flex img{
+ border-radius: 20px !important;
+width: 100%;
+ }
+ .ycm-name{
+   font-size: 15px !important;
+   text-align: start;   
+ }
+ .ycm-title{
+    margin-top: -8px;
+    font-size: 13px;
+    font-weight: 100;    
+ }
+ .ycm-socialicons{
+    margin-top: -8px;
+ }
+ .ycm-socialicons a i{
+    padding-right: 15px;    
+ }
+ .ycm-btn{
+    display: flex;
+    justify-content: end;
+    margin: 20px 0px;      
+}
+.ycm-btn button{
+      padding: 10px;
+background: rgb(72, 125, 206);
+border: none;
+font-size: 15px;
+border-radius: 8px;
+color: #ffffff;
+font-weight: bold;
+cursor: pointer;
+}
+ /* .ycm-join-btn{
+    font-size: 10px !important;
+    padding: 8px;
+ } */

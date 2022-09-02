@@ -1,0 +1,52 @@
+
+ .advisorcouncil{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.advisorprofile{
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0px 60px;
+    /* background: rgb(163, 157, 157); */
+    margin: 10px 20px;
+}
+.advisorflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.advisorflex img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+ .advisorflex1{
+    margin-top: -20px;
+ }
+.advisorname{
+ font-size: 20px;
+ text-align: start; 
+ 
+ letter-spacing: .8px;
+}
+.advisortitle{
+    font-size: 15px;
+    text-align: start;
+ letter-spacing: 1px;
+margin-top: -10px;
+font-weight: 100;
+}
+.advisorsocialicons{  
+    margin-top: -20px;
+    display: flex; 
+    justify-content: start; 
+}
+ .advisorsocialicons a > i {
+    font-size: 20px; 
+    color: rgb(143, 134, 134) !important;
+    padding-right: 12px; 
+    margin-top: 10px;    
+ }
+ 
