@@ -2,8 +2,7 @@ import './YCAboutpage.css'
 function YCObjective() {
     return (
         <div className='yc-objective-container'>
-            <div className="yc-objective-icon">
-                <img src="../../../assets/image/YCAbout/mission.png" alt="" />
+            <div className="yc-objective-bg-img">
             </div>
             <div className="yc-objective-textlist">
                 <h2 className="yc-objective-title">Our Objective</h2>

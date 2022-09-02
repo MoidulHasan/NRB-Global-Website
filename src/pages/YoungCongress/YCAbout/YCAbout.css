@@ -1,9 +1,10 @@
 .yca-container{
-    /* margin: 20px 150px;  */
-    padding: 5%;
+    /* margin:0px 150px;  */
+    margin: 0% 12%;
+    padding-top:10px;
 }
 .yca-mvo{
-    padding-top: 50px !important;
+ 
     display: flex;
     align-items: center;
     justify-content: space-between;
