@@ -21,6 +21,7 @@ import Contact from './pages/Contact/Contact';
 import BlogPage from './pages/Blogs/BlogPage/BlogPage';
 import Footer from './component/Footer/Footer';
 import MemberList from './pages/Membership/Members/MemberList/MemberList';
+import MemberServices from './pages/Membership/Members/MemberServices/MemberServices';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
 
               {/* members  */}
               <Route path='memberList' element={<MemberList />} />
+              <Route path='memberservices' element={<MemberServices />} />
 
               {/* <Route path='memberList' element={}/>
             <Route path='memberservices' element={}/>
