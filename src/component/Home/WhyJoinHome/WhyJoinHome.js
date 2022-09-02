@@ -7,7 +7,7 @@ const WhyJoinHome = () => {
   return (
     <div className='p-container mb-4'>
       {/* why join nrb home 
-      is completed */}
+      is completed by this */}
       <div className='sectionWhyContainer  py-5 px-4'>
         <h1 className='text-4xl md:text-5xl mt-3 mb-3 md:mb-6 textWhy text-center'>
           Why Join NRB Global?{' '}
