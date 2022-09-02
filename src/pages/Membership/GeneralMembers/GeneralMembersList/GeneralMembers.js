@@ -2,7 +2,7 @@ import { Button } from 'primereact/button';
 import React from 'react';
 import './GeneralMembers.css';
 import MemberListToSHow from '../../../../component/Membership/Members/MemberList/MemberListToSHow/MemberListToSHow';
-import GeneralMemberHeader from '../../../../component/Membership/GeneralMembers/GeneralMembers/GeneralMemberHeader';
+import GeneralMemberHeader from '../../../../component/Membership/GeneralMembers/GeneralMembersList/GeneralMemberHeader';
 
 const GeneralMembers = () => {
   return (

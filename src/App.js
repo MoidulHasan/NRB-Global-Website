@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 // primeReact imports
@@ -22,7 +21,7 @@ import BlogPage from './pages/Blogs/BlogPage/BlogPage';
 import Footer from './component/Footer/Footer';
 import MemberList from './pages/Membership/Members/MemberList/MemberList';
 import MemberServices from './pages/Membership/Members/MemberServices/MemberServices';
-import GeneralMembers from './pages/Membership/GeneralMembers/GeneralMembers/GeneralMembers';
+import GeneralMembers from './pages/Membership/GeneralMembers/GeneralMembersList/GeneralMembers';
 
 function App() {
   return (
