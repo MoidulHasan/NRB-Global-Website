@@ -22,6 +22,7 @@ import Footer from './component/Footer/Footer';
 import MemberList from './pages/Membership/Members/MemberList/MemberList';
 import MemberServices from './pages/Membership/Members/MemberServices/MemberServices';
 import GeneralMembers from './pages/Membership/GeneralMembers/GeneralMembersList/GeneralMembers';
+import GeneralMemberRegistration from './pages/Membership/GeneralMembers/GeneralMemberRegistration/GeneralMemberRegistration';
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
               <Route path='memberList' element={<MemberList />} />
               <Route path='memberservices' element={<MemberServices />} />
               <Route path='generalMembers' element={<GeneralMembers />} />
+              <Route
+                path='gmRegistration'
+                element={<GeneralMemberRegistration />}
+              />
 
               {/* <Route path='memberList' element={}/>
             <Route path='memberservices' element={}/>

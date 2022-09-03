@@ -1,0 +1,31 @@
+.registrationContainer{
+        /* padding: 2rem;
+background-color: #FFFFFF; */
+background-color: #FFFFFF;
+border-radius: 10px;
+/* margin: 20px 0px; */
+/* padding-bottom: 3rem; */
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.registrationInfo{
+        background-color: #6c67fc;
+        border-radius: 10px;
+        font-family: "Barlow Condensed", sans-serif;
+        height: 100%;
+}
+.spanSupportText{
+        color: #d5d5ef;
+}
+
+.reviewKarim{
+        border-radius: 7px;
+        background-color:#4943ee ;
+        color: #b1b1e7;
+}
+
+.regImageMember{
+        border-radius: 5px;
+}
+.reviewRegName{
+        color: white;
+}
