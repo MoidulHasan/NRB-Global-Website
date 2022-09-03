@@ -70,7 +70,7 @@ const MembershipProcessSteps = () => {
         </div>
       </div>
       <div className='grid mt-4 mb-7'>
-        <div className='col-12 md:col-6 stepToMemberOneDesc pt-2 pb-2 pl-2 md:pl-6 pr-2'>
+        <div className='col-12 md:col-6 stepToMemberOneDesc pt-2 pb-2 pl-2 md:pl-4 pr-12'>
           <h1 className='textStepPrime'>Organization</h1>
           <span className='text-gray-700 font-bold mb-2 md:mb-4'>
             We help you to gain leverage and efficiency through our consultancy,
@@ -173,7 +173,7 @@ const MembershipProcessSteps = () => {
                 check_circle
               </span>{' '}
               <span className='text-blue-900 text-xl ml-2'>
-                Student Support
+                Student Support, E Doctor Support
               </span>
             </p>
             <p className='stepPointToIndividual flex align-items-center'>
@@ -181,7 +181,7 @@ const MembershipProcessSteps = () => {
                 check_circle
               </span>{' '}
               <span className='text-blue-900 text-xl ml-2'>
-                Step 4: Payment information should be given
+                Relief and other supports to enhance your life
               </span>
             </p>
           </div>
