@@ -25,6 +25,7 @@ import GeneralMembers from './pages/Membership/GeneralMembers/GeneralMembersList
 import GeneralMemberRegistration from './pages/Membership/GeneralMembers/GeneralMemberRegistration/GeneralMemberRegistration';
 import EMIndividualRegistration from './pages/Membership/ExecutiveMember/EMIndividualRegistration';
 import EMOrganization from './pages/Membership/ExecutiveMember/EMOrganization';
+import MembershipProcess from './pages/Membership/MembershipProcess/MembershipProcess';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
                 path='emOrganizationRegistration'
                 element={<EMOrganization />}
               />
+              <Route path='membershipProcess' element={<MembershipProcess />} />
 
               {/* <Route path='memberList' element={}/>
             <Route path='memberservices' element={}/>

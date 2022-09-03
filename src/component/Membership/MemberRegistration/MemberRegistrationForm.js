@@ -50,7 +50,7 @@ const MemberRegistrationForm = (props) => {
 
   const onSubmit = (data) => {
     setFormData(data);
-    console.log(formData);
+    console.log(JSON.stringify(formData));
     setShowMessage(true);
 
     reset();
@@ -126,7 +126,11 @@ const MemberRegistrationForm = (props) => {
                 <h5 className='text-center md:text-2xl'>
                   Welcome to NRB Global
                 </h5>
-                <form onSubmit={handleSubmit(onSubmit)} className='p-fluid'>
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className='p-fluid'
+                  encType='multipart/form-data'
+                >
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
