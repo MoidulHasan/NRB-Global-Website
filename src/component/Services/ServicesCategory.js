@@ -4,12 +4,17 @@ import { services_data as services } from '../../data'
 function ServicesCategory() {
     return (
         <div className='sc-container'>
-            <svg className='sc-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            {/* <svg className='sc-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#0099ff" fill-opacity="0.64" d="M0,256L80,229.3C160,203,320,149,480,149.3C640,149,800,203,960,229.3C1120,256,1280,256,1360,256L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-            </svg>
-            <div className="sc-text-container">
-                <h2>Our Services</h2>
-                <p>We Provide our services with care  and always priority our client</p>
+            </svg> */}
+            <div className="sc-header-service-container">
+                <div className="sc-text-container">
+                    <h2>Our Services</h2>
+                    <p>We Provide our services with care  and always priority our client</p>
+                </div>
+                <div className="sc-img-container">
+                    <img src="../../assets/image/Services/help.png" alt="" />
+                </div>
             </div>
             <div className="sc-service">
                 {services.map((service, i) => (
