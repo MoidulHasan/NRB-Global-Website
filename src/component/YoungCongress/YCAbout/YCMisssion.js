@@ -4,7 +4,6 @@ function YCMisssion() {
         <div className='yc-mission-vision-container'>
             <div className="yc-mission-center-postition">
                 <div className="yc-mission-container">
-
                     <div className="yc-mission-textlist">
                         <div className="yc-mission-flex-text">
                             <h2 className="yc-mission-title">Our Mission</h2>

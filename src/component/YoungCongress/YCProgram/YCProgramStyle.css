@@ -34,14 +34,12 @@
     border: none;
     margin: 0px 20px;
 }
- 
 .ycpc-card{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
-}
- 
+} 
 .ycpc-details{
     margin: 25px;
 }

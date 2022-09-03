@@ -18,31 +18,33 @@ function YCMembersCard() {
             </div>
             <div className="ycm">
                 {ycateam_data.map((acateam, i) => (
-                    <Card className='ycm-profile' style={{ width: '18em' }} key={i}>
-                        {/* <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {acateam.description}
+                    <div className="ycm-profile">
+                        <Card className='ycm-card' style={{ width: '18em' }} key={i}>
+                            {/* <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {acateam.description}
                         </p> */}
-                        <div className="ycm-flex">
-                            <img src={acateam.image} alt="img" />
-                            <div className="ycm-flex1">
-                                <p className='ycm-name'>{acateam.name}</p>
-                                <h5 className='ycm-title'>{acateam.title}</h5>
-                                <div className="ycm-socialicons">
-                                    <a href={acateam.fblink}>
-                                        <i className="pi pi-facebook" style={{ color: '#333' }} />
-                                    </a>
-                                    <a href={acateam.wtapplink}>
-                                        <i className="pi pi-whatsapp" style={{ color: '#333' }} />
-                                    </a>
-                                    <a href={acateam.linkedinlink}> <i className="pi pi-linkedin" style={{ color: '#333' }} /></a>
-                                    {/* <a href={acateam.linkedinlink}> <i className="pi pi-linkedin" style={{ color: '#333' }} /></a> */}
-                                    <a href={acateam.weblink}>
-                                        <i className="pi pi-link" style={{ color: '#333' }} />
-                                    </a>
+                            <div className="ycm-flex">
+                                <img src={acateam.image} alt="img" />
+                                <div className="ycm-flex1">
+                                    <p className='ycm-name'>{acateam.name}</p>
+                                    <h5 className='ycm-title'>{acateam.title}</h5>
+                                    <div className="ycm-socialicons">
+                                        <a href={acateam.fblink}>
+                                            <i className="pi pi-facebook" style={{ color: '#333' }} />
+                                        </a>
+                                        <a href={acateam.wtapplink}>
+                                            <i className="pi pi-whatsapp" style={{ color: '#333' }} />
+                                        </a>
+                                        <a href={acateam.linkedinlink}> <i className="pi pi-linkedin" style={{ color: '#333' }} /></a>
+                                        {/* <a href={acateam.linkedinlink}> <i className="pi pi-linkedin" style={{ color: '#333' }} /></a> */}
+                                        <a href={acateam.weblink}>
+                                            <i className="pi pi-link" style={{ color: '#333' }} />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                    </Card>
+                            </div>
+                        </Card>
+                    </div>
                 ))}
             </div>
             <div className="ycm-btn">

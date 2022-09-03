@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-
 // primeReact imports
 import 'primereact/resources/themes/lara-light-indigo/theme.css'; //theme
 import 'primereact/resources/primereact.min.css'; //core css
 import 'primeicons/primeicons.css'; //icons
 import 'primeflex/primeflex.css';
-
 import ContextProvider from './contexts/ContextProvider';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
@@ -23,6 +21,8 @@ import CabinateMembers from './pages/Commitees/CabinateMembers/CabinateMembers';
 import ExecutiveAbassador from './pages/Commitees/ExecutiveAmbassador/ExecutiveAbassador';
 import AdvisorCouncil from './pages/Commitees/AdvisoryCouncil/AdvisorCouncil';
 import Service from './pages/Services/Service';
+import PhotoGallary from './pages/Galllery/PhotoGallery/PhotoGallary';
+import Gallery from './pages/Galllery/Gallery';
 function App() {
   return (
     <div className='App'>
@@ -61,14 +61,10 @@ function App() {
             <Route path='deadbodySupport' element={ } />
             <Route path='lawsupport' element={ } />
             <Route path='relief' element={ } /> */}
-
             {/* gallery  */}
-
-            {/* <Route path='gallery' element={}>
-                <Route path='photoGallery' element={}/>
-                <Route path='videoGallery'/>
-            </Route>
-          <Route path='events' element={}/> */}
+            <Route path='gallery' element={<Gallery />} />
+            <Route path='gallery/photoGallery' element={<PhotoGallary />} />
+            {/* <Route path='events' element={ } /> */}
             <Route path='blogs' element={<BlogPage />} />
           </Routes>
           <Footer />

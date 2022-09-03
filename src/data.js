@@ -454,3 +454,68 @@ export const services_data = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt',
     }
 ]
+// Gallary Image
+
+export const eventpic_data = [
+    {
+        id: 1,
+        img: 'https://i.ibb.co/FHXFGWF/blood-Donation.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 2,
+        img: 'https://i.ibb.co/FHXFGWF/blood-Donation.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 3,
+        img: '/assets/image/gallery/event-02.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 4,
+        img: '/assets/image/gallery/event-01.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 5,
+        img: '/assets/image/gallery/event-02.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 6,
+        img: '/assets/image/gallery/event-05.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 7,
+        img: 'https://i.ibb.co/FHXFGWF/blood-Donation.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 8,
+        img: 'https://i.ibb.co/FHXFGWF/blood-Donation.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 9,
+        img: '/assets/image/gallery/event-02.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 10,
+        img: '/assets/image/gallery/event-01.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 11,
+        img: '/assets/image/gallery/event-02.jpg',
+        title: 'Developer'
+    },
+    {
+        id: 12,
+        img: '/assets/image/gallery/event-05.jpg',
+        title: 'Developer'
+    }
+]
+
