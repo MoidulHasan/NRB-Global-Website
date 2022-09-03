@@ -19,6 +19,9 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
   const [formData, setFormData] = useState({});
 
+  const org = props.memberType === 'Organization';
+  console.log(org);
+
   const defaultValues = {
     name: '',
     email: '',
@@ -32,9 +35,9 @@ const MemberRegistrationForm = (props) => {
     intro: '',
     payment: '',
     paymentFee: '',
-    password: '',
+    picture: {},
     birthday: null,
-    category: props.memberType == 'Individual' ? 'Individual' : 'Organization',
+    category: props.memberType === 'Individual' ? 'Individual' : 'Organization',
   };
 
   const {
@@ -146,7 +149,7 @@ const MemberRegistrationForm = (props) => {
                       <label htmlFor='category'>Category</label>
                     </span>
                   </div>
-                  <div className='field mb-5'>
+                  <div className='field mb-3'>
                     <span className='p-float-label'>
                       <Controller
                         name='name'
@@ -167,10 +170,43 @@ const MemberRegistrationForm = (props) => {
                         htmlFor='name'
                         className={classNames({ 'p-error': errors.name })}
                       >
-                        Name*
+                        {org ? 'Organization Name*' : 'Name*'}
                       </label>
                     </span>
                     {getFormErrorMessage('name')}
+                  </div>
+                  <div className='field mb-5'>
+                    <span className='p-label p-input-icon-right'>
+                      <i className='pi pi-pi-file' />
+                      <label
+                        htmlFor='picture'
+                        className='block text-gray-600 mb-1 ml-2'
+                      >
+                        Picture*
+                      </label>
+                      <Controller
+                        name='picture'
+                        control={control}
+                        rules={{
+                          required: 'Photo is required.',
+                        }}
+                        render={({ field, fieldState }) => (
+                          <InputText
+                            type='file'
+                            id={field.name}
+                            {...field}
+                            value={field.value.filename}
+                            onChange={(e) => {
+                              return field.onChange(e.target.files);
+                            }}
+                            className={classNames({
+                              'p-invalid': fieldState.invalid,
+                            })}
+                          />
+                        )}
+                      />
+                    </span>
+                    {getFormErrorMessage('picture')}
                   </div>
                   <div className='field mb-5'>
                     <span className='p-float-label p-input-icon-right'>
@@ -249,7 +285,9 @@ const MemberRegistrationForm = (props) => {
                           />
                         )}
                       />
-                      <label htmlFor='birthday'>Birthday</label>
+                      <label htmlFor='birthday'>
+                        {org ? 'Established Date' : 'Birthday'}
+                      </label>
                     </span>
                   </div>
                   <div className='field mb-5'>
@@ -351,7 +389,7 @@ const MemberRegistrationForm = (props) => {
                         htmlFor='placeOfBirth'
                         className={classNames({ 'p-error': errors.name })}
                       >
-                        Place Of Birth
+                        {org ? 'Establishment Place' : 'Place Of Birth'}
                       </label>
                     </span>
                     {getFormErrorMessage('placeOfBirth')}
@@ -377,7 +415,7 @@ const MemberRegistrationForm = (props) => {
                         htmlFor='nationality'
                         className={classNames({ 'p-error': errors.name })}
                       >
-                        Nationality
+                        {org ? 'Registration Country/Countries' : 'Nationality'}
                       </label>
                     </span>
                     {getFormErrorMessage('nationality')}
@@ -403,7 +441,10 @@ const MemberRegistrationForm = (props) => {
                         htmlFor='spouceOrChild'
                         className={classNames({ 'p-error': errors.name })}
                       >
-                        If preferred, Name of Spouce, Child(ren)
+                        If preferred,{' '}
+                        {org
+                          ? 'Reference Person'
+                          : 'Name of Spouce, Child(ren)'}
                       </label>
                     </span>
                     {getFormErrorMessage('spouceOrChild')}
@@ -464,7 +505,8 @@ const MemberRegistrationForm = (props) => {
                   </div>
                   <div className='mb-4'>
                     <span className='text-green-500'>
-                      Membership fee 200.00$ for Individual
+                      Membership fee {org ? '300.00$' : '200.00$'} for{' '}
+                      {org ? 'Organization' : 'Individual'}
                     </span>
                   </div>
                   {/* <div className='field mb-5'>

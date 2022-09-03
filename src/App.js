@@ -23,6 +23,8 @@ import MemberList from './pages/Membership/Members/MemberList/MemberList';
 import MemberServices from './pages/Membership/Members/MemberServices/MemberServices';
 import GeneralMembers from './pages/Membership/GeneralMembers/GeneralMembersList/GeneralMembers';
 import GeneralMemberRegistration from './pages/Membership/GeneralMembers/GeneralMemberRegistration/GeneralMemberRegistration';
+import EMIndividualRegistration from './pages/Membership/ExecutiveMember/EMIndividualRegistration';
+import EMOrganization from './pages/Membership/ExecutiveMember/EMOrganization';
 
 function App() {
   return (
@@ -55,6 +57,14 @@ function App() {
               <Route
                 path='gmRegistration'
                 element={<GeneralMemberRegistration />}
+              />
+              <Route
+                path='emIndividualRegistration'
+                element={<EMIndividualRegistration />}
+              />
+              <Route
+                path='emOrganizationRegistration'
+                element={<EMOrganization />}
               />
 
               {/* <Route path='memberList' element={}/>
