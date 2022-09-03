@@ -1,8 +1,8 @@
-.executivecontainer{
+.executive-container{
     padding: 15px;
     overflow-x: hidden;
 }
-  p{
+  .executive-container-para{
     text-align: center;
     font-size: 30px;
     font-weight: bold;

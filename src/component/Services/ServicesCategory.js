@@ -30,7 +30,7 @@ function ServicesCategory() {
                                         <p>{service.description}</p>
                                     </div>
                                     <div className="sc-phone">
-                                        <p><span>Phone : </span>{service.number}</p>
+                                        <p><span className='sc-phone-span'>Phone : </span>{service.number}</p>
                                     </div>
                                     <div className="sc-email">
                                         <p><span>Email : </span>{service.email}</p>

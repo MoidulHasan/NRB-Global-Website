@@ -3,7 +3,7 @@ function YCAtivitesGrid() {
     return (
         <div className='ycativity-container'>
             <div className="ycativity-header">
-                <h1>Our Regular <span>Acitivities</span>  </h1>
+                <h1>Our Regular <span className='ycativity-header-span'>Acitivities</span>  </h1>
             </div>
             <div className="ycativity-parent-grid">
                 <div className="ycativity-bloodImg">
