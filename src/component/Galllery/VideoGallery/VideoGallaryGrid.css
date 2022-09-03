@@ -1,0 +1,26 @@
+.video-gallary-column{
+    margin: 2% 6%;
+}
+ .video-gallary-column div iframe {
+    width: 100%;
+    /* max-height: 30; */
+    height: auto;
+    border-radius: 10px;
+ }
+/* MEDIA  */
+ @media only screen and (min-width: 1440px) {
+    .video-gallary-column{
+        margin: 2% 8%;
+        padding: 2%;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+    .video-gallary-column div iframe {
+   height: 300px;
+     }
+  }
+  @media only screen and (min-width: 1140px) { 
+    .video-gallary-column div iframe {
+   height: 250px;
+     }
+  }

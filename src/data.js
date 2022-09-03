@@ -519,3 +519,68 @@ export const eventpic_data = [
     }
 ]
 
+// Event video 
+
+export const eventvideo_data = [
+    {
+        id: 1,
+        video: 'https://www.youtube.com/embed/LgNiHfmsA9o',
+        title: 'theme song'
+    },
+    {
+        id: 2,
+        video: 'https://www.youtube.com/embed/Mh2gLWKKYNY',
+        title: 'opening ceremony'
+    },
+    {
+        id: 3,
+        video: 'https://www.youtube.com/embed/3ZL7W_jpJWs',
+        title: 'Ambassador'
+    },
+    {
+        id: 4,
+        video: 'https://www.youtube.com/embed/Fyws1g6Feu4',
+        title: 'special episod'
+    },
+    {
+        id: 5,
+        video: 'https://www.youtube.com/embed/baiv_gMsA98',
+        title: 'Executive ambassador'
+    },
+    {
+        id: 6,
+        video: 'https://www.youtube.com/embed/qvMlx9FcaTw',
+        title: 'Relief'
+    },
+    {
+        id: 7,
+        video: 'https://www.youtube.com/embed/ZwkAYmE25I8',
+        title: 'Interview'
+    },
+    {
+        id: 8,
+        video: 'https://www.youtube.com/embed/kf5A1pPhnSQ',
+        title: 'cabinate slide show'
+    },
+    {
+        id: 9,
+        video: 'https://www.youtube.com/embed/kvStoD9U3FY',
+        title: 'Special Dialog'
+    },
+    {
+        id: 10,
+        video: 'https://www.youtube.com/embed/ykWNXYsGLFg',
+        title: 'city Council'
+    },
+    {
+        id: 11,
+        video: 'https://www.youtube.com/embed/qvMlx9FcaTw',
+        title: 'Relief'
+    },
+    {
+        id: 12,
+        video: 'https://www.youtube.com/embed/3ZL7W_jpJWs',
+        title: 'Ambassador'
+    }
+]
+

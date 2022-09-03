@@ -23,6 +23,7 @@ import AdvisorCouncil from './pages/Commitees/AdvisoryCouncil/AdvisorCouncil';
 import Service from './pages/Services/Service';
 import PhotoGallary from './pages/Galllery/PhotoGallery/PhotoGallary';
 import Gallery from './pages/Galllery/Gallery';
+import VideoGallary from './pages/Galllery/VideoGallery/VideoGallary';
 function App() {
   return (
     <div className='App'>
@@ -64,6 +65,9 @@ function App() {
             {/* gallery  */}
             <Route path='gallery' element={<Gallery />} />
             <Route path='gallery/photoGallery' element={<PhotoGallary />} />
+            {/* MINE  */}
+            <Route path='gallery/videoGallery' element={<VideoGallary />} />
+            {/* END  */}
             {/* <Route path='events' element={ } /> */}
             <Route path='blogs' element={<BlogPage />} />
           </Routes>
