@@ -114,3 +114,40 @@
     margin-bottom: -20px;
     width: 100%;
 }
+
+/* YCProgramSlide  */
+.ycprogram-slide{
+background: rgb(244, 243, 243);
+}
+.ycprogram-slide-img img{
+    width: 100%;
+    object-fit: cover;   
+}
+.ycprogram-slide-title{
+    font-size: 30px !important;
+}
+.ycprogram-slide-details{
+    padding: 10px;
+}
+.ycprogram-slide-description{
+    font-size: 16px !important;
+    line-height: 25px;
+}
+.ycprogram-slide-description::after{
+    content: '';
+    display: block;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dbdada;
+}
+
+
+/* Media  */
+
+@media screen and (max-width:960px){
+    .ycprogram-slide-title:after{
+        content: '';
+        display: block;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #dbdada;
+    }
+}

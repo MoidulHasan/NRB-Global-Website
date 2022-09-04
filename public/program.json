@@ -1,28 +1,60 @@
 {
     "data": [
         {
-            "itemImageSrc": "./assets/image/YCAbout/programSlide01.jpg",
-            "thumbnailImageSrc": "https://i.ibb.co/4KPqszh/Blue-Group-Banner-Active-Club-Exercise-Activity-People-Facebook-Cover.png",
-            "alt": "Description for Image 1",
-            "title": "Title 1"
+            "id": "1000",
+            "code": "f230fh0g3",
+            "name": "How to get informed about music",
+            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "image": "./assets/image/YCAbout/educationslide.jpg",
+            "time": 5,
+            "view": 317,
+            "date": "Nov 3, 2021",
+            "like": 20,
+            "author": "Abdullah Azad",
+            "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
+            "category": "Art & Love"
         },
         {
-            "itemImageSrc": "./assets/image/YCAbout/programmslide02.jpg",
-            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria2.jpg",
-            "alt": "Description for Image 2",
-            "title": "Title 2"
+            "id": "1001",
+            "code": "nvklal433",
+            "name": "Save the Tree, Save the World",
+            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "image": "./assets/image/YCAbout/covidawarness.jpg",
+            "time": 10,
+            "view": 327,
+            "date": "Sept 3, 2021",
+            "like": 10,
+            "author": "Moidul Hasan",
+            "thumb": "./assets/image/blogs/5fc9f284bfe27-bpfull.jpg",
+            "category": "Nature and Environment"
         },
         {
-            "itemImageSrc": "./assets/image/YCAbout/programmslide03.jpg",
-            "thumbnailImageSrc": "https://i.ibb.co/RCjNTRN/Colorful-Culture-and-Communication-Presentation.png",
-            "alt": "Description for Image 3",
-            "title": "Title 3"
+            "id": "1002",
+            "code": "zz21cz3c1",
+            "name": "Read our blog and master your skills",
+            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "image": "./assets/image/YCAbout/fooddistributionslide.jpg",
+            "time": 10,
+            "view": 327,
+            "date": "Sept 3, 2021",
+            "like": 10,
+            "author": "Moidul Hasan",
+            "thumb": "./assets/image/blogs/5fc9f43c2ad07-bpfull.jpg",
+            "category": "Skill Development"
         },
         {
-            "itemImageSrc": "./assets/image/YCAbout/programmslide04.jpg",
-            "thumbnailImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
-            "alt": "Description for Image 4",
-            "title": "Title 4"
+            "id": "1003",
+            "code": "244wgerg2",
+            "name": "New environments you’re going to enjoy",
+            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "image": "./assets/image/YCAbout/visitslide.jpg",
+            "time": 10,
+            "view": 327,
+            "date": "Sept 3, 2021",
+            "like": 10,
+            "author": "Najim Uddin",
+            "thumb": "./assets/image/blogs/5fc9f43c2ad07-bpfull.jpg",
+            "category": "Skill Development"
         }
     ]
 }
