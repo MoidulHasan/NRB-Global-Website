@@ -2,7 +2,7 @@ import React from 'react'
 import YCMembersCard from '../../../component/YoungCongress/YCMembers/YCMembersCard'
 function YCMembers() {
     return (
-        <div><YCMembersCard /></div>
+        <div className='young-congress-main-conatiner'><YCMembersCard /></div>
     )
 }
 

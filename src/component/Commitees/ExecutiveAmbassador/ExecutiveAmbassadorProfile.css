@@ -1,62 +1,67 @@
-
- .executive-ambassador{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    /* background: #f3f7f5; */
-    /* margin: 5%; */
-    border-radius: 10px;
-}
+.executive-ambassador-container{
+    /* margin: 50px 100px; */
  
-.executive-ambassador-profile{
-    padding: 10px 10px !important;
-}
-.executive-card{
-    border: none !important;
-    box-shadow: none !important;
-}
-.executive-profile-img {      
-   margin-right: 30px;
-    width: 120px !important; 
-    border-radius: 50%;  
-    margin: 20px;
-    border: 6px solid rgb(226, 224, 224);
-    /* border-radius: 8px; */
-}
-/* .cabinetcardquote{
-    font-size: 18px;
-    margin-top: -15px;
-} */ 
-.executive-name{
- font-size: 15px;
- text-align: center;
- margin-top: -8px;
- /* color: black;
- background: rgb(226, 224, 224); */
- color: #ffffff;
- background: rgb(194, 38, 38);
- padding: 6px;
- border-radius: 4px;
- letter-spacing: .8px;
-}
-.executive-title{
-    font-size: 15px;
-    text-align: center;
-}
-.executive-social-icons{  
-    margin-top: -20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
- .executive-social-icons a > i {
-    font-size: 20px;   
-    /* background: rgb(92, 85, 185); */
-    /* color: black !important; */
-    cursor: pointer;
-    margin: 8px;
-    padding: 3px;
-    border-radius: 4px;
- }
+    } 
  
+ 
+  
+     /* .executive-ambassador{
+      width: 100%;
+    }  */
+     .executive-ambassador {
+     
+     }
+    .executive-ambassador-card{
+       /* padding: 20px; */
+        box-shadow: none;
+        /* margin-top: 30px; */
+      
+    }
+    .executive-ambassador-flex img{
+    border-radius: 50%;
+   width: 150px;
+   margin-left: 43px;
+   height: 150px;
+   margin-top: -20px;
+    }
+    .executive-ambassador-name{
+      font-size: 15px !important;
+      text-align: center;   
+font-weight: bold;
+letter-spacing: .7px;
+    }
+    .executive-ambassador-title{
+       margin-top: -6px;
+       font-size: 13px;
+       text-align: center;
+       font-weight: 100;    
+    }
+    .executive-ambassador-socialicons{
+       margin-top: -8px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .executive-ambassador-socialicons a i{
+    padding: 12px;
+     
+    }
+    /* .executive-ambassador-btn{
+       display: flex;
+       justify-content: end;
+       margin: 20px 0px;      
+   }
+   .executive-ambassador-btn button{
+         padding: 10px;
+   background: rgb(72, 125, 206);
+   border: none;
+   font-size: 15px;
+   border-radius: 8px;
+   color: #ffffff;
+   font-weight: bold;
+   cursor: pointer;
+   } */
+    /* .executive-ambassador-join-btn{
+       font-size: 10px !important;
+       padding: 8px;
+    } */
