@@ -34,27 +34,27 @@
     border: none;
     margin: 0px 20px;
 }
-.ycpc-card{
+/* .ycpc-card{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
-} 
+}  */
 .ycpc-details{
     margin: 25px;
 }
-
-.ycpc-profile{
+.ycpc-card-grid{
+    /* background: #000; */
+    padding: 20px;
+}
+.ycpc-card{
     box-shadow: none;
     border-radius: 0px; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
  
  
-.ycpc-profile{
-    border-top: 2px solid rgb(76, 62, 199) !important;
-    background: #ededff;
-}
+ 
 .ycpc-type{
     font-size: 15px;
     font-weight: 600;

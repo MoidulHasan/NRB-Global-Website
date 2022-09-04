@@ -9,7 +9,7 @@ function CabinateCard() {
 
     }
     return (
-        <div>
+        <div className='cabinet-card-main-container'>
             {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
             <div className="cabinetorgcenterdiv">
                 <div className="cabinetorganizer">
