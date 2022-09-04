@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 import { useForm, Controller } from 'react-hook-form';
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
@@ -46,13 +47,61 @@ const MemberRegistrationForm = (props) => {
     handleSubmit,
     reset,
   } = useForm({ defaultValues });
-  console.log(formData);
+  // console.log(formData);
 
-  const onSubmit = (data) => {
-    setFormData(data);
-    console.log(JSON.stringify(formData));
-    setShowMessage(true);
+  const onSubmit = async (data) => {
+    // setFormData({ formData, ...data });
 
+    const formData = new FormData();
+    formData.append('name', data.name);
+    formData.append('email', data.email);
+    formData.append('presentAddress', data.presentAddress);
+    formData.append('addressInBangladesh', data.addressInBangladesh);
+    formData.append('otherContact', data.otherContact);
+    formData.append('placeOfBirth', data.placeOfBirth);
+    formData.append('nationality', data.nationality);
+    formData.append('spouceOrChild', data.spouceOrChild);
+    formData.append('intro', data.intro);
+    formData.append('payment', data.payment);
+    formData.append('paymentFee', data.paymentFee);
+    formData.append('birthday', data.birthday);
+    formData.append('category', data.category);
+    formData.append('photo', data.picture[0]);
+
+    Swal.fire({
+      icon: 'warning',
+      title: 'All of the information are correct?',
+      showCancelButton: true,
+      confirmButtonText: 'Yes',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        console.log(formData);
+        fetch('http://localhost:5001/regi', {
+          method: 'POST',
+          headers: { 'content-type': 'multipart/form-data' },
+          body: formData,
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            // console.log(data);
+            if (data.insertedId) {
+              reset();
+              setShowMessage(true);
+              Swal.fire('Your Registration Form Submitted!', '', 'success');
+            }
+          })
+          .catch((err) => {
+            Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Something went wrong!',
+              html: 'Please, try again',
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          });
+      }
+    });
     reset();
   };
 
