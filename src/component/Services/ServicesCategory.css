@@ -8,11 +8,10 @@ top: 0 !important;
 margin-top: -50px;
 } */
 .sc-service{
-   z-index: -1;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+ background: #f3f7f3;
 align-items: center;
+margin:0px .8px;
+padding: 30px 0px;
 /* margin: 0px 50px; */
 }
 .sc-header-service-container{
@@ -21,7 +20,7 @@ align-items: center;
    /* align-items: center; */
    background:#ffffff;
    padding: 20px;
-   height: 300px;
+   height: 400px;
 }
 .sc-text-container{
    padding: 30px;
@@ -32,7 +31,6 @@ align-items: center;
    text-align: center;
    font-family: 'Times New Roman', Times, serif;
    font-size: 50px;
-   margin-top: -10px;
 }
 .sc-text-container p{
    margin-top: -30px;
@@ -52,14 +50,13 @@ align-items: center;
     position: relative;    
     /* box-shadow: rgb(191, 205, 212) 0px 1px 4px, rgb(242, 243, 243) 0px 20px 0px 3px; */
     box-shadow: none;
-   
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: 10px;
     height: 350px;
 }
 
 .sc-profile{
-    padding: 20px 50px;
+    padding: 20px 10px;
 }
 .sc-overlay {
    position: absolute;
@@ -67,8 +64,7 @@ align-items: center;
    left: 0;
    right: 0;
    border-radius: 10px;
-
-   background-color: #5CBEFF;
+   background-color: #000;
    overflow: hidden;
    width: 100%;
    height: 0;
@@ -113,18 +109,18 @@ align-items: center;
  }
  .sc-email p{
     margin-top: -10px;
-    font-size:18px;
+    font-size:16px;
     font-weight: 100;
     text-align: start;
  }
- .sc-email p span{
+ .sc-email-span, .sc-phone-span{
     font-weight: 500;
-    font-size: 20px;
-    color: #333;     
+    font-size:18px;
+    color: #ffffff;     
  }
  .sc-doctor-title h3{
    text-align: center; 
-   background: #5CBEFF;
+   background: #000;
    margin-top: 60px;
   padding: 8px;
   color: #ffffff;

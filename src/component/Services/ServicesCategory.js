@@ -16,31 +16,34 @@ function ServicesCategory() {
                     <img src="../../assets/image/Services/help.png" alt="" />
                 </div>
             </div>
-            <div className="sc-service">
+            <div className="sc-service grid">
                 {services.map((service, i) => (
-                    <div className="sc-profile" key={i}>
-                        <Card className='sc-card' style={{ width: '18em' }}>
-                            <div className="sc-image">
-                                <img src={service.image} alt="" />
-                            </div>
-                            <div className="sc-overlay">
-                                <div className="sc-text">
-                                    <div className="sc-title"><h3>{service.programName}</h3></div>
-                                    <div className="sc-description">
-                                        <p>{service.description}</p>
-                                    </div>
-                                    <div className="sc-phone">
-                                        <p><span className='sc-phone-span'>Phone : </span>{service.number}</p>
-                                    </div>
-                                    <div className="sc-email">
-                                        <p><span>Email : </span>{service.email}</p>
+                    <div className="sc-profile col-3 " key={i}>
+                        <div className="flex align-items-cetner justify-content-center">
+                            <Card className='sc-card' style={{ width: '16em' }}>
+                                <div className="sc-image">
+                                    <img src={service.image} alt="" />
+                                </div>
+                                <div className="sc-overlay">
+                                    <div className="sc-text">
+                                        <div className="sc-title"><h3>{service.programName}</h3></div>
+                                        <div className="sc-description">
+                                            <p>{service.description}</p>
+                                        </div>
+                                        <div className="sc-phone">
+                                            <p><span className='sc-phone-span'>Phone : </span>{service.number}</p>
+                                        </div>
+                                        <div className="sc-email">
+                                            <p><span className='sc-email-span'>Email : </span>{service.email}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="sc-doctor-title">
-                                <h3>{service.programName}</h3>
-                            </div>
-                        </Card>
+                                <div className="sc-doctor-title">
+                                    <h3>{service.programName}</h3>
+                                </div>
+                            </Card>
+                        </div>
+
                     </div>
                 ))}
             </div>
