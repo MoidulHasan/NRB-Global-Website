@@ -1,5 +1,12 @@
- /* YCAbout  */
- 
+ /* YCAbout  */ 
+ .yca-about-section{
+  background: #75aac1;
+  margin-top: 35px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+ }
  .yca-description{   
   background-image: url('../../../assets/image/YCAbout/abouthd.png');  
   background-position: center;
@@ -42,7 +49,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
  .yca-about-text h3{
   font-size: 20px;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid #ffffff;
   padding: 5px;
   letter-spacing:.2px;
 font-size: 30px;
@@ -61,10 +68,13 @@ font-size: 30px;
 }
 .yca-research h1,.yca-audience h1,.yca-contact h1{
   font-size: 25px;
-  font-weight: 600;
-  color: rgb(192, 70, 54);
+  font-weight: bold;
+  /* color: rgb(192, 70, 54); */
+  color: #333;
   letter-spacing:.2px;
-
+  font-style: italic;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
 }
   /* .yca-contact h1::before{
   content: "\22C4";
@@ -91,12 +101,14 @@ font-size: 30px;
 }
 /* MISSION - VISSION  */
 .yc-mission-vision-container{
- border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
 /* background: #ebe8e8; */
+background: #f3f7f5;
 }
 .yc-mission-container{
 
-  margin-top: -30px;
 display: grid;
 /* background: #000; */
 grid-template-columns: 80% 20%;
@@ -123,7 +135,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 border-radius: 10px;
-
+object-fit: cover;
 }
 .yc-mission-title{
 font-size: 30px;
@@ -153,6 +165,8 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 border-radius: 10px;
+object-fit: cover;
+
 }
 .yc-vision-textlist{
   padding-left: 50px;
@@ -192,9 +206,6 @@ padding: 40px 0px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom-left-radius:10px ;
-  border-top-left-radius:10px ;
-
 }
  .yc-objective-textlist{
   /* padding: 30px ; */
@@ -231,13 +242,9 @@ font-size: 30px;
   font-family:'Times New Roman', Times, serif;
 }
 .ycateam{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /* background: #141414; */
-  background: #f3f7f5;
-  border-radius: 10px;
+ background: #f3f7f5;
+ padding: 20px;
+ border-radius: 10px;
 }
 .ycateam-profile{
   padding: 20px 10px;
