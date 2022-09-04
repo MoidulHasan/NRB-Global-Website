@@ -2,8 +2,7 @@
     border-radius: 10px;
 }
 .ycpc-container{ 
-    background: #f7f3f5;
-    margin-top: 150px;
+    background: #f7f3f5;    
     border-left: 4px solid red;
     border-radius: 8px;
 }
@@ -68,11 +67,10 @@
 .ycpc-card{
     background: none;
     box-shadow: none;
-    border-radius: 10px; 
+    /* border-radius: 10px;      */
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-    box-shadow: rgba(148, 146, 146, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(148, 146, 146, 0.35) 0px 5px 15px; */
     color: #ffffff !important;
-
 }
  
  
@@ -118,10 +116,13 @@
 /* YCProgramSlide  */
 .ycprogram-slide{
 background: rgb(244, 243, 243);
+
 }
 .ycprogram-slide-img img{
     width: 100%;
     object-fit: cover;   
+    padding: 10px 0px 0px 0px;
+    border-radius: 10px !important;
 }
 .ycprogram-slide-title{
     font-size: 30px !important;

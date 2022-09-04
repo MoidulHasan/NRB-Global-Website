@@ -4,8 +4,8 @@ import YCActivitiesSlide from '../../../component/YoungCongress/YCActivities/YCA
 function YCAtivities() {
     return (
         <div className='YCAtivities'>
-            <YCActivitiesSlide />
             <YCAtivitesGrid />
+            {/* <YCActivitiesSlide /> */}
         </div>
     )
 }
