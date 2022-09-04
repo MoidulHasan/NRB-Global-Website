@@ -43,14 +43,36 @@
 .ycpc-details{
     margin: 25px;
 }
+.ycpc-profile:nth-child(2){
+    background: rgb(149, 63, 63) !important;
+}
+.ycpc-profile:nth-child(1){
+    background: rgb(81, 175, 191) !important;
+}
+.ycpc-profile:nth-child(4){
+    background: rgb(149, 63, 63) !important;
+}
+.ycpc-profile:nth-child(3){
+    background: rgb(81, 175, 191) !important;
+}
+.ycpc-profile:nth-child(5){
+    background: rgb(81, 175, 191) !important;
+}
+.ycpc-profile:nth-child(6){
+    background: rgb(149, 63, 63) !important;
+}
 .ycpc-card-grid{
     /* background: #000; */
     padding: 20px;
 }
 .ycpc-card{
+    background: none;
     box-shadow: none;
-    border-radius: 0px; 
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px; 
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(148, 146, 146, 0.35) 0px 5px 15px;
+    color: #ffffff !important;
+
 }
  
  
@@ -71,7 +93,8 @@
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px; */
     border-radius: 2px;
-    background-color: #2c8aaf;
+    /* background-color: #2c8aaf; */
+    background-color: #ffffff;
 } 
 .ycpc-title{
     margin-top: -20px;

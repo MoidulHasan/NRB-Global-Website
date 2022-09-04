@@ -1,6 +1,10 @@
  .ycprogram{
-    padding: 30px 150px;
+     margin: .5% 10%;
  }
 
 
- 
+ @media screen and (min-width: 1440px) {
+   .ycprogram{
+      margin: .5% 18%;
+   }
+ }
