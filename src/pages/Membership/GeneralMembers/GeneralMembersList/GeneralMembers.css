@@ -1,12 +1,14 @@
-.beAnrbMember{
+.beAnrbMember {
     background-color: #FAF6F7;
     border-radius: 10px;
     /* margin: 20px 0px; */
     padding-bottom: 3rem;
 }
-.excitedJoinText{
+
+.excitedJoinText {
     color: var(--primeBLue);
 }
-.seeYou{
+
+.seeYou {
     color: rgb(239, 88, 62);
 }

@@ -51,6 +51,7 @@ const MemberRegistrationForm = (props) => {
 
   const onSubmit = async (data) => {
     // setFormData({ formData, ...data });
+    console.log(data.picture);
 
     const formData = new FormData();
     formData.append('name', data.name);
@@ -66,7 +67,10 @@ const MemberRegistrationForm = (props) => {
     formData.append('paymentFee', data.paymentFee);
     formData.append('birthday', data.birthday);
     formData.append('category', data.category);
-    formData.append('photo', data.picture[0]);
+    formData.append('accept', data.accept);
+    formData.append('phone', data.phone);
+    formData.append("picture", data.picture[0], data.picture[0].name);
+
 
     Swal.fire({
       icon: 'warning',
@@ -75,34 +79,57 @@ const MemberRegistrationForm = (props) => {
       confirmButtonText: 'Yes',
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log(formData);
-        fetch('http://localhost:5001/regi', {
+
+        const requestOptions = {
           method: 'POST',
-          headers: { 'content-type': 'multipart/form-data' },
-          body: formData,
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            // console.log(data);
-            if (data.insertedId) {
-              reset();
-              setShowMessage(true);
-              Swal.fire('Your Registration Form Submitted!', '', 'success');
-            }
-          })
-          .catch((err) => {
-            Swal.fire({
-              position: 'center',
-              icon: 'error',
-              title: 'Something went wrong!',
-              html: 'Please, try again',
-              showConfirmButton: false,
-              timer: 1500,
+          body: formData
+        };
+
+        try {
+          fetch("http://localhost:3001/api/register", requestOptions)
+            .then(response => response.json())
+            .then((data) => {
+              console.log(data);
+              if (data?.data?._id) {
+                reset();
+                setShowMessage(true);
+                Swal.fire('Your Registration Form Submitted!', '', 'success');
+              }
+              else {
+                Swal.fire({
+                  position: 'center',
+                  icon: 'error',
+                  title: 'Error!',
+                  html: data?.message,
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+              }
+            })
+            .catch((err) => {
+              console.log(err);
+              Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Error2!',
+                html: err?.message,
+                showConfirmButton: false,
+                timer: 1500,
+              });
             });
+        } catch (err) {
+          Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Failed!',
+            html: err.message,
+            showConfirmButton: false,
+            timer: 1500,
           });
+        }
       }
     });
-    reset();
+    // reset();
   };
 
   const getFormErrorMessage = (name) => {
@@ -244,7 +271,7 @@ const MemberRegistrationForm = (props) => {
                           required: 'Photo is required.',
                         }}
                         render={({ field, fieldState }) => (
-                          <InputText
+                          <input
                             type='file'
                             id={field.name}
                             {...field}
