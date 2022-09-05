@@ -1,11 +1,15 @@
  /* YCAbout  */ 
  .yca-about-section{
-  background: #75aac1;
+  /* background: #75aac1; */
+  background-image: url('../../../assets//image/YCAbout/aboutbgimgdesk.png');
   margin-top: 35px;
   /* border-radius: 10px; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
  }
  .yca-description{   
   background-image: url('../../../assets/image/YCAbout/abouthd.png');  
@@ -25,6 +29,7 @@
  text-align: center;
  padding-top: 30px;
  padding-left: 5%;
+ font-weight: 600 !important;
 }
 .yca-title h1{
   text-align: start;
@@ -46,6 +51,19 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding: 20px;  
   /* background-image: url('../../../assets/image//YCAbout/aboutus.png'); */
  
+}
+.yca-about-text h3{
+/* color: #176ae7; */
+color: #ffffff;
+}
+.yca-about-text-p{
+  /* color:#ffffff; */
+  /* background: rgb(100, 98, 98); */
+  /* background: #f3f7f5; */
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 600 !important;
 }
  .yca-about-text h3{
   font-size: 20px;
@@ -70,7 +88,7 @@ font-size: 30px;
   font-size: 25px;
   font-weight: bold;
   /* color: rgb(192, 70, 54); */
-  color: #333;
+  color: #ffffff;
   letter-spacing:.2px;
   font-style: italic;
   border-bottom: 1px solid #ffffff;
@@ -87,6 +105,11 @@ font-size: 30px;
     font-weight: 100;
     line-height: 30px;
     letter-spacing:.5px;
+  /* background: #f3f7f5;     */
+  color:#ffffff;
+    border-radius: 10px;
+    padding: 10px;  
+    margin-right: 10px; 
 }
 .yca-join-btn Button{
   margin-left: 5%;  
@@ -105,7 +128,16 @@ font-size: 30px;
     grid-template-rows: auto  ;  
    }     
 }
-
+/* MEDIA  */
+@media only screen and (max-width:624px){
+  .yca-title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 10px;
+    padding-left: 5%;
+   
+   }
+}
 /* MISSION - VISSION  */
 .yc-mission-vision-container{
   border-bottom-left-radius: 10px;
@@ -207,7 +239,11 @@ font-size: 30px;
       grid-template-columns: 0% 100%;
       grid-template-rows: auto  ; 
       }
-
+.yc-objective-bg-img{
+  width: 150px !important;
+  height: 150px !important;
+  margin-top:120px !important;
+}
 }
 @media only screen and (max-width:800px){
   .yc-mission-flex-img {   
@@ -221,6 +257,11 @@ font-size: 30px;
     margin-left: 100px;
     height: 100px;
    }
+   .yc-objective-bg-img{
+    width: 110px !important;
+    height: 110px !important;
+    margin-top:190px !important;
+  }
 }
 @media only screen and (max-width:748px){ 
   .yc-mission-textlist{ 
@@ -234,6 +275,12 @@ font-size: 30px;
 .yc-mission-flex-img, .yc-vision-bg-img{
     display: none; 
   }
+  .yc-objective-container{ 
+    grid-template-columns:  100% !important; 
+   }
+  .yc-objective-bg-img{
+    display: none !important;
+  }
 }
 
 /* OBJECTIVE  */
@@ -242,13 +289,15 @@ font-size: 30px;
  grid-template-columns: 25% 75%;
  grid-template-rows: auto auto; 
 padding: 40px 0px;
-
 }
 .yc-objective-bg-img{
-  background-image: url('../../../assets/image/YCAbout/objective.jpg');
+  background-image: url('../../../assets/image/YCAbout/objective.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-top: 60px;
 }
  .yc-objective-textlist{
   /* padding: 30px ; */
@@ -284,10 +333,13 @@ font-size: 30px;
   font-weight: 100;
   font-family:'Times New Roman', Times, serif;
 }
-.ycateam{
- background: #f3f7f5;
- padding: 20px;
+.ycateam-container{
+  background: #f3f7f5;
  border-radius: 10px;
+
+}
+.ycateam{
+ padding: 20px;
 }
 .ycateam-profile{
   padding: 20px 10px;
@@ -322,88 +374,4 @@ font-size: 30px;
 padding: 5px;
 border-radius: 6px;
 }
-/* MISION 
-.yc-mission-container{
-display: flex;
-width: 100%;
-margin-left: auto;
-margin-top: 30px;
-margin-right: auto;
-align-items: center;
-justify-content: space-around;
-flex-wrap: wrap;
-
-}
-
-.yc-mission-icon{
-background:#f3f7f5 ;
-border-radius: 10px;
-}
-.yc-mission-container img {
-width: 320px;
-} 
-.yc-mission-title{
-font-size: 30px;
-color:#e02d45;
-}
-.missionlist-item ul {
-line-height: 30px;
-list-style-type:square;
-} */
-
-/* VISION  */
-/* 
-.vision-container{
-display: flex;
-width: 100%;
-margin-left: auto;
-margin-top: 30px;
-margin-right: auto;
-align-items: center;
-justify-content: space-around;
-
-padding-top: 50px;
-flex-wrap: wrap;
-}
-
-.vision-icon{
-background:#f3f7f5 ;
-border-radius: 10px;
-}
-.vision-container img {
-width: 320px;
-} 
-.vision-title{
-font-size: 30px;
-color:#42e02d;
-}
-.visionlist-item ul {
-line-height: 30px;
-list-style-type:square;
-
-} */
-
  
-
-
-/* .visionlist - item ul li::before{
-  content: "\22C4";
-  color: rgb(92, 202, 29);
-  font - weight: bold;
-  display: inline - block;
-  width: 2em;
-  height: 2em;
-  margin - left: -2em;
-}
-
- 
-}
-.missionlist - item ul li::before{
-  content: "\22C4";
-  color: rgb(204, 42, 50);
-  font - weight: bold;
-  display: inline - block;
-  width: 2em;
-  height: 2em;
-  margin - left: -2em;
-}  */

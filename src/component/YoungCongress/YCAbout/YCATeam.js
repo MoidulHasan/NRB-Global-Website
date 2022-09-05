@@ -8,7 +8,7 @@ function YCATeam() {
             <h1 className="ycateam-header">Young congress members</h1>
             <div className="ycateam grid">
                 {ycateam_data.map((acateam, i) => (
-                    <div className="ycateam-profile xl:col-4 md:col-3 sm:col-12">
+                    <div className="ycateam-profile xl:col-3 md:col-6 sm:col-12">
                         <div className="flex align-items-cetner justify-content-center">
                             <Card className='ycateam-card' style={{ width: '18em' }} key={i}>
                                 {/* <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {acateam.description}
