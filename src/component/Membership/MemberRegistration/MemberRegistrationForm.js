@@ -72,7 +72,6 @@ const MemberRegistrationForm = (props) => {
     formData.append('birthday', data.birthday);
     formData.append('category', data.category);
     formData.append('accept', data.accept);
-    formData.append('phone', data.phone);
     formData.append('picture', data.picture[0], data.picture[0].name);
 
     Swal.fire({
@@ -88,7 +87,7 @@ const MemberRegistrationForm = (props) => {
         };
 
         try {
-          fetch('http://localhost:3001/api/register', requestOptions)
+          fetch('https://nrb-global.herokuapp.com/api/register', requestOptions)
             .then((response) => response.json())
             .then((data) => {
               console.log(data);
@@ -103,7 +102,7 @@ const MemberRegistrationForm = (props) => {
                   title: 'Error!',
                   html: data?.message,
                   showConfirmButton: false,
-                  timer: 1500,
+                  timer: 1200,
                 });
               }
             })
@@ -115,7 +114,7 @@ const MemberRegistrationForm = (props) => {
                 title: 'Error2!',
                 html: err?.message,
                 showConfirmButton: false,
-                timer: 1500,
+                timer: 1200,
               });
             });
         } catch (err) {
@@ -125,14 +124,12 @@ const MemberRegistrationForm = (props) => {
             title: 'Failed!',
             html: err.message,
             showConfirmButton: false,
-            timer: 1500,
+            timer: 1200,
           });
         }
       }
     });
     // console.log(pictureRef);
-
-    reset();
   };
 
   // useEffect(() => {
