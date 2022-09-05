@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 // primeReact imports
@@ -22,6 +21,11 @@ import BlogPage from './pages/Blogs/BlogPage/BlogPage';
 import Footer from './component/Footer/Footer';
 import MemberList from './pages/Membership/Members/MemberList/MemberList';
 import MemberServices from './pages/Membership/Members/MemberServices/MemberServices';
+import GeneralMembers from './pages/Membership/GeneralMembers/GeneralMembersList/GeneralMembers';
+import GeneralMemberRegistration from './pages/Membership/GeneralMembers/GeneralMemberRegistration/GeneralMemberRegistration';
+import EMIndividualRegistration from './pages/Membership/ExecutiveMember/EMIndividualRegistration';
+import EMOrganization from './pages/Membership/ExecutiveMember/EMOrganization';
+import MembershipProcess from './pages/Membership/MembershipProcess/MembershipProcess';
 
 function App() {
   return (
@@ -50,6 +54,20 @@ function App() {
               {/* members  */}
               <Route path='memberList' element={<MemberList />} />
               <Route path='memberservices' element={<MemberServices />} />
+              <Route path='generalMembers' element={<GeneralMembers />} />
+              <Route
+                path='gmRegistration'
+                element={<GeneralMemberRegistration />}
+              />
+              <Route
+                path='emIndividualRegistration'
+                element={<EMIndividualRegistration />}
+              />
+              <Route
+                path='emOrganizationRegistration'
+                element={<EMOrganization />}
+              />
+              <Route path='membershipProcess' element={<MembershipProcess />} />
 
               {/* <Route path='memberList' element={}/>
             <Route path='memberservices' element={}/>
