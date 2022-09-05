@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Swal from 'sweetalert2';
 import { useForm, Controller } from 'react-hook-form';
 import { InputText } from 'primereact/inputtext';
@@ -20,8 +20,10 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
   const [formData, setFormData] = useState({});
 
+  const pictureRef = useRef('');
+
   const org = props.memberType === 'Organization';
-  console.log(org);
+  // console.log(org);
 
   const defaultValues = {
     name: '',
@@ -43,19 +45,21 @@ const MemberRegistrationForm = (props) => {
 
   const {
     control,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
     handleSubmit,
     reset,
+    register,
   } = useForm({ defaultValues });
   // console.log(formData);
 
   const onSubmit = async (data) => {
     // setFormData({ formData, ...data });
-    console.log(data.picture);
+    // console.log(data.picture);
 
     const formData = new FormData();
     formData.append('name', data.name);
     formData.append('email', data.email);
+    formData.append('phone', data.phone);
     formData.append('presentAddress', data.presentAddress);
     formData.append('addressInBangladesh', data.addressInBangladesh);
     formData.append('otherContact', data.otherContact);
@@ -69,8 +73,7 @@ const MemberRegistrationForm = (props) => {
     formData.append('category', data.category);
     formData.append('accept', data.accept);
     formData.append('phone', data.phone);
-    formData.append("picture", data.picture[0], data.picture[0].name);
-
+    formData.append('picture', data.picture[0], data.picture[0].name);
 
     Swal.fire({
       icon: 'warning',
@@ -79,23 +82,21 @@ const MemberRegistrationForm = (props) => {
       confirmButtonText: 'Yes',
     }).then((result) => {
       if (result.isConfirmed) {
-
         const requestOptions = {
           method: 'POST',
-          body: formData
+          body: formData,
         };
 
         try {
-          fetch("http://localhost:3001/api/register", requestOptions)
-            .then(response => response.json())
+          fetch('http://localhost:3001/api/register', requestOptions)
+            .then((response) => response.json())
             .then((data) => {
               console.log(data);
               if (data?.data?._id) {
                 reset();
                 setShowMessage(true);
                 Swal.fire('Your Registration Form Submitted!', '', 'success');
-              }
-              else {
+              } else {
                 Swal.fire({
                   position: 'center',
                   icon: 'error',
@@ -129,14 +130,23 @@ const MemberRegistrationForm = (props) => {
         }
       }
     });
-    // reset();
+    // console.log(pictureRef);
+
+    reset();
   };
+
+  // useEffect(() => {
+  //   reset({
+  //     data: '',
+  //   });
+  // }, [isSubmitSuccessful]);
 
   const getFormErrorMessage = (name) => {
     return (
       errors[name] && <small className='p-error'>{errors[name].message}</small>
     );
   };
+
   return (
     <div className='p-container my-4'>
       <div className='registrationContainer py-2 px-2'>
@@ -264,7 +274,7 @@ const MemberRegistrationForm = (props) => {
                       >
                         Picture*
                       </label>
-                      <Controller
+                      {/* <Controller
                         name='picture'
                         control={control}
                         rules={{
@@ -272,6 +282,7 @@ const MemberRegistrationForm = (props) => {
                         }}
                         render={({ field, fieldState }) => (
                           <input
+                            ref={pictureRef}
                             type='file'
                             id={field.name}
                             {...field}
@@ -284,6 +295,13 @@ const MemberRegistrationForm = (props) => {
                             })}
                           />
                         )}
+                      /> */}
+                      <input
+                        type='file'
+                        name='picture'
+                        {...register('picture', {
+                          required: 'Picture is required.',
+                        })}
                       />
                     </span>
                     {getFormErrorMessage('picture')}
@@ -375,7 +393,16 @@ const MemberRegistrationForm = (props) => {
                       <Controller
                         name='presentAddress'
                         control={control}
-                        // rules={{ required: 'Name is required.' }}
+                        // rules={{ props.memberType === 'Individual' ? ' ' : '' }}
+                        rules={{
+                          validate: {
+                            required: (value) => {
+                              if (props.memberType === 'Individual' && !value)
+                                return 'Present Address Required';
+                              return true;
+                            },
+                          },
+                        }}
                         render={({ field, fieldState }) => (
                           <InputText
                             id={field.name}
@@ -389,9 +416,13 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='presentAddress'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({
+                          'p-error': errors.presentAddress,
+                        })}
                       >
-                        Present Address
+                        {props.memberType === 'Individual'
+                          ? 'Present Address*'
+                          : 'Present Address'}
                       </label>
                     </span>
                     {getFormErrorMessage('presentAddress')}
@@ -415,7 +446,9 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='addressInBangladesh'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({
+                          'p-error': errors.addressInBangladesh,
+                        })}
                       >
                         Address In Bangladesh (If Any)
                       </label>
@@ -441,7 +474,9 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='otherContact'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({
+                          'p-error': errors.otherContact,
+                        })}
                       >
                         Other Contact (If Any)
                       </label>
@@ -453,7 +488,7 @@ const MemberRegistrationForm = (props) => {
                       <Controller
                         name='placeOfBirth'
                         control={control}
-                        // rules={{ required: 'Name is required.' }}
+                        // rules={{ required: 'POB is required.' }}
                         render={({ field, fieldState }) => (
                           <InputText
                             id={field.name}
@@ -467,7 +502,9 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='placeOfBirth'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({
+                          'p-error': errors.placeOfBirth,
+                        })}
                       >
                         {org ? 'Establishment Place' : 'Place Of Birth'}
                       </label>
@@ -479,7 +516,15 @@ const MemberRegistrationForm = (props) => {
                       <Controller
                         name='nationality'
                         control={control}
-                        // rules={{ required: 'Name is required.' }}
+                        rules={{
+                          validate: {
+                            required: (value) => {
+                              if (props.memberType === 'Individual' && !value)
+                                return 'Nationality is required';
+                              return true;
+                            },
+                          },
+                        }}
                         render={({ field, fieldState }) => (
                           <InputText
                             id={field.name}
@@ -493,9 +538,13 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='nationality'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({
+                          'p-error': errors.nationality,
+                        })}
                       >
-                        {org ? 'Registration Country/Countries' : 'Nationality'}
+                        {org
+                          ? 'Registration Country/Countries'
+                          : 'Nationality*'}
                       </label>
                     </span>
                     {getFormErrorMessage('nationality')}
@@ -519,7 +568,9 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='spouceOrChild'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({
+                          'p-error': errors.spouceOrChild,
+                        })}
                       >
                         If preferred,{' '}
                         {org
@@ -550,7 +601,7 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='intro'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({ 'p-error': errors.intro })}
                       >
                         Brief Intro
                       </label>
@@ -576,7 +627,7 @@ const MemberRegistrationForm = (props) => {
                       />
                       <label
                         htmlFor='payment'
-                        className={classNames({ 'p-error': errors.name })}
+                        className={classNames({ 'p-error': errors.payment })}
                       >
                         Payment
                       </label>
