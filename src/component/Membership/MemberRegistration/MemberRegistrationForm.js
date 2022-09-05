@@ -25,6 +25,8 @@ const MemberRegistrationForm = (props) => {
   const org = props.memberType === 'Organization';
   // console.log(org);
 
+  const url = process.env.REACT_APP_BACKEND_URL;
+
   const defaultValues = {
     name: '',
     email: '',
@@ -87,7 +89,7 @@ const MemberRegistrationForm = (props) => {
         };
 
         try {
-          fetch('https://nrb-global.herokuapp.com/api/register', requestOptions)
+          fetch(`${url}/api/register`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
               console.log(data);
