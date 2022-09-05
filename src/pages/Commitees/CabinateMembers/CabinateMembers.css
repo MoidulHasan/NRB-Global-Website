@@ -1,5 +1,6 @@
 .cabinetcontainer{
-    margin: 0% 13%;
+    /* padding: 15px; */
+    margin: .5% 13%;
     overflow-x: hidden;
 }
 .cabinet-para{
@@ -8,6 +9,13 @@
     font-weight: bold;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family:serif;
+}
+.cabinetorgcenterdiv{
+    /* margin-left: 20px ; */
+    padding: 10px !important;
+}
+.cabinetcard{
+    width: 300px !important;
 }
 .cabinet h3 {
     font-size: 20px;
@@ -19,8 +27,7 @@
     line-height: 2;    
     font-family:sans-serif;
     opacity: .8;
-}
-
+} 
 
 .cabinet h3::first-letter{
     text-transform: uppercase;

@@ -4,7 +4,6 @@ import { cabinetcared_data } from '../../../data'
 import './CabinateCard.css';
 function CabinateCard() {
     const cardImg = (imgName) => {
-
         return <img className='cabinercardimg' alt="Card" src={`../../../assets/image/committess/cabinetmembers/${imgName}`} />
 
     }
@@ -14,7 +13,7 @@ function CabinateCard() {
             <div className="cabinetorgcenterdiv">
                 <div className="cabinetorganizer">
                     {cabinetcared_data.slice(0, 2).map((card, i) => (
-                        <Card className='cabinetcard' title={card.name} subTitle={card.title} style={{ width: '19em' }} header={cardImg(card.image)} key={i}>
+                        <Card className='cabinetcard' title={card.name} subTitle={card.title} style={{ width: '20em' }} header={cardImg(card.image)} key={i}>
                             <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {card.description}
                             </p>
                             <div className="cabinetsocialicons">
@@ -35,7 +34,7 @@ function CabinateCard() {
             </div>
             <div className="cabinetmembers">
                 {cabinetcared_data.slice(2, 6).map((card, i) => (
-                    <Card className='cabinetcard' title={card.name} subTitle={card.title} style={{ width: '19em' }} header={cardImg(card.image)} key={i}>
+                    <Card className='cabinetcard' title={card.name} subTitle={card.title} style={{ width: '20em' }} header={cardImg(card.image)} key={i}>
                         <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {card.description}
                         </p>
                         <div className="cabinetsocialicons">
