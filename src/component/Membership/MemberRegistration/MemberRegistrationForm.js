@@ -18,9 +18,9 @@ import memberImg from '../../../assets/image/topmembers/img6.jpg';
 const MemberRegistrationForm = (props) => {
   // const [countries, setCountries] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
-  const [formData, setFormData] = useState({});
+  // const [formData, setFormData] = useState({});
 
-  const pictureRef = useRef('');
+  // const pictureRef = useRef('');
 
   const org = props.memberType === 'Organization';
   // console.log(org);
