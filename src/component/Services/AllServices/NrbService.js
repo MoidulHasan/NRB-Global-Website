@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './AllServices.css';
+import './NrbService.css';
 
 const NrbService = ({ singleService }) => {
   return (
@@ -13,6 +13,8 @@ const NrbService = ({ singleService }) => {
           <h2 className='text-2xl textPrimeService mt-2'>
             {singleService.name}
           </h2>
+        </Link>
+        <Link to={`/allservices/${singleService.id}`} className='toLinkText'>
           <p className=' ml-4 md:ml-8 textPrimeService flex align-items-center'>
             <span class='material-icons-sharp mr-2'>info</span>See Details
           </p>

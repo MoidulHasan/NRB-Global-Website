@@ -2,7 +2,7 @@ import { Button } from 'primereact/button';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useDataContexts from '../../../hooks/useDataContexts';
-import NrbService from '../../../pages/Services/AllServices/NrbService';
+import NrbService from '../../Services/AllServices/NrbService';
 import './TopService.css';
 
 const TopServices = () => {

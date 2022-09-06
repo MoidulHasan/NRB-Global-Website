@@ -3,7 +3,7 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import Dropdown from './MenuList/Dropdown/Dropdown';
 import MenuList from './MenuList/MenuList';
-import nrbLogo from '../../assets/image/nrblogo.png';
+import nrbLogo from '../../assets/image/mainNrbLogo.png';
 
 const Header = () => {
   const [click, setClick] = useState(false);
