@@ -4,9 +4,10 @@
             "author": "Hasan Ahmed",
             "authorPic": "/assets/image/testimonials/review11.png",
             "authorDesignation": "Social Worker",
-            "testimonialTitle": "Service of NRB is beyond expectation",
-            "testimonialDetails": "An international platform to represent Bangladesh. A lot of kind hearted people maintain the community. Love NRB Global. I will always be thankful to NRB Global. Without this community, I could barely stand where I am now.",
-            "id": "A01"
+            "testimonialTitle": "Service of NRB is beyond expectation. I will always be helpful TO NRB Global.",
+            "testimonialDetails": "An international platform to represent Bangladesh. A lot of kind hearted people maintain the community. Love NRB Global. I will always be thankful to NRB Global. Without this community, I could barely stand where I am now. I will always be thankful to NRB Global. People will love to be a part of NRB Global anytime because of the community service of NRB Global.",
+            "id": "A01",
+            "sideImg": "/assets/image/testimonials/testimonialImg/socialGrowth.png"
         },
         {
             "author": "Moidul Hasan Khan",
@@ -14,14 +15,16 @@
             "authorDesignation": "Restaurant Owner",
             "testimonialTitle": "I will recommend NRB to everyone without having a second Thought",
             "testimonialDetails": "NRB Global helped me to be successful. Excellent level of communication enable people to grow more here. It was God's blessing that I got to know about NRB Globals. My keen interest to start a business was just an dream. With the help of NRB it was possible to make my dream into reality.",
+            "sideImg": "/assets/image/testimonials/testimonialImg/businessGrowth.png",
             "id": "A02"
         },
         {
             "author": "Nusrat Tabassum",
             "authorPic": "/assets/image/testimonials/review33.png",
             "authorDesignation": "University Student",
-            "testimonialTitle": "Nothing But NRB Global is your choice.",
-            "testimonialDetails": "NRB Global makes me fill like home in abroad. Different kind of meetings, hangouts are highly appreciable. By joining here, I was able to know more about the foreing policies, how to lead life here, what to do and what to avoid. I will always be thankful to NRB Global.",
+            "testimonialTitle": "Nothing But NRB Global is your choice whn you leave Bangladesh and want to have a lovely community who will contribute in your life.",
+            "testimonialDetails": "NRB Global makes me fill like home in abroad. Different kind of meetings, hangouts are highly appreciable. By joining here, I was able to know more about the foreing policies, how to lead life here, what to do and what to avoid. I will always be thankful to NRB Global. People will love to be a part of NRB Global anytime because of the community service of NRB Global.",
+            "sideImg": "/assets/image/testimonials/testimonialImg/studentGrowth.png",
             "id": "A03"
         }
     ]

@@ -30,10 +30,10 @@ const TestimonialCarousel = () => {
 
   const TesimonialTemplate = (testimonial) => {
     return (
-      <div className='TestimonialCard my-4'>
+      <div className='TestimonialCard mb-4'>
         <div className='grid'>
-          <div className='col-12 md:col-6 p-2'>
-            <div className='flex flex-column md:flex-row'>
+          <div className='col-12 md:col-7 px-2  pl-2 pr-2 md:pr-7'>
+            <div className='flex flex-column md:flex-row pt-0 md:pt-6'>
               <img
                 src={testimonial.authorPic}
                 alt='testimonial member'
@@ -55,14 +55,18 @@ const TestimonialCarousel = () => {
               </div>
             </div>
           </div>
-          <div className='col-12 md:col-6 hidden md:block'></div>
+          <div className='col-12 md:col-5 hidden md:block'>
+            <div className='testimonailStaticImgHolder'>
+              <img src={testimonial.sideImg} alt='testimonal reviews' />
+            </div>
+          </div>
         </div>
       </div>
     );
   };
 
   return (
-    <div className='carousel-demo'>
+    <div className='carousel-review'>
       <div className='card'>
         <Carousel
           value={testimonials}
