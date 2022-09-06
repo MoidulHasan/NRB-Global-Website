@@ -16,3 +16,6 @@
     color: var(--primeBLue);
     cursor: pointer;
 }
+.footerLogoColor{
+    color: #1F1FA0;
+}

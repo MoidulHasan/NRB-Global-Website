@@ -1,0 +1,26 @@
+.memberServiceContainer{
+    /* padding: 2rem;
+background-color: #FFFFFF; #FAF6F7 */
+background-color: #dcebf9;
+border-radius: 10px;
+/* margin: 20px 0px; */
+padding-bottom: 3rem;
+background-image: url(/public/assets/image/servicesNRB.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 50vh;
+}
+.growthSpanService{
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 400px) {
+    .memberServiceContainer{
+        height: 60vh;
+    }
+    .growthSpanService{
+        font-size: 1rem;
+    }
+}

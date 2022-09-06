@@ -1,0 +1,63 @@
+.membershipProcessContainer{
+    background-color: #FAF6F7;
+    border-radius: 10px;
+    /* margin: 20px 0px; */
+    padding-bottom: 3rem;
+    background-image: url(/public/assets/image/membershipProcess.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 48vh;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.stepToMemberOneDesc{
+    padding-bottom: 3rem;
+}
+
+.membershipProcessSteps{
+    padding-bottom: 3rem;
+}
+
+.whatNeedToJoin{
+    color: var(--primeBLue);
+}
+
+.stepToMemberOne{
+    background-color: #f3f0f0;
+    border-radius: 7px;
+}
+.stepToMemberTwo{
+    background-color: #E1F5FE;
+    border-radius: 7px;
+}
+.stepToMemberThree{
+    background-color: #FCE4EC;
+    border-radius: 7px;
+}
+
+
+
+.textStepPrime{
+    color: var(--primeBLue);
+}
+.profileProcessSpan{
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: var(--primeBLue);
+}
+.profileTwoProcessSpan{
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #01579B;
+}
+.profileProcessSpanCommon{
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #880E4F;
+}

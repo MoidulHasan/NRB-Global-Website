@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='p-container mt-6 mb-0'>
       <div className='grid mb-4'>
         <div className='col-12 md:col-3 pr-4 md:pr-8'>
-          <h1 className='text-3xl orangeTextOrg'>NRB Global</h1>
+          <h1 className='text-3xl footerLogoColor'>NRB Global</h1>
           <span className='my-4 text-sm font-semibold detailColor'>
             NRb Global is one of the Bangladesh's largest non residential
             community that provides a one-stop platform for students, youth,
