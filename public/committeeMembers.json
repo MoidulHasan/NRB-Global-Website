@@ -1,0 +1,32 @@
+[
+    {
+        "cabinateId": 1001,
+        "name": "Tarik Babu",
+        "profileImg": "./assets/image/cabinateMembers/tarikbabu.jpg",
+        "designation": "Founder President NRB-Global"
+    },
+    {
+        "cabinateId": 1002,
+        "name": "Ataul Khan",
+        "profileImg": "./assets/image/cabinateMembers/ataulKhan.jpg",
+        "designation": "Vice president NRB-Global"
+    },
+    {
+        "cabinateId": 1003,
+        "name": "Ehsanur Rahman",
+        "profileImg": "./assets/image/cabinateMembers/ehsanurRahman.jpg",
+        "designation": "General Secretary NRB Global"
+    },
+    {
+        "cabinateId": 1004,
+        "name": "Suriya Munni",
+        "profileImg": "./assets/image/cabinateMembers/suraiaMunni.jpg",
+        "designation": "Press Secretary NRB Global"
+    },
+    {
+        "cabinateId": 1005,
+        "name": "Mohammad Sharif Sumon",
+        "profileImg": "./assets/image/cabinateMembers/sharifSuman.jpg",
+        "designation": "Public Relations Secretary NRB Global"
+    }
+]
