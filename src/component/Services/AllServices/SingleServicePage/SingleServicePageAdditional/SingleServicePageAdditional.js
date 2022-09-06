@@ -8,9 +8,15 @@ const SingleServicePageAdditional = ({ singleService }) => {
     <div className='p-container mt-4 md:mt-0 mb-4 '>
       <div className='additionalInfoSIngleServicePageContainer py-5 px-4'>
         <div className='flex flex-column align-items-center'>
-          <h2 className='text-bold  text-gray-700 my-3'>
+          <h2 className='text-bold  text-gray-600 my-3'>
             {singleService.name}
           </h2>
+          <h1 className='my-4 text-xl sm:text-2xl md:text-4xl text-blue-700'>
+            NRB global will always be with it's members{' '}
+            <span className='text-blue-900'>
+              when the need {singleService.name}.
+            </span>{' '}
+          </h1>
           <p className='text-bold my-3 text-blue-900'>
             NRB Global is committed to their members while giving services.
             Services provided by NRB globals will be one of the best community
