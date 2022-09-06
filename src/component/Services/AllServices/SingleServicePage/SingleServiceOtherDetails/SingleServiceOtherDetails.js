@@ -24,20 +24,6 @@ const SingleServiceOtherDetails = ({ singleService }) => {
                 </div>
               </div>
             ))}
-            {/* <div className='col-12 md:col-4 py-3 md:py-4 px-3 md:px-4 singleServiceDetailColumn'>
-              <div className='singleServiceColumn'>
-                <h3 className='mt-1 mb-3 text-base md:text-xl'>
-                  One stop Solution for {singleService?.name}
-                </h3>
-                <p className='my-1'>{singleService?.desc1}</p>
-                <Link to='/contact' className='linkDecoration'>
-                  <h2 className='text-blue-900 text-base cursor-pointer d-flex align-items-center justify-content-center'>
-                    <span>Contact NRB</span>{' '}
-                    <span class='material-icons-sharp'>contact_support</span>
-                  </h2>
-                </Link>
-              </div>
-            </div> */}
           </div>
         ) : (
           <>
