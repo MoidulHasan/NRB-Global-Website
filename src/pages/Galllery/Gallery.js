@@ -9,7 +9,7 @@ const Gallery = () => {
   return (
     <div className='gallary-container'>
       <div className="gallary-event-img">
-        <h3>Our Event Picture</h3>
+        <h3>Our Event Pictures</h3>
         <div className="photo-gallary-row">
           <div className="phtoto-gallary-column grid">
             {eventImg.slice(1, 10).map((item, i) => (
@@ -24,11 +24,10 @@ const Gallery = () => {
         </div>
       </div>
       <div className="gallary-event-video">
-        <h3>Our Event Video</h3>
-
-        <div className='video-Gallary'>
-          <div className="video-gallary-row">
-            <div className="video-gallary-column grid">
+        <h3>Our Event Videos</h3>
+        <div className='gallary-video'>
+          <div className="gallary-video-row">
+            <div className="gallary-video-column grid">
               {eventvid.slice(0, 8).map((item, i) => (
                 <div className="col-12 md:col-4" key={i}>
                   <iframe width="640" height="360" src={item.video} allowFullScreen />

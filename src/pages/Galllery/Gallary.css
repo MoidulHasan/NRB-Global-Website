@@ -1,37 +1,67 @@
 .gallary-container{
-    background: #ffffff;
+    /* background: #ffffff; */
     margin: 0px 50px;
-    border-radius: 10px;
 }
 .gallary-event-img{
-    margin: 10px 7%;
+    margin: 0% 7%;
+    margin-bottom: 0px !important;
     background: #ffffff;
+    border-radius: 10px;
 }
  
 .gallary-event-img h3 {
     /* padding: 40px 0px ; */
-    padding-top: 30px;
-
+    padding: 30px 0px;
+ /* background: #606060FF; */
+ background: rgba(96,96,96,.5);
     text-align: center;
-    font-size: 26px;
-
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #D6ED17FF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .gallary-event-video{
     background: #ffffff;
-
+    padding: 0px !important;
+    margin:7% !important;
+    margin-top: 0% !important;
+    border-radius: 10px;
 }
+.gallary-video-column{
+    margin: 0% !important;
+}
+/* .gallary-event-video{
+    background: #ffffff;
+} */
  .gallary-event-video h3{
     /* padding: 40px 0px ; */
-    padding-top: 20px;
+    padding: 30px 0px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #2BAE66FF;
+    color: #FCF6F5FF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
+.gallary-video-column{
+    padding: 20px;
+}
+.gallary-video-column div iframe {
+    width: 100%;
+    /* max-height: 30; */
+    height: auto;
+    border-radius: 10px;
+ }
 .gallary-img-seemoreBtn{
     display: flex;
     justify-content: center;
-  padding-top: 20px;
-
+  /* padding-top: 0px; */
+  padding: 10px 0px;
+ padding-bottom: 50px;
 }
 .gallary-img-seemoreBtn button{
 color: #ffffff;  
@@ -52,3 +82,21 @@ border: none;
 }
 /* gallary-video-seemoreBtn
 gallary-img-seemoreBtn */
+
+@media only screen and (min-width: 1440px) {
+    .gallary-video-column{
+        margin: 2% 8%;
+        margin-top:0% !important;
+        padding: 2%;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+    .gallary-video-column div iframe {
+   height: 300px;
+     }
+  }
+  @media only screen and (min-width: 1140px) { 
+    .gallary-video-column div iframe {
+   height: 250px;
+     }
+  }
