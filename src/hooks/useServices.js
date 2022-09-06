@@ -4,7 +4,7 @@ const useServices = () => {
   const [nrbServices, setNrbServices] = useState([]);
 
   useEffect(() => {
-    fetch('services.json')
+    fetch('/services.json')
       .then((res) => res.json())
       .then((data) => setNrbServices(data));
   }, []);
