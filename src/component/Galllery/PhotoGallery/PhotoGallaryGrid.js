@@ -11,12 +11,7 @@ function PhotoGallaryGrid() {
                             <Image src={item.img} alt="Image" width="250" preview />
                         </div>
                     ))}
-                    {/* <div className="one"></div>
-                    <div className="two"></div>
-                    <div className="three"></div>
-                    <div className="four"></div>
-                    <div className="five"></div>
-                    <div className="six"></div> */}
+
                 </div>
 
                 {/* <div className="photo-gallary-column-2">

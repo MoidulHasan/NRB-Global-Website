@@ -2,18 +2,14 @@
     border-radius: 10px;
 }
 .ycpc-container{ 
-    background: #f7f3f5;    
-    border-left: 4px solid red;
+    /* border-left: 4px solid red; */
     border-radius: 8px;
 }
 .ycpc-header-flex{
- display: flex;
- align-items: start;
- padding: 30px; 
+ padding: 0px 10px;
+ 
 }
-.ycpc-flex1{
-    width: 50%;
-} 
+ 
 .ycpc-flex1 h1{
     font-size: 22px;
     font-size: 20px; 
@@ -42,24 +38,27 @@
 .ycpc-details{
     margin: 25px;
 }
-.ycpc-profile:nth-child(2), .ycpc-card:nth-child(2){
-    background: #00539CFF !important;
-    color:#FFD662FF !important;
+.ycpc-profile:nth-child(2){
+    background: #000 !important;
+    
 }
 .ycpc-profile:nth-child(1){
-    background: rgb(81, 175, 191) !important;
+    background: #F95700FF !important;
+
 }
 .ycpc-profile:nth-child(4){
-    background: rgb(149, 63, 63) !important;
+    background: #000 !important;
 }
 .ycpc-profile:nth-child(3){
-    background: rgb(81, 175, 191) !important;
+    background: #F95700FF !important;
+
 }
 .ycpc-profile:nth-child(5){
-    background: rgb(81, 175, 191) !important;
+    background: #F95700FF !important;
 }
 .ycpc-profile:nth-child(6){
-    background: rgb(149, 63, 63) !important;
+    background: #000 !important;
+     
 }
 .ycpc-card-grid{
     /* background: #000; */
@@ -71,7 +70,7 @@
     /* border-radius: 10px;      */
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     /* box-shadow: rgba(148, 146, 146, 0.35) 0px 5px 15px; */
-
+    color: #ffffff !important;
 }
  
  
