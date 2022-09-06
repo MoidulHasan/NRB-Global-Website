@@ -5,6 +5,18 @@
     border: 1px solid #dbdada;
     padding: 1rem;
 }
+
+.testimonalMemberImg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: .5px solid #b1c9e0;
+}
+
+
+
+
+
 .blogDescription:after{
     content: '';
     display: block;
@@ -39,5 +51,10 @@
         display: block;
         padding-bottom: 2rem;
         border-bottom: 1px solid #dbdada;
+    }
+
+    .testimonalMemberImg{
+        height: 50px;
+        width: 50px;
     }
 }

@@ -1,6 +1,5 @@
 import { Carousel } from 'primereact/carousel';
 import React, { useState, useEffect } from 'react';
-import { TestimonalService, TestimonialService } from './TestimonialService';
 import './TestimonialCarousel.css';
 
 const TestimonialCarousel = () => {
@@ -23,19 +22,40 @@ const TestimonialCarousel = () => {
     },
   ];
 
-  const testimonicalService = new TestimonialService();
-
   useEffect(() => {
-    testimonicalService
-      .getTestimonials()
-      .then((data) => setTestimonials(data.slice(0, 4)));
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    fetch('/testimonials.json')
+      .then((res) => res.json())
+      .then((data) => setTestimonials(data.data));
+  }, []);
 
   const TesimonialTemplate = (testimonial) => {
     return (
-      <div className='TestimonialCard'>
-        <div>
-          <h1>Turu</h1>
+      <div className='TestimonialCard my-4'>
+        <div className='grid'>
+          <div className='col-12 md:col-6 p-2'>
+            <div className='flex flex-column md:flex-row'>
+              <img
+                src={testimonial.authorPic}
+                alt='testimonial member'
+                className='testimonalMemberImg mr-0 md:mr-3'
+              />
+              <div className='testimonialDetails'>
+                <h3 className='text-base md:text-xl font-bold mt-0'>
+                  {testimonial.testimonialTitle}
+                </h3>
+                <p className='text-gray-800'>
+                  {testimonial.testimonialDetails}
+                </p>
+                <h2 className='text-lg font-bold'>
+                  {' '}
+                  <span className='text-blue-900'>
+                    {testimonial.author}
+                  </span>, <span>{testimonial.authorDesignation}</span>{' '}
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className='col-12 md:col-6 hidden md:block'></div>
         </div>
       </div>
     );
