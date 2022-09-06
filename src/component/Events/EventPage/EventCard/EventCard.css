@@ -1,0 +1,61 @@
+.event-title {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #0b69bc;
+  text-align: center;
+}
+
+.event-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  border-bottom: 6px solid #f09c6f;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.eventImgCard,
+.eventImgCard img {
+  height: 280px;
+}
+.eventCardDetails {
+  background-color: #212529;
+  color: white;
+  padding: 1.2rem 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+.eventButtonCard {
+  padding-left: 15em;
+  margin-top: 2em;
+}
+.eventButton {
+  background-color: rgb(186, 190, 191);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+}
+.eventButton:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 991px) {
+  .eventButtonCard {
+    padding-left: 14em;
+  }
+}
+@media screen and (max-width: 960px) {
+  .eventButtonCard {
+    padding-left: 6em;
+  }
+  .eventImgCard img {
+    min-height: 380px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .eventButtonCard {
+    padding-left: 6em;
+  }
+}

@@ -1,0 +1,59 @@
+.nrbObjectiveDiv {
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 3rem;
+}
+
+.objectibe-title::after {
+  content: "";
+  display: block;
+  width: 4em;
+  max-width: 13%;
+  border-bottom: 5px solid #e2b77c;
+  margin-top: 0.2em;
+}
+.objective-value {
+  font-family: lora, sans-serif;
+  color: #182934;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.objectiveIcon {
+  color: #195283;
+  font-size: 1em;
+  font-weight: 800;
+}
+.objectiveImg {
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .objective-value {
+    text-align: justify;
+  }
+  .objectiveImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .objective-value {
+    text-align: justify;
+  }
+  .objectiveImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .objectibe-title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .objectiveImg {
+    height: auto;
+  }
+  .objective-value {
+    text-align: justify;
+  }
+}

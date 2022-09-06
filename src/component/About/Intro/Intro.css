@@ -1,0 +1,74 @@
+.nrbAboutIntro {
+  background-color: rgb(221, 228, 226);
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 3rem;
+}
+.nrbIntro-title {
+  font-family: museo-sans, sans-serif;
+  color: #195283;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 900;
+}
+.nrbIntro-title::after {
+  content: "";
+  display: block;
+  width: 4em;
+  max-width: 13%;
+  border-bottom: 5px solid #e2b77c;
+  margin-top: 0.8em;
+}
+.intro-details {
+  font-family: Jost, Helvetica, Arial, sans-serif;
+  color: #182934;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.nrbIntroImg {
+  border-radius: 16px;
+  height: 500px;
+}
+.introIcon {
+  color: #195283;
+  font-size: 1em;
+  font-weight: 800;
+}
+.intro-value {
+  font-family: lora, sans-serif;
+  color: #182934;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 991px) {
+  .nrbIntroImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nrbIntro-title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .intro-details {
+    text-align: justify;
+  }
+  .nrbIntroImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nrbIntro-title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .intro-details {
+    text-align: justify;
+  }
+  .nrbIntroImg {
+    height: auto;
+  }
+}
