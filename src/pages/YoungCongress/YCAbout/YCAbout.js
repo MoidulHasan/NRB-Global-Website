@@ -6,7 +6,7 @@ import YCObjective from '../../../component/YoungCongress/YCAbout/YCObjective';
 import YCATeam from '../../../component/YoungCongress/YCAbout/YCATeam';
 function YCAbout() {
     return (
-        <div className='yca-container'>
+        <div className='yca-container p-container'>
             <YCAboutSection />
             <YCMisssion />
             {/* <YCVision /> */}

@@ -1,7 +1,7 @@
 import './YCAtivitesStyle.css'
 function YCAtivitesGrid() {
     return (
-        <div className='ycativity-container'>
+        <div className='ycativity-container p-container'>
             <div className="ycativity-header">
                 <h1>Our Regular <span className='ycativity-header-span'>Acitivities</span>  </h1>
             </div>

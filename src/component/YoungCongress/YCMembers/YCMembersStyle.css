@@ -1,9 +1,7 @@
- .young-congress-main-conatiner{
-   margin: .5% 10%;
- }
- .ycm-container{
+  .ycm-container{
  /* margin: 50px 100px; */
  /* margin: 1% 15%; */
+ margin-top: 10px;
  position: relative;
  display: flex;
  flex-direction: column;

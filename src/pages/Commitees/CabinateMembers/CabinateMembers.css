@@ -1,12 +1,10 @@
 .cabinetcontainer{
     /* padding: 15px; */
-    margin: .5% 10%;
     overflow-x: hidden;
     background: #f3f7f5;
     border-radius: 10px;
-
-}
- 
+margin-top: 5px;
+} 
 .cabinet-para{
     text-align: center;
     font-size: 60px;

@@ -116,13 +116,13 @@
 /* YCProgramSlide  */
 .ycprogram-slide{
 background: rgb(244, 243, 243);
-
+border-radius: 10px !important;    
 }
 .ycprogram-slide-img img{
     width: 100%;
     object-fit: cover;   
     padding: 10px 0px 0px 0px;
-    border-radius: 10px !important;
+    border-radius: 10px !important;     
 }
 .ycprogram-slide-title{
     font-size: 30px !important;

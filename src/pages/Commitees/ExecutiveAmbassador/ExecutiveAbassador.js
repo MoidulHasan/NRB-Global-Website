@@ -3,7 +3,7 @@ import './ExecutiveAmbassador.css'
 import { Button } from 'primereact/button';
 function ExecutiveAbassador() {
     return (
-        <div className="executive-container">
+        <div className="executive-container p-container">
             <p className="executive-container-para">ExecutiveAbassador</p>
             <ExecutiveAbassadorProfile />
             <div className="executive-memberBtn">

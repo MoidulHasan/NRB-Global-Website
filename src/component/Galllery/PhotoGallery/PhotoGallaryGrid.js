@@ -3,7 +3,7 @@ import './PhotoGallaryGrid.css'
 import { Image } from 'primereact/image';
 function PhotoGallaryGrid() {
     return (
-        <div className='photo-Gallary'>
+        <div className='photo-Gallary p-container'>
             <div className="photo-gallary-row">
                 <div className="phtoto-gallary-column grid">
                     {eventImg.map((item, i) => (

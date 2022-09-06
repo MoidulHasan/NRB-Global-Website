@@ -2,7 +2,7 @@ import CabinateCard from "../../../component/Commitees/CabinateMembers/CabinateC
 import './CabinateMembers.css';
 const CabinateMembers = () => {
     return (
-        <div className="cabinetcontainer">
+        <div className="cabinetcontainer p-container">
             <div className="cabinet" style={{ padding: '30px' }}>
                 <p className="cabinet-para">The Cabinet</p>
                 <h3>The Cabinete role is to advise the President on any subject he or she may require relating to the duties of each member’s respective office.</h3>

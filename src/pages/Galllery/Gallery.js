@@ -7,7 +7,7 @@ import { Button } from 'primereact/button';
 import './Gallary.css'
 const Gallery = () => {
   return (
-    <div className='gallary-container'>
+    <div className='gallary-container p-container'>
       <div className="gallary-event-img">
         <h3>Our Event Pictures</h3>
         <div className="photo-gallary-row">

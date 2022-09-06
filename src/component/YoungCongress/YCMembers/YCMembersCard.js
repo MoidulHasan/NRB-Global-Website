@@ -4,7 +4,7 @@ import { ycateam_data } from '../../../data'
 import './YCMembersStyle.css'
 function YCMembersCard() {
     return (
-        <div className='ycm-container'>
+        <div className='ycm-container p-container'>
             {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
             <div className="ycm-header-container grid">
                 <div className="ycm-header col-12 md:col-6 px-3">
