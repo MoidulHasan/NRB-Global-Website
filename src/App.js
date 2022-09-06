@@ -25,6 +25,8 @@ import GeneralMemberRegistration from './pages/Membership/GeneralMembers/General
 import EMIndividualRegistration from './pages/Membership/ExecutiveMember/EMIndividualRegistration';
 import EMOrganization from './pages/Membership/ExecutiveMember/EMOrganization';
 import MembershipProcess from './pages/Membership/MembershipProcess/MembershipProcess';
+import AllServices from './pages/Services/AllServices/AllServices';
+import SingleServicePage from './pages/Services/AllServices/SingleServicePage/SingleServicePage';
 import YCAbout from './pages/YoungCongress/YCAbout/YCAbout';
 import YCMembers from './pages/YoungCongress/YCMembers/YCMembers';
 import YCProgram from './pages/YoungCongress/YCProgram/YCProgram';
@@ -82,6 +84,8 @@ function App() {
             <Route path='membershipProcess' element={}/> */}
 
               {/* services  */}
+              <Route path='allservices' element={<AllServices />} />
+              <Route path='allservices/:id' element={<SingleServicePage />} />
 
               <Route path='allservices' element={<Service />} />
               {/* <Route path='consultant' element={ } />
