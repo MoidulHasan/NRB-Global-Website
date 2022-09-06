@@ -1,0 +1,45 @@
+
+
+.testimonalMemberImg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: .5px solid #b1c9e0;
+}
+
+.testimonailStaticImgHolder img{
+    width: 100%;
+    min-height: 350px ;
+}
+
+
+
+
+
+/* .p-carousel .p-carousel-indicators .p-carousel-indicator button{
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+} */
+
+@media screen and (max-width:960px){
+    .testimonalMemberImg{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .carousel-review .p-carousel .p-carousel-content .p-carousel-indicators .p-carousel-indicator button{
+        border-radius: 50%;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .carousel-review  .p-carousel-indicators {
+        position: relative;
+        top: -105px;
+        left: -210px;
+    }
+}

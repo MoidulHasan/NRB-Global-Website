@@ -1,0 +1,332 @@
+[
+    {
+        "id": "1000",
+        "name": "Relief Support",
+        "desc": "Relief Support",
+        "image": "./assets/image/support/handSupp.gif",
+        "code": "123",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Relief Support!",
+                "desc": "Our Relief Support is much easier and finer. People who need relief support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your relief. NRB will help you when you need relief. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Food Support is easy to get!",
+                "desc": "NRB Global will try to manage food support for you if you badly need for it. Relief Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Reliefs are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of relief support like cloths, emergency utencils, emergency things to lead life, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1001",
+        "name": "Business Support",
+        "desc": "Business Support",
+        "image": "./assets/image/support/Untitled design (6).png",
+        "code": "124",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Business Support!",
+                "desc": "Our Business Support is much easier and finer. People who need Business support can contact with us anytime. NRB will always helps people who wants to do business."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your business growth. NRB will help you when you need help. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Business Loan Support is easy to get!",
+                "desc": "NRB Global will try to manage business loan support for you if you badly need for it. Business Loan Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Business supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of business support like utilities, emergency equiptments, emergency things to run a business, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1002",
+        "name": "Consultant Support",
+        "desc": "Consultant Support",
+        "image": "./assets/image/support/Untitled design (7).png",
+        "code": "125",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Consultancy Support!",
+                "desc": "Our Consultancy Support is much easier and finer. People who need Consultancy support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your problems. NRB will help you when you need Consultancy. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Consultancy Support is easy to get!",
+                "desc": "NRB Global will try to manage Consultancy support for you if you badly need for it. Consultancy Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Consultancy support are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of Consultancy support like meetings, gatherings, emergency councils, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1003",
+        "name": "Law Support",
+        "desc": "Law Support",
+        "image": "./assets/image/support/Untitled design (8).png",
+        "code": "126",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Law Support!",
+                "desc": "Our Law Support is much easier and finer. People who need relief support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your Law support. NRB will help you when you need Law support. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Law Support is easy to get!",
+                "desc": "NRB Global will try to manage Law support for you if you badly need for it. Law Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Law Supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of law support like police shelter, community certificate, emergency shelter, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1004",
+        "name": "Student Support",
+        "desc": "Student Support",
+        "image": "./assets/image/support/studentSteps.gif",
+        "code": "127",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Student Support!",
+                "desc": "Our Student Support is much easier and finer. People who need Student support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your Student support. NRB will help you when you need Student support. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Student Support is easy to get!",
+                "desc": "NRB Global will try to manage food support for you if you badly need for it. Student Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Student Supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of Student support like part time jobs, tuition helps, emergency things to lead student life, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1005",
+        "name": "Community Support",
+        "desc": "Community Support",
+        "image": "./assets/image/support/encourage-removebg-preview.png",
+        "code": "128",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Community Support!",
+                "desc": "Our Community Support is much easier and finer. People who need Community support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your support. NRB will help you when you need support. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Community Support is easy to get!",
+                "desc": "NRB Global will try to manage Community support for you if you badly need for it. Community Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Community are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of Community support like counseling, emergency meetings, emergency things to lead life, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1006",
+        "name": "Loan Support",
+        "desc": "Loan Support",
+        "image": "./assets/image/support/step.png",
+        "code": "129",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Loan Support!",
+                "desc": "Our Loan Support is much easier and finer. People who need Loan support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your Loan. NRB will help you when you need Loan. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Loan Support is easy to get!",
+                "desc": "NRB Global will try to manage Loan support for you if you badly need for it. Loan Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Loan supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of Loan support like student loan, emergency business loans, house loan, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1007",
+        "name": "E Doctor Support",
+        "desc": "E Doctor Support",
+        "image": "./assets/image/support/e doctor.png",
+        "code": "130",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for E Doctor Support!",
+                "desc": "Our E Doctor Support is much easier and finer. People who need E Doctor support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your E Doctor support. NRB will help you when you need E Doctor support. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "E Doctor Support is easy to get!",
+                "desc": "NRB Global will try to manage E Doctor support for you if you badly need for it. E Doctor Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other E Doctor supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of E Doctor support like cpr, emergency counseling, emergency checkups, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1008",
+        "name": "Job Support",
+        "desc": "Job Support",
+        "image": "./assets/image/support/pathmerge.png",
+        "code": "130",
+        "support": [
+            {
+                "featureTitle": "One Stop Solution for Job Support!",
+                "desc": "Our Job Support is much easier and finer. People who need Job support can contact with us anytime. NRB will always helps people who suffers."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your Job. NRB will help you when you need Job. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less, Grow yourself fast",
+                "desc": "NRB Globals helps you to grow yourself. We will encourage you, support you until you got the opportunity to show people your worth. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "Job Support is easy to get!",
+                "desc": "NRB Global will try to manage Job support for you if you badly need for it. Job Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Job supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of Job support like counseling, grooming, language training, NRB Global will try to help."
+            }
+        ]
+    },
+    {
+        "id": "1009",
+        "name": "Dead Body Support",
+        "desc": "Dead Body Support",
+        "image": "./assets/image/support/deadbody.png",
+        "code": "131",
+        "support": [
+            {
+                "featureTitle": "NRB GLobal will help to transport Dead Body to Bangladesh",
+                "desc": "Loss of a person is unbearable. We feel sorry for the family who have to go through the process. We will help our best to manage the transportation."
+            },
+            {
+                "featureTitle": "We are always with you when needed.",
+                "desc": "It's not necessary to search very hard for your problem. NRB will help you when you need help. We just need to know about you and you have to be our member."
+            },
+            {
+                "featureTitle": "Suffer less on your loss",
+                "desc": "NRB Globals support you on your lose. We will encourage you, support you until you got the opportunity to be strong. We hope for your best!"
+            },
+            {
+                "featureTitle": "Support will be on your door!",
+                "desc": "Our community members will always be in you for your bad time. If you are meet the requirements for support we will always be there for you."
+            },
+            {
+                "featureTitle": "This support is easier to get",
+                "desc": "NRB Global will try to manage Dead body transfer support for you if you badly need for it. Dead Body Support will be provided to you if you badly in need of it."
+            },
+            {
+                "featureTitle": "Other Related Supports are also can be managed in emergency !",
+                "desc": "In emergency moments, when you need to have other kind of this supports, NRB Global will try to help. We are always a family in foreign lands."
+            }
+        ]
+    }
+]
