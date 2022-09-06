@@ -14,21 +14,7 @@ function PhotoGallaryGrid() {
 
                 </div>
 
-                {/* <div className="photo-gallary-column-2">
-                    {eventImg.slice(3, 9).map((photo, i) => (
-                        <img src={photo.img} alt="" />
-                    ))}
-                </div>
-                <div className="photo-gallary-column-3">
-                    {eventImg.slice(2, 9).map((photo, i) => (
-                        <img src={photo.img} alt="" />
-                    ))}
-                </div>
-                <div className="photo-gallary-column-4">
-                    {eventImg.slice(3, 10).map((photo, i) => (
-                        <img src={photo.img} alt="" />
-                    ))}
-                </div> */}
+
             </div>
         </div>
     )
