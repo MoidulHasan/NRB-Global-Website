@@ -6,6 +6,7 @@ import memberImg2 from '../../../assets/image/topmembers/img4.jpg';
 import memberImg3 from '../../../assets/image/topmembers/img5.jpg';
 import memberIm4 from '../../../assets/image/topmembers/img6.jpg';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 const FeaturedMembers = () => {
   return (
@@ -22,12 +23,14 @@ const FeaturedMembers = () => {
           his/her own position.
         </span>
         <div className='flex justify-content-center mt-4 mb-6'>
-          <Button
-            label='View All Members'
-            className='p-button-rounded p-button-help p-button-outlined'
-            icon='pi pi-angle-right'
-            iconPos='right'
-          />
+          <Link to='/memberList' className='linkDecoration'>
+            <Button
+              label='View All Members'
+              className='p-button-rounded p-button-help p-button-outlined'
+              icon='pi pi-angle-right'
+              iconPos='right'
+            />
+          </Link>
         </div>
         <Fade bottom cascade duration={1200}>
           <div className='grid my-2'>

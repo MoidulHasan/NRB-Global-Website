@@ -26,6 +26,7 @@ import GeneralMemberRegistration from './pages/Membership/GeneralMembers/General
 import EMIndividualRegistration from './pages/Membership/ExecutiveMember/EMIndividualRegistration';
 import EMOrganization from './pages/Membership/ExecutiveMember/EMOrganization';
 import MembershipProcess from './pages/Membership/MembershipProcess/MembershipProcess';
+import AllServices from './pages/Services/AllServices/AllServices';
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
             <Route path='membershipProcess' element={}/> */}
 
               {/* services  */}
+              <Route path='allservices' element={<AllServices />} />
 
               {/* <Route path='allservices' element={}/>
             <Route path='consultant' element={}/>

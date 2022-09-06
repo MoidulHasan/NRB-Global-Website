@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1000",
+        "name": "Relief Support",
+        "desc": "Relief Support",
+        "image": "./assets/image/support/handSupp.gif",
+        "code": "123"
+    },
+    {
+        "id": "1001",
+        "name": "Business Support",
+        "desc": "Business Support",
+        "image": "./assets/image/support/Untitled design (6).png",
+        "code": "124"
+    },
+    {
+        "id": "1002",
+        "name": "Consultant Support",
+        "desc": "Consultant Support",
+        "image": "./assets/image/support/Untitled design (7).png",
+        "code": "125"
+    },
+    {
+        "id": "1003",
+        "name": "Law Support",
+        "desc": "Law Support",
+        "image": "./assets/image/support/Untitled design (8).png",
+        "code": "126"
+    },
+    {
+        "id": "1004",
+        "name": "Student Support",
+        "desc": "Student Support",
+        "image": "./assets/image/support/studentSteps.gif",
+        "code": "127"
+    },
+    {
+        "id": "1005",
+        "name": "Community Support",
+        "desc": "Community Support",
+        "image": "./assets/image/support/encourage-removebg-preview.png",
+        "code": "128"
+    },
+    {
+        "id": "1006",
+        "name": "Loan Support",
+        "desc": "Loan Support",
+        "image": "./assets/image/support/step.png",
+        "code": "129"
+    },
+    {
+        "id": "1007",
+        "name": "E Doctor Support",
+        "desc": "E Doctor Support",
+        "image": "./assets/image/support/e doctor.png",
+        "code": "130"
+    },
+    {
+        "id": "1008",
+        "name": "Job Support",
+        "desc": "Job Support",
+        "image": "./assets/image/support/pathmerge.png",
+        "code": "130"
+    },
+    {
+        "id": "1009",
+        "name": "Dead Body Support",
+        "desc": "Dead Body Support",
+        "image": "./assets/image/support/deadbody.png",
+        "code": "131"
+    }
+]
