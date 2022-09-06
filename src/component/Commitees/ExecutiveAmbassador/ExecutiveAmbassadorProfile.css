@@ -1,4 +1,6 @@
 .executive-ambassador-container{
+   background:#f3f7f5;
+   padding: 30px;
     /* margin: 50px 100px; */
     }  
      /* .executive-ambassador{
@@ -7,14 +9,15 @@
     .executive-ambassador-card{
        /* padding: 20px; */
         box-shadow: none;
+        background: #333D79FF;
+        color: #FAEBEFFF;
         /* margin-top: 30px; */
     }
     .executive-ambassador-flex img{
     border-radius: 50%;
-   width: 150px;
-   margin-left: 43px;
-   height: 150px;
-   margin-top: -20px;
+     width: 60%;
+     margin-left: 20%;
+     margin-top: -20px;
     }
     .executive-ambassador-name{
       font-size: 15px !important;
@@ -24,9 +27,10 @@ letter-spacing: .7px;
     }
     .executive-ambassador-title{
        margin-top: -6px;
-       font-size: 13px;
+       font-size: 14px;
        text-align: center;
        font-weight: 100;    
+       letter-spacing: .5px;
     }
     .executive-ambassador-socialicons{
        margin-top: -8px;
@@ -35,8 +39,9 @@ letter-spacing: .7px;
        justify-content: center;
     }
     .executive-ambassador-socialicons a i{
-    padding: 12px;
-     
+    padding: 10px;
+    margin: 3px;
+    box-shadow: rgba(250, 248, 248, 0.1) 0px 4px 12px;
     }
     /* .executive-ambassador-btn{
        display: flex;

@@ -42,8 +42,9 @@
 .ycpc-details{
     margin: 25px;
 }
-.ycpc-profile:nth-child(2){
-    background: rgb(149, 63, 63) !important;
+.ycpc-profile:nth-child(2), .ycpc-card:nth-child(2){
+    background: #00539CFF !important;
+    color:#FFD662FF !important;
 }
 .ycpc-profile:nth-child(1){
     background: rgb(81, 175, 191) !important;
@@ -70,7 +71,7 @@
     /* border-radius: 10px;      */
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     /* box-shadow: rgba(148, 146, 146, 0.35) 0px 5px 15px; */
-    color: #ffffff !important;
+
 }
  
  

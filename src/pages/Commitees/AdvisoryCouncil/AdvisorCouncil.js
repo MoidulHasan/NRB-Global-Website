@@ -9,8 +9,10 @@ function AdvisorCouncil() {
             {/* <div className="advisorBtn">
                 <Button label="Become a Advisor Councilor" />
             </div> */}
+            <div className="advisor-memberBtn">
+                <Button label="Become a Advisor" />
+            </div>
         </div>
     )
 }
-
 export default AdvisorCouncil

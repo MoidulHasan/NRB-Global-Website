@@ -6,7 +6,7 @@ function ExecutiveAbassador() {
         <div className="executive-container">
             <p className="executive-container-para">ExecutiveAbassador</p>
             <ExecutiveAbassadorProfile />
-            <div className="memberBtn">
+            <div className="executive-memberBtn">
                 <Button label="Become a Executive Ambassador" />
             </div>
         </div>

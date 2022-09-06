@@ -1,24 +1,28 @@
 .executive-container{
-     margin: .5% 13%;
+     margin: .5% 12%;
     overflow-x: hidden;
-    border-radius: 10px;
-    background:#94a4da;
-    padding: 10px;
+    border-radius: 10px;   
+   background:#f3f7f5;
 }
   .executive-container-para{
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
+    font-style: italic;
+    padding: 20px;
+    margin-top: 0px;
+    background: #333D79FF;
+        color: #FAEBEFFF;
+        font-weight: bold;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family:serif;
 } 
-.memberBtn{
+.executive-memberBtn{
     display: flex;
     justify-content: center;
     margin: 20px 0px;   
 }
-.memberBtn button{
+.executive-memberBtn button{
 color: #ffffff;  
-background:#333;
+background:#333D79FF;
 border: none;
 }
