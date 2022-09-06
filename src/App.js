@@ -28,6 +28,8 @@ import GeneralMemberRegistration from "./pages/Membership/GeneralMembers/General
 import EMIndividualRegistration from "./pages/Membership/ExecutiveMember/EMIndividualRegistration";
 import EMOrganization from "./pages/Membership/ExecutiveMember/EMOrganization";
 import MembershipProcess from "./pages/Membership/MembershipProcess/MembershipProcess";
+import AllServices from "./pages/Services/AllServices/AllServices";
+import SingleServicePage from "./pages/Services/AllServices/SingleServicePage/SingleServicePage";
 
 function App() {
   return (
@@ -80,6 +82,8 @@ function App() {
             <Route path='membershipProcess' element={}/> */}
 
               {/* services  */}
+              <Route path="allservices" element={<AllServices />} />
+              <Route path="allservices/:id" element={<SingleServicePage />} />
 
               {/* <Route path='allservices' element={}/>
             <Route path='consultant' element={}/>

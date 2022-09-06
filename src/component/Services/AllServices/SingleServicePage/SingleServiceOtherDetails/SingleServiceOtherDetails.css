@@ -1,0 +1,22 @@
+.detailSingleService{
+        /* padding: 2rem; */
+    background-image: linear-gradient(to right, #2B81F0 , #0FC0D2);
+    /* background-color: #FAF6F7; */
+    /* border-radius: 10px; */
+    /* margin: 20px 0px; */
+    padding-bottom: 3rem;
+}
+.singleServiceDetailColumn{
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-height: 265px;
+}
+
+@media screen and (min-width: 1200px) {
+    .detailSingleService{
+        position: relative;
+        top: -100px;
+    }
+    
+}

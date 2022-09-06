@@ -371,6 +371,9 @@ const MemberRegistrationForm = (props) => {
                       <Controller
                         name='birthday'
                         control={control}
+                        rules={{
+                          required: 'Birthday is required.',
+                        }}
                         render={({ field }) => (
                           <Calendar
                             id={field.name}
@@ -383,7 +386,7 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label htmlFor='birthday'>
-                        {org ? 'Established Date' : 'Birthday'}
+                        {org ? 'Established Date*' : 'Birthday*'}
                       </label>
                     </span>
                   </div>
