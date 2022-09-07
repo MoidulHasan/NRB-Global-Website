@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "itemImageSrc": "./assets/image/YCAbout/programSlide01.jpg",
+            "thumbnailImageSrc": "https://i.ibb.co/4KPqszh/Blue-Group-Banner-Active-Club-Exercise-Activity-People-Facebook-Cover.png",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "./assets/image/YCAbout/programmslide02.jpg",
+            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria2.jpg",
+            "alt": "Description for Image 2",
+            "title": "Title 2"
+        },
+        {
+            "itemImageSrc": "./assets/image/YCAbout/programmslide03.jpg",
+            "thumbnailImageSrc": "https://i.ibb.co/RCjNTRN/Colorful-Culture-and-Communication-Presentation.png",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "./assets/image/YCAbout/programmslide04.jpg",
+            "thumbnailImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
+            "alt": "Description for Image 4",
+            "title": "Title 4"
+        }
+    ]
+}

@@ -31,8 +31,8 @@ const PhotoCarousel = () => {
       <img
         src={item.itemImageSrc}
         onError={(e) =>
-          (e.target.src =
-            'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
+        (e.target.src =
+          'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
         }
         alt={item.alt}
         style={{ width: '100%', display: 'block', height: '75vh' }}
