@@ -2,6 +2,7 @@
 .eventCard{
     border-radius: 15px;
     color: #C5CCE8;
+    /* background-color: #2B2B2B; */
 }
 .eventDetail{
 background-color: #2B2B2B;
@@ -11,7 +12,9 @@ border-bottom-left-radius: 15px;
 .eventImgDiv{
     max-width: 500px;
     max-height: 199px;
+    /* max-height: 200px; */
 }
+
 .eventImgDiv img{
     max-height: 198px;
     width: 100%;
