@@ -2,7 +2,6 @@ import { Carousel } from 'primereact/carousel';
 import React, { useEffect, useState } from 'react';
 import { BlogService } from './BlogService';
 import './BlogCarousel.css';
-
 const BlogCarousel = () => {
   const [blogs, setBlogs] = useState([]);
   const responsiveOptions = [

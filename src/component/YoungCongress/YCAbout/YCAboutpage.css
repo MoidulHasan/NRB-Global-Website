@@ -1,0 +1,378 @@
+ /* YCAbout  */ 
+ .yca-about-section{
+  /* background: #75aac1; */
+  background-image: url('../../../assets//image/YCAbout/aboutbgimgdesk.png');
+  margin-top: 35px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ .yca-description{   
+  background-image: url('../../../assets/image/YCAbout/abouthd.png');  
+  background-position: center;
+   background-size: cover; 
+   background-repeat: no-repeat;
+   position: relative;
+   /* width: 85%; */
+   width: 100% !important;
+   height: 800px;
+   /* margin-left: auto;
+   margin-right: auto; */
+   margin: 0px;
+   border-radius: 10px;
+
+} 
+.yca-title{
+ text-align: center;
+ padding-top: 30px; 
+ padding-left: 5%;
+ font-weight: 600 !important;
+}
+.yca-title h1{
+  text-align: start;
+font-weight: 100;
+/* font-style: italic; */
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.yca-join-btn{
+  
+}
+.yca-about-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto; 
+  padding: 40px 0px;
+}
+.yca-about-text{
+  /* background: rgb(151, 187, 68); */
+  padding: 20px;  
+  /* background-image: url('../../../assets/image//YCAbout/aboutus.png'); */
+ 
+}
+.yca-about-text h3{
+/* color: #176ae7; */
+color: #ffffff;
+}
+.yca-about-text-p{
+  /* color:#ffffff; */
+  /* background: rgb(100, 98, 98); */
+  /* background: #f3f7f5; */
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 600 !important;
+}
+ .yca-about-text h3{
+  font-size: 20px;
+  border-bottom: 5px solid #ffffff;
+  padding: 5px;
+  letter-spacing:.2px;
+font-size: 30px;
+
+ }
+ .yca-about-text-p{
+  font-size: 18px;
+  line-height: 30px;
+  text-align: start;
+  font-weight: 100;
+  letter-spacing:.5px;
+ }
+.yca-presenet-them{
+  /* background: rgb(91, 206, 221); */
+  padding-left: 30px;
+}
+.yca-research h1,.yca-audience h1,.yca-contact h1{
+  font-size: 25px;
+  font-weight: bold;
+  /* color: rgb(192, 70, 54); */
+  color: #ffffff;
+  letter-spacing:.2px;
+  font-style: italic;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+}
+  /* .yca-contact h1::before{
+  content: "\22C4";
+  color: rgb(248, 4, 4);
+  font-weight: bold; 
+  } */
+.yca-research p,.yca-audience p,.yca-contact p{
+    font-size: 18px;
+    text-align: start;
+    font-weight: 100;
+    line-height: 30px;
+    letter-spacing:.5px;
+  /* background: #f3f7f5;     */
+  color:#ffffff;
+    border-radius: 10px;
+    padding: 10px;  
+    margin-right: 10px; 
+}
+.yca-join-btn Button{
+  margin-left: 5%;  
+  margin-top: 5%;
+}
+ 
+@media only screen and (max-width: 1400px) {
+  .yca-description{ 
+      width: 85%;  
+     height: 540px; 
+   }     
+}
+@media only screen and (max-width: 800px) {
+  .yca-about-section{  
+    grid-template-columns: 100% ;
+    grid-template-rows: auto  ;  
+   }     
+}
+/* MEDIA  */
+@media only screen and (max-width:624px){
+  .yca-title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 10px;
+    padding-left: 5%;
+   
+   }
+}
+/* MISSION - VISSION  */
+.yc-mission-vision-container{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+/* background: #ebe8e8; */
+background: #f3f7f5;
+}
+.yc-mission-container{
+display: grid;
+/* background: #000; */
+grid-template-columns: 80% 20%;
+grid-template-rows: auto auto; 
+padding: 40px 0px;
+}  
+.yc-mission-textlist{
+display: grid;
+grid-template-columns: 60% 40%;
+padding-left: 20px;
+}
+.yc-missionlist-item ul li::before{
+  content: "\22C4";
+  color: rgb(202, 64, 29);
+  font-weight: bold;  
+  margin-right: 10px;
+  /* margin-left: ; */
+}
+.yc-mission-flex-img{
+/* width: 100%; */
+background-image: url('../../../assets/image/YCAbout/mission.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+ width: 200px;
+ margin-top: 30px;
+ height: 200px;
+}
+.yc-mission-title{
+font-size: 30px;
+/* padding-left: 20px; */
+padding-left: 7%;
+color: #e02d45;
+}
+.yc-missionlist-item ul li{
+list-style: none;
+line-height: 30px;
+font-size: 20px;
+}
+/* VISION  */
+.yc-vision-container{
+display: grid;
+grid-template-columns: 30% 70%;
+grid-template-rows: 230px auto; 
+padding: 40px 0px;
+}
+.yc-vision-flex{
+display: grid;
+grid-template-columns: 40% 60%;
+}
+.yc-vision-bg-img{
+background-image: url('../../../assets/image/YCAbout/vision\ .jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+object-fit: cover;
+
+}
+.yc-vision-textlist{
+  padding-left: 50px;
+}
+.yc-visionlist-item ul li{
+  list-style: none;
+line-height: 30px;
+font-size: 20px;
+}
+.yc-vision-title{
+  color: rgb(92, 202, 29);
+font-size: 30px;
+
+}
+.yc-visionlist-item ul li::before{
+  content: "\22C4";
+  color: rgb(92, 202, 29);
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  margin-left: -2em;
+}
+/* END  */
+@media only screen and (max-width: 1100px) {
+  .yc-mission-container{ 
+    grid-template-columns: 100% 0%;
+    grid-template-rows: auto  ; 
+    }         
+    .yc-vision-container{ 
+      grid-template-columns: 0% 100%;
+      grid-template-rows: auto  ; 
+      }
+.yc-objective-bg-img{
+  width: 150px !important;
+  height: 150px !important;
+  margin-top:120px !important;
+}
+}
+@media only screen and (max-width:800px){
+  .yc-mission-flex-img {   
+    width: 100px;
+    margin-top: 130px;
+    height: 100px;
+   }
+   .yc-vision-bg-img{   
+    width: 100px;
+    margin-top: 80px;
+    margin-left: 100px;
+    height: 100px;
+   }
+   .yc-objective-bg-img{
+    width: 110px !important;
+    height: 110px !important;
+    margin-top:190px !important;
+  }
+}
+@media only screen and (max-width:748px){ 
+  .yc-mission-textlist{ 
+    grid-template-columns: 100% 0% !important;
+    grid-template-rows: auto; 
+    }      
+    .yc-vision-flex{ 
+      grid-template-columns:100% 0% !important;
+      grid-template-rows: auto; 
+      }   
+.yc-mission-flex-img, .yc-vision-bg-img{
+    display: none; 
+  }
+  .yc-objective-container{ 
+    grid-template-columns:  100% !important; 
+   }
+  .yc-objective-bg-img{
+    display: none !important;
+  }
+}
+
+/* OBJECTIVE  */
+.yc-objective-container{
+ display: grid;
+ grid-template-columns: 25% 75%;
+ grid-template-rows: auto auto; 
+padding: 40px 0px;
+}
+.yc-objective-bg-img{
+  background-image: url('../../../assets/image/YCAbout/objective.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-top: 60px;
+}
+ .yc-objective-textlist{
+  /* padding: 30px ; */
+  /* background: #f3f7f5; */
+  padding-left: 30px;
+  border-bottom-right-radius:10px ;
+  border-top-right-radius:10px ;
+ }
+ .yc-objective-title{
+font-size: 30px;
+
+  color: #176ae7;
+ }
+ .yc-objective-item ul li{
+  line-height: 30px;
+  font-size: 20px;
+  list-style: none;
+ }
+ .yc-objective-item ul li::before{
+  content: "\22C4";
+  color: #176ae7;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  margin-left: -2em;
+ }
+/* young congress team page  */
+.ycateam-header{
+  padding: 25px 0px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  font-family:'Times New Roman', Times, serif;
+}
+.ycateam-container{
+  background: #f3f7f5;
+ border-radius: 10px;
+
+}
+.ycateam{
+ padding: 20px;
+}
+.ycateam-profile{
+  padding: 20px 10px;
+ }
+.ycateam-card{ 
+  padding: 0px ;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 15px;  
+}
+.ycateam-name {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.ycateam-title {
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -10px;
+}
+.ycateam-flex img{
+  width: 100%;
+  border-radius: 15px;
+}
+.ycateam-socialicons{
+  margin: 0px 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.ycateam-socialicons a i{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+padding: 5px;
+border-radius: 6px;
+}
+ 

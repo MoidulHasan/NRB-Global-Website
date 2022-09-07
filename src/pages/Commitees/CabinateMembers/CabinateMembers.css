@@ -1,0 +1,44 @@
+.cabinetcontainer{
+    /* padding: 15px; */
+    overflow-x: hidden;
+    background: #f3f7f5;
+    border-radius: 10px;
+margin-top: 5px;
+} 
+.cabinet-para{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family:serif;
+}
+.cabinetorgcenterdiv{
+    /* margin-left: 20px ; */
+    padding: 10px !important;
+}
+.cabinetcard{
+    width: 300px !important;
+}
+.cabinet h3 {
+    font-size: 20px;
+    font-weight: 300;     
+}
+.cabinet h4{
+    font-size: 18px;
+    font-weight: 100; 
+    line-height: 2;    
+    font-family:sans-serif;
+    opacity: .8;
+} 
+
+.cabinet h3::first-letter{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(103, 103, 199);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 5px;  */
+    font-family:sans-serif;
+
+}
+
+ 
