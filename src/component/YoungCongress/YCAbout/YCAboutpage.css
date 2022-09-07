@@ -24,10 +24,11 @@
    margin-right: auto; */
    margin: 0px;
    border-radius: 10px;
+
 } 
 .yca-title{
  text-align: center;
- padding-top: 30px;
+ padding-top: 30px; 
  padding-left: 5%;
  font-weight: 600 !important;
 }
