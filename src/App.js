@@ -20,7 +20,6 @@ import YCAtivities from './pages/YoungCongress/YCActivities/YCAtivities';
 import CabinateMembers from './pages/Commitees/CabinateMembers/CabinateMembers';
 import ExecutiveAbassador from './pages/Commitees/ExecutiveAmbassador/ExecutiveAbassador';
 import AdvisorCouncil from './pages/Commitees/AdvisoryCouncil/AdvisorCouncil';
-import Service from './pages/Services/Service';
 import PhotoGallary from './pages/Galllery/PhotoGallery/PhotoGallary';
 import Gallery from './pages/Galllery/Gallery';
 import VideoGallary from './pages/Galllery/VideoGallery/VideoGallary';
@@ -54,7 +53,7 @@ function App() {
 
             {/* services  */}
 
-            <Route path='allservices' element={<Service />} />
+            {/* <Route path='allservices' element={<Service />} /> */}
             {/* <Route path='consultant' element={ } />
             <Route path='jobsupport' element={ } />
             <Route path='bussinessSupport' element={ } />
