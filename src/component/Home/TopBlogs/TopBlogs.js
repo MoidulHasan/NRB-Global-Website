@@ -7,7 +7,7 @@ const TopBlogs = () => {
   return (
     <div className='p-container mb-4'>
       <div className='BlogSummery  py-5 px-4'>
-        <h2 className='my-3 text-5xl text-center'>
+        <h2 className='my-3 text-3xl md:text-5xl text-center'>
           {' '}
           <span className='orangeTextOrg'>Exclusive Blogs</span> for NRB Global
           Memebers{' '}

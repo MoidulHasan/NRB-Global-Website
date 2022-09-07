@@ -9,4 +9,3 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
-<h2>This is the blog pager</h2>;

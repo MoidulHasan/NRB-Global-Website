@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './TopBanner.css';
 
 const TopBanner = () => {
@@ -15,24 +16,28 @@ const TopBanner = () => {
           and have fun!
         </p>
         <div class='mt-8 mb-4 flex w-full flex-column gap-4 md:flex-row'>
-          <button
-            class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton'
-            type='button'
-          >
-            Join NRB Global
-            <span class='material-icons-sharp'>public</span>
-          </button>
-          <button
-            class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton'
-            type='button'
-          >
-            Explore Community
-            <span class='material-icons-sharp'>groups</span>
-          </button>
+          <Link to='/gmRegistration' className='linkDecoration '>
+            <button
+              class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
+              type='button'
+            >
+              Join NRB Global
+              <span class='material-icons-sharp'>public</span>
+            </button>
+          </Link>
+          <Link to='/gmRegistration' className='linkDecoration '>
+            <button
+              class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
+              type='button'
+            >
+              Explore Community
+              <span class='material-icons-sharp'>groups</span>
+            </button>
+          </Link>
         </div>
       </div>
       <div class='mx-auto  w-full max-w-xl basis-auto md:mt-0 md:w-11'>
-      {/* -mt-6 was in the upper div class  */}
+        {/* -mt-6 was in the upper div class  */}
         <div className='imageTop' style={{ width: '100%', height: '100%' }}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
