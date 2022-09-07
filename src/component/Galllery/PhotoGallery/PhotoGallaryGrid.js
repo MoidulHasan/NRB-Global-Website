@@ -5,6 +5,7 @@ function PhotoGallaryGrid() {
     return (
         <div className='photo-Gallary p-container'>
             <div className="photo-gallary-row">
+                <h3>Photo Gallary</h3>
                 <div className="phtoto-gallary-column grid">
                     {eventImg.map((item, i) => (
                         <div className="col-12 md:col-3" key={i}>
@@ -13,8 +14,6 @@ function PhotoGallaryGrid() {
                     ))}
 
                 </div>
-
-
             </div>
         </div>
     )
