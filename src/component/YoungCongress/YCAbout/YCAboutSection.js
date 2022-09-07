@@ -20,10 +20,9 @@ function YCAboutSection() {
             </div>
             <div className="yca-about-section">
                 <div className="yca-about-text">
-                    <div className="yca-about-img-div">
-                        <img src=".../" alt="" />
-                        <h3>About Us</h3>
-                    </div>
+
+                    <h3>About Us</h3>
+
                     <p className='yca-about-text-p'>Young Congress NRB Global is a non-political Organization. This platform is open for all young generation. We give the opportunities to be a good person in life as well as to improve skills for career build up.</p>
                 </div>
                 <div className="yca-presenet-them">

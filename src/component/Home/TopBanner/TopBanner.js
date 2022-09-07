@@ -31,7 +31,8 @@ const TopBanner = () => {
           </button>
         </div>
       </div>
-      <div class='mx-auto -mt-6 w-full max-w-xl basis-auto md:mt-0 md:w-11'>
+      <div class='mx-auto  w-full max-w-xl basis-auto md:mt-0 md:w-11'>
+      {/* -mt-6 was in the upper div class  */}
         <div className='imageTop' style={{ width: '100%', height: '100%' }}>
           <svg
             xmlns='http://www.w3.org/2000/svg'

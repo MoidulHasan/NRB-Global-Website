@@ -8,9 +8,10 @@
 .advisorprofile{
     border: none !important;
     box-shadow: none !important;
-    margin: 0px 60px;
+    /* margin: 0px 60px; */
     /* background: rgb(163, 157, 157); */
     margin: 10px 20px;
+    background: #f3f7f5;
 }
 .advisorflex{
     display: flex;
@@ -28,7 +29,7 @@
 .advisorname{
  font-size: 20px;
  text-align: start; 
- 
+ color:#195190FF; 
  letter-spacing: .8px;
 }
 .advisortitle{
@@ -37,6 +38,8 @@
  letter-spacing: 1px;
 margin-top: -10px;
 font-weight: 100;
+color:#195190FF;
+
 }
 .advisorsocialicons{  
     margin-top: -20px;
@@ -44,9 +47,37 @@ font-weight: 100;
     justify-content: start; 
 }
  .advisorsocialicons a > i {
-    font-size: 20px; 
-    color: rgb(143, 134, 134) !important;
-    padding-right: 12px; 
+    font-size: 18px; 
+    /* color: rgb(143, 134, 134) !important; */
+    padding-right: 13px; 
     margin-top: 10px;    
  }
  
+ /* MEDIA  */
+ @media only screen and (max-width:1216px){
+    .advisorprofile{      
+        margin: 10px 10px !important;
+    }
+}
+@media only screen and (max-width:575px){
+    .advisorflex img{
+        width: 100px;
+        height: 100px;
+    }
+     .advisorflex1{
+        margin-top: -20px;
+     }
+    .advisorname{
+     font-size: 18px;     
+    }
+    .advisortitle{
+        font-size: 13px;
+    margin-top: -10px;
+    
+    }
+    .advisorsocialicons a > i {
+        font-size: 15px; 
+ 
+        margin-top: 15px;    
+     }
+}

@@ -1,8 +1,9 @@
  .contactinfo-container{
     overflow-x: hidden;
     /* background:  ; */
-    margin: .5% 13%;
-    padding: 50px 15px;
+    /* margin: .5% 13%; */
+    margin-top: 5px;
+    /* padding: 50px 15px; */
     /* background: #ffffff; */
     border-radius: 10px;
     /* background: #000; */

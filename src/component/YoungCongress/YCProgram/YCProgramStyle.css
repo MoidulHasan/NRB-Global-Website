@@ -2,19 +2,14 @@
     border-radius: 10px;
 }
 .ycpc-container{ 
-    background: #f7f3f5;
-    margin-top: 150px;
-    border-left: 4px solid red;
+    /* border-left: 4px solid red; */
     border-radius: 8px;
 }
 .ycpc-header-flex{
- display: flex;
- align-items: start;
- padding: 30px; 
+ padding: 0px 10px;
+ 
 }
-.ycpc-flex1{
-    width: 50%;
-} 
+ 
 .ycpc-flex1 h1{
     font-size: 22px;
     font-size: 20px; 
@@ -34,27 +29,52 @@
     border: none;
     margin: 0px 20px;
 }
-.ycpc-card{
+/* .ycpc-card{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
-} 
+}  */
 .ycpc-details{
     margin: 25px;
 }
+.ycpc-profile:nth-child(2){
+    background: #000 !important;
+    
+}
+.ycpc-profile:nth-child(1){
+    background: #F95700FF !important;
 
-.ycpc-profile{
+}
+.ycpc-profile:nth-child(4){
+    background: #000 !important;
+}
+.ycpc-profile:nth-child(3){
+    background: #F95700FF !important;
+
+}
+.ycpc-profile:nth-child(5){
+    background: #F95700FF !important;
+}
+.ycpc-profile:nth-child(6){
+    background: #000 !important;
+     
+}
+.ycpc-card-grid{
+    /* background: #000; */
+    padding: 20px;
+}
+.ycpc-card{
+    background: none;
     box-shadow: none;
-    border-radius: 0px; 
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* border-radius: 10px;      */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    /* box-shadow: rgba(148, 146, 146, 0.35) 0px 5px 15px; */
+    color: #ffffff !important;
 }
  
  
-.ycpc-profile{
-    border-top: 2px solid rgb(76, 62, 199) !important;
-    background: #ededff;
-}
+ 
 .ycpc-type{
     font-size: 15px;
     font-weight: 600;
@@ -71,7 +91,8 @@
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px; */
     border-radius: 2px;
-    background-color: #2c8aaf;
+    /* background-color: #2c8aaf; */
+    background-color: #ffffff;
 } 
 .ycpc-title{
     margin-top: -20px;
@@ -90,4 +111,44 @@
     border-radius: 8px;
     margin-bottom: -20px;
     width: 100%;
+}
+
+/* YCProgramSlide  */
+.ycprogram-slide{
+background: rgb(244, 243, 243);
+border-radius: 10px !important;    
+}
+.ycprogram-slide-img img{
+    width: 100%;
+    object-fit: cover;   
+    padding: 10px 0px 0px 0px;
+    border-radius: 10px !important;     
+}
+.ycprogram-slide-title{
+    font-size: 30px !important;
+}
+.ycprogram-slide-details{
+    padding: 10px;
+}
+.ycprogram-slide-description{
+    font-size: 16px !important;
+    line-height: 25px;
+}
+.ycprogram-slide-description::after{
+    content: '';
+    display: block;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dbdada;
+}
+
+
+/* Media  */
+
+@media screen and (max-width:960px){
+    .ycprogram-slide-title:after{
+        content: '';
+        display: block;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #dbdada;
+    }
 }

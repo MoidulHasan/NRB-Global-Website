@@ -1,11 +1,21 @@
 .photo-Gallary{
-    margin: 3% 10%;
+    margin-top: 10px;
 }
 .photo-gallary-row{
     background: #ffffff;
     padding:3%;
+    padding-top: 1% !important;
     border-radius: 10px;
 } 
+.photo-gallary-row h3{
+    background-color: #FCF6F5FF;
+    padding: 30px;
+    font-size: 30px;
+    color: #2BAE66FF;
+    border-bottom: 1px solid #2BAE66FF;
+    border-style:dotted;
+    text-align: center;
+}
 .phtoto-gallary-column img{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 border-radius:10px; 

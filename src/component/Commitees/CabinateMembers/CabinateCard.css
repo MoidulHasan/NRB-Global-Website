@@ -1,58 +1,62 @@
+ .cabinet-card-main-container{
+    border-radius: 10px;
+    padding: 30px 0px;
+    /* background: #f3f7f5; */
+    background: #f3f7f3;
+ }
+ .cabinate-card{
+    width: 300px !important;
+    height: auto;
+    /* background: #333; */
+    background: #567572FF;
 
-.cabinetorgcenterdiv{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    /* background: #000; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    color: #f3f7f5;
+ }
+ .cabinate-card-ceo-img img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ 
+ 
+.cabinate-ceo-name{
+    font-size: 15px;
+    letter-spacing: .5px;
 }
-.cabinetorganizer{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 30px; 
-    margin-right: 28px;
-    /* background: rgb(188, 164, 164); */
+.cabinate-ceo-title{
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: -12px;
+    letter-spacing: .5px;
 }
-.cabinetorganizer .cabinetcard{
-    margin: 20px;
-
+.cabinate-card-quote{
+    margin-top: -20px;
 }
-
-.cabinetcard{
-    box-shadow:  rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;   
-    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px !important; */
-    width: 25rem;
-    margin: 20px 2px;
-}
-.cabinetmembers{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-around;
-}
-.cabinercardimg{      
-    /* width: 100%; */
-    border-top-right-radius: 8px ;
-    border-top-left-radius:8px;
-    /* border-radius: 8px; */
-}
-.cabinetcardquote{
-    font-size: 18px;
-    margin-top: -15px;
-}
-.cabinetsocialicons{
+/* icons  */
+ .cabinate-social-icons{
     margin-bottom: -20px !important;
-    background: rgb(72, 180, 223);
     /* background: rgb(199, 178, 119); */
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     border-radius: 8px;
 }
- .cabinetsocialicons a > i {
+ .cabinate-social-icons a > i {
     padding-right: 20px; 
     font-size: 20px;   
     cursor: pointer;
     margin-top: 3px;
  }
+ .cabinate-org-members-div{
+padding-top: 50px;
+padding-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+ /* MEDIA  */
  
+ @media only screen and (min-width:1280px){
+    .cabinate-ceo-gird-two{
+        
+    }
+ }

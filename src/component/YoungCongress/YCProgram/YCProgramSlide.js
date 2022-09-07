@@ -1,75 +1,64 @@
+import { Carousel } from 'primereact/carousel';
 import React, { useEffect, useState } from 'react';
-import { Galleria } from 'primereact/galleria';
 import { ProgramService } from './YCProgramService';
-import './YCProgramStyle.css'
+import './YCProgramStyle.css';
 const YCProgramSlide = () => {
-    const [images, setImages] = useState(null);
-    const galleriaService = new ProgramService();
-
+    const [programs, setPrograms] = useState([]);
     const responsiveOptions = [
         {
             breakpoint: '1024px',
-            numVisible: 5,
-        },
-        {
-            breakpoint: '768px',
-            numVisible: 3,
-        },
-        {
-            breakpoint: '560px',
             numVisible: 1,
+            numScroll: 1,
+        },
+        {
+            breakpoint: '600px',
+            numVisible: 1,
+            numScroll: 1,
+        },
+        {
+            breakpoint: '480px',
+            numVisible: 1,
+            numScroll: 1,
         },
     ];
 
+    const programService = new ProgramService();
     useEffect(() => {
-        galleriaService.getImages().then((data) => setImages(data));
-    }, []);
-    const itemTemplate = (item) => {
-        return (
-            <img
-                className='ycps-img'
-                src={item.itemImageSrc}
-                onError={(e) =>
-                (e.target.src =
-                    'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
-                }
-                alt={item.alt}
-                style={{ width: '100%', display: 'block', height: '88vh' }}
-            />
-        );
-    };
+        // programService.getPrograms().then((data) => setPrograms(data.slice(0, 4)));
+        programService.getPrograms().then((data) => setPrograms(data));
 
-    const thumbnailTemplate = (item) => {
-        return (
-            <img
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-                src={item.thumbnailImageSrc}
-                onError={(e) =>
-                (e.target.src =
-                    'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
-                }
-                alt={item.alt}
-                style={{ display: 'block', height: '100px' }}
-            />
+    const programTemplate = (program) => {
+        return (
+            <div className='ycprogram-slide'>
+                <div className='ycprogram-slide-img'>
+                    <img src={program.image} alt='program pic' />
+                </div>
+                <div className='ycprogram-slide-details'>
+                    <h2 className='text-l md:text-5xl my-1 font-bold ycprogram-slide-title'>
+                        {program.name}
+                    </h2>
+                    <span className='ycprogram-slide-description text-gray-700 text-xl hidden md:block'>
+                        {program.description}
+                    </span>
+                </div>
+            </div>
         );
     };
 
     return (
-        <div>
-            <div className='card' style={{ maxHeight: '75vh' }}>
-                <Galleria
-                    value={images}
+        <div className='carousel-demo'>
+            <div className='card'>
+                <Carousel
+                    value={programs}
+                    numVisible={1}
+                    numScroll={1}
                     responsiveOptions={responsiveOptions}
-                    numVisible={5}
-                    item={itemTemplate}
-                    showItemNavigators
-                    showItemNavigatorsOnHover
-                    showIndicators
-                    showThumbnails={false}
-                    //   thumbnail={thumbnailTemplate}
+                    className='custom-carousel'
                     circular
-                    autoPlay
-                    transitionInterval={2000}
+                    autoplayInterval={3000}
+                    itemTemplate={programTemplate}
                 />
             </div>
         </div>
@@ -77,5 +66,3 @@ const YCProgramSlide = () => {
 };
 
 export default YCProgramSlide;
-
-

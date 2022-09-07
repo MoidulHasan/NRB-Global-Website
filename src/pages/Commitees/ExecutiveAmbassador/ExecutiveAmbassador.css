@@ -1,16 +1,30 @@
-.executivecontainer{
-    padding: 15px;
+.executive-container{
+     /* margin: .5% 12%; */
     overflow-x: hidden;
+    border-radius: 10px;   
+    padding: 0px 0px;
+    margin-top: 10px;
+   background:#f3f7f5;
 }
-  p{
+  .executive-container-para{
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
+    font-style: italic;
+    padding: 20px;
+    background: #333D79FF;
+        color: #FAEBEFFF;
+        font-weight: bold;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin-top: 0px;
     font-family:serif;
 } 
-.memberBtn{
+.executive-memberBtn{
     display: flex;
     justify-content: center;
-    margin: 20px 0px;
+    margin: 40px 0px;   
+}
+.executive-memberBtn button{
+color: #ffffff;  
+background:#333D79FF;
+border: none;
 }

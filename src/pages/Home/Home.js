@@ -10,6 +10,7 @@ import TopServices from '../../component/Home/TopServices/TopServices';
 import WhyJoinNRB from '../../component/Home/WhyJoinNRB/WhyJoinNRB';
 import TopBlogs from '../../component/Home/TopBlogs/TopBlogs';
 import WhyJoinHome from '../../component/Home/WhyJoinHome/WhyJoinHome';
+import ExecutiveCommitteeMembers from '../../component/Home/ExecutiveCommitteeMembers/ExecutiveCommitteeMembers';
 
 const Home = () => {
   return (
@@ -28,8 +29,12 @@ const Home = () => {
         <MembersInOrganizations />
       </section>
       <section>
+        <ExecutiveCommitteeMembers />
+      </section>
+      <section>
         <ExclusiveEvent />
       </section>
+
       <section>
         <WhyJoinHome />
       </section>

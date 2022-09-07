@@ -1,5 +1,5 @@
 .ycativity-container{
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 .ycativity-header h1{
     text-align: center;
@@ -8,7 +8,7 @@
     padding: 10px 0px;
     font-weight: bold;
 }
-.ycativity-header h1 span{
+.ycativity-header-span{
     font-size: 35px;
     font-weight: bold;
  border-bottom: 2px solid rgb(224, 226, 74);
@@ -33,9 +33,9 @@
     .ycativity-blood-bg-bottom{
         position: absolute;
         background: rgb(230, 5, 5);
-        opacity: .3;
+        opacity: .8;
         width: 100%;   
-        height: 120px !important;
+        height: 130px ;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         padding: 20px 30px;
@@ -53,7 +53,8 @@
     
     .ycativity-bloodTxt h1{
         position: relative;
-        color: #ffffff;   
+        /* color: #ffffff;    */
+        color: #ffffff;
         font-size: 20px;
         opacity: 1 !important;    
         letter-spacing: 1px;
@@ -64,9 +65,9 @@
         text-align: start;
         opacity: 1 !important;     
         font-size: 15px;
-      letter-spacing: 1px;
-     color: #ffffff;   
-
+      letter-spacing: .5px;
+      color: #ffffff;
+ font-weight: bold;
     }
     .ycativity-foodImg {     
         background-image: url('../../../assets/image/YCAbout/foodDistribution.jpg');  
@@ -79,10 +80,11 @@
     .ycativity-food-bg-bottom{
         position: absolute;
         background: rgb(230, 208, 5);
-        opacity: .3;
+        opacity: .7;
         width: 100%;   
         /* height: 150px !important; */
-        height: 120px;
+        height: 130px ;
+
 
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -100,7 +102,6 @@
         border-bottom-right-radius: 10px;       
         padding: 10px;
         bottom: 0;
-        color:#ffffff;
         }
     
      .ycativity-foodTxt h1{
@@ -108,6 +109,7 @@
         font-size: 20px;
         opacity: 1 !important;    
         letter-spacing: 1px;
+        color:#000;
     }
      .ycativity-foodTxt p{   
         font-size: 15px;
@@ -115,8 +117,8 @@
         text-align: start;
         opacity: 1 !important;     
         font-size: 15px;
-      letter-spacing: 1px;
-
+      letter-spacing: .5px;
+    font-weight: bold;
     }
     .ycativity-naturaldisasterImg {
         background-image: url('../../../assets/image/YCAbout/naturalDisaster.jpg');  
@@ -129,9 +131,9 @@
     .ycativity-naturaldisaster-bg-bottom{
         position: absolute;
         background: rgb(31, 230, 5);
-        opacity: .3;
+        opacity: .5;
         width: 100%;   
-        height: 120px;
+        height: 130px ;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px; 
         bottom: 0;
@@ -156,6 +158,7 @@ display: none;
         font-size: 20px;
         opacity: 1 !important;    
         letter-spacing: 1px;
+        color: #000;
     }
      .ycativity-naturaldisasterTxt p{   
         font-size: 15px;
@@ -163,8 +166,9 @@ display: none;
         text-align: start;
         opacity: 1 !important;     
         font-size: 15px;
-      letter-spacing: 1px;
-
+      letter-spacing: .8px;
+      color: #000;
+font-weight: bold;
     }
     .ycativity-floodImg {
         background-image: url('../../../assets/image/YCAbout/the\ flood.jpeg');  
@@ -177,9 +181,9 @@ display: none;
     .ycativity-flood-bg-bottom{
         position: absolute;
         background: rgb(176, 18, 216);
-        opacity: .3;
+        opacity: .5;
         width: 100%;   
-        height: 120px !important;
+        height: 130px ;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         padding: 20px 30px;
@@ -213,6 +217,12 @@ display: none;
 
     }
 /* @media  */
+@media only screen and (max-width:1024px){
+    .ycativity-container{
+        /* margin-top: 200px; */
+        margin: .5% 2%;
+    }
+}
 @media screen and (max-width:700px){
     .ycativity-parent-grid { 
         grid-template-columns: repeat(1, 1fr);

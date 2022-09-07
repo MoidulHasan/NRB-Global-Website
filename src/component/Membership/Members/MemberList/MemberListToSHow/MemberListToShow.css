@@ -1,0 +1,28 @@
+.nrbMemberCard{
+    background-color: #d8eafa;
+    color: #002C53;
+    /* margin: 0 1.2rem;
+    padding: 1.7rem 1.2rem; */
+    border-radius: 10px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    font-family: 'Rubik', sans-serif;
+}
+.memberImgHolder img{
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 400px) {
+    .memberImgHolder img{
+        height: 200px;
+    }
+    .nrbMemberDetail{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 2px;
+            grid-row-gap: 0px;
+    }
+    
+}
