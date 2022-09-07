@@ -37,8 +37,12 @@ const ExecutiveCommitteeMemberCarousel = () => {
           <img src={member.profileImg} alt='cabinate member of NRB Global' />
         </div>
         <div className='cabinateMemberDetailHolder text-center'>
-          <h2 className='text-blue-900 my-1 text-xl'>{member.name}</h2>
-          <h3 className='text-gray-700 my-1 text-base'>{member.designation}</h3>
+          <h2 className='text-blue-900 my-1 text-base md:text-xl'>
+            {member.name}
+          </h2>
+          <h3 className='text-gray-700 my-1 text-sm md:text-base'>
+            {member.designation}
+          </h3>
         </div>
       </div>
     );
