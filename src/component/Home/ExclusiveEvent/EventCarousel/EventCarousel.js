@@ -5,7 +5,6 @@ import './EventCarousel.css';
 import img1 from '../../../../assets/image/Blue Teal Yellow Hopeful Community Facebook Cover.png';
 
 const EventCarousel = () => {
-  const [products, setProducts] = useState([]);
   const [homeEvents, setHomeEvents] = useState([]);
   const responsiveOptions = [
     {

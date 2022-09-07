@@ -6,3 +6,12 @@
     /* margin: 20px 0px; */
     padding-bottom: 3rem;
 }
+
+@media screen and (max-width: 380px) {
+    .eventHeaderTextOnHome{
+        font-size: 1.5rem !important ;
+    }
+    .eventHeaderSupportTextOnHome{
+        font-size: 1.1rem !important ;
+    }
+}

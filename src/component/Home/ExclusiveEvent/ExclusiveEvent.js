@@ -6,12 +6,12 @@ const ExclusiveEvent = () => {
   return (
     <div className='p-container mb-4'>
       <div className='eventSummery  py-5 px-4'>
-        <h2 className='my-3 text-5xl text-center'>
+        <h2 className='my-3 text-3xl md:text-5xl text-center eventHeaderTextOnHome'>
           {' '}
           <span className='orangeTextOrg'>Exclusive Events</span> for NRB Global
           Memebers{' '}
         </h2>
-        <p className='text-center text-2xl'>
+        <p className='text-center text-xl md:text-2xl eventHeaderSupportTextOnHome'>
           Join our NRB GLobal community absolutely free and get access to
           valuable events by industry experts.
         </p>

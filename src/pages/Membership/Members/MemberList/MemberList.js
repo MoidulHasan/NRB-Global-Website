@@ -3,6 +3,7 @@ import MemberListHeader from '../../../../component/Membership/Members/MemberLis
 import MemberListToSHow from '../../../../component/Membership/Members/MemberList/MemberListToSHow/MemberListToSHow';
 import './Meberlist.css';
 import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 
 const MemberList = () => {
   return (
@@ -22,12 +23,14 @@ const MemberList = () => {
             </h2>
           </div>
           <div className='flex justify-content-center mt-3'>
-            <Button
-              label='Join NRB Global'
-              className='p-button-rounded p-button-raised p-button-help p-button-outlined'
-              icon='pi pi-angle-right'
-              iconPos='right'
-            />
+            <Link to='/gmRegistration' className='linkDecoration '>
+              <Button
+                label='Join NRB Global'
+                className='p-button-rounded p-button-raised p-button-help p-button-outlined'
+                icon='pi pi-angle-right'
+                iconPos='right'
+              />
+            </Link>
           </div>
         </div>
       </section>

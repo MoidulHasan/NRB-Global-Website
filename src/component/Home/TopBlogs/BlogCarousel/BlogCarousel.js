@@ -115,16 +115,18 @@ const BlogCarousel = () => {
           </div>
           <div className=' md:hidden grid my-3 font-semibold text-gray-700'>
             <div className='col-6'>
-              <span className=''>{blog.date}</span>
+              <span className='exclusiveDateField'>{blog.date}</span>
             </div>
             <div className='col-6'>
-              <span className='flex align-items-center justify-content-center '>
-                <span class='material-icons-sharp'>visibility</span>{' '}
+              <span className='flex align-items-center justify-content-center exclusiveVisibilityField'>
+                <span class='material-icons-sharp exclusiveVisibilityFieldIcon'>
+                  visibility
+                </span>{' '}
                 <span className='ml-1'>{blog.view}</span>
               </span>
             </div>
             <div className='col-6'>
-              <span className='flex align-items-center justify-content-center text-xs'>
+              <span className='flex align-items-center justify-content-center text-xs scheduleMobile'>
                 <span class='material-icons-sharp'>
                   <span class='material-icons-sharp'>schedule</span>
                 </span>{' '}
