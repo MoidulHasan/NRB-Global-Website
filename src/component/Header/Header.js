@@ -223,11 +223,7 @@ const Header = () => {
             />
           ))}
           <li className='nav-item'>
-            <Link
-              to='/products'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
+            <Link to='/events' className='nav-links' onClick={closeMobileMenu}>
               Events
             </Link>
           </li>
