@@ -50,7 +50,8 @@ function ContactInfo() {
                     </div>
                 </div>
                 <div className="contactinfo-us col-12 grid">
-                    <div className="col lg:col-6 md:col-12 lg:flex-order-1 md:flex-order-2"><GMapus /></div>
+                    {/* <div className="col lg:col-6 md:col-12 lg:flex-order-1 md:flex-order-2"><GMapus /></div> */}
+                    <div className="col lg:col-6 md:col-12"><GMapus /></div>
                     <div className="col lg:col-6 md:col-12 sm:col-12">
                         <div className="contactinfo-us-txt">
                             <div className="contactinfo-us-details">
