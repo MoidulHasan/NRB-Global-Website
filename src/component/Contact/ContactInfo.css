@@ -37,11 +37,7 @@ column-rule: #ffffff;
      .contactinfo-location-icon h2 span{
         font-size: 15px;
         font-weight:bold; 
-    }
- .contactinfo-us-txt{
-   /* background: #ffffff;; */
- }
-
+    } 
  /* ConatctForm  */
 
  .contact-form-conatiner{
@@ -75,16 +71,21 @@ column-rule: #ffffff;
    /* padding: 10px 10px; */
    /* height: ; */
    height: 360px;
-   border-radius: 15px;
+   border-radius: 5px;
  }
  .contact-info-map-us{
    margin-left: 10px;
  }
  .contactinfo-bn{
-   background: #496878;
-   color: #ffffff;
+   /* background: #496878; */
+   background: #8DA1E8;
+
+   /* color: #ffffff; */
    margin-left: .2px;
-   border-radius: 10px;
+   border: 20px;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+
  }
  .contact-info-map-bn{
    margin-top: 10px;
