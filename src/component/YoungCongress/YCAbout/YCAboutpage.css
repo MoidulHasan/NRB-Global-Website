@@ -337,7 +337,7 @@ font-size: 30px;
 .ycateam-container{
   background: #f3f7f5;
  border-radius: 10px;
-
+ padding-bottom:40px ;
 }
 .ycateam{
  padding: 20px;
@@ -375,4 +375,12 @@ font-size: 30px;
 padding: 5px;
 border-radius: 6px;
 }
+
+/* MEDIA  */
+@media only screen and (max-width:768px){
+  .ycateam-profile{
+    width: 100%;
+   
+  }
  
+}
