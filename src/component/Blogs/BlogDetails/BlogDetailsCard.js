@@ -68,6 +68,7 @@ const BlogDetailsCard = (singleBlog) => {
             </span>
           </div>
         </div>
+        {/* test  */}
         <div className="sm:col-6 md:col-6 lg:col-6 xl:col-6 text-right">
           <a href="#" className="">
             <i
