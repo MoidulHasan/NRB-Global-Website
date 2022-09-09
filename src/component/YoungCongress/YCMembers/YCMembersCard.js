@@ -4,7 +4,7 @@ import { ycateam_data } from '../../../data'
 import './YCMembersStyle.css'
 function YCMembersCard() {
     return (
-        <div className='ycm-container p-container'>
+        <div className='ycm-container'>
             {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
             <div className="ycm-header-container grid">
                 <div className="ycm-header col-12 md:col-6 px-3">
@@ -19,9 +19,9 @@ function YCMembersCard() {
             </div>
             <div className="ycm grid">
                 {ycateam_data.map((acateam, i) => (
-                    <div className="ycm-profile lg:col-3 md:col-4 py-3">
-                        <div className="flex align-items-cetner justify-content-center">
-                            <Card className='ycm-card ' style={{ width: '17em' }} key={i}>
+                    <div className="ycm-profile lg:col-3 md:col-6 py-3">
+                        <div className="ycm-profile-flex-container flex align-items-cetner justify-content-center">
+                            <Card className='ycm-card' style={{ width: '17em' }} key={i}>
                                 {/* <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {acateam.description}
                         </p> */}
                                 <div className="ycm-flex">
