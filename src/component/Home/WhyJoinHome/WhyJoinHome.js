@@ -2,6 +2,7 @@ import React from 'react';
 import './WhyJoinHome.css';
 import whyJoin from '../../../assets/image/whyJoin/whyJoin11.png';
 import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 
 const WhyJoinHome = () => {
   return (
@@ -59,12 +60,14 @@ const WhyJoinHome = () => {
                 </span>
               </div>
               <div className='flex justify-content-center mt-3 pb-6'>
-                <Button
-                  label='Explore more event'
-                  className='p-button-rounded p-button-warning p-button-outlined'
-                  icon='pi pi-angle-right'
-                  iconPos='right'
-                />
+                <Link to='/events' className='linkDecoration'>
+                  <Button
+                    label='Explore more event'
+                    className='p-button-rounded p-button-warning p-button-outlined'
+                    icon='pi pi-angle-right'
+                    iconPos='right'
+                  />
+                </Link>
               </div>
             </div>
           </div>
