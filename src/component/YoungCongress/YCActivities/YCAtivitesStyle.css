@@ -232,7 +232,11 @@ font-weight: bold;
         }
      
 }
-
+@media only screen and (max-width:580px){
+    .ycativity-bloodImg, .ycativity-foodImg, .ycativity-floodImg, .ycativity-naturaldisasterImg {
+        width: 100% !important;
+    }
+}
     /* .ycativity-bloodImg img{
         width: 400px;
         height: 400px;
