@@ -8,13 +8,12 @@ import useDataContexts from '../../../../hooks/useDataContexts';
 
 const SingleServicePage = () => {
   const { id } = useParams();
-  console.log(typeof id);
 
   const { nrbServices } = useDataContexts();
 
-  console.log(nrbServices, 'nrbServices');
+  // console.log(nrbServices, 'nrbServices');
   const singleService = nrbServices?.find((service) => service.id === id);
-  console.log(singleService, 'matchedService');
+  // console.log(singleService, 'matchedService');
   return (
     <div>
       {singleService && (
