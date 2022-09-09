@@ -1,22 +1,32 @@
 import React from "react";
+import { Button } from "primereact/button";
+import { Link } from "react-router-dom";
 import "./EventCard.css";
 
 const Card = (props) => {
-  const { name, description, img, button } = props.cardsinfo;
+  const { id, name, description, img } = props.cardsinfo;
+  // const newDescription = description;
+  const newDescription = description.slice(0, 201);
+  // console.log("new-description :-", newDescription);
+
   return (
-    <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-4 ">
+    <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-4">
       <div className="eventImgCard">
         <img src={img} alt="event_image" className="w-full" />
       </div>
       <div className="eventCardDetails">
         <span className="block text-xl font-bold  pb-4 ">{name}</span>
-        <span className="block ">{description}</span>
+        <span className="block text-justify">{newDescription}</span>
         <div className="pt-6">
-          <div className="  text-right">
-            <button type="button" className="eventButton">
-              {button}
-              <i className="pi pi-arrow-right  pl-2 py-1 text-center"></i>
-            </button>
+          <div className="text-right">
+            <Link to={`/events/${id}`} className="no-underline">
+              <Button
+                label="Read More"
+                icon="pi pi-arrow-right"
+                className="p-button-sm pt-1 pb-1 p-button-secondary"
+                iconPos="right"
+              />
+            </Link>
           </div>
         </div>
       </div>

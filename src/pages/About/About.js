@@ -9,14 +9,14 @@ import Founder from "../../component/About/Founder/Founder";
 
 const About = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Intro />
       <Mission />
       <Objective />
       <Vision />
       <Founder />
       {/* <Counter /> */}
-    </>
+    </div>
   );
 };
 

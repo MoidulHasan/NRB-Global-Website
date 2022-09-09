@@ -4,13 +4,13 @@ import "./Vision.css";
 
 const Vision = () => {
   return (
-    <div className="mt-4 nrbvision-div">
+    <div className="p-container mt-4 nrbvision-div">
       <div className="">
-        <h1 className=" text-center text-6xl font-bold line-height-3 pb-2 visionTitle">
+        <h1 className=" text-center text-6xl font-bold pt-2 visionTitle">
           Our Vision
         </h1>
       </div>
-      <div className="px-5 py-5">
+      <div className="">
         <div className="">
           <img src={vision} alt="" className="nrbVisionImg pb-6 w-full" />
         </div>
@@ -18,10 +18,7 @@ const Vision = () => {
           <div className="grid  ">
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
               <div className="flex">
-                <i
-                  className=" pi pi-check-circle  mx-3 pt-4   font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className=" pi pi-check-circle  mx-3 pt-4   font-bold nrbVisionIcon"></i>
                 <p className="vision-details text-justify">
                   NRB Global Non-resident Bangladeshi a completely different
                   type of Global based organization formed by the Expatriate
@@ -35,10 +32,7 @@ const Vision = () => {
 
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 ">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="vision-details text-justify">
                   We also roared our voice putting our shoulders to the
                   shoulders of international human rights organizations. NRB
@@ -54,10 +48,7 @@ const Vision = () => {
           <div className="grid">
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle  mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle  mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details ">
                   We are going to host “Vision 2025 1st NRB Global (Non-resident
                   Bangladeshi) international convention in (World Capital) New
@@ -76,10 +67,7 @@ const Vision = () => {
             </div>
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 ">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details ">
                   NRB's Bangladeshis in the Middle East, Europe, Australia,
                   America, Canada, and elsewhere are creating a good reputation
@@ -105,33 +93,21 @@ const Vision = () => {
               </span>
 
               <div className="flex mx-5 pt-3">
-                <i
-                  className="pi pi-check mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.2em", color: "#F08A55" }}
-                ></i>
+                <i className="pi pi-check mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="vision-details pt-1">
                   Collect all professional data (icon of Bangladesh)
                 </p>
               </div>
               <div className="flex mx-5">
-                <i
-                  className="pi pi-check mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.2em", color: "#F08A55" }}
-                ></i>
+                <i className="pi pi-check mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="vision-details pt-1">Potential investor data</p>
               </div>
               <div className="flex mx-5">
-                <i
-                  className="pi pi-check mx-3  pt-4 font-bold"
-                  style={{ fontSize: "1.2em", color: "#F08A55" }}
-                ></i>
-                <p className="vision-details pt-1">Address NRB’s issues</p>
+                <i className="pi pi-check mx-3  pt-4 font-bold nrbVisionIcon"></i>
+                <p className="vision-details pt-1">Address NRB's issues</p>
               </div>
               <div className="flex mx-5">
-                <i
-                  className="pi pi-check mx-3  pt-4 font-bold"
-                  style={{ fontSize: "1.2em", color: "#F08A55" }}
-                ></i>
+                <i className="pi pi-check mx-3  pt-4 font-bold nrbVisionIcon"></i>
                 <p className="vision-details pt-1">
                   Help to involve with mainstream
                 </p>
@@ -140,10 +116,7 @@ const Vision = () => {
 
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 ">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details">
                   NRB Global is the symbol of Unity among the healthy diversity
                   of our multi-talented community and beyond. NRB Global
@@ -152,10 +125,7 @@ const Vision = () => {
                 </p>
               </div>
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details">
                   NRB Global and their families save on the earth by offering
                   our quality services like help our NRB Global Peoples around
@@ -168,10 +138,7 @@ const Vision = () => {
           <div className="grid ">
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details">
                   NRB Global great tools in establishing a great platform that
                   can be the richest strongest and powerful tool in bringing a
@@ -183,10 +150,7 @@ const Vision = () => {
             </div>
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 ">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details">
                   NRB Global can do a great deal of lobbying here to enforce
                   justice in fair elections in Bangladesh. NRB Global will
@@ -199,10 +163,7 @@ const Vision = () => {
           <div className="grid ">
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details">
                   The slogan should be something like True patriotism begins
                   here, No more Blood for freedom rather, Social justice to
@@ -216,10 +177,7 @@ const Vision = () => {
             </div>
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 ">
               <div className="flex">
-                <i
-                  className="pi pi-check-circle mx-3 pt-4 font-bold"
-                  style={{ fontSize: "1.8em", color: "#195283" }}
-                ></i>
+                <i className="pi pi-check-circle mx-3 pt-4 font-bold nrbVisionIcon"></i>
                 <p className="text-justify vision-details">
                   NRB Global has to be very seriously committed and aggressively
                   voice up for peoples will establish social justice and peace.

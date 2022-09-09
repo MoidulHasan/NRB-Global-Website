@@ -1,4 +1,4 @@
-.nrbEventDetails {
+.eventDetailsDiv {
   background-color: #fbfafc;
   border-radius: 10px;
 }
@@ -12,8 +12,8 @@
   margin-right: 45px;
 }
 .eventDetailsImg {
-  border-radius: 12px !important;
-  height: 500px;
+  /* border-radius: 12px !important; */
+  height: 450px;
 }
 .eventOverView::after {
   content: "";
@@ -22,9 +22,7 @@
   border-bottom: 5px solid #e2b77c;
   margin-top: 0.8rem;
 }
-/* .nrbEventTitle {
-  text-align: center !important;
-} */
+
 /* .nrbEventTitle::after {
   content: "";
   display: block;

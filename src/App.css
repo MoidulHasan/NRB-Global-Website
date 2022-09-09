@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&family=Rubik:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&family=Rubik:wght@400;700&display=swap");
 
 /* css made for container  */
 .p-container,
@@ -13,38 +13,48 @@
   margin-right: auto;
   margin-left: auto;
 }
-.mainApp{
+.mainApp {
   min-height: 50vh;
 }
 
-.mainApp:after{
-  content: '';
+.mainApp:after {
+  content: "";
   display: block;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--primeBLue);
 }
 
 @media (min-width: 576px) {
-  .p-container, .p-container-sm {
+  .p-container,
+  .p-container-sm {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .p-container, .p-container-sm, .p-container-md {
+  .p-container,
+  .p-container-sm,
+  .p-container-md {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .p-container, .p-container-sm, .p-container-md, .p-container-lg {
+  .p-container,
+  .p-container-sm,
+  .p-container-md,
+  .p-container-lg {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .p-container, .p-container-sm, .p-container-md, .p-container-lg, .p-container-xl {
-    max-width: 1280px; 
+  .p-container,
+  .p-container-sm,
+  .p-container-md,
+  .p-container-lg,
+  .p-container-xl {
+    max-width: 1280px;
     /* 1340  */
     /* 1140  */
   }

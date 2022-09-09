@@ -30,6 +30,8 @@ import EMOrganization from "./pages/Membership/ExecutiveMember/EMOrganization";
 import MembershipProcess from "./pages/Membership/MembershipProcess/MembershipProcess";
 import AllServices from "./pages/Services/AllServices/AllServices";
 import SingleServicePage from "./pages/Services/AllServices/SingleServicePage/SingleServicePage";
+import BlogDetailSingle from "./pages/Blogs/BlogDetails/BlogDetailSingle";
+import EventDetailSingle from "./pages/Events/EventDetails/EventDetailSingle";
 
 function App() {
   return (
@@ -101,7 +103,10 @@ function App() {
                 <Route path='videoGallery'/>
             </Route> */}
               <Route path="events" element={<EventPage />} />
+              <Route path="events/:id" element={<EventDetailSingle />} />
+
               <Route path="blogs" element={<Blog />} />
+              <Route path="blogs/:id" element={<BlogDetailSingle />} />
             </Routes>
           </div>
           <ScrollTop />

@@ -1,35 +1,40 @@
 import React from "react";
 import { Divider } from "primereact/divider";
+import "./EventDetailsCard.css";
 
-const EventDetailsCard = (props) => {
-  const { title, subject, description, img } = props.cardsDetailsInfo;
-
+const EventDetailsCard = (singleEvent) => {
   return (
-    <div className="pt-4">
-      <div className="m-5">
-        <img src={img} alt="" className=" w-full eventDetailsImg" />
+    <div className="p-container p-4 my-4 eventDetailsDiv">
+      <div className="">
+        <img
+          src={singleEvent.singleEvent.img}
+          alt=""
+          className=" w-full eventDetailsImg"
+        />
       </div>
-      <div className=" pb-6 mx-5  nrbEventDetails">
+      <div className="pb-4 ">
         <div className="">
-          <span
-            className="flex pt-4 text-center text-5xl sm:font-normal md:font-semibold lg:font-bold xl:font-bold nrbEventTitle"
+          <h1
+            className="pt-2 text-center text-5xl sm:font-normal md:font-semibold lg:font-bold xl:font-bold"
             style={{ color: "#195283" }}
           >
-            {title}
-          </span>
-          <span
-            className="flex text-2xl font-normal"
+            {singleEvent.singleEvent.name}
+          </h1>
+          <p
+            className="text-center text-2xl font-normal"
             style={{ color: "#F4AA0B" }}
           >
-            {subject}
-          </span>
+            {singleEvent.singleEvent.subject}
+          </p>
           <Divider />
         </div>
-        <div className=" pt-2 ">
+        <div className=" ">
           <p className="px-6 text-3xl font-bold eventOverView">
             Event Overview:
           </p>
-          <p className="pt-3 eventDetailsText">{description}</p>
+          <p className="pt-3 eventDetailsText">
+            {singleEvent.singleEvent.description}
+          </p>
         </div>
       </div>
 

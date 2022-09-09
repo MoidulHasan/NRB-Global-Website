@@ -4,8 +4,8 @@ import "./Founder.css";
 
 const Founder = () => {
   return (
-    <div className="mt-5  nrbFounderDiv">
-      <div className="grid px-5 py-5">
+    <div className="p-container mt-5  nrbFounderDiv">
+      <div className="grid py-2">
         <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
           <img src={founder} alt="mission_Image" className="founderImg " />
         </div>

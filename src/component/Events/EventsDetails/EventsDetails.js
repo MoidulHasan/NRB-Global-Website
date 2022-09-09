@@ -13,7 +13,7 @@ const EventsDetails = () => {
     <div className="bg-blue-100 text-white-800">
       {cardDetailsInfo.map((cardsDetailsInfo) => (
         <EventDetailsCard
-          key={cardsDetailsInfo._id}
+          key={cardsDetailsInfo.id}
           cardsDetailsInfo={cardsDetailsInfo}
         ></EventDetailsCard>
       ))}{" "}

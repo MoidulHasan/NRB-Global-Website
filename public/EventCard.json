@@ -1,23 +1,23 @@
 [
   {
-    "_id": "6310668459b705450ed1316e",
-    "name": "Crystal Waterfall Event Planning",
-    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.\r\n",
-    "img": "https://cdn.pixabay.com/photo/2018/05/31/11/54/celebration-3443779_960_720.jpg",
-    "button": "Read More"
+    "id": "1001",
+    "name": "WordPress Author Meetup",
+    "subject": "Learn wordpress to create website",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    "img": "https://i.ibb.co/p04PXfy/wordpress.png"
   },
   {
-    "_id": "63106684479b5457deed5612",
-    "name": "River Stone Events",
-    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.\r\n",
-    "img": "https://www.colesclassroom.com/wp-content/uploads/2019/02/pexels-photo-1105666.jpeg",
-    "button": "Read More"
+    "id": "1002",
+    "name": "বিতর্ক প্রতিযোগিতা-২০২১",
+    "subject": "সামাজিক যোগাযোগ মাধ্যম তরুণদের সৃজনশীলতা বিকাশে অন্তরায়",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    "img": "https://i.ibb.co/cF3FStF/event-debate.png"
   },
   {
-    "_id": "6310668496406a6b71dad96a",
-    "name": "Hyde Park Event Design",
-    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.\r\n",
-    "img": "https://eventrhythm.com/wp-content/uploads/2020/08/events.jpg",
-    "button": "Read More"
+    "id": "1003",
+    "name": "বিতর্ক প্রতিযোগিতা-২০২১ (দ্বিতীয় পর্ব)",
+    "subject": "প্রযুক্তি নির্ভর শিক্ষা ব্যবস্হা শিক্ষার্থীদের জ্ঞান ক্ষুধা  সীমিত করে তুলেছে।",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+    "img": "https://i.ibb.co/2s7gwPd/debate2-1.png"
   }
 ]

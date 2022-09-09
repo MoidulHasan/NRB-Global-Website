@@ -1,9 +1,13 @@
 import React from "react";
 import { Button } from "primereact/button";
 import "./BlogPage.css";
+import { Link } from "react-router-dom";
 
 const Blog = (props) => {
-  const { title, auther, date, like, description, img } = props.blogsinfo;
+  const { id, title, auther, date, like, description, img } = props.blogsinfo;
+  // const newDescription = description;
+  const newDescription = description.slice(0, 201);
+  // console.log("new-description :-", newDescription);
 
   return (
     <div className="col-12 md:col-6 lg:col-4 xl:col-4 pb-4">
@@ -32,7 +36,9 @@ const Blog = (props) => {
           </div>
         </div>
         <span className="block text-xl font-bold mb-1 pb-3 pt-3 ">{title}</span>
-        <span className="block text-l text-gray-700">{description}</span>
+        <span className="block text-l text-gray-700 text-justify">
+          {newDescription}
+        </span>
         <div className="flex justify-content-between">
           <div className="mt-4 flex align-items-center">
             <i
@@ -44,15 +50,14 @@ const Blog = (props) => {
             </span>
           </div>
           <div className="mt-4 flex align-items-center">
-            <a href="#" className="no-underline ">
+            <Link to={`/blogs/${id}`} className="no-underline">
               <Button
                 label="Read More"
                 icon="pi pi-arrow-right"
                 className="p-button-sm pt-1 pb-1 p-button-secondary"
                 iconPos="right"
-                style={{ background: "" }}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

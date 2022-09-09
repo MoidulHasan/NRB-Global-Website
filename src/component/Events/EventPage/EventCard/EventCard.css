@@ -15,7 +15,7 @@
 
 .eventImgCard,
 .eventImgCard img {
-  height: 280px;
+  height: 260px;
 }
 .eventCardDetails {
   background-color: #212529;
@@ -23,39 +23,4 @@
   padding: 1.2rem 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
-}
-.eventButtonCard {
-  padding-left: 15em;
-  margin-top: 2em;
-}
-.eventButton {
-  background-color: rgb(186, 190, 191);
-  color: black;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 15px 5px 15px;
-}
-.eventButton:hover {
-  background-color: white;
-  color: black;
-}
-
-@media screen and (max-width: 991px) {
-  .eventButtonCard {
-    padding-left: 14em;
-  }
-}
-@media screen and (max-width: 960px) {
-  .eventButtonCard {
-    padding-left: 6em;
-  }
-  .eventImgCard img {
-    min-height: 380px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .eventButtonCard {
-    padding-left: 6em;
-  }
 }
