@@ -1,11 +1,8 @@
- .YCAtivities{
-    /* background: #000; */
- }
+ 
  @media only screen and (max-width:580px){
     .YCAtivities{
         /* background: rgb(168, 196, 44); */
         width:98%;
         margin-left: -5px;
-     }
-    
+     }    
 }
