@@ -5,9 +5,10 @@ import useDataContexts from '../../../../../hooks/useDataContexts';
 import NrbService from '../../../../Services/AllServices/NrbService';
 import { Link } from 'react-router-dom';
 
-const MemberServiceList = () => {
+const MemberServiceList = ({ location }) => {
   const { nrbServices } = useDataContexts();
-  console.log(nrbServices);
+  // console.log(nrbServices);
+  const pathAllService = location?.pathname === '/allservices';
   return (
     <div className='p-container my-4'>
       <div className='mmbrServiceListContainer py-5 px-4'>
@@ -28,16 +29,18 @@ const MemberServiceList = () => {
             <NrbService key={singleService.id} singleService={singleService} />
           ))}
         </div>
-        <div className='flex justify-content-center mt-6 mb-4'>
-          <Link to='/allservices' className='linkDecoration'>
-            <Button
-              label='View All Services'
-              className='p-button-rounded p-button-help p-button-outlined'
-              icon='pi pi-angle-right'
-              iconPos='right'
-            />
-          </Link>
-        </div>
+        {!pathAllService && (
+          <div className='flex justify-content-center mt-6 mb-4'>
+            <Link to='/allservices' className='linkDecoration'>
+              <Button
+                label='View All Services'
+                className='p-button-rounded p-button-help p-button-outlined'
+                icon='pi pi-angle-right'
+                iconPos='right'
+              />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
