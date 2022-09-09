@@ -71,28 +71,28 @@ const BlogDetailsCard = (singleBlog) => {
         <div className="sm:col-6 md:col-6 lg:col-6 xl:col-6 text-right">
           <a href="#" className="">
             <i
-              className="pi pi-facebook mr-4 text-orange-600"
-              style={{ fontSize: "2em" }}
+              className="pi pi-facebook mr-4 text-orange-500 socialMediaIocn"
+              style={{ fontSize: "1.8em" }}
             ></i>
           </a>
           <a href="#" className="">
             <i
-              className="pi pi-linkedin  mr-4 text-orange-600"
-              style={{ fontSize: "2em" }}
-            ></i>
-          </a>
-          <a href="#" className="">
-            {" "}
-            <i
-              className="pi pi-whatsapp  mr-4 text-orange-600"
-              style={{ fontSize: "2em" }}
+              className="pi pi-linkedin  mr-4 text-orange-500"
+              style={{ fontSize: "1.8em" }}
             ></i>
           </a>
           <a href="#" className="">
             {" "}
             <i
-              className="pi pi-twitter  mr-6 text-orange-600"
-              style={{ fontSize: "2em" }}
+              className="pi pi-whatsapp  mr-4 text-orange-500"
+              style={{ fontSize: "1.8em" }}
+            ></i>
+          </a>
+          <a href="#" className="">
+            {" "}
+            <i
+              className="pi pi-twitter  mr-6 text-orange-500"
+              style={{ fontSize: "1.8em" }}
             ></i>
           </a>
         </div>
