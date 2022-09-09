@@ -3,7 +3,7 @@ import { Divider } from "primereact/divider";
 import "./BlogDetailsCard.css";
 
 const BlogDetailsCard = (singleBlog) => {
-  console.log("single-Blog-Find", singleBlog.singleBlog.id);
+  // console.log("single-Blog-Find", singleBlog.singleBlog.id);
 
   return (
     <div className="p-container p-4 my-4 blogDetailsPageContainer">
