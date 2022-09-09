@@ -1,5 +1,6 @@
 .ycativity-container{
     /* margin-top: 200px; */
+    /* background: rgb(206, 84, 84); */
 }
 .ycativity-header h1{
     text-align: center;
@@ -233,9 +234,7 @@ font-weight: bold;
      
 }
 @media only screen and (max-width:580px){
-    .ycativity-bloodImg, .ycativity-foodImg, .ycativity-floodImg, .ycativity-naturaldisasterImg {
-        width: 100% !important;
-    }
+   
 }
     /* .ycativity-bloodImg img{
         width: 400px;
