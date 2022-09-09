@@ -27,11 +27,16 @@ const MenuList = ({ menu, closeMobileMenu }) => {
     setDropdown(false);
   };
 
+  const menuClickMobile = () => {
+    setDropdown(!dropdown);
+  };
+
   return (
     <li
       className='nav-item'
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={menuClickMobile}
     >
       {menu?.path === '/gallery' ? (
         <Link to={menu.path} className='nav-links'>
