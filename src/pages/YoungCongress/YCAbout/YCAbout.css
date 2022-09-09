@@ -1,0 +1,21 @@
+.yca-container{
+    /* margin:0px 150px;  */
+    /* margin: 0% 12%; */
+    padding-top:10px;
+}
+.yca-mvo{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 50px;
+    flex-wrap: wrap;
+     }
+
+
+     @media only screen and (max-width: 900px){
+        .yca-container{
+            /* margin:0px 150px;  */
+            margin: 0% 5%;
+            
+        }
+     }

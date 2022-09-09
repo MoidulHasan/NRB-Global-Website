@@ -39,10 +39,10 @@ const Footer = () => {
             <Link to='/events' className='linkDecoration my-2'>
               <li>Events</li>
             </Link>
-            <Link to='/about' className='linkDecoration my-2'>
+            <Link to='/gmRegistration' className='linkDecoration my-2'>
               <li>Registration</li>
             </Link>
-            <Link to='/about' className='linkDecoration my-2'>
+            <Link to='/contact' className='linkDecoration my-2'>
               <li>Contact</li>
             </Link>
           </div>

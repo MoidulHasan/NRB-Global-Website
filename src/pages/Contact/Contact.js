@@ -1,11 +1,11 @@
-import React from 'react';
-
-const Contact = () => {
+import React from 'react'
+import ContactForm from '../../component/Contact/ContactForm'
+import ContactInfo from '../../component/Contact/ContactInfo'
+function Contact() {
     return (
-        <div>
-            <h2>THIS IS COntact</h2>
+        <div className='p-container'><ContactInfo />
         </div>
-    );
-};
+    )
+}
 
-export default Contact;
+export default Contact

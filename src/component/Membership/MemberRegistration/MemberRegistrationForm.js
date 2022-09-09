@@ -150,7 +150,7 @@ const MemberRegistrationForm = (props) => {
     <div className='p-container my-4'>
       <div className='registrationContainer py-2 px-2'>
         <div className='grid'>
-          <div className='col-12 md:col-4 order-2 md:order-1'>
+          <div className='col-12 md:col-4 flex-order-2 md:flex-order-1 mt-6 md:mt-0'>
             <div className='registrationInfo flex flex-column justify-content-between p-4 text-white'>
               <div>
                 <img
@@ -174,14 +174,14 @@ const MemberRegistrationForm = (props) => {
                 <h3 className='my-4 font-bold text-xl md:text-4xl'>
                   Most Popular community among the non residents of Bangladesh.
                 </h3>
-                <span className='my-1 pr-1 md:pr-3 spanSupportText'>
+                <span className='mt-1 pr-1 md:pr-3 spanSupportText mb-2'>
                   NRb Global is one of the Bangladesh's largest non residential
                   community that provides a one-stop platform for students,
                   youth, businessmen, job holders to cope up in foreign, learn
                   new screen,network with peers, and grow as an individual.
                 </span>
               </div>
-              <div className='p-3 reviewKarim'>
+              <div className='p-3 reviewKarim mt-3 md:mt-0'>
                 <span className=''>
                   Simply unbelievable I am really satisfied with my business and
                   communication. This Community is absolutely wonderful!
@@ -204,7 +204,7 @@ const MemberRegistrationForm = (props) => {
               </div>
             </div>
           </div>
-          <div className='col-12 md:col-8 order-1 md:order-2'>
+          <div className='col-12 md:col-8 flex-order-1 md:flex-order-2'>
             <div className='registrationForm pl-0 md:pl-6 pr-1 md:pr-6 '>
               {/* <div className='flex'> */}
               <div className='card'>

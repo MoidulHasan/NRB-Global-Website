@@ -70,7 +70,7 @@ const MembershipProcessSteps = () => {
         </div>
       </div>
       <div className='grid mt-4 mb-7'>
-        <div className='col-12 md:col-6 stepToMemberOneDesc pt-2 pb-2 pl-2 md:pl-4 pr-12'>
+        <div className='col-12 md:col-6 stepToMemberOneDesc pt-2 pb-2 pl-2 md:pl-4 pr-12 flex-order-2 md:flex-order-1'>
           <h1 className='textStepPrime'>Organization</h1>
           <span className='text-gray-700 font-bold mb-2 md:mb-4'>
             We help you to gain leverage and efficiency through our consultancy,
@@ -111,7 +111,7 @@ const MembershipProcessSteps = () => {
             </p>
           </div>
         </div>
-        <div className='col-12 md:col-6 stepToMemberTwo'>
+        <div className='col-12 md:col-6 stepToMemberTwo flex-order-1 md:flex-order-2'>
           <div className='d-flex flex-column justify-content-start p-3'>
             <span className='profileTwoProcessSpan flex align-items-center justify-content-center mt-3 md:mt-4'>
               <span class='material-icons-sharp text-white text-5xl'>

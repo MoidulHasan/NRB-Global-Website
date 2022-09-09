@@ -32,7 +32,16 @@ import AllServices from "./pages/Services/AllServices/AllServices";
 import SingleServicePage from "./pages/Services/AllServices/SingleServicePage/SingleServicePage";
 import BlogDetailSingle from "./pages/Blogs/BlogDetails/BlogDetailSingle";
 import EventDetailSingle from "./pages/Events/EventDetails/EventDetailSingle";
-
+import YCAbout from "./pages/YoungCongress/YCAbout/YCAbout";
+import YCMembers from "./pages/YoungCongress/YCMembers/YCMembers";
+import YCProgram from "./pages/YoungCongress/YCProgram/YCProgram";
+import YCAtivities from "./pages/YoungCongress/YCActivities/YCAtivities";
+import CabinateMembers from "./pages/Commitees/CabinateMembers/CabinateMembers";
+import ExecutiveAbassador from "./pages/Commitees/ExecutiveAmbassador/ExecutiveAbassador";
+import AdvisorCouncil from "./pages/Commitees/AdvisoryCouncil/AdvisorCouncil";
+import PhotoGallary from "./pages/Galllery/PhotoGallery/PhotoGallary";
+import Gallery from "./pages/Galllery/Gallery";
+import VideoGallary from "./pages/Galllery/VideoGallery/VideoGallary";
 function App() {
   return (
     <div className="App">
@@ -45,18 +54,14 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               {/* committee  */}
-
-              {/* <Route path='cabinateMembers' element={}/>
-            <Route path='exAmbassador' element={}/>
-            <Route path='adCouncil' element={}/> */}
-
+              <Route path="cabinateMembers" element={<CabinateMembers />} />
+              <Route path="exAmbassador" element={<ExecutiveAbassador />} />
+              <Route path="adCouncil" element={<AdvisorCouncil />} />
               {/* Young Congress  */}
-
-              {/* <Route path='YCAbout' element={}/>
-            <Route path='YCPrograms' element={}/>
-            <Route path='YCActivities' element={}/>
-            <Route path='YCMembers' element={}/> */}
-
+              <Route path="YCAbout" element={<YCAbout />} />
+              <Route path="YCPrograms" element={<YCProgram />} />
+              <Route path="YCActivities" element={<YCAtivities />} />
+              <Route path="YCMembers" element={<YCMembers />} />
               {/* members  */}
               <Route path="memberList" element={<MemberList />} />
               <Route path="memberservices" element={<MemberServices />} />
@@ -87,21 +92,22 @@ function App() {
               <Route path="allservices" element={<AllServices />} />
               <Route path="allservices/:id" element={<SingleServicePage />} />
 
-              {/* <Route path='allservices' element={}/>
-            <Route path='consultant' element={}/>
-            <Route path='jobsupport' element={}/>
-            <Route path='bussinessSupport' element={}/>
-            <Route path='edoctor' element={}/>
-            <Route path='deadbodySupport' element={}/>
-            <Route path='lawsupport' element={}/>
-            <Route path='relief' element={}/> */}
-
+              {/* <Route path='allservices' element={<Service />} /> */}
+              {/* <Route path='consultant' element={ } />
+            <Route path='jobsupport' element={ } />
+            <Route path='bussinessSupport' element={ } />
+            <Route path='edoctor' element={ } />
+            <Route path='deadbodySupport' element={ } />
+            <Route path='lawsupport' element={ } />
+            <Route path='relief' element={ } /> */}
               {/* gallery  */}
 
-              {/* <Route path='gallery' element={}>
-                <Route path='photoGallery' element={}/>
-                <Route path='videoGallery'/>
-            </Route> */}
+              {/* gallery  */}
+              <Route path="gallery" element={<Gallery />} />
+              <Route path="gallery/photoGallery" element={<PhotoGallary />} />
+              {/* MINE  */}
+              <Route path="gallery/videoGallery" element={<VideoGallary />} />
+              {/* END  */}
               <Route path="events" element={<EventPage />} />
               <Route path="events/:id" element={<EventDetailSingle />} />
 

@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "itemImageSrc": "../src/assets/image/gallery/event-03.jpg",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "../src/assets/image/gallery/event-01.jpg",
+            "title": "Title 2"
+        },
+        {
+            "itemImageSrc": "../src/assets/image/gallery/event-03.jpg",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "../src/assets/image/gallery/event-02.jpg",
+            "title": "Title 4"
+        },
+        {
+            "itemImageSrc": "../src/assets/image/gallery/event-01.jpg",
+            "title": "Title 5"
+        },
+        {
+            "itemImageSrc": "../src/assets/image/gallery/event-03.jpg",
+            "title": "Title 6"
+        },
+        {
+            "itemImageSrc": "../src/assets/image/gallery/eveent-04.jpg",
+            "title": "Title 7"
+        }
+    ]
+}

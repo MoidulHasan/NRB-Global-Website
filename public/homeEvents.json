@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1000",
+        "code": "f230fh0g3",
+        "eventName": "School Bag Distribution Program",
+        "description": "In Bangladesh we will provide bags.",
+        "organizer": "NRB Global",
+        "date": "Jun 05,2022",
+        "image": "./assets/image/homeEvents/bagDistribution.jpg"
+    },
+    {
+        "id": "1001",
+        "code": "nvklal433",
+        "eventName": "Community Meetup",
+        "description": "In Bangladesh we will provide bags.",
+        "organizer": "NRB Global",
+        "date": "Sep 19,2022",
+        "image": "./assets/image/homeEvents/Community Meetup.png"
+    },
+    {
+        "id": "1002",
+        "code": "zz21cz3c1",
+        "eventName": "Debate Competition",
+        "description": "In Bangladesh we will provide bags.",
+        "organizer": "NRB Global",
+        "date": "Oct 20,2022",
+        "image": "./assets/image/homeEvents/debateCompitiion.jpg"
+    },
+    {
+        "id": "1003",
+        "code": "244wgerg2",
+        "eventName": "Inspiring Others with the arge community",
+        "description": "In Bangladesh we will provide bags.",
+        "organizer": "NRB Global",
+        "date": "Aug 10,2022",
+        "image": "./assets/image/homeEvents/inspiring others.png"
+    },
+    {
+        "id": "1004",
+        "code": "h456wer53",
+        "eventName": "Student Grooming to cope up",
+        "description": "In Bangladesh we will provide bags.",
+        "organizer": "NRB Global",
+        "date": "Sep 20,2022",
+        "image": "./assets/image/homeEvents/Student Grooming.png"
+    },
+    {
+        "id": "1005",
+        "code": "av2231fwg",
+        "eventName": "College University Students Fair",
+        "description": "In Bangladesh we will provide bags.",
+        "organizer": "NRB Global",
+        "date": "Aug 10,2022",
+        "image": "./assets/image/homeEvents/StudentFair.jpg"
+    }
+]

@@ -24,3 +24,12 @@
     color: #c5cce8;
     border-radius: 18px;
 }
+
+@media screen and (max-width: 480px) {
+    .textGlance{
+        font-size: 2.5rem;
+    }
+    .miniTextGlance{
+        font-size: 1.2rem;
+    }
+}

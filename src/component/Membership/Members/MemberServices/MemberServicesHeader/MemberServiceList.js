@@ -3,6 +3,7 @@ import React from 'react';
 import './MemberServicesList.css';
 import useDataContexts from '../../../../../hooks/useDataContexts';
 import NrbService from '../../../../Services/AllServices/NrbService';
+import { Link } from 'react-router-dom';
 
 const MemberServiceList = () => {
   const { nrbServices } = useDataContexts();
@@ -28,12 +29,14 @@ const MemberServiceList = () => {
           ))}
         </div>
         <div className='flex justify-content-center mt-6 mb-4'>
-          <Button
-            label='View All Services'
-            className='p-button-rounded p-button-help p-button-outlined'
-            icon='pi pi-angle-right'
-            iconPos='right'
-          />
+          <Link to='/allservices' className='linkDecoration'>
+            <Button
+              label='View All Services'
+              className='p-button-rounded p-button-help p-button-outlined'
+              icon='pi pi-angle-right'
+              iconPos='right'
+            />
+          </Link>
         </div>
       </div>
     </div>
