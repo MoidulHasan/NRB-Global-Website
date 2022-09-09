@@ -1,10 +1,6 @@
 .counterDiv {
-  display: flex;
-  justify-content: center;
   background-color: #f5f5f5;
   border-radius: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .counter {
@@ -14,55 +10,10 @@
   font-size: 50px;
   line-height: 96px;
   text-align: center;
-  color: #195283;
+  color: #e8cc16;
 }
 .counterText {
-  color: #182934;
+  color: #195283;
   font-family: lora, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 96px;
-  text-align: center;
-  margin-top: -40px;
-}
-
-.counterIcon {
-  background-color: rgb(224, 229, 232);
-  height: 78px;
-  width: 78px;
-  border-radius: 40px;
-  color: #030303;
-  font-size: 35px;
-  align-items: center;
-  text-align: center;
-  margin-left: 115px;
-  padding-top: 13px;
-}
-@media only screen and (max-width: 991px) {
-  .counterIcon {
-    height: 78px;
-    width: 78px;
-    border-radius: 40px;
-    color: #030303;
-    font-size: 35px;
-    align-items: center;
-    text-align: center;
-    margin-left: 150px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .counterIcon {
-    margin-left: 250px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .counterIcon {
-    margin-left: 200px;
-  }
-}
-@media only screen and (max-width: 488px) {
-  .counterIcon {
-    margin-left: 160px;
-  }
+  margin-top: -45px;
 }

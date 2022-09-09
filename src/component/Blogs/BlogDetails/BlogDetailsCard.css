@@ -16,7 +16,7 @@
 }
 
 .blogDetailsImg {
-  /* border-radius: 12px; */
+  border-radius: 12px;
   height: 500px;
 }
 .blogOverview {
@@ -29,6 +29,12 @@
   max-width: 13%;
   border-bottom: 6px solid #f08a55;
   margin-top: 0.6em;
+}
+.blogUserIcon {
+  font-size: 1.8em;
+}
+.socialMediaIocn {
+  font-size: 1.6em;
 }
 .socialMediaIocn:hover {
   color: black;
@@ -59,8 +65,13 @@
     font-size: 20px;
     text-align: center;
   }
-
   .blogDetailsImg {
     height: auto;
+  }
+  .blogUserIcon {
+    font-size: 1em;
+  }
+  .socialMediaIocn {
+    font-size: 1em;
   }
 }

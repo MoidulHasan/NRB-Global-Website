@@ -15,7 +15,7 @@ const About = () => {
       <Objective />
       <Vision />
       <Founder />
-      {/* <Counter /> */}
+      <Counter />
     </div>
   );
 };
