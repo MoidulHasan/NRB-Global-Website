@@ -28,3 +28,14 @@ color: #ffffff;
 background:#333D79FF;
 border: none;
 }
+
+@media only screen and (max-width:575px){
+    .executive-container{
+        background:none;
+        padding: 0px 10px; 
+    }
+    .executive-container-para{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
