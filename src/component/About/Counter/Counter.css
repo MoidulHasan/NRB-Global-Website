@@ -1,8 +1,6 @@
 .counterDiv {
   background-color: #f5f5f5;
-  margin-left: 33px;
-  margin-right: 33px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .counter {
   font-family: poppins, sans-serif;

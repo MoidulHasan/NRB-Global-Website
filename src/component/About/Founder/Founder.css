@@ -12,8 +12,7 @@
   line-height: 44px;
   font-weight: 900;
 }
-.founderImg {
-  width: 500px;
+.founderImage {
   height: 500px;
   border-radius: 10px;
   display: block;
@@ -52,8 +51,7 @@
   }
 } */
 @media only screen and (max-width: 500px) {
-  .founderImg {
-    width: 400px;
+  .founderImage {
     height: 400px;
     display: block;
     margin-left: auto;
