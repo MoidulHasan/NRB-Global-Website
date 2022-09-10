@@ -4,7 +4,7 @@ import objective from "../../../assets/image/about/objective.png";
 
 const Objective = () => {
   return (
-    <div class="p-container p-container-sm  mt-4 mb-4 surface-300 nrbObjectiveDiv">
+    <div class="p-container p-container-sm  mt-4 mb-4 nrbObjectiveDiv">
       <div className="grid">
         <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 lg:mt-8 xl:mt-8">
           <img

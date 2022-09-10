@@ -14,8 +14,8 @@ const About = () => {
       <Mission />
       <Objective />
       <Vision />
-      <Founder />
       <Counter />
+      <Founder />
     </div>
   );
 };

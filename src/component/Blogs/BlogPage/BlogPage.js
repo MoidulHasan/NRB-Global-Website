@@ -28,14 +28,6 @@ const BlogPage = () => {
             <Blog key={blogsinfo.id} blogsinfo={blogsinfo}></Blog>
           ))}
         </div>
-        <div className="flex justify-content-center mt-4">
-          <Button
-            label="Find More blogs"
-            className="p-button-rounded p-button-danger p-button-outlined"
-            icon="pi pi-arrow-right"
-            iconPos="right"
-          />
-        </div>
       </div>
     </div>
   );

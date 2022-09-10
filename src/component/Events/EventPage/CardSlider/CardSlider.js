@@ -51,8 +51,6 @@ const CardSlider = () => {
         numVisible={5}
         showItemNavigators
         showThumbnails={false}
-        // changeItemOnIndicatorHover
-        // showIndicators
         showItemNavigatorsOnHover
         showIndicators
         item={itemTemplate}

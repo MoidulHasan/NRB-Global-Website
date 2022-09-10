@@ -1,6 +1,6 @@
 import React from "react";
-import aboutImg from "../../../assets/image/about/Mission-vision.gif";
-import intoImg from "../../../assets/image/about/NRB-About.gif";
+import aboutImg from "../../../assets/image/about/about-page-image.jpg";
+import intoImg from "../../../assets/image/about/nrb about.jpg";
 
 import "./Intro.css";
 
@@ -14,7 +14,7 @@ const Intro = () => {
           className="mb-4   md:h-25rem lg:h-30rem xl:h-30rem w-full"
         />
       </div>
-      <div className="p-container nrbAboutIntro py-1 px-4 ">
+      <div className="p-container nrbAboutIntro py-3 px-4 ">
         <div className="grid">
           <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 md:mt-4 lg:mt-8 xl:mt-8  ">
             <img
