@@ -7,11 +7,11 @@ const Objective = () => {
     <div className="p-container">
       <div class="  my-4 nrbObjectiveDiv">
         <div className="grid">
-          <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 lg:mt-8 xl:mt-8">
+          <div className="px-5 lg:px-6 xl:px-6 sm:col-12 md:col-12 lg:col-6 xl:col-6 mt-3 lg:mt-8 xl:mt-8 ">
             <img
               src={objective}
               alt="objective_Image"
-              className="sm:h-25rem md:h-25rem lg:h-25rem xl:h-28rem w-full objectiveImg px-4"
+              className="objectiveImg"
             />
           </div>
           <div class="sm:col-12 md:col-12 lg:col-6 xl:col-6  lg:mt-7 xl:mt-7 px-4">

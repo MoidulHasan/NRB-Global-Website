@@ -7,12 +7,8 @@ const Founder = () => {
     <div className="p-container">
       <div className=" my-5  nrbFounderDiv">
         <div className="grid py-3">
-          <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
-            <img
-              src={founder}
-              alt="founder_Image"
-              className="founderImage px-4"
-            />
+          <div className="px-4 sm:col-12 md:col-12 lg:col-6 xl:col-6">
+            <img src={founder} alt="founder_Image" className="founderImage " />
           </div>
           <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 px-4">
             <h1 className=" founder-title">Our Founder</h1>

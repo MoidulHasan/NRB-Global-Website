@@ -12,16 +12,18 @@ const EventCard = () => {
       .then((data) => setCardInfo(data));
   }, []);
   return (
-    <div className=" p-container pt-5 pb-3 ">
-      <div className="">
-        <h1 className="text-center text-5xl font-bold  pt-4 event-title">
-          Our All Events
-        </h1>
-      </div>
-      <div className="grid">
-        {cardInfo.map((cardsinfo) => (
-          <Card key={cardsinfo.id} cardsinfo={cardsinfo}></Card>
-        ))}
+    <div className="p-container">
+      <div className="  pt-2 pb-3 ">
+        <div className="">
+          <h1 className="text-center text-5xl font-bold  py-3 event-title">
+            Our All Events
+          </h1>
+        </div>
+        <div className="grid">
+          {cardInfo.map((cardsinfo) => (
+            <Card key={cardsinfo.id} cardsinfo={cardsinfo}></Card>
+          ))}
+        </div>
       </div>
     </div>
   );
