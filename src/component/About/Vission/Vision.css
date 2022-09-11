@@ -14,12 +14,9 @@
   margin: auto;
   padding-top: 15px;
 }
-/* .visionContent {
-  background-color: white;
-  border-radius: 10px;
-} */
+
 .nrbVisionImg {
-  border-radius: 20px;
+  border-radius: 12px;
   height: 500px;
 }
 .vision-details {

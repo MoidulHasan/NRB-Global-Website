@@ -12,8 +12,8 @@ const Vision = () => {
           </h1>
         </div>
         <div className="">
-          <div className="px-4">
-            <img src={vision} alt="" className="nrbVisionImg pb-6 w-full" />
+          <div className="px-2">
+            <img src={vision} alt="" className="nrbVisionImg my-2 w-full" />
           </div>
           <div className="visionContent pb-5 px-4">
             <div className="grid  ">
@@ -88,7 +88,7 @@ const Vision = () => {
             <div className="grid">
               <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6">
                 <span
-                  className="text-xl font-bold mx-6"
+                  className="text-lg md:text-xl lg:text-xl xl:text-xl font-bold mx-6"
                   style={{ color: "#195283" }}
                 >
                   Develop database for NRB's
@@ -194,7 +194,7 @@ const Vision = () => {
               </div>
             </div>
             <div
-              className="mx-4 pt-1 text-xl font-semibold text-justify"
+              className="pt-1 text-xl font-semibold text-justify"
               style={{ color: "#195283" }}
             >
               Thanks for your time to read our mission and vision and to

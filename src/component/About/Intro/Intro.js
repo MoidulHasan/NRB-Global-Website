@@ -14,7 +14,7 @@ const Intro = () => {
         />
       </div>
       <div className="p-container">
-        <div className=" nrbAboutIntro py-3 px-4 ">
+        <div className=" nrbAboutIntro py-2 px-4 ">
           <div className="grid">
             <div className="sm:col-12 md:col-12 lg:col-6 xl:col-6 md:mt-4 lg:mt-8 xl:mt-8  ">
               <img

@@ -14,10 +14,8 @@
 }
 .founderImage {
   height: 500px;
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* width: 500px; */
+  border-radius: 12px;
 }
 
 .founder-title::after {
@@ -42,19 +40,14 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
+}*/
 @media only screen and (max-width: 768px) {
   .founderImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 450px;
   }
-} */
+}
 @media only screen and (max-width: 500px) {
   .founderImage {
     height: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

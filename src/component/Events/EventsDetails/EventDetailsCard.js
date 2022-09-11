@@ -16,13 +16,13 @@ const EventDetailsCard = (singleEvent) => {
         <div className="pb-4 ">
           <div className="">
             <h1
-              className="pt-2 text-center text-5xl sm:font-normal md:font-semibold lg:font-bold xl:font-bold"
+              className="pt-2 text-center text-2xl md:text-5xl lg:text-5xl xl:text-5xl sm:font-normal md:font-semibold lg:font-bold xl:font-bold"
               style={{ color: "#195283" }}
             >
               {singleEvent.singleEvent.name}
             </h1>
             <p
-              className="text-center text-2xl font-normal"
+              className="text-center  text-lg md:text-3xl lg:text-3xl xl:text-3xl font-normal"
               style={{ color: "#F4AA0B" }}
             >
               {singleEvent.singleEvent.subject}
@@ -30,10 +30,10 @@ const EventDetailsCard = (singleEvent) => {
             <Divider />
           </div>
           <div className=" ">
-            <p className="px-6 text-3xl font-bold eventOverView">
+            <p className="px-2 md:px-4 lg:px-6 xl:px-6 text-3xl font-bold eventOverView">
               Event Overview:
             </p>
-            <p className="pt-3 eventDetailsText">
+            <p className="px-2 md:px-4 lg:px-6 xl:px-6 pt-2 eventDetailsText">
               {singleEvent.singleEvent.description}
             </p>
           </div>

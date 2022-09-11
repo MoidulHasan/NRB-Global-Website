@@ -5,8 +5,8 @@ import "primeicons/primeicons.css";
 
 const Counter = () => {
   return (
-    <div className="p-container">
-      <div className="grid counterDiv my-5">
+    <div className=" p-container">
+      <div className=" grid counterDiv my-5">
         <div className="col-12 sm:col-6 md:col-6 lg:col-4 xl:col-4">
           <div className="">
             <p className="counter">

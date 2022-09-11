@@ -59,17 +59,17 @@ const BlogDetailsCard = (singleBlog) => {
           <p className="font-bold blogDetailsTitle">
             {singleBlog.singleBlog.title}
           </p>
-          <p className="text-xl md:text-3xl lg:text-3xl xl:text-3xl font-bold blogOverview">
+          <p className="px-2 md:px-5 lg:px-5 xl:px-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl font-bold blogOverview">
             Blog Overview:
           </p>
-          <p className="text-justify blogDetailsContent">
+          <p className="px-2 md:px-5 lg:px-5 xl:px-5 text-justify blogDetailsContent">
             {singleBlog.singleBlog.description}
           </p>
         </div>
         <Divider style={{ color: "#ff0000" }} />
         <div className="grid">
           <div className="sm:col-6 md:col-6 lg:col-6 l:col-6 ">
-            <div className="flex align-items-center ml-5 mr-5">
+            <div className="flex align-items-center ml-3 md:ml-5 lg:ml-5 xl:ml-5  mr-5">
               <i className="pi pi-user font-bold mr-3 text-orange-600 blogUserIcon"></i>
               <span className="text-sm lg:text-xl xl:text-xl font-semibold">
                 By {singleBlog.singleBlog.auther}
