@@ -1,0 +1,51 @@
+.mission-div {
+  background-color: white;
+  border-radius: 10px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+}
+.mision-title {
+  font-family: museo-sans, sans-serif;
+  color: #195283;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 900;
+}
+.mision-title::after {
+  content: "";
+  display: block;
+  width: 4em;
+  max-width: 13%;
+  border-bottom: 6px solid #f08a55;
+  margin-top: 0.6em;
+}
+.missionImg {
+  height: 450px;
+  border-radius: 16px;
+}
+
+.mission-details {
+  font-family: lora, sans-serif;
+  color: #182934;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.mission-value {
+  font-family: lora, sans-serif;
+  color: #182934;
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.missionIcon {
+  color: #0c70c7;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+@media only screen and (max-width: 500px) {
+  .missionImg {
+    height: auto;
+  }
+}

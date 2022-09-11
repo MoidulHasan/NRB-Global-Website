@@ -42,7 +42,8 @@
   .nav-item {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 80px; 
+    /* height should be changed in mobile to be responsive */
   }
   
   .nav-links {
@@ -91,11 +92,13 @@
         padding-inline-start: 0;
     }
   
+    /* min-height was 90vh  */
     .nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      min-height: 90vh;
+      min-height: 93vh;
+      
       position: absolute;
       top: 80px;
       left: -100%;
@@ -110,6 +113,17 @@
       transition: all 0.5s ease;
       z-index: 1;
     }
+
+  /* for mobile responsive navbar  */
+    /* .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      height should be changed in mobile to be responsive
+    } */
+
+  /* code ends here for mobile responsive  */
   
     .nav-links {
       color: #d2d7dd; 
