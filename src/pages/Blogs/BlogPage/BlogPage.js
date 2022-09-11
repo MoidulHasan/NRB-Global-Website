@@ -1,5 +1,4 @@
 import React from 'react';
-
 const BlogPage = () => {
   return (
     <div>
@@ -7,5 +6,4 @@ const BlogPage = () => {
     </div>
   );
 };
-
 export default BlogPage;
