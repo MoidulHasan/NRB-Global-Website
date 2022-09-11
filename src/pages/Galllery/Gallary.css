@@ -12,12 +12,12 @@
 .gallary-event-img h3 {
     /* padding: 40px 0px ; */
     padding: 30px 0px;
- background: #411530;
+ background: #606060FF;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #fff;
+    color: #D6ED17FF;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
