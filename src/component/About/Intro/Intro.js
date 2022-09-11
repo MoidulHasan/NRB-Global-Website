@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../../../assets/image/about/about-page-image.jpg";
-import intoImg from "../../../assets/image/about/nrb about.jpg";
+import intoImg from "../../../assets/image/about/nrb about.png";
 import "./Intro.css";
 
 const Intro = () => {

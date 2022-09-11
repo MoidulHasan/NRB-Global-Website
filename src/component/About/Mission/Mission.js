@@ -1,11 +1,11 @@
 import React from "react";
-import mission from "../../../assets/image/about/mission (2).jpg";
+import mission from "../../../assets/image/about/mission.png";
 import "./Mission.css";
 
 const Mission = () => {
   return (
     <div className="p-container">
-      <div className="px-3 my-5 mission-div">
+      <div className="px-4 my-5 mission-div">
         <div className="grid">
           <div className="col-12 md:col-12 lg:col-6 xl:col-6">
             <h1 className="mision-title">Our Mission</h1>
