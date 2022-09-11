@@ -13,7 +13,7 @@ const Vision = () => {
         </div>
         <div className="">
           <div className="px-2">
-            <img src={vision} alt="" className="nrbVisionImg my-2 w-full" />
+            <img src={vision} alt="" className="nrbVisionImg my-3 w-full" />
           </div>
           <div className="visionContent pb-5 px-4">
             <div className="grid  ">

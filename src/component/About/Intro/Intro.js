@@ -6,11 +6,11 @@ import "./Intro.css";
 const Intro = () => {
   return (
     <div className="">
-      <div className="p-container my-4">
+      <div className="p-container my-3">
         <img
           src={aboutImg}
           alt="intro_Image"
-          className=" md:h-25rem lg:h-30rem xl:h-30rem w-full aboutPageMainImage"
+          className=" h-16rem md:h-25rem lg:h-30rem xl:h-30rem w-full aboutPageMainImage"
         />
       </div>
       <div className="p-container">
