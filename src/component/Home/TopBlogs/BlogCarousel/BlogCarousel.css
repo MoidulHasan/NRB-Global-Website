@@ -41,3 +41,28 @@
         border-bottom: 1px solid #dbdada;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .blogCard{
+        padding: .4rem;
+    }
+
+    .exclusiveDateField{
+        font-size: .9rem;
+    }
+    .exclusiveVisibilityField{
+        font-size: .9rem;
+    }
+    .exclusiveVisibilityFieldIcon{
+        font-size: 1rem;
+    }
+    .blogTitle{
+        font-size: 1.1rem;
+    }
+    .blogTitle:after{
+        content: '';
+        display: block;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dbdada;
+    }
+}

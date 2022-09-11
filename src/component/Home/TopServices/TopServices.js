@@ -13,7 +13,7 @@ const TopServices = () => {
         <h3 className='orangeTextOrg text-xl text-center'>
           Services Our Members Get
         </h3>
-        <h1 className='mt-1 mb-2 textPrimeMembers text-4xl md:text-5xl'>
+        <h1 className='mt-1 mb-3 textPrimeMembers text-2xl md:text-5xl'>
           NRB Global is a family to serve our non residential Bangladesh
           community.
         </h1>

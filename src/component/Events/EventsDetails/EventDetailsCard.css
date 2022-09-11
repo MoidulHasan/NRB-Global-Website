@@ -1,0 +1,47 @@
+.eventDetailsDiv {
+  background-color: #fbfafc;
+  border-radius: 10px;
+}
+.eventDetailsText {
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.eventDetailsImg {
+  /* border-radius: 12px !important; */
+  height: 450px;
+}
+.eventOverView::after {
+  content: "";
+  display: block;
+  width: 4em;
+  border-bottom: 5px solid #e2b77c;
+  margin-top: 0.8rem;
+}
+
+/* .nrbEventTitle::after {
+  content: "";
+  display: block;
+  width: 12em
+  border-bottom: 5px solid #e2b77c;
+  margin: 0.8em 0em 1.8em 15em;
+} */
+@media only screen and (max-width: 991px) {
+  .eventDetailsImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .eventDetailsImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .eventDetailsImg {
+    height: auto;
+  }
+}
