@@ -17,7 +17,7 @@
     justify-content: center;
  }
  .contactinfo-bn-title h2, .contactinfo-us-title h2{
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing:1px;
  }
  .material-icons-sharp{
@@ -46,7 +46,7 @@ column-rule: #ffffff;
    border-radius: 10px;
     /* background: #000; */
     padding: 3px 0px;
- background: #2B4865;
+ background:#2CA9CC ;
  }
  .contact-form{
     margin: 2% 10%;
@@ -77,7 +77,8 @@ column-rule: #ffffff;
  }
  
  .contactinfo-bn{
-   background: #496878;
+   /* background: #2CA9CC; */
+   background: #6aa552;
    color: #ffffff;
    margin-left: .2px;
    border-radius: 20px;
@@ -89,7 +90,7 @@ column-rule: #ffffff;
    margin-top: 6px;
  }
    .contactinfo-us{
-      background: #29b46f;
+      background: #f3f7f5;
       margin-left: 234.2px;
       margin: 20px 0px;
       border-radius: 20px; 
