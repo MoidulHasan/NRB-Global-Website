@@ -1,8 +1,9 @@
 .counterDiv {
   background-color: #f5f5f5;
-  border-radius: 10px;
+  border-radius: 12px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
-
 .counter {
   font-family: poppins, sans-serif;
   font-style: normal;
@@ -10,10 +11,12 @@
   font-size: 50px;
   line-height: 96px;
   text-align: center;
-  color: #e8cc16;
+  color: #f5a30b;
 }
 .counterText {
   color: #195283;
   font-family: lora, sans-serif;
   margin-top: -45px;
+}
+@media only screen and (max-width: 500px) {
 }

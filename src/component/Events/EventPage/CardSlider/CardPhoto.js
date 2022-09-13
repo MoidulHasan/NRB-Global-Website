@@ -1,6 +1,6 @@
 export class PhotoService {
   getImages() {
-    return fetch("cardImage.json")
+    return fetch("sliderImage.json")
       .then((res) => res.json())
       .then((d) => d.data);
   }

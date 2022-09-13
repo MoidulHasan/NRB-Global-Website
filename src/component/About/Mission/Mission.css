@@ -1,5 +1,5 @@
 .mission-div {
-  background-color: white;
+  background-color: #e9f2fb;
   border-radius: 10px;
   /* margin-left: 30px;
   margin-right: 30px; */
@@ -21,7 +21,7 @@
 }
 .missionImg {
   height: 450px;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .mission-details {

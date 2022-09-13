@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PhotoService } from "../CardSlider/CardPhoto";
 import { Galleria } from "primereact/galleria";
+import "./CardSlider.css";
 
 const CardSlider = () => {
   const [images, setImages] = useState(null);
@@ -32,30 +33,29 @@ const CardSlider = () => {
   const itemTemplate = (item) => {
     return (
       <img
+        className=" w-full h-18rem sm:h-20rem md:h-25rem lg:h-30rem xl:h-30rem"
         src={item.itemImageSrc}
         onError={(e) =>
           (e.target.src =
             "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png")
         }
         alt={item.alt}
-        style={{ width: "100%", display: "block", height: "85vh" }}
+        // style={{ width: "100%", display: "block", height: "75vh" }}
       />
     );
   };
 
   return (
-    <div className="card" style={{ maxHeight: "85vh" }}>
+    <div className="card">
       <Galleria
         value={images}
         responsiveOptions={responsiveOptions}
         numVisible={5}
+        item={itemTemplate}
         showItemNavigators
-        showThumbnails={false}
-        // changeItemOnIndicatorHover
-        // showIndicators
         showItemNavigatorsOnHover
         showIndicators
-        item={itemTemplate}
+        showThumbnails={false}
         circular
         autoPlay
         transitionInterval={2000}
@@ -64,19 +64,3 @@ const CardSlider = () => {
   );
 };
 export default CardSlider;
-{
-  /* <div className="card">
-  <h5>Inside Content</h5>
-  <Galleria
-    value={images}
-    responsiveOptions={responsiveOptions}
-    numVisible={5}
-    style={{ maxWidth: "640px" }}
-    showThumbnails={false}
-    showIndicators
-    changeItemOnIndicatorHover
-    showIndicatorsOnItem
-    item={itemTemplate}
-  />
-</div>; */
-}
