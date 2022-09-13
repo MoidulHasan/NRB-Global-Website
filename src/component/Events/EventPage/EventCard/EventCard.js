@@ -12,7 +12,7 @@ const EventCard = () => {
       .then((data) => setCardInfo(data));
   }, []);
   return (
-    <div className="p-container">
+    <div className="p-container my-6 eventCardDiv">
       <div className="  pt-2 pb-3 ">
         <div className="">
           <h1 className="text-center text-5xl font-bold  py-3 event-title">

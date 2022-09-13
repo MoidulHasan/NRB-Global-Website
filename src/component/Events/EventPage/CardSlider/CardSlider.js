@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PhotoService } from "../CardSlider/CardPhoto";
 import { Galleria } from "primereact/galleria";
+import "./CardSlider.css";
 
 const CardSlider = () => {
   const [images, setImages] = useState(null);
@@ -20,7 +21,7 @@ const CardSlider = () => {
       numVisible: 3,
     },
     {
-      breakpoint: "560px",
+      breakpoint: "480px",
       numVisible: 1,
     },
   ];
@@ -62,19 +63,3 @@ const CardSlider = () => {
   );
 };
 export default CardSlider;
-{
-  /* <div className="card">
-  <h5>Inside Content</h5>
-  <Galleria
-    value={images}
-    responsiveOptions={responsiveOptions}
-    numVisible={5}
-    style={{ maxWidth: "640px" }}
-    showThumbnails={false}
-    showIndicators
-    changeItemOnIndicatorHover
-    showIndicatorsOnItem
-    item={itemTemplate}
-  />
-</div>; */
-}
