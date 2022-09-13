@@ -46,7 +46,7 @@ const CardSlider = () => {
   };
 
   return (
-    <div className="card ">
+    <div className="card">
       <Galleria
         value={images}
         responsiveOptions={responsiveOptions}
