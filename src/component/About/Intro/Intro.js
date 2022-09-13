@@ -20,7 +20,7 @@ const Intro = () => {
         <div className=' nrbAboutIntro py-2 '>
           <div className='flex align-items-center justify-content-center'>
             <h4 className='font-bold text-4xl md:text-6xl my-4 nrbIntro-title inline-block'>
-              Who are we?
+              Who are We?
             </h4>
           </div>
           <div className='aboutPageNRBInformation'>

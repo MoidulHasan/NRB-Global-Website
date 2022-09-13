@@ -7,11 +7,11 @@ const Mission = () => {
   return (
     <div className='p-container my-5'>
       <div className='px-4 py-4 mission-div'>
-        <h4 className='text-bold text-3xl md:text-4xl text-center my-3'>
+        <h4 className='text-bold text-3xl md:text-6xl text-center my-3'>
           Our Mission
         </h4>
         <div className='grid'>
-          <div className='col-12  md:col-6 p-2'>
+          <div className='col-12  md:col-6 p-2 flex-order-2 md:flex-order-1'>
             <div className='grid mt-4 mb-3'>
               <div className='col-12 px-4 m-2 p-1'>
                 <div className='gridColumnMission p-4'>
@@ -44,7 +44,7 @@ const Mission = () => {
               </div>
             </div>
           </div>
-          <div className='col-12 md:col-6 p-2 flex align-items-center justify-content-center'>
+          <div className='col-12 md:col-6 p-2 flex align-items-center justify-content-center flex-order-1 md:flex-order-2'>
             <div className='aboutMissionImgCover'>
               <img src={missionImg} alt='mision of NRB' className='ms-2' />
             </div>
