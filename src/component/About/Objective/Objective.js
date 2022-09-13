@@ -7,7 +7,7 @@ import objective2 from '../../../assets/image/aboutRefactor/objectiveNRB3.png';
 const Objective = () => {
   return (
     <div className='p-container my-6'>
-      <div class='  px-4 py-4 nrbObjectiveDiv'>
+      <div class='px-4 py-4 nrbObjectiveDiv'>
         <div className='grid'>
           <div class='col-12 md:col-6 flex-order-2 md:flex-order-1'>
             <h4 className='my-4 font-bold text-3xl md:text-6xl'>

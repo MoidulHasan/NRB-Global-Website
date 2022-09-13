@@ -1,0 +1,26 @@
+.moreInfoContaierAbout{
+    padding-bottom:3rem
+}
+
+.moreInfoOfAbout{
+    border: 4px solid #183462;
+    background-color: #EAF1F8;
+    min-height: 434px;
+}
+
+.extendedAboutText{
+    text-align: justify;
+}
+
+.moreInfoImgContainer{
+    border: 4px solid #183462;
+    background-color: #EAF1F8;
+}
+.moreInfoImgContainer img{
+    width: 100%;
+}
+
+.thankMessageAbout{
+    background-color: #EAF1F8;
+    border-radius: 10px;
+}
