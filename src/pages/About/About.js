@@ -9,13 +9,13 @@ import Founder from "../../component/About/Founder/Founder";
 
 const About = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <Intro />
       <Mission />
       <Objective />
       <Vision />
-      <Founder />
       <Counter />
+      <Founder />
     </div>
   );
 };

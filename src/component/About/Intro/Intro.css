@@ -1,5 +1,8 @@
+.aboutPageMainImage {
+  border-radius: 10px;
+}
 .nrbAboutIntro {
-  background-color: rgb(221, 228, 226);
+  background-color: #f1f2f6;
   border-radius: 10px;
   /* margin-left: 30px;
   margin-right: 30px; */
@@ -18,7 +21,7 @@
   width: 4em;
   max-width: 13%;
   border-bottom: 5px solid #e2b77c;
-  margin-top: 0.8em;
+  margin-top: 0.6em;
 }
 .intro-details {
   font-family: Jost, Helvetica, Arial, sans-serif;
@@ -29,7 +32,7 @@
 }
 .nrbIntroImg {
   border-radius: 16px;
-  height: 500px;
+  height: 600px;
 }
 .introIcon {
   color: #195283;

@@ -5,14 +5,10 @@ import "primeicons/primeicons.css";
 
 const Counter = () => {
   return (
-    <div className="p-container">
-      <div className="grid counterDiv mt-4">
+    <div className=" p-container">
+      <div className=" grid counterDiv my-5">
         <div className="col-12 sm:col-6 md:col-6 lg:col-4 xl:col-4">
-          <div className="surface-100">
-            {/* <i
-              className="pi pi-user-plus counterIcon"
-              style={{ fontSize: "3em" }}
-            ></i> */}
+          <div className="">
             <p className="counter">
               <CountUp end={15} />
               K+
@@ -24,10 +20,6 @@ const Counter = () => {
         </div>
         <div className="col-12 sm:col-6 md:col-6 lg:col-4 xl:col-4">
           <div className="counterCol">
-            {/* <i
-              className="pi pi-user-plus counterIcon"
-              style={{ fontSize: "3em" }}
-            ></i> */}
             <p className="counter">
               <CountUp end={1550} />+
             </p>
@@ -38,10 +30,6 @@ const Counter = () => {
         </div>
         <div className="col-12 sm:col-6 md:col-6 lg:col-4 xl:col-4">
           <div className="counterCo">
-            {/* <i
-              className="pi pi-user-plus counterIcon"
-              style={{ fontSize: "3em" }}
-            ></i> */}
             <p className="counter">
               <CountUp end={13} />
               K+

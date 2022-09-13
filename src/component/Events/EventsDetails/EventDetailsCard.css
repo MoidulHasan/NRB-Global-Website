@@ -8,11 +8,9 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
-  margin-left: 45px;
-  margin-right: 45px;
 }
 .eventDetailsImg {
-  /* border-radius: 12px !important; */
+  border-radius: 10px;
   height: 450px;
 }
 .eventOverView::after {
