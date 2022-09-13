@@ -1,5 +1,5 @@
 import React from 'react';
-import vision from '../../../assets/image/aboutRefactor/vissionNRB.png';
+import vision from '../../../assets/image/aboutRefactor/vissionNRB2.png';
 import './Vision.css';
 
 const Vision = () => {
