@@ -613,7 +613,7 @@ const MemberRegistrationForm = (props) => {
                   <div className='field mb-2'>
                     <span className='p-float-label'>
                       <Controller
-                        name='payment'
+                        name='paymentFee'
                         control={control}
                         // rules={{ required: 'Name is required.' }}
                         render={({ field, fieldState }) => (
@@ -628,10 +628,10 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='payment'
-                        className={classNames({ 'p-error': errors.payment })}
+                        htmlFor='paymentFee'
+                        className={classNames({ 'p-error': errors.paymentFee })}
                       >
-                        Payment
+                        Payment Fee
                       </label>
                     </span>
                     {getFormErrorMessage('spouceOrChild')}
