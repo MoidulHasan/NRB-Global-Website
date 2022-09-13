@@ -10,6 +10,8 @@
   font-family: 'Noto Sans', sans-serif;
   /* font-family: 'Barlow Condensed', sans-serif; */
 }
+
+
 .nrbIntro-title {
   color: var(--primeBLue);
   
@@ -17,15 +19,20 @@
 
 .aboutNRBInfoDetail {
   color: #182934;
-  line-height: 25px;
-  text-align: justify;
-  text-justify: inter-word;
+  /* text-align: justify;
+  text-justify: inter-word; */
 }
 
 .aboutIntroFirstImg img{
   width: 87%;
   border-radius: 10px;
 
+}
+
+.aboutIntroTextSecond{
+  color: #182934;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
