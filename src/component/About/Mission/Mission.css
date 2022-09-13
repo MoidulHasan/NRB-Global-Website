@@ -1,51 +1,38 @@
 .mission-div {
-  background-color: #e9f2fb;
+  /* background-color: #f4f8fc; */
   border-radius: 10px;
+  font-family: 'Noto Sans', sans-serif;
   /* margin-left: 30px;
   margin-right: 30px; */
 }
-.mision-title {
-  font-family: museo-sans, sans-serif;
-  color: #195283;
-  font-size: 38px;
-  line-height: 44px;
-  font-weight: 900;
+
+.gridColumnMission{
+  /* background-color: rgb(171, 210, 243); */
+  background-color: #eaf1f8;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;  */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.mision-title::after {
-  content: "";
-  display: block;
-  width: 4em;
-  max-width: 13%;
-  border-bottom: 6px solid #f08a55;
-  margin-top: 0.6em;
-}
-.missionImg {
-  height: 450px;
-  border-radius: 12px;
+.missionNumber{
+  color: var(--primeBLue);
 }
 
-.mission-details {
-  font-family: lora, sans-serif;
-  color: #182934;
-  font-size: 17px;
-  line-height: 25px;
-  font-weight: 400;
-}
-.mission-value {
-  font-family: lora, sans-serif;
-  color: #182934;
-  line-height: 25px;
-  font-size: 17px;
-  font-weight: 400;
+.missionText{
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--primeBLue);
+  font-weight: 700;
 }
 
-.missionIcon {
-  color: #0c70c7;
-  font-size: 1.2em;
-  font-weight: 900;
+.aboutMissionImgCover img{
+  width: 100%;
+  border-radius: 10px;
 }
+
+
+
 @media only screen and (max-width: 500px) {
-  .missionImg {
+  /* .missionImg {
     height: auto;
-  }
+  } */
 }

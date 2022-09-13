@@ -1,55 +1,53 @@
-import React from "react";
-import mission from "../../../assets/image/about/mission.png";
-import "./Mission.css";
+import React from 'react';
+import './Mission.css';
+
+import missionImg from '../../../assets/image/aboutRefactor/missionNRB.png';
 
 const Mission = () => {
   return (
-    <div className="p-container">
-      <div className="px-4 my-5 mission-div">
-        <div className="grid">
-          <div className="col-12 md:col-12 lg:col-6 xl:col-6">
-            <h1 className="mision-title">Our Mission</h1>
-            <p className="mission-details pt-1 text-justify">
-              All NRB'S professionals, scientist, academicians, people in
-              business, attorneys, journalists, government official, trade
-              organizations and community activists will unite and work together
-              for the betterment of our beloved Bangladesh regardless of
-              individual ideology or political affiliations is the vision of the
-              NRB Global Non-resident Bangladeshi.
-            </p>
-            <div className="">
-              <h3 className="">Our values</h3>
-              <div className="flex mission-value">
-                <i className="pi pi-check-circle pt-1 mt-3 missionIcon"></i>
-                <p className="pl-3 valuesContent">
-                  To serve the NRB across the globe{" "}
-                </p>
+    <div className='p-container my-5'>
+      <div className='px-4 py-4 mission-div'>
+        <h4 className='text-bold text-3xl md:text-6xl text-center my-3'>
+          Our Mission
+        </h4>
+        <div className='grid'>
+          <div className='col-12  md:col-6 p-2 flex-order-2 md:flex-order-1'>
+            <div className='grid mt-4 mb-3'>
+              <div className='col-12 px-4 m-2 p-1'>
+                <div className='gridColumnMission p-4'>
+                  <h5 className='missionNumber my-2 text-bold text-3xl'>01</h5>
+                  <p className='missionText my-2'>
+                    To serve the Non Residential Bangladeshies across the globe
+                  </p>
+                </div>
               </div>
-              <div className="flex mission-value">
-                <i className="pi pi-check-circle pt-1 mt-3 missionIcon"></i>
-                <p className="pl-3">
-                  To unite successful Bangladeshi under one Global platform to
-                  share ideas, leverage knowledge, connect with each other,
-                  create new ventures, create awareness of NRB's issues{" "}
-                </p>
+              <div className='col-12 px-4  m-2 p-1'>
+                <div className='gridColumnMission p-4'>
+                  <h5 className='missionNumber my-2 text-bold text-3xl'>02</h5>
+                  <p className='missionText my-2'>
+                    To unite successful Bangladeshi under one Global platform to
+                    share ideas, leverage knowledge, connect with each other,
+                    create new ventures, create awareness of NRB's issues
+                  </p>
+                </div>
               </div>
-              <div className="flex mission-value">
-                <i className="pi pi-check-circle pt-1 mt-3 missionIcon"></i>
-                <p className="pl-3">
-                  To bridge the gap between NRB and Bangladesh government so
-                  that Bangladesh can take advantages of her NRB's knowledge and
-                  expertise for the economic, social, and cultural development
-                  of Bangladesh.{" "}
-                </p>
+              <div className='col-12 px-4  m-2 p-1'>
+                <div className='gridColumnMission p-4'>
+                  <h5 className='missionNumber my-2 text-bold text-3xl'>03</h5>
+                  <p className='missionText my-2'>
+                    To bridge the gap between NRB and Bangladesh government so
+                    that Bangladesh can take advantages of her NRB's knowledge
+                    and expertise for the economic, social, and cultural
+                    development of Bangladesh.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-12 lg:col-6 xl:col-6 lg:pt-8 xl:pt-8 lg:mt-5 xl:mt-5">
-            <img
-              src={mission}
-              alt="mission_Image"
-              className="missionImg w-full"
-            />
+          <div className='col-12 md:col-6 p-2 flex align-items-center justify-content-center flex-order-1 md:flex-order-2'>
+            <div className='aboutMissionImgCover'>
+              <img src={missionImg} alt='mision of NRB' className='ms-2' />
+            </div>
           </div>
         </div>
       </div>
