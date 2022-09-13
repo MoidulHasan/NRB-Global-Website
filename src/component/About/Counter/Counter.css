@@ -15,7 +15,8 @@
 }
 .counterText {
   color: #195283;
-  font-family: lora, sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+
   margin-top: -45px;
 }
 @media only screen and (max-width: 500px) {

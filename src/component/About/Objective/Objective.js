@@ -1,6 +1,6 @@
 import React from "react";
 import "./Objective.css";
-import objective from "../../../assets/image/about/objective.png";
+import objective from "../../../assets/image/about/objective-nrb.jpg";
 
 const Objective = () => {
   return (

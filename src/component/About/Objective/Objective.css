@@ -3,7 +3,9 @@
   border-radius: 10px;
   padding-bottom: 3rem;
 }
-
+.objectibe-title {
+  font-family: "Barlow Condensed", sans-serif;
+}
 .objectibe-title::after {
   content: "";
   display: block;

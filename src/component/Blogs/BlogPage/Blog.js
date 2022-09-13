@@ -10,7 +10,7 @@ const Blog = (props) => {
   // console.log("new-description :-", newDescription);
 
   return (
-    <div className="col-12 md:col-6 lg:col-4 xl:col-4 pb-4">
+    <div className="col-12 md:col-6 lg:col-4 xl:col-4 pb-5">
       <div className="BlogImgContainer">
         <img src={img} alt="" className="w-full" />
       </div>
@@ -35,7 +35,7 @@ const Blog = (props) => {
             </span>
           </div>
         </div>
-        <span className="block text-xl font-bold mb-1 pb-3 pt-3 ">{title}</span>
+        <span className="block text-xl font-bold mb-1 pb-3 pt-4 ">{title}</span>
         <span className="block text-l text-gray-700 text-justify">
           {newDescription}
         </span>
