@@ -17,3 +17,16 @@
     max-height: 340px;
     border-radius: 7px;
 }
+
+@media screen and (max-width: 576px) {
+    .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next{
+        width: 1rem;
+        height: 2rem;
+        color: #6c757d;
+        border: 0 none;
+        margin: 0.2rem;
+    }
+    .p-button.p-button-icon-only{
+        width:1rem;
+    }
+}
