@@ -33,17 +33,11 @@ column-rule: #ffffff;
  .contactinfo-location-icon h2{
      font-size: 18px;
      font-weight:100; 
-    }
-     .contactinfo-location-icon h2 span{
-        font-size: 15px;
-        font-weight:bold; 
-<<<<<<< HEAD
-    } 
-=======
-    }
-
-
->>>>>>> bdf43530da29cb49aa359ce5cc65ad9c0b6738ac
+  }
+.contactinfo-location-icon h2 span{
+    font-size: 15px;
+    font-weight:bold; 
+  }
  /* ConatctForm  */
 
  .contact-form-conatiner{
@@ -81,23 +75,12 @@ column-rule: #ffffff;
  }
  
  .contactinfo-bn{
-<<<<<<< HEAD
-   /* background: #496878; */
-   background: #8DA1E8;
 
-   /* color: #ffffff; */
-   margin-left: .2px;
-   border: 20px;
-   border-bottom-right-radius: 20px;
-   border-bottom-left-radius: 20px;
-
-=======
    /* background: #2CA9CC; */
    background: #6aa552;
    color: #ffffff;
    margin-left: .2px;
    border-radius: 20px;
->>>>>>> bdf43530da29cb49aa359ce5cc65ad9c0b6738ac
  }
  .contact-info-map-bn{
    margin-top: 10px;
