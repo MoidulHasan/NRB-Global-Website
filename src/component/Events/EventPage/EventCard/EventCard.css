@@ -1,0 +1,32 @@
+.eventCardDiv {
+  background-color: #e5f0f8;
+  border-radius: 12px;
+}
+.event-title {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #0b69bc;
+  text-align: center;
+}
+
+.event-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  border-bottom: 6px solid #f09c6f;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.eventImgCard,
+.eventImgCard img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 260px;
+}
+.eventCardDetails {
+  background-color: #34373b;
+  color: white;
+  padding: 1.2rem 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}

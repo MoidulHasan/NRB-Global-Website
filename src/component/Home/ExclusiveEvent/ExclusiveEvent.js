@@ -1,5 +1,6 @@
 import { Button } from 'primereact/button';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import EventCarousel from './EventCarousel/EventCarousel';
 import './ExclusiveEvent.css';
 const ExclusiveEvent = () => {
@@ -20,12 +21,14 @@ const ExclusiveEvent = () => {
           <EventCarousel />
         </section>
         <div className='flex justify-content-center mt-3'>
-          <Button
-            label='Explore more event'
-            className='p-button-rounded p-button-help p-button-outlined'
-            icon='pi pi-angle-right'
-            iconPos='right'
-          />
+          <Link to='/events' className='linkDecoration'>
+            <Button
+              label='Explore more event'
+              className='p-button-rounded p-button-help p-button-outlined'
+              icon='pi pi-angle-right'
+              iconPos='right'
+            />
+          </Link>
         </div>
       </div>
     </div>

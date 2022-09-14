@@ -1,0 +1,38 @@
+.mission-div {
+  /* background-color: #f4f8fc; */
+  border-radius: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+}
+
+.gridColumnMission{
+  /* background-color: rgb(171, 210, 243); */
+  background-color: #eaf1f8;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;  */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.missionNumber{
+  color: var(--primeBLue);
+}
+
+.missionText{
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--primeBLue);
+  font-weight: 700;
+}
+
+.aboutMissionImgCover img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  /* .missionImg {
+    height: auto;
+  } */
+}

@@ -1,0 +1,67 @@
+.aboutPageMainImage {
+  border-radius: 10px;
+}
+.nrbAboutIntro {
+  /* background-color: #f1f2f6; */
+  /* border-radius: 10px; */
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  padding-bottom: 3rem;
+  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Barlow Condensed', sans-serif; */
+}
+
+
+.nrbIntro-title {
+  color: var(--primeBLue);
+  
+}
+
+.aboutNRBInfoDetail {
+  color: #182934;
+  /* text-align: justify;
+  text-justify: inter-word; */
+}
+
+.aboutIntroFirstImg img{
+  width: 87%;
+  border-radius: 10px;
+
+}
+
+.aboutIntroTextSecond{
+  color: #182934;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .nrbIntroImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nrbIntro-title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .intro-details {
+    text-align: justify;
+  }
+  .nrbIntroImg {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nrbIntro-title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .intro-details {
+    text-align: justify;
+  }
+  .nrbIntroImg {
+    height: auto;
+  }
+}
