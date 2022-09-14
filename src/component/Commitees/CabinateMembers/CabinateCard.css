@@ -8,8 +8,8 @@
     width: 300px !important;
     height: auto;
     /* background: #333; */
-    background: #567572FF;
-
+    /* background: #567572FF; */
+    background: #064663;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     color: #f3f7f5;
@@ -55,8 +55,8 @@ justify-content: center;
  }
  /* MEDIA  */
  
- @media only screen and (min-width:1280px){
-    .cabinate-ceo-gird-two{
-        
-    }
- }
+ @media only screen and (max-width:580px){
+   .cabinet-card-main-container{       
+       background:#f3f7f3;      
+   } 
+}

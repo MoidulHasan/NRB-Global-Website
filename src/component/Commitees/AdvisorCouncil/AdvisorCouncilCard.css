@@ -54,12 +54,17 @@ color:#195190FF;
  }
  
  /* MEDIA  */
- @media only screen and (max-width:1216px){
-    .advisorprofile{      
-        margin: 10px 10px !important;
+ @media only screen and (max-width:1216px) and (min-width:1200px){
+    .advisorcouncil{
+        background: #000;
     }
-}
+ }
 @media only screen and (max-width:575px){
+    .advisorcouncil{
+        background: #195190FF;
+        margin: 0px 5px;
+        padding: 10px 0px;
+    }
     .advisorflex img{
         width: 100px;
         height: 100px;
@@ -74,7 +79,7 @@ color:#195190FF;
         font-size: 13px;
     margin-top: -10px;
     
-    }
+    } 
     .advisorsocialicons a > i {
         font-size: 15px; 
  

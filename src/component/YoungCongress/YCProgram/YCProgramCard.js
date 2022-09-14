@@ -15,8 +15,8 @@ function YCProgramCard() {
             <div className="ycpc-card-grid grid">
                 {ycprogram_data.map((service, i) => (
                     // <div className="ycpc-details" key={i}>
-                    <div className="ycpc-profile col lg:col-4 md:col-6 ">
-                        <div className="flex align-items-cetner justify-content-center" key={i}>
+                    <div className="ycpc-profile col lg:col-4 md:col-6">
+                        <div className="flex align-items-cetner justify-content-center " key={i}>
                             <Card className='ycpc-card' style={{ width: '18em' }}>
                                 <div className="ycpc-txt">
                                     <h6 className='ycpc-type'>{service.programName}</h6>

@@ -33,13 +33,11 @@ column-rule: #ffffff;
  .contactinfo-location-icon h2{
      font-size: 18px;
      font-weight:100; 
-    }
-     .contactinfo-location-icon h2 span{
-        font-size: 15px;
-        font-weight:bold; 
-    }
-
-
+  }
+.contactinfo-location-icon h2 span{
+    font-size: 15px;
+    font-weight:bold; 
+  }
  /* ConatctForm  */
 
  .contact-form-conatiner{
@@ -73,10 +71,11 @@ column-rule: #ffffff;
    /* padding: 10px 10px; */
    /* height: ; */
    height: 360px;
-   border-radius: 15px;
+   border-radius: 5px;
  }
  
  .contactinfo-bn{
+
    /* background: #2CA9CC; */
    background: #6aa552;
    color: #ffffff;
