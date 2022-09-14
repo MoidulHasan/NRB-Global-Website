@@ -45,7 +45,7 @@ function ContactInfo() {
                             </div>
                         </div>
                     </div>
-                    <div className="contactinfo-map-txt col lg:col-6 md:col-12">
+                    <div className="contactinfo-map-txt col lg:col-6 md:col-12 sm:col-12 ">
                         <GMapbn />
                     </div>
                 </div>
