@@ -105,6 +105,11 @@ const MemberRegistrationForm = (props) => {
                 reset();
                 setShowMessage(true);
                 Swal.fire('Your Registration Form Submitted!', '', 'success');
+
+                if (data?.data?.paymentType === 'PayPal') {
+                  // window.location.href = 'https://stackoverflow.com';
+                  window.open = ('https://stackoverflow.com', '_blank');
+                }
               } else {
                 Swal.fire({
                   position: 'center',
@@ -230,6 +235,7 @@ const MemberRegistrationForm = (props) => {
                   className='p-fluid'
                   encType='multipart/form-data'
                 >
+                  {/* category  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -259,6 +265,7 @@ const MemberRegistrationForm = (props) => {
                       <label htmlFor='category'>Category</label>
                     </span>
                   </div>
+                  {/* name  */}
                   <div className='field mb-3'>
                     <span className='p-float-label'>
                       <Controller
@@ -285,6 +292,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('name')}
                   </div>
+                  {/* picture  */}
                   <div className='field mb-5'>
                     <span className='p-label p-input-icon-right'>
                       <i className='pi pi-pi-file' />
@@ -326,6 +334,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('picture')}
                   </div>
+                  {/* email  */}
                   <div className='field mb-5'>
                     <span className='p-float-label p-input-icon-right'>
                       <i className='pi pi-envelope' />
@@ -359,6 +368,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('email')}
                   </div>
+                  {/* phone number  */}
                   <div className='field mb-5'>
                     <span className='p-float-label p-input-icon-right'>
                       <i className='pi pi-phone' />
@@ -387,6 +397,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('phone')}
                   </div>
+                  {/* gender and designation for individual  */}
                   {!org && (
                     <div className='grid'>
                       <div className='field col-12 md:col-6 mb-5'>
@@ -449,7 +460,7 @@ const MemberRegistrationForm = (props) => {
                       </div>
                     </div>
                   )}
-
+                  {/* birthday  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -474,6 +485,7 @@ const MemberRegistrationForm = (props) => {
                       </label>
                     </span>
                   </div>
+                  {/* present address  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -513,6 +525,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('presentAddress')}
                   </div>
+                  {/* address in bangladesh  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -541,12 +554,13 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('addressInBangladesh')}
                   </div>
+                  {/* other contact  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
                         name='otherContact'
                         control={control}
-                        // rules={{ required: 'Name is required.' }}
+                        // rules={{ required: 'Other Contact is required.' }}
                         render={({ field, fieldState }) => (
                           <InputText
                             id={field.name}
@@ -569,6 +583,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('otherContact')}
                   </div>
+                  {/* place of Birth or Organization Place  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -597,6 +612,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('placeOfBirth')}
                   </div>
+                  {/* nationality  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -635,6 +651,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('nationality')}
                   </div>
+                  {/* spouce or children or refered person  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -666,6 +683,7 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('spouceOrChild')}
                   </div>
+                  {/* short intro  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
@@ -694,11 +712,10 @@ const MemberRegistrationForm = (props) => {
                     </span>
                     {getFormErrorMessage('intro')}
                   </div>
-
                   {/* payment section  */}
                   <div className='grid'>
                     {/* payment type  */}
-                    <div className='field col-12 md:col-6 mb-5'>
+                    <div className='field col-12 md:col-8 mb-5'>
                       <span className='p-float-label'>
                         <Controller
                           name='paymentType'
@@ -757,30 +774,14 @@ const MemberRegistrationForm = (props) => {
                       {getFormErrorMessage('paymentFee')}
                     </div>
                   </div>
+                  {/* fee declaration paragraph  */}
                   <div className='mb-4'>
                     <span className='text-green-500'>
                       Membership fee {org ? '300.00$' : '200.00$'} for{' '}
                       {org ? 'Organization' : 'Individual'}
                     </span>
                   </div>
-                  {/* <div className='field mb-5'>
-                    <span className='p-float-label'>
-                      <Controller
-                        name='country'
-                        control={control}
-                        render={({ field }) => (
-                          <Dropdown
-                            id={field.name}
-                            value={field.value}
-                            onChange={(e) => field.onChange(e.value)}
-                            options={countries}
-                            optionLabel='name'
-                          />
-                        )}
-                      />
-                      <label htmlFor='country'>Country</label>
-                    </span>
-                  </div> */}
+                  {/* accept field  */}
                   <div className='field-checkbox'>
                     <Controller
                       name='accept'
@@ -804,8 +805,17 @@ const MemberRegistrationForm = (props) => {
                       I agree to the terms and conditions*
                     </label>
                   </div>
-
-                  <Button type='submit' label='Submit' className='mt-2' />
+                  {/* submit button  */}
+                  {paymentMethod === 'Hands On' ? (
+                    <Button type='submit' label='Submit' className='mt-2' />
+                  ) : (
+                    <Button
+                      // onClick={() => onClickPaypalRedirect()}
+                      type='submit'
+                      label='Submit and Pay with PayPal'
+                      className='mt-2'
+                    />
+                  )}
                 </form>
               </div>
               {/* </div> */}
