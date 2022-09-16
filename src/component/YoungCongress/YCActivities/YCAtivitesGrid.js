@@ -12,7 +12,8 @@ function YCAtivitesGrid() {
                     </div>
                     <div className="ycativity-bloodTxt">
                         <h1>Blood Donation</h1>
-                        <p>The objective of collecting blood through voluntary blood donation are: Provide safe and quality blood  </p>
+                        <p>The objective of collecting blood through voluntary blood donation are: Provide safe and quality blood
+                            The objective of collecting blood through voluntary blood donation are: Provide safe and quality blood </p>
                     </div>
                 </div>
                 <div className="ycativity-foodImg">
