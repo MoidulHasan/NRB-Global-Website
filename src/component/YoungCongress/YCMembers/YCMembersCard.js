@@ -16,7 +16,7 @@ function YCMembersCard() {
                     <h2> Meet our young congress members. <br /> <br />
                         Who is always ready to help you any kinds of issues.
                     </h2>
-                    <p className='ycm-header-para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ut, perspiciatis cum dicta assumenda aperiam eligendi tenetur omnis eos  </p>
+                    <p className='ycm-header-para'>Members of an Organization means all trustees, members of the Board of Directors, Senior Executives, and employees of the organization, or their equivalent.  </p>
                 </div>
                 <div className="ycm-header-sticker col-12 md:col-6 px-3">
                     <img src="../../../assets/image/YCAbout/memberpic.png" alt="" />

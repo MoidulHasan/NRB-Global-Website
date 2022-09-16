@@ -13,7 +13,8 @@
 .ycpc-flex1 h1{
     font-size: 22px;
     font-size: 20px; 
-    font-style: italic;
+    /* font-style: italic; */
+    line-height: 15px;
 }
  
 .ycpc-header-flex p{
