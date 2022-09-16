@@ -59,22 +59,29 @@ border-radius: 10px !important;
  }
  .ycm-flex img{
  border-radius: 20px !important;
+ max-height: 200px;
 width: 100%;
  }
  .ycm-name{
    font-size: 15px !important;
    text-align: start;   
+   font-weight: 600;
+   letter-spacing: .5px;
  }
  .ycm-title{
     margin-top: -8px;
-    font-size: 13px;
-    font-weight: 100;    
+    font-size: 15px;
+    font-weight: 400;    
+    letter-spacing: .5px;
  }
- .ycm-socialicons{
-    margin-top: -8px;
- }
+ .ycm-flexSocialandFlagicons{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ } 
  .ycm-socialicons a i{
     padding-right: 15px;    
+    cursor: pointer;
  }
  .ycm-btn{
     display: flex;
