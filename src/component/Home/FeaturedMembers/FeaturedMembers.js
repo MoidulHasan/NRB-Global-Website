@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const FeaturedMembers = () => {
   return (
     <div className='p-container mb-4'>
-      <div className='sectionWhyContainer  pt-5 pb-3 px-4'>
+      <div className='featuredContainer  pt-5 pb-3 px-4'>
         <h3 className='orangeTextOrg text-xl text-center'>
           Our Featured Members
         </h3>

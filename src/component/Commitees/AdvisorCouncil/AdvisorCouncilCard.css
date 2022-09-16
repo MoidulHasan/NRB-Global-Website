@@ -11,7 +11,8 @@
     /* margin: 0px 60px; */
     /* background: rgb(163, 157, 157); */
     margin: 10px 20px;
-    background: #f3f7f5;
+    /* background: #f3f7f5; */
+    background: #ffffff;
 }
 .advisorflex{
     display: flex;
