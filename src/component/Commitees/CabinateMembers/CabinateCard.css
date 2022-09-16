@@ -1,9 +1,45 @@
  .cabinet-card-main-container{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 30px 0px;
     /* background: #f3f7f5; */
     /* background: #f3f7f3; */
     /* background: #ffffff; */
+ }
+
+.cabinateMemberGridForCommittee{
+  position: relative;
+  left: -40px;
+}
+
+
+ .primeCabinateMemberCard{
+   background-color: #ffffff;
+   border-radius: 10px;
+ }
+
+ .cabinateMemberCardCustom{
+   position: relative;
+ }
+
+ .cabinateMemberCustomImgContainer{
+   width: 250px;
+   height: 356px;
+   position: relative;
+   left: 124px;
+   top: 30px;
+ } 
+ 
+ .cabinateMemberCustomImgContainer img{
+   width: 100%;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ }
+
+ .cabinateMemberCustomDataContainer{
+   background-color: #144E62; 
+   font-family: 'Barlow Condensed', sans-serif;
+   border-radius: 10px;
+   min-height: 400px;
  }
  .cabinate-card{
     width: 300px !important;
@@ -40,7 +76,7 @@
 }
 /* icons  */
  .cabinate-social-icons{
-    margin-bottom: -20px !important;
+    /* margin-bottom: -20px !important; */
     /* background: rgb(199, 178, 119); */
     /* padding: 5px 20px; */
     border-radius: 8px;
@@ -59,9 +95,94 @@ align-items: center;
 justify-content: center;
  }
  /* MEDIA  */
- 
- @media only screen and (max-width:580px){
-   .cabinet-card-main-container{       
-       background:#f3f7f3;      
+
+ @media screen and (max-width: 400px){
+
+  .cabinateMemberGridForCommittee{
+    position: static;
+    left: 0;
+  }
+  
+  
+   .primeCabinateMemberCard{
+     background-color: #ffffff;
+     border-radius: 10px;
+   }
+  
+   .cabinateMemberCardCustom{
+     position: relative;
+   }
+  
+   .cabinateMemberCustomImgContainer{
+     width: 180px !important;
+     height: 280px ;
+     position: absolute;
+     z-index: 99;
+     left: -30px;
+     top: 30px;
    } 
+   .cabinateMemberCustomDataContainer{
+    width: 350px ;
+    /* max-height: 300px; */
+    position: relative;
+    left: 20px;
+   }
+   .dataDetailContainerCabinet{
+    position: relative;
+    top: 160px !important;
+    left: 120px !important;
+   }
+
+ }
+ 
+
+@media screen and (max-width: 480px) {
+
+  .cabinateMemberGridForCommittee{
+    position: static;
+    left: 0;
+  }
+  
+  
+   .primeCabinateMemberCard{
+     background-color: #ffffff;
+     border-radius: 10px;
+   }
+  
+   .cabinateMemberCardCustom{
+     position: relative;
+   }
+  
+   .cabinateMemberCustomImgContainer{
+     width: 200px ;
+     height: 300px;
+     position: absolute;
+     z-index: 99;
+     left: -30px;
+     top: 30px;
+   } 
+   .cabinateMemberCustomDataContainer{
+    width: 350px ;
+    max-height: 300px;
+    position: relative;
+    left: 20px;
+   }
+   .dataDetailContainerCabinet{
+    position: relative;
+    top: 180px;
+    left: 140px;
+   }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 1199px) {
+  
 }

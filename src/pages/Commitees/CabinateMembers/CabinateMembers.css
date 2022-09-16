@@ -3,9 +3,15 @@
     overflow-x: hidden;
     /* background: #f3f7f5; */
     /* background: #f5f5f4; */
+    /* background: #FFFFFF; */
     border-radius: 10px;
-margin-top: 5px;
+    margin-top: 5px;
 } 
+
+
+.cabinateTeamContainer{
+    font-family: 'Noto Sans', sans-serif;
+}
 .cabinet-para{
     text-align: center;
     font-size: 60px;
