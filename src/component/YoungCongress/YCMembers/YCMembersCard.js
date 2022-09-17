@@ -5,7 +5,7 @@ import { Card } from 'primereact/card';
 // import { useNrbMembers as ycateam_data } from '././../../../hooks/useNrbMembers'
 import './YCMembersStyle.css'
 import useDataContexts from '../../../hooks/useDataContexts';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 function YCMembersCard() {
     const { nrbMembers } = useDataContexts();
     return (
@@ -23,7 +23,7 @@ function YCMembersCard() {
                 </div>
             </div>
             <div className="ycm grid">
-                {nrbMembers.slice(0, 8).map((acateam, i) => (
+                {nrbMembers.map((acateam, i) => (
                     <div className="ycm-profile lg:col-3 md:col-6 py-3">
                         <div className="ycm-profile-flex-container flex align-items-cetner justify-content-center">
                             <Card className='ycm-card' style={{ width: '17em' }} key={i}>
@@ -60,12 +60,12 @@ function YCMembersCard() {
                     </div>
                 ))}
             </div>
-            <div className="ycm-btn">
-                {/* <Button className='ycm-join-btn' label="Become a Young Congress" /> */}
+            {/* <div className="ycm-btn">
+                <Button className='ycm-join-btn' label="Become a Young Congress" />
                 <Link to='/memberList'>
                     <button>See More Members</button>
                 </Link>
-            </div>
+            </div> */}
         </div >
     )
 }

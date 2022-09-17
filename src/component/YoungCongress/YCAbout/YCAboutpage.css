@@ -110,11 +110,11 @@ font-size: 30px;
     padding: 10px;  
     margin-right: 10px; 
 }
-.yca-join-btn Button{
+/* .yca-join-btn Button{
   margin-left: 5%;  
   margin-top: 5%;
 }
- 
+  */
 @media only screen and (max-width: 1400px) {
   .yca-description{ 
       width: 85%;  
@@ -329,8 +329,8 @@ font-size: 30px;
   padding: 25px 0px;
   text-align: center;
   font-size: 50px;
-  font-weight: 100;
-  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
+  /* font-family:'Times New Roman', Times, serif; */
 }
 .ycateam-container{
   background: #f3f7f5;
@@ -373,7 +373,19 @@ font-size: 30px;
 padding: 5px;
 border-radius: 6px;
 }
-
+.ycateam-btn  {
+display: flex;
+justify-content: center;
+}
+.ycateam-btn a button{
+ padding: 15px;
+ font-size: 20px;
+ border: none;
+ background: rgb(234, 236, 108);
+ color: #000;
+ border-radius: 10px;
+ margin: 5px 0px;
+  }
 /* MEDIA  */
 @media only screen and (max-width:768px){
   .ycateam-profile{
