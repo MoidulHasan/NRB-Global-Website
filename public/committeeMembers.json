@@ -3,30 +3,45 @@
         "cabinateId": 1001,
         "name": "Tarik Babu",
         "profileImg": "./assets/image/cabinateMembers/tariq.png",
-        "designation": "Founder President NRB-Global"
+        "designation": "Founder President NRB-Global",
+        "cabinateImg": "./assets/image/cabinateMembers/Cabinate tariq.png",
+        "designationShort": "Founder President",
+        "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
         "cabinateId": 1002,
         "name": "Ataul Khan",
         "profileImg": "./assets/image/cabinateMembers/ataul.png",
-        "designation": "Vice president NRB-Global"
+        "designation": "Vice president NRB-Global",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate ataul.png",
+        "designationShort": "Vice president",
+        "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
         "cabinateId": 1003,
         "name": "Ehsanur Rahman",
         "profileImg": "./assets/image/cabinateMembers/ehsanur.png",
-        "designation": "General Secretary NRB Global"
+        "designation": "General Secretary NRB Global",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate ehsanur.png",
+        "designationShort": "General Secretary",
+        "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
         "cabinateId": 1004,
         "name": "Suriya Munni",
         "profileImg": "./assets/image/cabinateMembers/suraia.png",
-        "designation": "Press Secretary NRB Global"
+        "designation": "Press Secretary NRB Global",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate suraia.png",
+        "designationShort": "Press Secretary",
+        "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
         "cabinateId": 1005,
         "name": "Mohammad Sharif Sumon",
         "profileImg": "./assets/image/cabinateMembers/suman.png",
-        "designation": "Public Relations Secretary NRB Global"
+        "designation": "Public Relations Secretary NRB Global",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate  suman.png",
+        "designationShort": "Public Relations Secretary",
+        "fbLink": "https://www.facebook.com/NRBGlobal20"
     }
 ]

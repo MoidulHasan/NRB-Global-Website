@@ -25,7 +25,7 @@ const TopBanner = () => {
               <span class='material-icons-sharp'>public</span>
             </button>
           </Link>
-          <Link to='/gmRegistration' className='linkDecoration '>
+          <Link to='/about' className='linkDecoration '>
             <button
               class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
               type='button'

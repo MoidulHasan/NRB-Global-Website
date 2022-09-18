@@ -17,7 +17,8 @@
     object-fit: cover;
 }
 .singleReview{
-    background-color: #FAF6F7;
+    /* background-color: #FAF6F7; */
+    background-color: #FFFFFF;
     border-radius: 10px;
 }
 

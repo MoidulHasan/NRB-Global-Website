@@ -130,7 +130,7 @@ const MoreInfo = () => {
           </div>
         </div>
         <div className='flex flex-column align-items-center my-2 p-3 thankMessageAbout'>
-          <p className='font-bold text-3xl my-2 text-blue-900 text-center'>
+          <p className='font-bold text-3xl my-2 text-blue-900 text-center p-2'>
             Thanks for your time to read our mission and vision and to consider
             a member of the NRB Global Non-resident Bangladeshi worldwide
             Platform

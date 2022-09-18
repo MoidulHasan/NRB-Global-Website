@@ -1,8 +1,6 @@
 import React from 'react';
 import './Objective.css';
-import objective from '../../../assets/image/aboutRefactor/objectiveNRB.png';
 import objective1 from '../../../assets/image/aboutRefactor/objectiveNRB2.png';
-import objective2 from '../../../assets/image/aboutRefactor/objectiveNRB3.png';
 
 const Objective = () => {
   return (
