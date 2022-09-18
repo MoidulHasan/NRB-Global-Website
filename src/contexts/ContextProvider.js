@@ -1,8 +1,9 @@
-import React, { createContext, useState } from "react";
-import useBlog from "../hooks/useBlog";
-import useEvent from "../hooks/useEvent";
-import useNrbMembers from "../hooks/useNrbMembers";
-import useServices from "../hooks/useServices";
+import React, { createContext, useState } from 'react';
+import useBlog from '../hooks/useBlog';
+import useCommitteeMembers from '../hooks/useCommitteeMembers';
+import useEvent from '../hooks/useEvent';
+import useNrbMembers from '../hooks/useNrbMembers';
+import useServices from '../hooks/useServices';
 
 export const ContextApi = createContext();
 
@@ -18,6 +19,8 @@ const ContextProvider = ({ children }) => {
   const { nrbBlogs } = useBlog();
   const { nrbEvents } = useEvent();
 
+  const { committeeMembers } = useCommitteeMembers();
+
   const data = {
     hoverMenu,
     setHoverMenu,
@@ -25,6 +28,7 @@ const ContextProvider = ({ children }) => {
     nrbServices,
     nrbBlogs,
     nrbEvents,
+    committeeMembers,
   };
 
   return <ContextApi.Provider value={data}>{children}</ContextApi.Provider>;

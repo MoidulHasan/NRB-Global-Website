@@ -1,5 +1,6 @@
 .executive-ambassador-container{
-   background:#f3f7f5;
+   /* background:#f3f7f5; */
+   background: #E5F0F8;
    padding: 30px;
     /* margin: 50px 100px; */
     border-bottom-left-radius: 10px;
@@ -12,8 +13,10 @@
     .executive-ambassador-card{
        /* padding: 20px; */
         box-shadow: none;
-        background: #333D79FF;
-        color: #FAEBEFFF;
+        /* background: #333D79FF; */
+        background: #fcfcfc;
+        /* color: #FAEBEFFF; */
+        color: #333D79FF;
         /* margin-top: 30px; */
     }
     .executive-ambassador-flex img{

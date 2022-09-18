@@ -1,6 +1,7 @@
 .advisor-council-container{
     /* margin: 0% 10%; */
-    background: #195190FF;
+    /* background: #195190FF; */
+    background: #E5F0F8;
     border-radius: 10px;
     margin-top: -25px;
     padding: 0px 0px;
@@ -8,11 +9,11 @@
 .advisor-council-container-para{
     font-size: 35px;
     font-weight: 600;
-    font-style: italic;
+    /* font-style: italic; */
     text-align: center;
     padding: 20px 0px;
     color: #195190FF;
-    background: #f3f7f5;
+    /* background: #f3f7f5; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -23,8 +24,8 @@
     padding: 40px 0px;
 }
 .advisor-memberBtn button{
-color: #195190FF;  
-background:#ffffff;
+color: #ffffff;  
+background:#195190FF;
 border: none;
 }
 
