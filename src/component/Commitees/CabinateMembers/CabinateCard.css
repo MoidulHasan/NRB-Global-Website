@@ -1,4 +1,4 @@
- .cabinet-card-main-container{
+.cabinet-card-main-container{
     /* border-radius: 10px; */
     padding: 30px 0px;
     /* background: #f3f7f5; */
@@ -12,14 +12,16 @@
 }
 
 
- .primeCabinateMemberCard{
+ /* .primeCabinateMemberCard{
    background-color: #ffffff;
    border-radius: 10px;
- }
+ } */
 
  .cabinateMemberCardCustom{
    position: relative;
  }
+
+
 
  .cabinateMemberCustomImgContainer{
    width: 250px;
@@ -41,39 +43,41 @@
    border-radius: 10px;
    min-height: 400px;
  }
- .cabinate-card{
-    width: 300px !important;
-    height: auto;
-    /* background: #333; */
-    /* background: #567572FF; */
-    /* background: #064663; */
-    background: #ffffff;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    /* box-shadow: rgba(27, 27, 27, 0.25) 5px 6px 30px -2px; */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    /* color: #f3f7f5; */
-    color: var(--primeBLue);
- }
- .cabinate-card-ceo-img img{
-    width: 100%;
-    border-radius: 10px;
-    min-height: 240px;
- }
+
+ .secondCabinateMemberCardCustom{
+  position: relative;
+}
+
+.secondCabinateMemberCustomImgContainer{
+  width: 200px;
+  height: 306px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+} 
+
+.secondCabinateMemberCustomImgContainer img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+ .secondCabinateMemberCustomDataContainer{
+  background-color: #144E62; 
+  font-family: 'Barlow Condensed', sans-serif;
+  border-radius: 10px;
+  min-height: 300px;
+  min-width: 280px;
+  position: relative;
+  top: 120px;
+  left: 50px;
+  padding-top: 6.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
  
- 
-.cabinate-ceo-name{
-    font-size: 15px;
-    letter-spacing: .5px;
-}
-.cabinate-ceo-title{
-    font-size: 13px;
-    font-weight: 100;
-    margin-top: -12px;
-    letter-spacing: .5px;
-}
-.cabinate-card-quote{
-    margin-top: -20px;
-}
 /* icons  */
  .cabinate-social-icons{
     /* margin-bottom: -20px !important; */
@@ -87,16 +91,87 @@
     cursor: pointer;
     margin-top: 3px;
  }
- .cabinate-org-members-div{
-padding-top: 50px;
-padding-bottom: 30px;
-display: flex;
-align-items: center;
-justify-content: center;
- }
+
  /* MEDIA  */
 
- @media screen and (max-width: 400px){
+ @media screen and (max-width: 385px){
+  /* .secondCabinateMemberGridForCommittee{
+    position: relative;
+    left: 10px;
+  } */
+  .cabinet-card-main-container{
+    /* border-radius: 10px; */
+    padding: 20px 0px;
+    /* background: #f3f7f5; */
+    /* background: #f3f7f3; */
+    /* background: #ffffff; */
+ }
+  .cabinateMemberGridForCommittee{
+    position: static;
+    left: 0;
+  }
+  
+  
+   .primeCabinateMemberCard{
+     background-color: #ffffff;
+     border-radius: 10px;
+   }
+  
+   .cabinateMemberCardCustom{
+     position: relative;
+   }
+  
+   .cabinateMemberCustomImgContainer{
+     width: 200px ;
+     height: max-content;
+     position: absolute;
+     z-index: 99;
+     left: 60px;
+     top: -50px;
+   } 
+   .cabinateMemberCustomDataContainer{
+    width: 380px ;
+    max-height: 300px;
+    position: static;
+    left: 20px;
+   }
+   .dataDetailContainerCabinet{
+    position: relative;
+    top: 200px;
+    left: 70px;
+   }
+
+   .secondCabinateMemberCustomDataContainer{
+    background-color: #144E62; 
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 10px;
+    min-height: 340px;
+    min-width: 290px;
+    position: relative;
+    top: 120px;
+    left: 50px;
+    padding-top: 9rem;
+    padding-left: 4rem;
+
+  
+  }
+
+  .secondCabinateMemberGridForCommittee .secondCabinetMemberCommitteeColumn:last-child .secondDataDetailContainerCabinet{
+      position: absolute;
+      left: 30px;
+  }
+ }
+
+
+
+ @media only screen and (min-width: 386px) and (max-width: 400px){
+  .cabinet-card-main-container{
+    /* border-radius: 10px; */
+    padding: 30px 20px;
+    /* background: #f3f7f5; */
+    /* background: #f3f7f3; */
+    /* background: #ffffff; */
+ }
 
   .cabinateMemberGridForCommittee{
     position: static;
@@ -123,7 +198,7 @@ justify-content: center;
    } 
    .cabinateMemberCustomDataContainer{
     width: 350px ;
-    /* max-height: 300px; */
+    
     position: relative;
     left: 20px;
    }
@@ -132,11 +207,24 @@ justify-content: center;
     top: 160px !important;
     left: 120px !important;
    }
+   .secondCabinateMemberCustomDataContainer {
+    min-height: 345px;
+   }
+   .secondDataDetailContainerCabinet{
+    position: absolute;
+    top: 145px;
+    left: 50px;
+   }
 
  }
  
 
-@media screen and (max-width: 480px) {
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+  .cabinet-card-main-container{
+    padding: 30px 20px;
+
+ }
 
   .cabinateMemberGridForCommittee{
     position: static;
@@ -172,14 +260,225 @@ justify-content: center;
     top: 180px;
     left: 140px;
    }
+
+   .secondCabinateMemberCustomDataContainer {
+    min-height: 345px;
+   }
+   .secondDataDetailContainerCabinet{
+    position: absolute;
+    top: 145px;
+    left: 50px;
+   }
   
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  .cabinateMemberGridForCommittee{
+    position: static;
+  }
+  
+  .cabinateMemberCustomImgContainer{
+
+    /* height: fit-content; */
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    top: 20;
+  } 
+  
+  .cabinateMemberCustomImgContainer img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+ 
+  .cabinateMemberCustomDataContainer{
+    position: relative;
+    left: 200px;
+    background-color: #144E62; 
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 10px;
+    min-height: 400px;
+    min-width: 270px;
+    padding-left: 60px !important;
+    padding-bottom: 30px !important;
+    padding-right: 10px;
+    padding-top: 6rem !important;
+  }
+  .dataDetailContainerCabinet h2{
+    font-size: 2.5rem !important;
+  }
+  .dataDetailContainerCabinet span{
+    font-size: 1.5rem !important;
+  }
+  .secondCabinateMemberGridForCommittee{
+    position: relative;
+    left: 40px;
+  }
+   
+  .secondCabinetMemberCommitteeColumn:nth-child(2), .secondCabinetMemberCommitteeColumn:nth-child(3){
+    margin-top: 6rem !important;
+  }
+  
+  .secondCabinateMemberCustomDataContainer{
+    background-color: #144E62; 
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 10px;
+    min-height: 300px;
+    min-width: 300px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    padding-top: 6.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
+  }
   
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cabinateMemberGridForCommittee{
+    position: relative;
+    left: 45px;
+  }
+  .cabinateMemberCustomImgContainer{
+    width: 190px;
+    height: 240px;
+    /* height: fit-content; */
+    position: absolute;
+    left: -85px;
+    z-index: 99;
+    top: 10px;
+  } 
+  
+  .cabinateMemberCustomImgContainer img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+ 
+  .cabinateMemberCustomDataContainer{
+    background-color: #144E62; 
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 10px;
+    min-height: 330px;
+    padding-left: 50px !important;
+    padding-bottom: 30px !important;
+    padding-right: 10px;
+    font-size: 1rem !important;
+  }
+  .dataDetailContainerCabinet h2{
+    font-size: 1.7rem !important;
+  }
+  .dataDetailContainerCabinet span{
+    font-size: 1rem !important;
+  }
+ 
+  .secondCabinateMemberCardCustom{
+   position: relative;
+ }
+ 
+ .secondCabinateMemberCustomImgContainer{
+   width: 200px;
+   height: 306px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 99;
+ } 
+ 
+ .secondCabinateMemberCustomImgContainer img{
+   width: 100%;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ }
+ 
+  .secondCabinateMemberCustomDataContainer{
+   background-color: #144E62; 
+   font-family: 'Barlow Condensed', sans-serif;
+   border-radius: 10px;
+   min-height: 300px;
+   min-width: 300px;
+   position: relative;
+   top: 120px;
+   left: 50px;
+   padding-top: 6.8rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+ 
+ }
+
+.cabinetMemberCommitteeColumn:nth-child(2){
+  position: relative;
+  left: 40px;
+}
+ .secondCabinateMemberGridForCommittee .secondCabinetMemberCommitteeColumn:nth-child(1){
+  position: relative;
+  left: -20px;
+}
+
+ .secondCabinateMemberGridForCommittee .secondCabinetMemberCommitteeColumn:last-child {
+  margin-top: 100px !important;
+}
+}
+
+@media only screen and (min-width:992) and (max-width: 1024px) {
+  .cabinateMemberCustomImgContainer{
+    width: 220px;
+    height: 356px;
+    position: relative;
+    left: 100px;
+    top: 30px;
+  } 
+  
+  .cabinateMemberCustomImgContainer img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+ 
+  .cabinateMemberCustomDataContainer{
+    background-color: #144E62; 
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 10px;
+    min-height: 400px;
+  }
+ 
+  .secondCabinateMemberCardCustom{
+   position: relative;
+ }
+ 
+ .secondCabinateMemberCustomImgContainer{
+   width: 200px;
+   height: 306px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 99;
+ } 
+ 
+ .secondCabinateMemberCustomImgContainer img{
+   width: 100%;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ }
+ 
+  .secondCabinateMemberCustomDataContainer{
+   background-color: #144E62; 
+   font-family: 'Barlow Condensed', sans-serif;
+   border-radius: 10px;
+   min-height: 300px;
+   min-width: 280px;
+   position: relative;
+   top: 120px;
+   left: 50px;
+   padding-top: 6.8rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+ 
+ }
   
 }
 

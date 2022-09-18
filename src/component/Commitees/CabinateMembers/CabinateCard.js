@@ -12,7 +12,7 @@ function CabinateCard() {
   const { committeeMembers } = useDataContexts();
 
   return (
-    <div className='cabinet-card-main-container mx-4'>
+    <div className='cabinet-card-main-container mx-1 sm:mx-4'>
       {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
       {/* <div className='cabinate-org-ceo-div grid'>
         <div className='cabinate-ceo-gird-one col lg:col-2 md:col-0'></div>
@@ -66,9 +66,9 @@ function CabinateCard() {
       </div> */}
       {/* new  */}
       <div className='grid cabinateMemberGridForCommittee'>
-        {committeeMembers.map((committeeMember) => (
+        {committeeMembers.slice(0, 2).map((committeeMember) => (
           <div
-            className='col-12 md:col-6 my-4'
+            className='col-12 md:col-6 my-4 cabinetMemberCommitteeColumn'
             id={committeeMember.cabinateId}
             committeeMember={committeeMember}
           >
@@ -147,8 +147,95 @@ function CabinateCard() {
           </div>
         </div> */}
       </div>
+      {/* for the three others  */}
+      <div className='grid secondCabinateMemberGridForCommittee mt-4 mb-8'>
+        {committeeMembers.slice(2, 5).map((committeeMember) => (
+          <div
+            className='col-12 md:col-6 lg:col-4 my-7 sm:my-6 md:my-4 secondCabinetMemberCommitteeColumn'
+            id={committeeMember.cabinateId}
+            committeeMember={committeeMember}
+          >
+            <div className='secondCabinateMemberCardCustom flex'>
+              <div className='secondCabinateMemberCustomImgContainer p-1 md:p-3'>
+                <img
+                  src={committeeMember?.cabinateImg}
+                  alt={committeeMember.name}
+                />
+              </div>
+              {/* for the next line pl-3 md:pl-8 pt-2 md:pt-8 pb-2 md:pb-8 pr-1 md:pr-4  */}
+              <div className='secondCabinateMemberCustomDataContainer '>
+                <div className='secondDataDetailContainerCabinet '>
+                  {/* pl-0 md:pl-6  */}
+                  <h2 className='text-3xl md:text-2xl my-3 md:my-4 text-white font-bold '>
+                    {committeeMember?.name}
+                  </h2>
+                  {/* pl-0 md:pl-6  */}
+                  <span className=' text-yellow-400 my-3 md:my-3 text-xl md:text-l block  '>
+                    {committeeMember?.designationShort}
+                  </span>
+                  {/* pl-0 md:pl-6  */}
+                  <div className='cabinate-social-icons mt-4 md:mt-5 '>
+                    <a href={committeeMember?.fbLink}>
+                      <i
+                        className='pi pi-facebook'
+                        style={{ color: '#EEC137' }}
+                      />
+                    </a>
+                    <a href={committeeMember?.fbLink}>
+                      <i
+                        className='pi pi-whatsapp'
+                        style={{ color: '#EEC137' }}
+                      />
+                    </a>
+                    <a href={committeeMember?.fbLink}>
+                      {' '}
+                      <i
+                        className='pi pi-linkedin'
+                        style={{ color: '#EEC137' }}
+                      />
+                    </a>
+                    <a href={committeeMember?.fbLink}>
+                      <i className='pi pi-link' style={{ color: '#EEC137' }} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        {/* <div className='col-12 md:col-6'>
+          <div className='cabinateMemberCardCustom flex'>
+            <div className='cabinateMemberCustomImgContainer p-3'>
+              <img src={committeeMembers[1]?.cabinateImg} alt='Tariq Babu' />
+            </div>
+            <div className='cabinateMemberCustomDataContainer pl-8 pt-8 pb-8 pr-4'>
+              <h2 className='text-2xl md:text-6xl my-4 text-white font-bold pl-6'>
+                {committeeMembers[1]?.name}
+              </h2>
+              <span className=' text-yellow-400 my-2 md:my-3 md:text-2xl  md:block pl-6'>
+                {committeeMembers[1]?.designationShort}
+              </span>
+              <div className='cabinate-social-icons mt-5 pl-6'>
+                <a href='#'>
+                  <i className='pi pi-facebook' style={{ color: '#EEC137' }} />
+                </a>
+                <a href='#'>
+                  <i className='pi pi-whatsapp' style={{ color: '#EEC137' }} />
+                </a>
+                <a href='#'>
+                  {' '}
+                  <i className='pi pi-linkedin' style={{ color: '#EEC137' }} />
+                </a>
+                <a href='#'>
+                  <i className='pi pi-link' style={{ color: '#EEC137' }} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </div>
       {/* MEMBERS   */}
-      <div className='cabinate-org-members-div '>
+      {/* <div className='cabinate-org-members-div '>
         <div className='cabinate-ceo-gird-two grid'>
           {cabinetcared_data.slice(2, 5).map((card, i) => (
             <div className='cabinate-card-member-profile col lg:col-4 md:col-6'>
@@ -195,7 +282,7 @@ function CabinateCard() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       {/* MEMBERS DIV  */}
     </div>
   );
