@@ -44,7 +44,7 @@ const BlogDetailsCard = (singleBlog) => {
                 {singleBlog.singleBlog.read}
               </span>
             </div>
-            <div className="flex align-items-center mr-5">
+            {/* <div className="flex align-items-center mr-5">
               <i
                 className="pi pi-heart-fill font-bold mr-2 text-orange-600"
                 style={{ fontSize: "1em" }}
@@ -52,13 +52,15 @@ const BlogDetailsCard = (singleBlog) => {
               <span className="font-semibold">
                 {singleBlog.singleBlog.like}
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-6">
           <p className="font-bold blogDetailsTitle">
             {singleBlog.singleBlog.title}
           </p>
+
+          <Divider style={{ color: "#ff0000" }} />
           <p className="px-2 md:px-5 lg:px-5 xl:px-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl font-bold blogOverview">
             Blog Overview:
           </p>

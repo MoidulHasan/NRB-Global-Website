@@ -29,6 +29,33 @@ const EventDetailsCard = (singleEvent) => {
             </p>
             <Divider />
           </div>
+          {/* <div className="border-round-md surface-100 p-4">
+            <div className="grid">
+              <div className="sm:col-12 md:col-6 lg:col-3 ">
+                <div className="">
+                  <div className="text-center">
+                    <i
+                      className="pi pi-clock font-bold block mx-auto"
+                      style={{}}
+                    ></i>
+                  </div>
+                  <div className="text-center">
+                    <div className="">
+                      <span className="text-xl font-bold">Event Time</span>
+                    </div>
+                    <div className="">
+                      <span className="text-xl font-bold">22 Sept, 2021</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="sm:col-12 md:col-6 lg:col-3 ">Speaker</div>
+              <div className="sm:col-12 md:col-6 lg:col-3 ">Venu</div>
+              <div className="sm:col-12 md:col-6 lg:col-3 ">Organized By</div>
+            </div>
+          </div> */}
+          <Divider />
+
           <div className=" ">
             <p className="px-2 md:px-4 lg:px-6 xl:px-6 text-3xl font-bold eventOverView">
               Event Overview:
@@ -38,19 +65,6 @@ const EventDetailsCard = (singleEvent) => {
             </p>
           </div>
         </div>
-
-        {/* <div className=" grid pt-2 ">
-          <div className="lg:col-8">
-            <p className="px-6 text-3xl font-bold">Event Overview:</p>
-            <p className="pt-3 eventDetailsText">{description}</p>
-          </div>
-          <div className="lg:col-4 surface-300">
-            <div className="flex ">
-              <i className=" pi pi-check-circle pt-1"></i>
-              <p className=" px-4">Speaker</p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

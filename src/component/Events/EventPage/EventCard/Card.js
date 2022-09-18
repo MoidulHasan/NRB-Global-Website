@@ -11,7 +11,7 @@ const Card = (props) => {
 
   return (
     <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-4">
-      <div className="eventImgCard">
+      <div className="eventImgCard ">
         <img src={img} alt="event_image" className="w-full" />
       </div>
       <div className="eventCardDetails">
