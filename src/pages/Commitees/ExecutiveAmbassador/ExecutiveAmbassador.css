@@ -4,15 +4,18 @@
     border-radius: 10px;   
     padding: 0px 0px;
     margin-top: 10px;
-   background:#f3f7f5;
+   background:#E5F0F8;
 }
   .executive-container-para{
     text-align: center;
     font-size: 35px;
-    font-style: italic;
+    /* font-style: italic; */
     padding: 20px;
-    background: #333D79FF;
-        color: #FAEBEFFF;
+    /* background: #333D79FF; */
+
+    background: #E5F0F8;
+        /* color: #FAEBEFFF; */
+        color: #333D79FF;
         font-weight: bold;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     margin-top: 0px;
@@ -27,4 +30,24 @@
 color: #ffffff;  
 background:#333D79FF;
 border: none;
+}
+
+@media only screen and (max-width:575px){
+    .executive-container{
+        background:none;
+        padding: 0px 10px; 
+    }
+    .executive-container-para{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .executive-memberBtn{
+        background: #f3f7f5;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 30px 0px;
+        margin-top: -20px;
+        
+    }
+     
 }

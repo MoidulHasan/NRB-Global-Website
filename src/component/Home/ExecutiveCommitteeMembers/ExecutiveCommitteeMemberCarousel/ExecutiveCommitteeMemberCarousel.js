@@ -32,7 +32,8 @@ const ExecutiveCommitteeMemberCarousel = () => {
 
   const cabinateMemberTemplate = (member) => {
     return (
-      <div className='cabinateMemberCard mx-2 border-round-xl px-2 pb-3 pt-2 my-2'>
+      // mx-2 px-2 pb-3 pt-2 my-2
+      <div className='cabinateMemberCard  border-round-xl mx-2 px-2 pb-3 pt-2 my-2'>
         <div className='cabinateMemberImgHolder'>
           <img src={member.profileImg} alt='cabinate member of NRB Global' />
         </div>

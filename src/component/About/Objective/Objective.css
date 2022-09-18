@@ -1,61 +1,27 @@
 .nrbObjectiveDiv {
-  background-color: #f3f7f5;
+  /* background-color: #f3f7f5; */
   border-radius: 10px;
   padding-bottom: 3rem;
 }
-.objectibe-title {
-  font-family: "Barlow Condensed", sans-serif;
-}
-.objectibe-title::after {
-  content: "";
-  display: block;
-  width: 4em;
-  max-width: 13%;
-  border-bottom: 5px solid #e2b77c;
-  margin-top: 0.2em;
-}
-.objective-value {
-  font-family: lora, sans-serif;
-  color: #182934;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-}
-.objectiveIcon {
-  color: #195283;
-  font-size: 1em;
-  font-weight: 800;
-}
-.objectiveImg {
-  height: 450px;
-  border-radius: 12px;
+
+.objectiveContainer {
+  /* background-color: rgb(171, 210, 243); */
+  /* background-color: #eaf1f8; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;  */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-@media only screen and (max-width: 991px) {
-  .objective-value {
-    text-align: justify;
-  }
-  .objectiveImg {
-    height: auto;
-  }
+.objectiveTextAbout {
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--primeBLue);
+  font-weight: 700;
 }
-@media only screen and (max-width: 768px) {
-  .objective-value {
-    text-align: justify;
-  }
-  .objectiveImg {
-    height: auto;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .objectibe-title {
-    font-size: 28px;
-    font-weight: 800;
-  }
-  .objectiveImg {
-    height: auto;
-  }
-  .objective-value {
-    text-align: justify;
+
+@media screen and (max-width: 960px) {
+  .nrbObjectiveImgContainer img {
+    width: 100%;
   }
 }

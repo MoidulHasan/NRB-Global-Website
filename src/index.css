@@ -2,6 +2,7 @@
  --primeBLue : #1D354F;
  --btnColor : #6A55EA;
  --primeHalka : #274463;
+ --bg-orange: #FF7901;
 }
 
 /* to implement color from root , follow below example: 
@@ -16,7 +17,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #BCDFFF;
+  /* background-color: #BCDFFF; */
+  background-color: #f2f2f9;
+  /* background-color: #EAEEEF; */
 }
 
 code {

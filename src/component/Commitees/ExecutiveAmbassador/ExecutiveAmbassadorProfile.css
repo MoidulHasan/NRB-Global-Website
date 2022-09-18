@@ -1,7 +1,11 @@
 .executive-ambassador-container{
-   background:#f3f7f5;
+   /* background:#f3f7f5; */
+   background: #E5F0F8;
    padding: 30px;
     /* margin: 50px 100px; */
+    border-bottom-left-radius: 10px;
+    margin-top: -35px;
+    border-bottom-right-radius: 10px;
     }  
      /* .executive-ambassador{
       width: 100%;
@@ -9,8 +13,10 @@
     .executive-ambassador-card{
        /* padding: 20px; */
         box-shadow: none;
-        background: #333D79FF;
-        color: #FAEBEFFF;
+        /* background: #333D79FF; */
+        background: #fcfcfc;
+        /* color: #FAEBEFFF; */
+        color: #333D79FF;
         /* margin-top: 30px; */
     }
     .executive-ambassador-flex img{
@@ -62,3 +68,11 @@ letter-spacing: .7px;
        font-size: 10px !important;
        padding: 8px;
     } */
+
+    @media only screen and (max-width:575px){
+      .executive-ambassador-container{
+          /* margin: 50px 100px; */
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          }  
+    }
