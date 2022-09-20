@@ -19,7 +19,7 @@ const BlogPage = () => {
         </div>
         <div className="">
           <div className="">
-            <h1 className="text-center text-6xl font-bold text-cyan-900 font-italic blogPageTitle">
+            <h1 className="text-center text-6xl font-bold text-cyan-900 blogPageTitle">
               Our All Blogs
             </h1>
           </div>

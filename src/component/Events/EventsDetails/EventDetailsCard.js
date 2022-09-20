@@ -29,7 +29,7 @@ const EventDetailsCard = (singleEvent) => {
             </p>
             <Divider />
           </div>
-          <div className="border-round-md surface-100 p-4">
+          {/* <div className="border-round-md surface-100 p-4">
             <div className="grid">
               <div className="sm:col-12 md:col-6 lg:col-4 ">
                 <div className="">
@@ -66,7 +66,7 @@ const EventDetailsCard = (singleEvent) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <Divider /> */}
 
           <div className=" ">

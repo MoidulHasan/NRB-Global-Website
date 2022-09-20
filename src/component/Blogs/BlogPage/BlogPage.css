@@ -1,14 +1,17 @@
+.blogPageTitle {
+  font-family: "Barlow Condensed", sans-serif;
+}
 .blogPageTitle::after {
   content: "";
   display: block;
-  width: 3em;
+  width: 2em;
   border-bottom: 6px solid #f08a55;
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .blogPageImg {
-  border-radius: 12px;
+  border-radius: 10px;
   height: 500px;
 }
 .BlogImgContainer,

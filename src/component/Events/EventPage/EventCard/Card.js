@@ -10,7 +10,7 @@ const Card = (props) => {
   // console.log("new-description :-", newDescription);
 
   return (
-    <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-4">
+    <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-6">
       <div className="eventImgCard ">
         <img src={img} alt="event_image" className="w-full" />
       </div>

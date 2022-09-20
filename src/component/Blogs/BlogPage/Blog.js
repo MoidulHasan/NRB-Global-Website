@@ -4,7 +4,7 @@ import "./BlogPage.css";
 import { Link } from "react-router-dom";
 
 const Blog = (props) => {
-  const { id, title, auther, date, like, description, img } = props.blogsinfo;
+  const { id, title, auther, date, description, img } = props.blogsinfo;
   // const newDescription = description;
   const newDescription = description.slice(0, 201);
   // console.log("new-description :-", newDescription);
@@ -15,7 +15,7 @@ const Blog = (props) => {
         <img src={img} alt="" className="w-full" />
       </div>
       <div className="blogPageDetails">
-        <div className="flex justify-content-between">
+        <div className="flex justify-content-between pt-1">
           <div className="flex align-items-center">
             <i
               className="pi pi-user font-bold mr-2 text-orange-600"

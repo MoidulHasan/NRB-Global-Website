@@ -1,5 +1,5 @@
 .eventCardDiv {
-  background-color: #e5f0f8;
+  background-color: #e7eef4;
   border-radius: 12px;
 }
 .event-title {
@@ -26,8 +26,8 @@
 .eventCardDetails {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  background-color: #34373b;
-  color: white;
+  background-color: rgb(245, 242, 242);
+  color: black;
   padding: 1.2rem 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
