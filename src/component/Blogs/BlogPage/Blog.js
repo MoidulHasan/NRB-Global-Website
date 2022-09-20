@@ -39,8 +39,8 @@ const Blog = (props) => {
         <span className="block text-l text-gray-700 text-justify">
           {newDescription}
         </span>
-        <div className="flex justify-content-between">
-          <div className="mt-4 flex align-items-center">
+        <div className="mt-5">
+          {/* <div className="mt-4 flex align-items-center">
             <i
               className="pi pi-heart mr-2 mt-1 font-bold text-orange-600"
               style={{ fontSize: "1.4em" }}
@@ -48,8 +48,8 @@ const Blog = (props) => {
             <span className="font-normal" style={{ fontSize: "1.4em" }}>
               {like}
             </span>
-          </div>
-          <div className="mt-4 flex align-items-center">
+          </div> */}
+          <div className="text-right">
             <Link to={`/blogs/${id}`} className="no-underline">
               <Button
                 label="Read More"

@@ -29,19 +29,19 @@ const EventDetailsCard = (singleEvent) => {
             </p>
             <Divider />
           </div>
-          {/* <div className="border-round-md surface-100 p-4">
+          <div className="border-round-md surface-100 p-4">
             <div className="grid">
-              <div className="sm:col-12 md:col-6 lg:col-3 ">
+              <div className="sm:col-12 md:col-6 lg:col-4 ">
                 <div className="">
                   <div className="text-center">
                     <i
-                      className="pi pi-clock font-bold block mx-auto"
-                      style={{}}
+                      className="pi pi-calendar-plus"
+                      style={{ fontSize: "2em" }}
                     ></i>
                   </div>
                   <div className="text-center">
                     <div className="">
-                      <span className="text-xl font-bold">Event Time</span>
+                      <span className="text-xl font-bold">Event Date</span>
                     </div>
                     <div className="">
                       <span className="text-xl font-bold">22 Sept, 2021</span>
@@ -49,12 +49,25 @@ const EventDetailsCard = (singleEvent) => {
                   </div>
                 </div>
               </div>
-              <div className="sm:col-12 md:col-6 lg:col-3 ">Speaker</div>
-              <div className="sm:col-12 md:col-6 lg:col-3 ">Venu</div>
-              <div className="sm:col-12 md:col-6 lg:col-3 ">Organized By</div>
+              <div className="sm:col-12 md:col-6 lg:col-4 ">
+                <div className="">
+                  <span class="material-icons-outlined">check_circle</span>
+                </div>
+                <div className="">
+                  <span class="material-symbols-outlined">Event Venu</span>
+                </div>
+              </div>
+              <div className="sm:col-12 md:col-6 lg:col-4 ">
+                <div className="">
+                  <i className="pi  pi-user" style={{ fontSize: "2em" }}></i>
+                </div>
+                <div className="">
+                  <span class="material-symbols-outlined">Organized By</span>
+                </div>
+              </div>
             </div>
-          </div> */}
-          <Divider />
+          </div>
+          {/* <Divider /> */}
 
           <div className=" ">
             <p className="px-2 md:px-4 lg:px-6 xl:px-6 text-3xl font-bold eventOverView">

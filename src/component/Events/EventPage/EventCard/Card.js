@@ -17,7 +17,7 @@ const Card = (props) => {
       <div className="eventCardDetails">
         <span className="block text-xl font-bold  pb-4 ">{name}</span>
         <span className="block text-justify">{newDescription}</span>
-        <div className="pt-6">
+        <div className="pt-5">
           <div className="text-right">
             <Link to={`/events/${id}`} className="no-underline">
               <Button

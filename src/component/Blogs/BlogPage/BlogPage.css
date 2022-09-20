@@ -25,6 +25,8 @@
   padding: 0.5rem 1rem 1rem 0.8rem;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .blogButton:hover {
   background-color: rgb(251, 246, 246);
