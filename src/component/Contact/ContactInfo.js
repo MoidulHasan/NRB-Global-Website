@@ -2,12 +2,11 @@ import ContactForm from './ContactForm'
 import './ContactInfo.css'
 import GMapbn from './ContactInfoBanMap'
 import GMapus from './ContactInfoUsMap'
-
 function ContactInfo() {
     return (
         <div className="contactinfo-container ">
             <div className="contactinfo-grid-container grid">
-                <div className="contactinfo-bn col-12 grid ">
+                <div className="contactinfo-bn col-12 grid align-items-center">
                     <div className="contactinfo-bn-txt col lg:col-6 md:col-12 sm:col-12">
                         <div className="contactinfo-bn-details">
                             <div className="contactinfo-bn-title">

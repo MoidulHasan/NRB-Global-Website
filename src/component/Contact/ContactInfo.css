@@ -1,20 +1,41 @@
+.contact-container{
+  background: #ffffff;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 30px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
  .contactinfo-container{
     overflow-x: hidden;
     /* background:  ; */
     /* margin: .5% 13%; */
-    margin-top: 5px;
+    margin-top: 25px;
     /* padding: 50px 15px; */
     /* background: #ffffff; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* background: #000; */
+    border-radius: 10px !important;
+/* background: #000; */
+padding-top: 25px;
  }
  .contactinfo-bn-txt, .contactinfo-us-txt{
  padding: 0px 20px 20px 20px;
+ }
+ .contactinfo-bn-details{
+  background: #23385E;
+    padding: 20px;    
+    height: 360px;
+    border-radius: 10px !important;
+    width: 100%;
+ }
+ .contactinfo-us-details{
+  padding-left: 20px;
  }
  .contactinfo-bn-details, .contactinfo-us-details{
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
  }
  .contactinfo-bn-title h2, .contactinfo-us-title h2{
     font-size: 22px;
@@ -44,7 +65,9 @@ column-rule: #ffffff;
    border-radius: 10px;
     /* background: #000; */
     padding: 3px 0px;
- background:#2CA9CC ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(175, 169, 169);
+ background:#ffffff ;
  }
  .contact-form{
     margin: 2% 10%;
@@ -66,33 +89,42 @@ column-rule: #ffffff;
     margin-left: 20px;
 }
  /* CONTACTINFOMAP  */
+ 
  .contact-info-map-bn-iframe, .contact-info-map-us-iframe{
    width: 100%;
    /* padding: 10px 10px; */
    /* height: ; */
    height: 360px;
-   border-radius: 5px;
+   margin-top: 0px;
+   margin-top: -16px;
+   border-radius: 10px;
  }
  
  .contactinfo-bn{
-
    /* background: #2CA9CC; */
-   background: #6aa552;
    color: #ffffff;
    margin-left: .2px;
-   border-radius: 20px;
+   
+ }
+ .contactinfo-bn-txt{
+  /* background: #23385E; */
+border-radius: 10px !important;
+border-top-left-radius: 20px !important;
+border-top-right-radius: 35px !important;
  }
  .contact-info-map-bn{
-   margin-top: 10px;
+   /* margin-top: 10px; */
  }
  .contact-info-map-us{
    margin-top: 6px;
  }
+ .contactinfo-us-txt{
+  /* background: #23385E; */
+  /* color: #ffffff; */
+ }
    .contactinfo-us{
-      background: #f3f7f5;
-      margin-left: 234.2px;
-      margin: 20px 0px;
       border-radius: 20px; 
+      margin: 20px 0px;
  }
 @media only screen and (max-width:992px){
   .conatactinfo-us{

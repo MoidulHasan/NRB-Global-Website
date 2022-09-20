@@ -5,6 +5,7 @@ import {
 import { Image } from 'primereact/image';
 import { Button } from 'primereact/button';
 import './Gallary.css'
+import { Link } from 'react-router-dom';
 const Gallery = () => {
   return (
     <div className='gallary-container p-container'>
@@ -20,7 +21,7 @@ const Gallery = () => {
           </div>
         </div>
         <div className="gallary-img-seemoreBtn">
-          <Button label="see more" />
+          <Link to="photoGallery"> <Button label="see more" /></Link>
         </div>
       </div>
       <div className="gallary-event-video">
@@ -37,7 +38,9 @@ const Gallery = () => {
           </div>
         </div>
         <div className="gallary-video-seemoreBtn">
-          <Button label="see more" />
+          <Link to="videoGallery">
+            <Button label="see more" />
+          </Link>
         </div>
       </div>
     </div>
