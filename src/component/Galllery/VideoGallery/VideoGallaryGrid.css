@@ -11,12 +11,14 @@
    padding: 30px;
 }
 .video-gallary-row h3{
-   background-color: #FCF6F5FF;
-   padding: 30px;
+   /* background-color: #FCF6F5FF; */
+   padding: 10px;
+   border-bottom: 3px solid #333D79FF;
    font-size: 30px;
    color:  #333D79FF;
-   border-bottom: 1px solid #333D79FF;
-   border-style:dotted;
+   /* border-bottom: 1px solid #333D79FF; */
+   /* border-style:dotted; */
+   border-bottom-style: double;
    text-align: center;
 }
  .video-gallary-column div iframe {
