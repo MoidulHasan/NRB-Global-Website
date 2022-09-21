@@ -35,11 +35,11 @@
 }
 @media only screen and (max-width: 768px) {
   .eventDetailsImg {
-    height: auto;
+    height: 300px;
   }
 }
 @media only screen and (max-width: 500px) {
   .eventDetailsImg {
-    height: auto;
+    height: 250px;
   }
 }
