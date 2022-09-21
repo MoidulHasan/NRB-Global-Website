@@ -20,6 +20,9 @@
   border-bottom: 5px solid #e2b77c;
   margin-top: 0.8rem;
 }
+.eventSubject {
+  margin-top: -20px;
+}
 
 /* .nrbEventTitle::after {
   content: "";

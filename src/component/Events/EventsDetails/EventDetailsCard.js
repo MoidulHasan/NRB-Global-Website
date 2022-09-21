@@ -13,26 +13,27 @@ const EventDetailsCard = (singleEvent) => {
             className=" w-full eventDetailsImg"
           />
         </div>
-        <div className="pb-4 ">
-          <div className="">
+        <div className="">
+          <div className="pb-4">
             <h1
-              className="pt-2 text-center text-2xl md:text-5xl sm:font-normal md:font-semibold lg:font-bold xl:font-bold"
+              className="pt-2 text-center text-2xl md:text-5xl sm:font-normal md:font-semibold lg:font-bold"
               style={{ color: "#195283" }}
             >
               {singleEvent.singleEvent.name}
             </h1>
             <p
-              className="text-center text-lg md:text-3xl font-normal"
+              className="text-center text-lg md:text-2xl font-normal eventSubject"
               style={{ color: "#F4AA0B" }}
             >
               {singleEvent.singleEvent.subject}
             </p>
-            <Divider className="" />
+            <Divider />
           </div>
-          <div className="border-round-md surface-100 ">
+
+          <div className="border-round-lg surface-100 py-4 ">
             <div className="grid mx-1 md:mx-3">
               <div className="col-12 md:col-4 ">
-                <div className="flex flex-column align-items-center justify-content-center mx-3 my-2 p-4">
+                <div className="flex flex-column align-items-center justify-content-center bg-green-100 border-round-2xl mx-3 my-2 p-4">
                   <svg
                     width="68"
                     height="66"
@@ -52,7 +53,7 @@ const EventDetailsCard = (singleEvent) => {
                 </div>
               </div>
               <div className="col-12 md:col-4">
-                <div className="flex flex-column align-items-center justify-content-center mx-3 my-2 p-4">
+                <div className="flex flex-column align-items-center justify-content-center bg-green-100 border-round-2xl mx-3 my-2 p-4">
                   <svg
                     width="68"
                     height="70"
@@ -72,7 +73,7 @@ const EventDetailsCard = (singleEvent) => {
                 </div>
               </div>
               <div className="col-12 md:col-4 text-center">
-                <div className="flex flex-column align-items-center justify-content-center mx-3 my-2 p-4">
+                <div className="flex flex-column align-items-center justify-content-center bg-green-100 border-round-2xl mx-3 my-2 p-4">
                   <svg
                     width="68"
                     height="70"
@@ -95,8 +96,11 @@ const EventDetailsCard = (singleEvent) => {
           </div>
           {/* <Divider /> */}
 
-          <div className="pt-4">
-            <p className="px-2 md:px-4 lg:px-6 xl:px-6 text-3xl font-bold eventOverView">
+          <div className="pt-2">
+            <p
+              className="px-2 md:px-4 lg:px-6 xl:px-6 text-3xl font-bold eventOverView"
+              style={{ color: "#195283" }}
+            >
               Event Overview:
             </p>
             <p className="px-2 md:px-4 lg:px-6 xl:px-6 pt-2 eventDetailsText">

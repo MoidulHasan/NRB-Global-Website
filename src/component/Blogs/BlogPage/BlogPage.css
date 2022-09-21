@@ -16,7 +16,7 @@
 }
 .BlogImgContainer,
 .BlogImgContainer img {
-  height: 280px;
+  height: 260px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -34,14 +34,18 @@
 .blogButton:hover {
   background-color: rgb(251, 246, 246);
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .blogPageImg {
     height: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .blogPageImg {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 500px) {
   .blogPageImg {
-    height: auto;
+    height: 280px;
   }
 }
