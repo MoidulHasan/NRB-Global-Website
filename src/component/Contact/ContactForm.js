@@ -1,27 +1,32 @@
 // import React, { useState } from 'react';
-import { Button } from 'primereact/button';
-import { InputText } from 'primereact/inputtext';
-import { InputTextarea } from 'primereact/inputtextarea';
+
 function ContactForm() {
     // const [value1, setValue1] = useState('');
     return (
-        <div className="contact-form-conatiner">
+        <div className="contact-form-conatiner ">
             {/* <form onSubmit={formik.handleSubmit} className="p-fluid"> */}
-
-            <form className="contact-form">
+            <div className="contact-form-contact-txt">
+                {/* <h3>Leave a message</h3> */}
+                <img src="../../assets/image/contact/airplanes.jpg" alt="" />
+            </div>
+            <form className="contact-form  ">
                 <div className="contact-form-title">
-                    <h5>Leave us a message</h5>
+                    <h2>
+                        <span className="contact-form-title-span">Leave a message</span>
+                    </h2>
                 </div>
-                <div className='contact-form-grid grid '>
-                    <InputText type="text" className="mb-2 col-12" placeholder="Name" />
-                    <InputText type="email" className="mb-2 col-12" placeholder="Email" />
-                    <InputText type="number" className="mb-2 col-12" placeholder="Phone" />
-                    <InputText type="text" className=" mb-2 col-12" placeholder="Subject" />
-                    {/* <InputTextarea value={value1} onChange={(e) => setValue1(e.target.value)} rows={5} cols={30} /> */}
-                    <InputTextarea className='col' placeholder="Comment" rows={5} cols={30} />
+                <div className='contact-form-grid '>
+                    <input type="text" placeholder='Name' />
+                    <input type="email" placeholder='Email' />
+                    <input type="number" placeholder='Number' />
+                    <input type="text" placeholder='Subject' />
+                    <textarea name="" id="" cols="80" rows="3" placeholder='Comment'></textarea>
+                    {/* <InputTextarea className='col' placeholder="Comment" rows={5} cols={30} /> */}
+
                 </div>
-                <Button type="submit" label="Submit" className="contact-form-submit-btn mt-2" />
+                <button type="submit" className="contact-form-submit-btn" >Submit</button>
             </form>
+
         </div>
     )
 }

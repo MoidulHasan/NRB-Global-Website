@@ -3,8 +3,8 @@
         {
             "id": "1000",
             "code": "f230fh0g3",
-            "name": "How to get informed about music",
-            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "name": "EDUCATION SUPPORT IN BANGLADESH",
+            "description": "The quality of education in Bangladesh remains low. The most essential measure of quality in a school system is whether its students are learning the foundational skill for all future learning: reading. In Bangladesh most children are not acquiring basic reading fluency.",
             "image": "./assets/image/YCAbout/educationslide.jpg",
             "time": 5,
             "view": 317,
@@ -15,24 +15,10 @@
             "category": "Art & Love"
         },
         {
-            "id": "1001",
-            "code": "nvklal433",
-            "name": "Save the Tree, Save the World",
-            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
-            "image": "./assets/image/YCAbout/covidawarness.jpg",
-            "time": 10,
-            "view": 327,
-            "date": "Sept 3, 2021",
-            "like": 10,
-            "author": "Moidul Hasan",
-            "thumb": "./assets/image/blogs/5fc9f284bfe27-bpfull.jpg",
-            "category": "Nature and Environment"
-        },
-        {
             "id": "1002",
             "code": "zz21cz3c1",
-            "name": "Read our blog and master your skills",
-            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "name": "FOOD PORGRAM IN BANGLADESH",
+            "description": "Food assistance in the form of cash allows participants in the public works programmes to be paid cash wages which are useful in themselves in alleviating poverty and in helping to improve food security. Participants can also, however, be paid directly in the form of food (food-for-work).",
             "image": "./assets/image/YCAbout/fooddistributionslide.jpg",
             "time": 10,
             "view": 327,
@@ -45,8 +31,8 @@
         {
             "id": "1003",
             "code": "244wgerg2",
-            "name": "New environments you’re going to enjoy",
-            "description": "An eam ornatus habemus corpora, qui eu congue verear audire. Eos debet diceret et, ad dico graecis liberavisse sed, eam ubique referrentur no. Sit eu labitur ocurreret, quot iracundia pri in. Ad cum laudem dolores, per et audire diceret. Cum ut quem velit sententiae. Hinc idque ullamcorper has eu, ut sit sapientem repudiare iracundia. Ut mel mentitum dissentiet. Tale meis error et sed, mel et nonumy option urbanitas ne detracto inimicus.",
+            "name": "HELP SAVE CHILDREN IN BANGLADESH",
+            "description": "Bangladesh has made remarkable progress in reducing child mortality in recent decades. Yet 1 child in every 33 still dies from a preventable or treatable cause – half of these are newborns. The children of Bangladesh also face malnutrition, child marriage, lack of education and more, risking their very lives and futures. ",
             "image": "./assets/image/YCAbout/visitslide.jpg",
             "time": 10,
             "view": 327,

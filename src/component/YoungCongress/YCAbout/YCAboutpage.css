@@ -34,9 +34,11 @@
 }
 .yca-title h1{
   text-align: start;
-font-weight: 100;
+font-weight: 400;
+line-height: 25px;
 /* font-style: italic; */
-font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-family:sans-serif;
+
 }
  
 .yca-about-section{
@@ -329,37 +331,56 @@ font-size: 30px;
   padding: 25px 0px;
   text-align: center;
   font-size: 50px;
-  font-weight: 100;
-  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
+  /* font-family:'Times New Roman', Times, serif; */
 }
 .ycateam-container{
   background: #f3f7f5;
  border-radius: 10px;
  padding-bottom:40px ;
 }
-.ycateam{
- padding: 20px;
-}
-.ycateam-profile{
-  padding: 20px 10px;
+ 
+ 
+.ycmteam {
+  padding:10px 0px;
+  /* background: rgb(50, 119, 36); */
  }
-.ycateam-card{ 
-  padding: 0px ;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  border-radius: 15px;  
+ /* .ycmteam-profile{
+  background: #000;
+ } */
+.ycmteam-card{
+   /* padding: 20px; */
+    box-shadow: none;
+    /* margin-top: 30px; */
+  
 }
-.ycateam-name {
+.ycmteam-flex img{
+border-radius: 20px !important;
+max-height: 200px;
+width: 100%;
+}
+.ycmteam-name{
+  font-size: 15px !important;
+  text-align: start;   
   font-weight: 600;
-  font-size: 20px;
-  text-align: center;
+  letter-spacing: .5px;
 }
-.ycateam-title {
-  font-weight: 100;
-  font-size: 15px;
-  text-align: center;
-  margin-top: -10px;
+.ycmteam-title{
+   margin-top: -8px;
+   font-size: 15px;
+   font-weight: 400;    
+   letter-spacing: .5px;
 }
-.ycateam-flex img{
+.ycmteam-flexSocialandFlagicons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.ycmteam-socialicons a i{
+   padding-right: 15px;    
+   cursor: pointer;
+}
+/* .ycateam-flex img{
   width: 100%;
   border-radius: 15px;
 }
@@ -372,8 +393,21 @@ font-size: 30px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 padding: 5px;
 border-radius: 6px;
+} */
+.ycateam-btn  {
+display: flex;
+justify-content: center;
 }
-
+.ycateam-btn a button{
+ padding: 15px;
+cursor: pointer;
+ font-size: 20px;
+ border: none;
+ background: rgb(23, 80, 202);
+ color: #ffffff;
+ border-radius: 10px;
+ margin: 5px 0px;
+  }
 /* MEDIA  */
 @media only screen and (max-width:768px){
   .ycateam-profile{

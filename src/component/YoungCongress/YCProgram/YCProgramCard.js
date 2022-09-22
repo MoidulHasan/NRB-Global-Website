@@ -9,7 +9,7 @@ function YCProgramCard() {
                     <h1>Our programs in different</h1>
                     <h1> places</h1>
                 </div>
-                <p className='ycpc-header-para col lg:col-6 md:col-6 '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae repudiandae quo aut, blanditiis sunt atque, odio quibusdam quis repellendus velit non incidunt, nisi eligendi neque rerum doloribus illo ea qui.</p>
+                <p className='ycpc-header-para col lg:col-6 md:col-6 '>This is about your charity's aspirations and what it hopes to achieve in the longer term; maybe many years into the future. It should infuse the organisation with a sense of purposeful action and motivate others to commit their support.</p>
             </div>
             <hr className='ycpc-hr' />
             <div className="ycpc-card-grid grid">
