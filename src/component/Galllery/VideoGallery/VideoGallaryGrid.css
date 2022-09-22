@@ -1,21 +1,24 @@
 .video-Gallary{
-   background: #f3f7f5;
+   background: #ffffff;
    margin-top: 10px;
    padding: 30px;
    padding-top: 20px !important;
    border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .video-gallary-column{
    margin-top: 10px;
    padding: 30px;
 }
 .video-gallary-row h3{
-   background-color: #FCF6F5FF;
-   padding: 30px;
+   /* background-color: #FCF6F5FF; */
+   padding: 10px;
+   border-bottom: 3px solid #333D79FF;
    font-size: 30px;
    color:  #333D79FF;
-   border-bottom: 1px solid #333D79FF;
-   border-style:dotted;
+   /* border-bottom: 1px solid #333D79FF; */
+   /* border-style:dotted; */
+   border-bottom-style: double;
    text-align: center;
 }
  .video-gallary-column div iframe {

@@ -3,7 +3,7 @@
     overflow-x: hidden;
     border-radius: 10px;   
     padding: 0px 0px;
-    margin-top: 10px;
+    margin-top: 20px;
    background:#E5F0F8;
 }
   .executive-container-para{
@@ -12,7 +12,6 @@
     /* font-style: italic; */
     padding: 20px;
     /* background: #333D79FF; */
-
     background: #E5F0F8;
         /* color: #FAEBEFFF; */
         color: #333D79FF;
