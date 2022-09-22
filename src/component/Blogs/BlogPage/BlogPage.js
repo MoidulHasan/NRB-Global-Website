@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Blog from "./Blog";
-import blog from "../../../assets/image/about/BLOG.jpg";
+import blog from "../../../assets/image/about/BLOG (3).jpg";
 
 import "./BlogPage.css";
 
