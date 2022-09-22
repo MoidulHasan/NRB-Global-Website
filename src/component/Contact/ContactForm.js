@@ -5,12 +5,15 @@ function ContactForm() {
     return (
         <div className="contact-form-conatiner ">
             {/* <form onSubmit={formik.handleSubmit} className="p-fluid"> */}
-            <div className="contact-form-contact-txt col-12 lg:col-4  ">
+            <div className="contact-form-contact-txt">
                 {/* <h3>Leave a message</h3> */}
+                <img src="https://i.ibb.co/cQgmTxF/airplanes-03.jpg" alt="" />
             </div>
             <form className="contact-form  ">
                 <div className="contact-form-title">
-                    <h2>Leave a message</h2>
+                    <h2>
+                        <span className="contact-form-title-span">Leave a message</span>
+                    </h2>
                 </div>
                 <div className='contact-form-grid grid '>
                     <input type="text" placeholder='Name' />
