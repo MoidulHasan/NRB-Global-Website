@@ -20,6 +20,9 @@
   border-bottom: 5px solid #e2b77c;
   margin-top: 0.8rem;
 }
+.eventSubject {
+  margin-top: -20px;
+}
 
 /* .nrbEventTitle::after {
   content: "";
@@ -35,11 +38,11 @@
 }
 @media only screen and (max-width: 768px) {
   .eventDetailsImg {
-    height: auto;
+    height: 300px;
   }
 }
 @media only screen and (max-width: 500px) {
   .eventDetailsImg {
-    height: auto;
+    height: 250px;
   }
 }
