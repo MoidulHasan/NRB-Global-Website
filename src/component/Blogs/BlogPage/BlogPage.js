@@ -1,7 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Blog from "./Blog";
-import blog from "../../../assets/image/about/Blog Banner.jpg";
+import blog from "../../../assets/image/about/BLOG.jpg";
+
 import "./BlogPage.css";
 
 const BlogPage = () => {
@@ -14,7 +15,7 @@ const BlogPage = () => {
   return (
     <div className="p-container">
       <div className="py-4">
-        <div className="">
+        <div className="grid">
           <img src={blog} alt="" className="w-full blogPageImg" />
         </div>
         <div className="">
