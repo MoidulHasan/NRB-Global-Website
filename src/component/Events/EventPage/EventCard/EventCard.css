@@ -1,5 +1,5 @@
 .eventCardDiv {
-  background-color: #e5f0f8;
+  background-color: #e7eef4;
   border-radius: 12px;
 }
 .event-title {
@@ -19,13 +19,15 @@
 
 .eventImgCard,
 .eventImgCard img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   height: 260px;
 }
 .eventCardDetails {
-  background-color: #34373b;
-  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: rgb(245, 242, 242);
+  color: black;
   padding: 1.2rem 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;

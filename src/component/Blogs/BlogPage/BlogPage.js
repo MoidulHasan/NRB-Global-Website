@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Blog from "./Blog";
-import blog from "../../../assets/image/about/Blog Banner.gif";
+import blog from "../../../assets/image/about/Blog Banner.jpg";
 import "./BlogPage.css";
 
 const BlogPage = () => {

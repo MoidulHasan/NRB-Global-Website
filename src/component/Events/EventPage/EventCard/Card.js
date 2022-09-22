@@ -10,14 +10,14 @@ const Card = (props) => {
   // console.log("new-description :-", newDescription);
 
   return (
-    <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-4">
-      <div className="eventImgCard">
+    <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-6">
+      <div className="eventImgCard ">
         <img src={img} alt="event_image" className="w-full" />
       </div>
       <div className="eventCardDetails">
         <span className="block text-xl font-bold  pb-4 ">{name}</span>
         <span className="block text-justify">{newDescription}</span>
-        <div className="pt-6">
+        <div className="pt-5">
           <div className="text-right">
             <Link to={`/events/${id}`} className="no-underline">
               <Button

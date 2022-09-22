@@ -1,11 +1,10 @@
 .blogDetailsPageContainer {
-  background-color: rgb(238, 245, 243);
+  background-color: white;
   border-radius: 12px;
 }
 .blogDetailsTitle {
-  font-size: 36px;
   color: #195283;
-  padding-left: 30px;
+  margin-bottom: 20px;
 }
 .blogDetailsContent {
   color: rgb(34, 33, 33);
@@ -28,37 +27,24 @@
   margin-top: 0.6em;
 }
 .blogUserIcon {
-  font-size: 1.8em;
+  font-size: 2.2em;
+  color: #0e2b4e;
 }
 .socialMediaIocn {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 991px) {
-  .blogDetailsTitle {
-    font-size: 32px;
-    text-align: center;
-  }
-
   .blogDetailsImg {
     height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
-  .blogDetailsTitle {
-    font-size: 24px;
-    text-align: center;
-  }
-
   .blogDetailsImg {
     height: auto;
   }
 }
 @media only screen and (max-width: 500px) {
-  .blogDetailsTitle {
-    font-size: 20px;
-    text-align: center;
-  }
   .blogDetailsImg {
     height: auto;
   }
