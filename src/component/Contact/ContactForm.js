@@ -7,7 +7,7 @@ function ContactForm() {
             {/* <form onSubmit={formik.handleSubmit} className="p-fluid"> */}
             <div className="contact-form-contact-txt">
                 {/* <h3>Leave a message</h3> */}
-                <img src="https://i.ibb.co/cQgmTxF/airplanes-03.jpg" alt="" />
+                <img src="../../assets/image/contact/airplanes.jpg" alt="" />
             </div>
             <form className="contact-form  ">
                 <div className="contact-form-title">
@@ -15,7 +15,7 @@ function ContactForm() {
                         <span className="contact-form-title-span">Leave a message</span>
                     </h2>
                 </div>
-                <div className='contact-form-grid grid '>
+                <div className='contact-form-grid '>
                     <input type="text" placeholder='Name' />
                     <input type="email" placeholder='Email' />
                     <input type="number" placeholder='Number' />

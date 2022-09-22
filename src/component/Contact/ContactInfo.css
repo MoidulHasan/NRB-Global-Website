@@ -171,7 +171,37 @@ font-weight: normal;
   border-radius: 4px;
   margin-top: 10px;
 }
- 
+ /* MEDIA  */
+ @media only screen and (max-width:850px){
+  /* FORM  */
+  .contact-form-conatiner{
+    /* background: rgb(206, 192, 192); */
+    border-radius: 10px;
+    /* margin: 0px 20px; */
+    margin-top: 20px !important;
+   /* background: #000; */
+   display: flex;
+   flex-direction: column;
+  /* margin: 0px 20px; */
+   }
+   .contact-form-contact-txt{
+    display: none;
+   }
+   .contactinfo-grid-container{
+    /* background: #32609E; */
+    /* margin-bottom: 20px ; */
+   display: flex;
+   flex-direction: column;
+    border: 3px solid #F2F2F9;
+    padding: 2px;
+   }  
+   .contactinfo-us{
+    margin: 10px 0px;
+   }
+   .conatactinfo-us-map{
+    order: 4;
+   }
+ }
  
  /* CONTACTINFOMAP  */
  
