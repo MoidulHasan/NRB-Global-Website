@@ -6,7 +6,7 @@ function YCAboutSection() {
             {/* <div className="yca-img">            
             </div> */}
             <div className='yca-description'>
-                <div className='yca-title'>
+                {/* <div className='yca-title'>
                     <h1>Young congress amis to become worldwide attachment of</h1>
                     <h1>young dynamic Bangladesh.</h1>
                 </div>
@@ -15,7 +15,7 @@ function YCAboutSection() {
                         label='Join with us'
                         className='p-button-outlined p-button-secondary'
                     />
-                </div>
+                </div> */}
             </div>
             <div className='yca-about-section'>
                 <div className='yca-about-text'>
