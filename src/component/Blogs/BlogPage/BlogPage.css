@@ -16,7 +16,7 @@
 }
 .BlogImgContainer,
 .BlogImgContainer img {
-  height: 260px;
+  height: 240px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -34,6 +34,7 @@
 .blogButton:hover {
   background-color: rgb(251, 246, 246);
 }
+
 @media screen and (max-width: 991px) {
   .blogPageImg {
     height: auto;
