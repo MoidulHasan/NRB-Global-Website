@@ -1,7 +1,24 @@
  /* YCAbout  */ 
+ .yca-description{   
+  /* background-image: url('../../../assets/image/YCAbout/abouthd.png');   */
+  background-image: url('../../../assets//image/YCAbout/yc.png'); 
+  background-position: center;
+   background-size: cover; 
+   background-repeat: no-repeat;
+   position: relative;
+   /* width: 85%; */
+   width: 100% !important;
+   height: 600px;
+   /* margin-left: auto;
+   margin-right: auto; */
+   margin: 0px;
+   border-radius: 10px;
+position: relative;
+} 
  .yca-about-section{
   /* background: #75aac1; */
   background-image: url('../../../assets//image/YCAbout/aboutbgimgdesk.png');
+  /* background-image: url('../../../assets//image/YCAbout/yc.png'); */
   margin-top: 35px;
   /* border-radius: 10px; */
   border-top-left-radius: 10px;
@@ -11,21 +28,7 @@
   background-size: cover;
   background-attachment: fixed;
  }
- .yca-description{   
-  background-image: url('../../../assets/image/YCAbout/abouthd.png');  
-  background-position: center;
-   background-size: cover; 
-   background-repeat: no-repeat;
-   position: relative;
-   /* width: 85%; */
-   width: 100% !important;
-   height: 800px;
-   /* margin-left: auto;
-   margin-right: auto; */
-   margin: 0px;
-   border-radius: 10px;
 
-} 
 .yca-title{
  text-align: center;
  padding-top: 30px; 
@@ -113,10 +116,18 @@ font-size: 30px;
     margin-right: 10px; 
 }
 .yca-join-btn Button{
-  margin-left: 5%;  
-  margin-top: 5%;
-}
- 
+  /* margin-left: 5%;  
+  margin-top: 35%; */
+  position: absolute;
+  left: 15%;
+  padding: 20px 40px;
+  bottom: 36%;
+  /* background:rgba(37, 49, 109, .5) !important;  */
+  color: #333 !important;
+  font-size: 25px !important;
+  outline: none !important;
+  border: 1px solid #333 !important;
+} 
 @media only screen and (max-width: 1400px) {
   .yca-description{ 
       width: 85%;  
@@ -145,7 +156,8 @@ font-size: 30px;
   border-bottom-right-radius: 10px;
 
 /* background: #ebe8e8; */
-background: #f3f7f5;
+/* background: #f3f7f5; */
+background: #ffffff;
 }
 .yc-mission-container{
 display: grid;
@@ -335,7 +347,8 @@ font-size: 30px;
   /* font-family:'Times New Roman', Times, serif; */
 }
 .ycateam-container{
-  background: #f3f7f5;
+  /* background: #f3f7f5; */
+background: #ffffff;
  border-radius: 10px;
  padding-bottom:40px ;
 }
@@ -352,7 +365,7 @@ font-size: 30px;
    /* padding: 20px; */
     box-shadow: none;
     /* margin-top: 30px; */
-  
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .ycmteam-flex img{
 border-radius: 20px !important;
