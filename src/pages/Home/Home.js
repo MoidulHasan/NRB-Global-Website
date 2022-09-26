@@ -16,9 +16,9 @@ const Home = () => {
   return (
     <div>
       {/* carousel section  */}
-      {/* <section>
+      <section>
         <PhotoCarousel />
-      </section> */}
+      </section>
       <section>
         <TopBanner />
       </section>

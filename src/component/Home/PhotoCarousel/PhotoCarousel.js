@@ -10,7 +10,7 @@ const PhotoCarousel = () => {
   const responsiveOptions = [
     {
       breakpoint: '1024px',
-      numVisible: 5,
+      numVisible: 3,
     },
     {
       breakpoint: '768px',
@@ -29,13 +29,14 @@ const PhotoCarousel = () => {
   const itemTemplate = (item) => {
     return (
       <img
+        className='topPhotoCarouselImg'
         src={item.itemImageSrc}
         onError={(e) =>
-        (e.target.src =
-          'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
+          (e.target.src =
+            'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
         }
         alt={item.alt}
-        style={{ width: '100%', display: 'block', height: '75vh' }}
+        style={{ width: '100%', display: 'block', height: '85vh' }}
       />
     );
   };
@@ -55,12 +56,12 @@ const PhotoCarousel = () => {
   // };
 
   return (
-    <div>
-      <div className='card' style={{ maxHeight: '75vh' }}>
+    <div className=' mb-4'>
+      <div className='card' style={{ maxHeight: '85vh' }}>
         <Galleria
           value={images}
           responsiveOptions={responsiveOptions}
-          numVisible={5}
+          numVisible={3}
           item={itemTemplate}
           showItemNavigators
           showItemNavigatorsOnHover
