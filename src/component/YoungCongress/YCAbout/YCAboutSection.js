@@ -1,5 +1,4 @@
 import './YCAboutpage.css';
-import { Button } from 'primereact/button';
 function YCAboutSection() {
     return (
         <div className='ycasection-container'>
@@ -20,7 +19,6 @@ function YCAboutSection() {
             <div className='yca-about-section'>
                 <div className='yca-about-text'>
                     <h3>About Us</h3>
-
                     <p className='yca-about-text-p'>
                         Young Congress NRB Global is a non-political Organization. This
                         platform is open for all young generation. We give the opportunities
