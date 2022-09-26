@@ -11,5 +11,46 @@
 }
 
 .topPhotoCarouselImg{
-    /* border-radius: 10px; */
+    width: 100%;
+    display: block;
+    height: 85vh;
+}
+
+.topPhotoCarouselCard{
+    max-height: 85vh;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .topPhotoCarouselImg{
+        width: 100%;
+        display: block;
+        height: 55vh ;
+    }
+    .topPhotoCarouselCard{
+        max-height: 55vh ;
+    } 
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .topPhotoCarouselImg{
+        width: 100%;
+        display: block;
+        height: 50vh ;
+    }
+    .topPhotoCarouselCard{
+        max-height: 50vh ;
+    } 
+}
+
+@media screen and (max-width: 576px) {
+    .topPhotoCarouselImg{
+        width: 100%;
+        display: block;
+        height: 48vh ;
+    }
+    .topPhotoCarouselCard{
+        max-height: 48vh ;
+    } 
 }

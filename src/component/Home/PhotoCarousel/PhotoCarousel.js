@@ -36,7 +36,7 @@ const PhotoCarousel = () => {
             'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
         }
         alt={item.alt}
-        style={{ width: '100%', display: 'block', height: '85vh' }}
+        // style={{ width: '100%', display: 'block', height: '85vh' }}
       />
     );
   };
@@ -57,7 +57,7 @@ const PhotoCarousel = () => {
 
   return (
     <div className=' mb-4'>
-      <div className='card' style={{ maxHeight: '85vh' }}>
+      <div className='card topPhotoCarouselCard'>
         <Galleria
           value={images}
           responsiveOptions={responsiveOptions}
