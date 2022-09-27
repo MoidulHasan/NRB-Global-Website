@@ -1,18 +1,6 @@
 {
     "data": [
         {
-            "itemImageSrc": "./assets/image/Top banner Image/2.png",
-            "thumbnailImageSrc": "https://www.primefaces.org/primereact/images/galleria/galleria2.jpg",
-            "alt": "Description for Image 2",
-            "title": "Title 2"
-        },
-        {
-            "itemImageSrc": "./assets/image/Top banner Image/3.png",
-            "thumbnailImageSrc": "https://i.ibb.co/RCjNTRN/Colorful-Culture-and-Communication-Presentation.png",
-            "alt": "Description for Image 3",
-            "title": "Title 3"
-        },
-        {
             "itemImageSrc": "./assets/image/Top banner Image/4.png",
             "thumbnailImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
             "alt": "Description for Image 4",
@@ -28,26 +16,6 @@
             "itemImageSrc": "./assets/image/Top banner Image/6.png",
             "thumbnailImageSrc": "https://i.ibb.co/Hq4gGV6/Dark-Green-Cultural-Diversity-Facebook-Cover.png",
             "alt": "Description for Image 5",
-            "title": "Title 5"
-        },
-        {
-            "itemImageSrc": "./assets/image/Top banner Image/7.png",
-            "thumbnailImageSrc": "https://i.ibb.co/5Y8t550/White-Facebook-Cover-for-Creative-People-Community-Membership-or-Audience.png",
-            "title": "Title 5"
-        },
-        {
-            "itemImageSrc": "./assets/image/Top banner Image/8.png",
-            "thumbnailImageSrc": "https://i.ibb.co/5Y8t550/White-Facebook-Cover-for-Creative-People-Community-Membership-or-Audience.png",
-            "title": "Title 5"
-        },
-        {
-            "itemImageSrc": "./assets/image/Top banner Image/9.png",
-            "thumbnailImageSrc": "https://i.ibb.co/5Y8t550/White-Facebook-Cover-for-Creative-People-Community-Membership-or-Audience.png",
-            "title": "Title 5"
-        },
-        {
-            "itemImageSrc": "./assets/image/Top banner Image/10.png",
-            "thumbnailImageSrc": "https://i.ibb.co/5Y8t550/White-Facebook-Cover-for-Creative-People-Community-Membership-or-Audience.png",
             "title": "Title 5"
         }
     ]

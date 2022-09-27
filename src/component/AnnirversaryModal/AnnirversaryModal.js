@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import './AnnirversaryModal.css';
-import anniversaryImg from '../../assets/image/nrb anniversary.png';
+// import anniversaryImg from '../../assets/image/nrb anniversary.png';
+// import anniversaryImg2 from '../../assets/image/anniversaryModal2.png';
+import anniversaryImg3 from '../../assets/image/anniversarymodal3.png';
 
 const AnnirversaryModal = (props) => {
   console.log(props.show);
@@ -26,7 +28,7 @@ const AnnirversaryModal = (props) => {
       unmountOnExit
       timeout={{ enter: 10, exit: 300 }}
     >
-      <div className='modal' onClick={props.onClose}>
+      <div className='modal mt-8' onClick={props.onClose}>
         <div className='modal-content' onClick={(e) => e.stopPropagation()}>
           <div className='modal-header'>
             <span
@@ -38,7 +40,7 @@ const AnnirversaryModal = (props) => {
           </div>
           <div className='modal-body'>
             <div className='modalImageContainer'>
-              <img src={anniversaryImg} alt='3 Year Anniversary Celebration' />
+              <img src={anniversaryImg3} alt='3 Year Anniversary Celebration' />
             </div>
           </div>
         </div>
