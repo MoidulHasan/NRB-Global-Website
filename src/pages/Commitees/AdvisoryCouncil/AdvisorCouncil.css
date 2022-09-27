@@ -24,11 +24,14 @@
     padding: 40px 0px;
 }
 .advisor-memberBtn button{
-color: #ffffff;  
-background:#195190FF;
+color: #195190FF;  
+background:none !important;
+border: 2px solid #195190FF !important;
 border: none;
 }
-
+.advisor-memberBtn button:hover{
+    color: #195190FF !important;  
+}
 /* MEDIA  */
  
  @media only screen and (max-width:575px){
