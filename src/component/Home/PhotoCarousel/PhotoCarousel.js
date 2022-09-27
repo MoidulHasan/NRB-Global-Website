@@ -10,11 +10,11 @@ const PhotoCarousel = () => {
   const responsiveOptions = [
     {
       breakpoint: '1024px',
-      numVisible: 3,
+      numVisible: 1,
     },
     {
       breakpoint: '768px',
-      numVisible: 3,
+      numVisible: 1,
     },
     {
       breakpoint: '560px',
@@ -61,7 +61,7 @@ const PhotoCarousel = () => {
         <Galleria
           value={images}
           responsiveOptions={responsiveOptions}
-          numVisible={3}
+          numVisible={1}
           item={itemTemplate}
           showItemNavigators
           showItemNavigatorsOnHover
@@ -70,7 +70,7 @@ const PhotoCarousel = () => {
           //   thumbnail={thumbnailTemplate}
           circular
           autoPlay
-          transitionInterval={2000}
+          transitionInterval={4000}
         />
       </div>
     </div>

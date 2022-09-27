@@ -14,10 +14,23 @@
     width: 100%;
     display: block;
     height: 85vh;
+    animation: zoomInImageFeature 4s 9;
 }
 
 .topPhotoCarouselCard{
     max-height: 85vh;
+    overflow: hidden;
+}
+
+@keyframes zoomInImageFeature {
+    0% {
+        transform: scale(1,1);
+    }
+    
+    100% {
+        transform: scale(1.1,1.1);
+    }
+    
 }
 
 
