@@ -84,7 +84,7 @@ export const executiveprofile_data = [
     },
     {
         id: 3,
-        name: 'Mohammad Maruf',
+        name: 'Alicia R. Fisher',
         title: 'Secretary',
         image: './assets/image/YCAbout/memberdummyimglady.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt',
@@ -117,7 +117,7 @@ export const executiveprofile_data = [
     },
     {
         id: 6,
-        name: 'Rabeya Chowdhuri',
+        name: 'Alicia R. Fisher',
         title: 'Member of Board',
         image: './assets/image/YCAbout/memberdummyimglady.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt',
@@ -172,7 +172,7 @@ export const executiveprofile_data = [
     },
     {
         id: 11,
-        name: 'Mohammad Maruf',
+        name: 'Alicia R. Fisher',
         title: 'Secretary',
         image: './assets/image/YCAbout/memberdummyimglady.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt',
@@ -205,7 +205,7 @@ export const executiveprofile_data = [
     },
     {
         id: 14,
-        name: 'Rabeya Chowdhuri',
+        name: 'Alicia R. Fisher',
         title: 'Member of Board',
         image: './assets/image/YCAbout/memberdummyimglady.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt',
@@ -260,7 +260,7 @@ export const executiveprofile_data = [
     },
     {
         id: 19,
-        name: 'Mohammad Maruf',
+        name: 'Alicia R. Fisher',
         title: 'Secretary',
         image: './assets/image/YCAbout/memberdummyimglady.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt',
