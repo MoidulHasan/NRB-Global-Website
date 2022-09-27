@@ -346,6 +346,7 @@ font-size: 30px;
   text-align: center;
   font-size: 50px;
   font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
   /* font-family:'Times New Roman', Times, serif; */
 }
 .ycateam-container{
@@ -418,9 +419,11 @@ justify-content: center;
 cursor: pointer;
  font-size: 20px;
  border: none;
- background: rgb(23, 80, 202);
- color: #ffffff;
+ /* background: rgb(23, 80, 202); */
+ border: 2px solid rgb(23, 80, 202);
+ color: rgb(23, 80, 202);
  border-radius: 10px;
+ background: none;
  margin: 5px 0px;
   }
 /* MEDIA  */
