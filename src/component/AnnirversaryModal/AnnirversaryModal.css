@@ -4,7 +4,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
   
   .modal-content {
     max-width: 500px;
-    background-color: #fff;
+    /* background-color: #fff; */
     transition: all 0.3s ease-in-out;
     transform: translateY(-200px);
     border-radius: 10px;
@@ -41,6 +41,9 @@
   
   .modal-header {
     padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
   
   .modal-title {
@@ -50,7 +53,7 @@
   .modal-body {
     padding: 0px;
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     border-radius: 10px;
   }
 
@@ -58,7 +61,6 @@
   .modalImageContainer img{
     width: 100%;
     border-radius: 10px;
-    height: 100%;
   }
 
   .closeButtonPi{

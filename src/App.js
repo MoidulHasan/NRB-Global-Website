@@ -45,6 +45,7 @@ import VideoGallary from './pages/Galllery/VideoGallery/VideoGallary';
 import AnnirversaryModal from './component/AnnirversaryModal/AnnirversaryModal';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import ScrollToTopComp from './component/ScrollToTopComp/ScrollToTopComp';
 function App() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -58,6 +59,7 @@ function App() {
         <BrowserRouter>
           <Header />
           <div className='mainApp'>
+            <ScrollToTopComp />
             <AnnirversaryModal
               title='Anniversary Modal'
               onClose={() => setShow(false)}
