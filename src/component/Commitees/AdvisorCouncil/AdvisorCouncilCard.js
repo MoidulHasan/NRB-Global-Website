@@ -7,7 +7,7 @@ function AdvisorCouncilCard() {
         <div>
             {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
             <div className="advisorcouncil">
-                {advisorProfile_data.map((advisor, i) => (
+                {advisorProfile_data.slice(0, 3).map((advisor, i) => (
                     <Card className='advisorprofile' style={{ width: '30em' }} key={i}>
                         {/* <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {advisor.description}
                         </p> */}
