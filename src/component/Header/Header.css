@@ -13,7 +13,7 @@
     box-shadow: 0 1px 3px rgba(90, 90, 90, 0.4);
 
     /* for the top fixed code  */
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
     top: 0;
     width: 100%;
