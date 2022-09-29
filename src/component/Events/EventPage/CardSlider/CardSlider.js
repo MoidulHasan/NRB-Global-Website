@@ -58,7 +58,7 @@ const CardSlider = () => {
         showThumbnails={false}
         circular
         autoPlay
-        transitionInterval={2000}
+        transitionInterval={4000}
       />
     </div>
   );

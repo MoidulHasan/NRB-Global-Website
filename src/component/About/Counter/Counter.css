@@ -1,6 +1,6 @@
 .counterDiv {
   /* background-color: #EAF1F8; */
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 12px;
   margin-left: 1px;
   margin-right: 1px;
@@ -17,7 +17,7 @@
   font-size: 50px;
   line-height: 96px;
   text-align: center;
-  color: #f5a30b;
+  color: #f34915;
 }
 .counterText {
   color: #195283;
