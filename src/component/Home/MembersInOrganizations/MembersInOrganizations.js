@@ -13,12 +13,12 @@ const MembersInOrganizations = () => {
   return (
     <div className='p-container mb-4'>
       <div className='organization py-5 px-4'>
-        <h2 className='font-semibold companyMembers mt-4 uppercase ml-1 md:ml-4 text-2xl mb-4'>
+        <h2 className='font-semibold md:font-bold companyMembers mt-4 md:mt-5 uppercase ml-1 md:ml-4 text-3xl md:text-4xl mb-4 md:mb-6'>
           Our <span className='orangeTextOrg'> Community Members</span> come
           from
         </h2>
 
-        <div className='grid'>
+        <div className='grid mb-4'>
           <div className='col-6 md:col-2 flex align-items-center justify-content-center'>
             <img className='imgOrg' src={img2} alt='' />
           </div>
