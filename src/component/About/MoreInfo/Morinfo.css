@@ -7,6 +7,18 @@
     /* background-color: #EAF1F8; */
     background-color: #FFFFFF;
     min-height: 434px;
+    transition: all .3s ease-in-out;
+
+}
+
+.moreInfoImgContainer{
+    transition: all .3s ease-in-out;
+    
+}
+
+.moreInfoOfAbout:hover, .moreInfoImgContainer:hover{
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
 .extendedAboutText{

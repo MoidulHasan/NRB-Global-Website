@@ -3,7 +3,7 @@ import { Carousel } from 'primereact/carousel';
 
 const AnniversaryPhotoCarousel = () => {
   const [anniversaryImages, setAnniversaryImages] = useState([]);
-  console.log(anniversaryImages);
+  // console.log(anniversaryImages);
 
   const responsiveOptions = [
     {
@@ -35,9 +35,9 @@ const AnniversaryPhotoCarousel = () => {
   }, []);
 
   const anniversaryImgTemplate = (image) => {
-    console.log(image, 'item form template');
+    // console.log(image, 'item form template');
     return (
-      <div className='card anniversaryCarouselCard'>
+      <div className='card anniversaryCarouselCard p-1 md:p-2'>
         <div className='anniversaryImgDiv'>
           <img
             className='anniversaryImg'
