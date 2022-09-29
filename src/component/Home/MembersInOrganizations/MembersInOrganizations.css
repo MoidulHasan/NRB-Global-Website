@@ -12,6 +12,10 @@
 .imgOrg{
     /* width: 126px;
     height:70px ; */
+    transition: all .6s ease-in-out;
+}
+.imgOrg:hover{
+    transform: scale(1.3);
 }
 .orangeTextOrg{
     color: tomato

@@ -11,14 +11,15 @@ import WhyJoinNRB from '../../component/Home/WhyJoinNRB/WhyJoinNRB';
 import TopBlogs from '../../component/Home/TopBlogs/TopBlogs';
 import WhyJoinHome from '../../component/Home/WhyJoinHome/WhyJoinHome';
 import ExecutiveCommitteeMembers from '../../component/Home/ExecutiveCommitteeMembers/ExecutiveCommitteeMembers';
+import ThirdAnniversarySection from '../../component/Home/ThirdAnniversarySection/ThirdAnniversarySection';
 
 const Home = () => {
   return (
     <div>
       {/* carousel section  */}
-      {/* <section>
+      <section>
         <PhotoCarousel />
-      </section> */}
+      </section>
       <section>
         <TopBanner />
       </section>
@@ -34,7 +35,9 @@ const Home = () => {
       <section>
         <ExclusiveEvent />
       </section>
-
+      <section>
+        <ThirdAnniversarySection />
+      </section>
       <section>
         <WhyJoinHome />
       </section>
