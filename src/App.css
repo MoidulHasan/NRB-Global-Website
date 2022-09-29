@@ -1,7 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&family=Noto+Sans&family=Rubik:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DynaPuff&family=Inter&family=Kaushan+Script&family=Acme&family=Pacifico&family=Noto+Sans&family=Rubik:wght@400;700&family=Poppins&display=swap");
 
 /* newly added :
-font-family: 'Noto Sans', sans-serif; */
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'DynaPuff', cursive;
+font-family: 'Barlow Condensed', sans-serif;
+
+
+font-family: 'Kaushan Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Acme', sans-serif;
+
+
+
+*/
 
 /* css made for container  */
 .p-container,
@@ -18,6 +32,7 @@ font-family: 'Noto Sans', sans-serif; */
 }
 .mainApp {
   min-height: 50vh;
+  margin-top: 80px;
 }
 
 .mainApp:after {

@@ -1,4 +1,4 @@
-.p-galleria-indicators{
+.topPhotoCarouselCard .p-galleria-indicators{
     position: relative;
     top: -55px;
 }
@@ -8,4 +8,62 @@
 }
 .p-galleria-item-next-icon{
     color: gray;
+}
+
+.topPhotoCarouselImg{
+    width: 100%;
+    display: block;
+    height: 85vh;
+    animation: zoomInImageFeature 4s 9;
+}
+
+.topPhotoCarouselCard{
+    max-height: 85vh;
+    overflow: hidden;
+}
+
+@keyframes zoomInImageFeature {
+    0% {
+        transform: scale(1,1);
+    }
+    
+    100% {
+        transform: scale(1.1,1.1);
+    }
+    
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .topPhotoCarouselImg{
+        width: 100%;
+        display: block;
+        height: 55vh ;
+    }
+    .topPhotoCarouselCard{
+        max-height: 55vh ;
+    } 
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .topPhotoCarouselImg{
+        width: 100%;
+        display: block;
+        height: 50vh ;
+    }
+    .topPhotoCarouselCard{
+        max-height: 50vh ;
+    } 
+}
+
+@media screen and (max-width: 576px) {
+    .topPhotoCarouselImg{
+        width: 100%;
+        display: block;
+        height: 48vh ;
+    }
+    .topPhotoCarouselCard{
+        max-height: 48vh ;
+    } 
 }

@@ -33,6 +33,14 @@ max-height: 100%;
 object-fit: cover;
 }
 
+.whyJoinPhoto{
+    transition: all .4s ease-in-out;
+}
+
+.whyJoinPhoto:hover{
+    transform: scale(1.07);
+}
+
 .whyJoinColText{
     background-color: #144E62;
 }
