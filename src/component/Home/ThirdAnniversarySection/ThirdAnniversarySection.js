@@ -19,7 +19,11 @@ const ThirdAnniversarySection = () => {
             <span>Year Anniversary of NRB Global</span>
           </h2>
           <div className='anniversaryImgContainer flex align-items-center justify-content-center'>
-            <img src={thirdAnniversaryImg} alt='three Year Anniversary' />
+            <img
+              src={thirdAnniversaryImg}
+              alt='three Year Anniversary'
+              className='thirdAnniversaryImg'
+            />
           </div>
           <h4 className='my-3 text-3xl md:text-5xl text-center thirdAnniversaryHeaderTextHome'>
             {' '}

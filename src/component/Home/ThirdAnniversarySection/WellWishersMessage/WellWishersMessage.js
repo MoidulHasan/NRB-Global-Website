@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import '../ThirdAnniversarySection.css';
-import promo1 from '../../../../assets/videos/promo1.mp4';
 
 const WellWishersMessage = () => {
   return (
