@@ -1,0 +1,38 @@
+.thirdAnniversarySection{
+     /* padding: 2rem; */
+     background-color: #BCDFFF;
+     /* background-color: #e5f0f8; */
+     border-radius: 10px;
+     /* margin: 20px 0px; */
+     padding-bottom: 3rem;  
+}
+
+.celebrationText{
+     font-size: 4rem;
+     font-family: 'Pacifico', cursive;
+ }
+ .celebrationTextExtra{
+     font-family: 'Cookie', cursive;
+ }
+
+ .eventHeaderSupportTextAnniversary{
+     font-family: 'Cookie', cursive;
+ }
+
+ .guestText{
+    font-family: 'Cookie', cursive;
+ }
+
+.anniversaryCarouselCard{
+    border-radius: 7px;
+}
+.anniversaryImgDiv img{
+    width: 98%;
+    max-height: 350px;
+}
+
+@media screen and (max-width: 960px) {
+    .celebrationText{
+        font-size: 3rem;
+    }
+}

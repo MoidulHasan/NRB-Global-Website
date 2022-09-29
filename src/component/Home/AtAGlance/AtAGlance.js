@@ -1,5 +1,6 @@
 import React from 'react';
 import './AtAGlance.css';
+import CountUp from 'react-countup';
 
 const AtAGlance = () => {
   return (
@@ -30,7 +31,10 @@ const AtAGlance = () => {
                 fill='#FE6C3E'
               ></path>
             </svg>
-            <h1 className='text-6xl font-bold my-1'>15,000K+</h1>
+            <h1 className='text-6xl font-bold my-1'>
+              <CountUp end={1500} separator=',' enableScrollSpy duration={3} />
+              K+
+            </h1>
             <p className='mt-1'>Members</p>
           </div>
         </div>
@@ -51,7 +55,9 @@ const AtAGlance = () => {
                 fill='#FE6C3E'
               ></path>
             </svg>
-            <h1 className='text-6xl font-bold my-1'>500+</h1>
+            <h1 className='text-6xl font-bold my-1'>
+              <CountUp end={500} enableScrollSpy duration={3} />+
+            </h1>
             <p className='mt-1'>Free Events Organized</p>
           </div>
         </div>
@@ -72,7 +78,9 @@ const AtAGlance = () => {
                 fill='#FE6C3E'
               ></path>
             </svg>
-            <h1 className='text-6xl font-bold my-1'>4500+</h1>
+            <h1 className='text-6xl font-bold my-1'>
+              <CountUp end={4500} separator=',' enableScrollSpy duration={3} />+
+            </h1>
             <p className='mt-1'>College & University </p>
           </div>
         </div>

@@ -19,6 +19,8 @@
 
 }
 
+
+
 @media (min-width: 960px){
     .basis-auto {
         flex-basis: 50%;
@@ -29,7 +31,16 @@
     .imageTop{
         max-height: 520px !important;
     }
+    /* .imageTop img{
+        width: 100%;
+    } */
 
+}
+@media screen and (max-width: 960px) {
+    .imageTop img{
+        width: 100%;
+    }
+    
 }
 
 /* @media screen and (max-width: 600px){

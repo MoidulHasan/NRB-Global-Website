@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TopBanner.css';
+import topBannerImg from '../../../assets/image/topbannerImg.png';
 
 const TopBanner = () => {
   return (
     <div className='p-container flex flex-column-reverse justify-content-end gap-4 md:flex-row md:justify-content-between heightCalc mb-4 md:mb-8 topBannerContainer'>
-      <div className='basis-auto md:basis-half mt-4 md:mt-7 fadeinleft animation-duration-1000 animation-iteration-1'>
+      <div className='basis-auto md:basis-half mt-4 md:mt-6 fadeinleft animation-duration-1000 animation-iteration-1'>
         <h1 className='mx-auto mb-2 text-2xl font-bold md:text-6xl'>
           Bangladesh's most active non residential comminity with{' '}
           <span className='text-orange-700'>15,000K+</span> members.
@@ -38,8 +39,11 @@ const TopBanner = () => {
       </div>
       <div class='mx-auto  w-full max-w-xl basis-auto md:mt-0 md:w-11'>
         {/* -mt-6 was in the upper div class  */}
-        <div className='imageTop' style={{ width: '100%', height: '100%' }}>
-          <svg
+        <div
+          className='imageTop flex align-items-center justify-content-center'
+          style={{ width: '100%', height: '100%' }}
+        >
+          {/* <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 588 457'
             width='588'
@@ -1034,7 +1038,12 @@ const TopBanner = () => {
                 </g>
               </g>
             </g>
-          </svg>
+          </svg> */}
+          <img
+            src={topBannerImg}
+            alt='NRB GLobal Community'
+            className='topBannerImgCommunity'
+          />
         </div>
       </div>
     </div>

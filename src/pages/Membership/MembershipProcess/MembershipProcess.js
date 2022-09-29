@@ -2,6 +2,7 @@ import React from 'react';
 import './MembershipProcess.css';
 import { Fade } from 'react-reveal';
 import MembershipProcessSteps from '../../../component/Membership/MembershipProcess/MembershipProcessSteps';
+import WhyJoinNRB from '../../../component/Home/WhyJoinNRB/WhyJoinNRB';
 
 const MembershipProcess = () => {
   return (
@@ -23,6 +24,9 @@ const MembershipProcess = () => {
       </div>
       {/* process list  */}
       <MembershipProcessSteps />
+      <section className='my-2'>
+        <WhyJoinNRB />
+      </section>
     </div>
   );
 };
