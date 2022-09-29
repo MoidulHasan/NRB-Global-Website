@@ -20,7 +20,7 @@ function ContactForm() {
                     <input type="email" placeholder='Email' />
                     <input type="number" placeholder='Number' />
                     <input type="text" placeholder='Subject' />
-                    <textarea name="" id="" cols="80" rows="3" placeholder='Comment'></textarea>
+                    <textarea name="" id="" cols="80" rows="3" placeholder='Write your message'></textarea>
                     {/* <InputTextarea className='col' placeholder="Comment" rows={5} cols={30} /> */}
 
                 </div>
