@@ -12,7 +12,6 @@ function PhotoGallaryGrid() {
                             <Image src={item.img} alt="Image" width="250" preview />
                         </div>
                     ))}
-
                 </div>
             </div>
         </div>
