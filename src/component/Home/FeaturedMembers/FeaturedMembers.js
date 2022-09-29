@@ -1,9 +1,9 @@
 import React from 'react';
 import './FeatureMembers.css';
 import { Button } from 'primereact/button';
-import memberImg1 from '../../../assets/image/topmembers/img3.jpg';
-import memberImg2 from '../../../assets/image/topmembers/img4.jpg';
-import memberImg3 from '../../../assets/image/topmembers/img5.jpg';
+import memberImg1 from '../../../assets/image/topmembers/drZia.png';
+import memberImg2 from '../../../assets/image/topmembers/aziz.png';
+import memberImg3 from '../../../assets/image/topmembers/tarikBabu.png';
 import memberIm4 from '../../../assets/image/topmembers/img6.jpg';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
@@ -40,9 +40,10 @@ const FeaturedMembers = () => {
                   <img src={memberImg1} alt='' className='imgMember' />
                 </div>
                 <div className='memberDetail'>
-                  <span className='block text-xl mb-1'>Hasan Ahmed</span>
+                  <span className='block text-xl mb-1'>Dr. Ziauddin Ahmed</span>
                   <span className='block text-l text-gray-700'>
-                    SE at Kajkam Init
+                    President of Bangladesh Medical Association of North America
+                    (BMANA)
                   </span>
                   <div className='socailLinks mt-4 flex align-items-center'>
                     <i
@@ -63,9 +64,9 @@ const FeaturedMembers = () => {
                   <img src={memberImg2} alt='' className='imgMember' />
                 </div>
                 <div className='memberDetail'>
-                  <span className='block text-xl mb-1'>Moidul Hasan Khan</span>
+                  <span className='block text-xl mb-1'>Aziz Choudhury</span>
                   <span className='block text-l text-gray-700'>
-                    SE at Kajkam Init
+                    Founder of Jamming Entertainment
                   </span>
                   <div className='socailLinks mt-4 flex align-items-center'>
                     <i
@@ -86,11 +87,9 @@ const FeaturedMembers = () => {
                   <img src={memberImg3} alt='' className='imgMember' />
                 </div>
                 <div className='memberDetail'>
-                  <span className='block text-xl mb-1'>
-                    Raida Fairuz Nashra
-                  </span>
+                  <span className='block text-xl mb-1'>Tarik Babu</span>
                   <span className='block text-l text-gray-700'>
-                    Member of UK Parliament
+                    Founder President of NRB Global
                   </span>
                   <div className='socailLinks mt-4 flex align-items-center'>
                     <i
@@ -112,7 +111,7 @@ const FeaturedMembers = () => {
                 </div>
                 <div className='memberDetail'>
                   <span className='block text-xl mb-1'>Atik Shahriar</span>
-                  <span className='block text-l text-gray-700'>
+                  <span className='block text-base text-gray-700'>
                     Civil Engineer at RCC
                   </span>
                   <div className='socailLinks mt-4 flex align-items-center'>
