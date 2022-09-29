@@ -28,10 +28,7 @@ const AnnirversaryModal = (props) => {
       unmountOnExit
       timeout={{ enter: 10, exit: 300 }}
     >
-      <div
-        className='modal mt-3 md:mt-8 anniversaryModal'
-        onClick={props.onClose}
-      >
+      <div className='modal anniversaryModal' onClick={props.onClose}>
         <div className='modal-content' onClick={(e) => e.stopPropagation()}>
           <div className='modal-header'>
             <span
