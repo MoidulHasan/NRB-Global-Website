@@ -67,4 +67,12 @@
   .closeButtonPi{
     font-size: 2rem;
   }
+
+  @media screen and (max-width:960px){
+    .modal{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  }
   

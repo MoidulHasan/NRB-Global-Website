@@ -1,6 +1,12 @@
 {
     "data": [
         {
+            "itemImageSrc": "./assets/image/Top banner Image/flags with nrb logo.png",
+            "thumbnailImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
             "itemImageSrc": "./assets/image/Top banner Image/4.png",
             "thumbnailImageSrc": "https://i.ibb.co/RCHnfFy/Creamy-Yellow-Simple-Illustrative-Marketing-Strategy-Blog-Banner.png",
             "alt": "Description for Image 4",

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 import { Button } from 'primereact/button';
 import './EventCarousel.css';
-import img1 from '../../../../assets/image/Blue Teal Yellow Hopeful Community Facebook Cover.png';
 
 const EventCarousel = () => {
   const [homeEvents, setHomeEvents] = useState([]);
