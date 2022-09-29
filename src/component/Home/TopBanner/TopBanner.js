@@ -5,45 +5,46 @@ import topBannerImg from '../../../assets/image/topbannerImg.png';
 
 const TopBanner = () => {
   return (
-    <div className='p-container flex flex-column-reverse justify-content-end gap-4 md:flex-row md:justify-content-between heightCalc mb-4 md:mb-8 topBannerContainer'>
-      <div className='basis-auto md:basis-half mt-4 md:mt-6 fadeinleft animation-duration-1000 animation-iteration-1'>
-        <h1 className='mx-auto mb-2 text-2xl font-bold md:text-6xl'>
-          Bangladesh's most active non residential comminity with{' '}
-          <span className='text-orange-700'>15,000K+</span> members.
-        </h1>
-        <p>
-          Learn from experts and network through events, join clubs and learn
-          real life skills, hang out on our discord server to make new friends
-          and have fun!
-        </p>
-        <div class='mt-8 mb-4 flex w-full flex-column gap-4 md:flex-row'>
-          <Link to='/gmRegistration' className='linkDecoration '>
-            <button
-              class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
-              type='button'
-            >
-              Join NRB Global
-              <span class='material-icons-sharp'>public</span>
-            </button>
-          </Link>
-          <Link to='/about' className='linkDecoration '>
-            <button
-              class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
-              type='button'
-            >
-              Explore Community
-              <span class='material-icons-sharp'>groups</span>
-            </button>
-          </Link>
+    <div className='p-container'>
+      <div className='flex flex-column-reverse justify-content-end gap-4 md:flex-row md:justify-content-between heightCalc mb-4 md:mb-8 topBannerContainer'>
+        <div className='basis-auto md:basis-half mt-4 md:mt-6 fadeinleft animation-duration-1000 animation-iteration-1'>
+          <h1 className='mx-auto mb-2 text-2xl font-bold md:text-6xl'>
+            Bangladesh's most active non residential comminity with{' '}
+            <span className='text-orange-700'>15,000K+</span> members.
+          </h1>
+          <p>
+            Learn from experts and network through events, join clubs and learn
+            real life skills, hang out on our discord server to make new friends
+            and have fun!
+          </p>
+          <div class='mt-8 mb-4 flex w-full flex-column gap-4 md:flex-row'>
+            <Link to='/gmRegistration' className='linkDecoration '>
+              <button
+                class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
+                type='button'
+              >
+                Join NRB Global
+                <span class='material-icons-sharp'>public</span>
+              </button>
+            </Link>
+            <Link to='/about' className='linkDecoration '>
+              <button
+                class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
+                type='button'
+              >
+                Explore Community
+                <span class='material-icons-sharp'>groups</span>
+              </button>
+            </Link>
+          </div>
         </div>
-      </div>
-      <div class='mx-auto  w-full max-w-xl basis-auto md:mt-0 md:w-11'>
-        {/* -mt-6 was in the upper div class  */}
-        <div
-          className='imageTop flex align-items-center justify-content-center'
-          style={{ width: '100%', height: '100%' }}
-        >
-          {/* <svg
+        <div class='mx-auto basis-auto '>
+          {/* -mt-6 was in the upper div class  */}
+          <div
+            className='imageTop flex align-items-center justify-content-center'
+            style={{ width: '100%', height: '100%' }}
+          >
+            {/* <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 588 457'
             width='588'
@@ -1039,11 +1040,12 @@ const TopBanner = () => {
               </g>
             </g>
           </svg> */}
-          <img
-            src={topBannerImg}
-            alt='NRB GLobal Community'
-            className='topBannerImgCommunity'
-          />
+            <img
+              src={topBannerImg}
+              alt='NRB GLobal Community'
+              className='topBannerImgCommunity'
+            />
+          </div>
         </div>
       </div>
     </div>

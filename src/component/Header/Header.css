@@ -60,6 +60,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: .9rem;
+    min-width: max-content;
   }
   
   .nav-links:hover {

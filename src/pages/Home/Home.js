@@ -33,11 +33,12 @@ const Home = () => {
         <ExecutiveCommitteeMembers />
       </section>
       <section>
-        <ExclusiveEvent />
-      </section>
-      <section>
         <ThirdAnniversarySection />
       </section>
+      <section>
+        <ExclusiveEvent />
+      </section>
+
       <section>
         <WhyJoinHome />
       </section>
