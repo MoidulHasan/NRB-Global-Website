@@ -52,21 +52,55 @@ const Footer = () => {
             <h2 className='text-l uppercase'>Contact Us</h2>
             <span className='orangeTextOrg '>support@nrbglobal.org</span>
             <div className='flex align-items-center justify-content-start my-4'>
-              <span className='mr-3'>
-                <i className='pi pi-instagram text-xl'></i>
-              </span>
-              <span className='mr-3'>
-                <i className='pi pi-twitter text-xl'></i>
-              </span>
-              <span className='mr-3'>
-                <i className='pi pi-facebook text-xl'></i>
-              </span>
-              <span className='mr-3'>
-                <i className='pi pi-linkedin text-xl'></i>
-              </span>
-              <span className='mr-3'>
-                <i className='pi pi-youtube text-xl'></i>
-              </span>
+              <a
+                href='https://www.facebook.com/NRBGlobal20'
+                target='_blanck'
+                className='linkKajkam instaLink'
+              >
+                <span className='mr-3'>
+                  <i className='pi pi-instagram text-xl'></i>
+                </span>
+              </a>
+
+              <a
+                href='https://www.facebook.com/NRBGlobal20'
+                target='_blanck'
+                className='linkKajkam twitterLink'
+              >
+                <span className='mr-3'>
+                  <i className='pi pi-twitter text-xl'></i>
+                </span>
+              </a>
+
+              <a
+                href='https://www.facebook.com/NRBGlobal20'
+                target='_blanck'
+                className='linkKajkam fbLink'
+              >
+                <span className='mr-3'>
+                  <i className='pi pi-facebook text-xl'></i>
+                </span>
+              </a>
+
+              <a
+                href='https://www.linkedin.com/company/kajkam-initiative-ltd/'
+                target='_blanck'
+                className='linkKajkam linkedinLink'
+              >
+                <span className='mr-3'>
+                  <i className='pi pi-linkedin text-xl'></i>
+                </span>
+              </a>
+
+              <a
+                href='https://www.youtube.com/channel/UCqOkpldBPoXCpi62nt9UioQ'
+                target='_blanck'
+                className='linkKajkam youtubeLink'
+              >
+                <span className='mr-3'>
+                  <i className='pi pi-youtube text-xl'></i>
+                </span>
+              </a>
             </div>
           </div>
         </div>
