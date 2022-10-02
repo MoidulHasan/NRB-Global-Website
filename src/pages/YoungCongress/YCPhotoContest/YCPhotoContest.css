@@ -1,0 +1,16 @@
+.photoContestContainer{
+  
+    /* background: rgb(110, 141, 198); */
+    padding: 10px;
+    border-radius: 10px !important;
+}
+
+.photoContestHeaderContainer{
+    height: 60vh;
+    width: 90%;
+}
+
+.photoContestHeaderContainer img{
+    width: 100% !important;
+    
+}

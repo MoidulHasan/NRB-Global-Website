@@ -36,18 +36,18 @@ const Header = () => {
       cName: 'nav-links',
       subMenu: [
         {
-          title: 'Cabinate Members',
-          path: '/cabinateMembers',
+          title: 'Cabinet Members',
+          path: '/cabinetMembers',
           cName: 'dropdown-link',
         },
         {
           title: 'Executive Ambassador',
-          path: '/exAmbassador',
+          path: '/executiveAmbassador',
           cName: 'dropdown-link',
         },
         {
           title: 'Advisory Council',
-          path: '/adCouncil',
+          path: '/advisoryCouncil',
           cName: 'dropdown-link',
         },
       ],
@@ -59,22 +59,27 @@ const Header = () => {
       subMenu: [
         {
           title: 'About Young Congress',
-          path: '/YCAbout',
+          path: '/YoungCongressAbout',
           cName: 'dropdown-link',
         },
         {
           title: 'Programs',
-          path: '/YCPrograms',
+          path: '/YoungCongressPrograms',
           cName: 'dropdown-link',
         },
         {
           title: 'Activities',
-          path: '/YCActivities',
+          path: '/YoungCongressActivities',
           cName: 'dropdown-link',
         },
         {
           title: 'Members',
-          path: '/YCMembers',
+          path: '/YoungCongressMembers',
+          cName: 'dropdown-link',
+        },
+        {
+          title: 'Photo Contest',
+          path: '/YoungCongressPhotoContest',
           cName: 'dropdown-link',
         },
       ],

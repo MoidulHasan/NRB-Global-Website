@@ -46,6 +46,7 @@ import AnnirversaryModal from './component/AnnirversaryModal/AnnirversaryModal';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import ScrollToTopComp from './component/ScrollToTopComp/ScrollToTopComp';
+import YCPhotoContest from './pages/YoungCongress/YCPhotoContest/YCPhotoContest';
 function App() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -70,14 +71,21 @@ function App() {
               <Route path='about' element={<About />} />
               <Route path='contact' element={<Contact />} />
               {/* committee  */}
-              <Route path='cabinateMembers' element={<CabinateMembers />} />
-              <Route path='exAmbassador' element={<ExecutiveAbassador />} />
-              <Route path='adCouncil' element={<AdvisorCouncil />} />
+              <Route path='cabinetMembers' element={<CabinateMembers />} />
+              <Route
+                path='executiveAmbassador'
+                element={<ExecutiveAbassador />}
+              />
+              <Route path='advisoryCouncil' element={<AdvisorCouncil />} />
               {/* Young Congress  */}
-              <Route path='YCAbout' element={<YCAbout />} />
-              <Route path='YCPrograms' element={<YCProgram />} />
-              <Route path='YCActivities' element={<YCAtivities />} />
-              <Route path='YCMembers' element={<YCMembers />} />
+              <Route path='YoungCongressAbout' element={<YCAbout />} />
+              <Route path='YoungCongressPrograms' element={<YCProgram />} />
+              <Route path='YoungCongressActivities' element={<YCAtivities />} />
+              <Route path='YoungCongressMembers' element={<YCMembers />} />
+              <Route
+                path='YoungCongressPhotoContest'
+                element={<YCPhotoContest />}
+              />
               {/* members  */}
               <Route path='memberList' element={<MemberList />} />
               <Route path='memberservices' element={<MemberServices />} />
