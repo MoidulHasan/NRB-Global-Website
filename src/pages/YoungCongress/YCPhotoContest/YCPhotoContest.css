@@ -1,0 +1,53 @@
+.photoContestContainer{
+  
+    /* background: rgb(110, 141, 198); */
+    padding: 10px;
+    border-radius: 10px ;
+}
+
+.photoContestHeaderContainer{
+    /* height: 60vh; */
+    /* width: 90%; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    transition: all .7s ease-in-out
+   
+}
+
+.photoContestHeaderContainer:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.photoContestHeaderContainer img{
+    width: 100% !important;
+    height: 70vh;
+    border-radius: 10px;
+    
+}
+
+.youngCongressPhotoContestPhotoContainer{
+    background-color: #FFFFFF;
+    
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.imgPhotoGraphyContestContainer{
+    border-radius: 10px;
+}
+
+.imgPhotoGraphyContest{
+    border-radius: 10px;
+    /* min-height: 30vh; */
+    /* max-height: 420px; */
+    
+}
+
+
+.youngCongressPhotoContestPhotoContainer .p-image-preview-indicator{
+    border-radius: 10px;
+    /* height: min-content; */
+    
+}
