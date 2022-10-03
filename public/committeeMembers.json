@@ -9,39 +9,39 @@
         "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
+        "cabinateId": 1005,
+        "name": "Aziz Chowdhury",
+        "profileImg": "./assets/image/cabinateMembers/aziz.png",
+        "designation": "Press & Public Relations Secretary NRB Global",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate aziz.png",
+        "designationShort": "Public Relations Secretary",
+        "fbLink": "https://www.facebook.com/NRBGlobal20"
+    },
+    {
         "cabinateId": 1002,
-        "name": "Ataul Khan",
-        "profileImg": "./assets/image/cabinateMembers/ataul.png",
+        "name": "Vice President",
+        "profileImg": "./assets/image/cabinateMembers/anonymous.png",
         "designation": "Vice president NRB-Global",
-        "cabinateImg": "./assets/image/cabinateMembers/cabinate ataul.png",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate annonymous.png",
         "designationShort": "Vice president",
         "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
         "cabinateId": 1003,
-        "name": "Ehsanur Rahman",
-        "profileImg": "./assets/image/cabinateMembers/ehsanur.png",
+        "name": "General Secretary",
+        "profileImg": "./assets/image/cabinateMembers/anonymous.png",
         "designation": "General Secretary NRB Global",
-        "cabinateImg": "./assets/image/cabinateMembers/cabinate ehsanur.png",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate annonymous.png",
         "designationShort": "General Secretary",
         "fbLink": "https://www.facebook.com/NRBGlobal20"
     },
     {
         "cabinateId": 1004,
-        "name": "Suriya Munni",
-        "profileImg": "./assets/image/cabinateMembers/suraia.png",
-        "designation": "Press Secretary NRB Global",
-        "cabinateImg": "./assets/image/cabinateMembers/cabinate suraia.png",
-        "designationShort": "Press Secretary",
-        "fbLink": "https://www.facebook.com/NRBGlobal20"
-    },
-    {
-        "cabinateId": 1005,
-        "name": "Mohammad Sharif Sumon",
-        "profileImg": "./assets/image/cabinateMembers/suman.png",
-        "designation": "Public Relations Secretary NRB Global",
-        "cabinateImg": "./assets/image/cabinateMembers/cabinate  suman.png",
-        "designationShort": "Public Relations Secretary",
+        "name": "Financial Secretary",
+        "profileImg": "./assets/image/cabinateMembers/anonymous.png",
+        "designation": "Financial Secretary NRB Global",
+        "cabinateImg": "./assets/image/cabinateMembers/cabinate annonymous.png",
+        "designationShort": "Financial Secretary",
         "fbLink": "https://www.facebook.com/NRBGlobal20"
     }
 ]

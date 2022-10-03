@@ -55,7 +55,7 @@ border-radius: 10px !important;
     /* padding: 20px; */
      box-shadow: none;
      /* margin-top: 30px; */
-   
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
  }
  .ycm-flex img{
  border-radius: 20px !important;

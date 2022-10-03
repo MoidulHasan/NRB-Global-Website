@@ -2,8 +2,8 @@
     {
         "id": "1000",
         "code": "f230fh0g3",
-        "name": "Md. Mokter Hossen",
-        "image": "./assets/image/members/1617217986Ickw3RTlmVMU0LN48611.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Law Student",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-gb"
@@ -11,8 +11,8 @@
     {
         "id": "1001",
         "code": "nvklal433",
-        "name": "Mithun Bairagi",
-        "image": "./assets/image/members/1617218059ssTKDTEgk1YjQkDz5779.jpg",
+        "name": "Alicia R. Fisher",
+        "image": "./assets/image/YCAbout/memberdummyimglady.jpg",
         "designation": "Cs Student",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-us"
@@ -20,8 +20,8 @@
     {
         "id": "1002",
         "code": "zz21cz3c1",
-        "name": "Mst. Shamema Ahmed Lisha",
-        "image": "./assets/image/members/1617218111gU7OhLUXTKVyOg4X9168.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Entrepreneur",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-us"
@@ -29,8 +29,8 @@
     {
         "id": "1003",
         "code": "244wgerg2",
-        "name": "Siam Ahmed",
-        "image": "./assets/image/members/16172181469xxBH8m0ENRZarCl8402.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Law Student",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-ea"
@@ -38,8 +38,8 @@
     {
         "id": "1004",
         "code": "h456wer53",
-        "name": "Fargana Afrin Anu",
-        "image": "./assets/image/members/1617218178CHJNA12PVyF6ktih604.jpg",
+        "name": "Alicia R. Fisher",
+        "image": "./assets/image/YCAbout/memberdummyimglady.jpg",
         "designation": "Engineer",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-au"
@@ -47,8 +47,8 @@
     {
         "id": "1005",
         "code": "av2231fwg",
-        "name": "A.K.M. Ashek Farabi",
-        "image": "./assets/image/members/1617785129fpTaxlYyZu1EIw378635.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Business Student",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-be"
@@ -56,8 +56,8 @@
     {
         "id": "1006",
         "code": "a4v2231fwg",
-        "name": "Puja Roy",
-        "image": "./assets/image/members/1617785165Kn1oIPYhsXELmfI74154.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "HRM Manager",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-ca"
@@ -65,8 +65,8 @@
     {
         "id": "1007",
         "code": "av2231fwg",
-        "name": "Md. Azim Uddin",
-        "image": "./assets/image/members/1617785186jPHrJGZnt871b0Lg4869.jpg",
+        "name": "Alicia R. Fisher",
+        "image": "./assets/image/YCAbout/memberdummyimglady.jpg",
         "designation": "Event Manager",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-dk"
@@ -74,8 +74,8 @@
     {
         "id": "1008",
         "code": "av2231fwg",
-        "name": "Shoaib Mahbub",
-        "image": "./assets/image/members/1617785216PYEgWoUvIvIuMEII2204.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Co-Convenor",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-us"
@@ -83,8 +83,8 @@
     {
         "id": "1009",
         "code": "av2231fwg",
-        "name": "Mst Shahanara Khatun",
-        "image": "./assets/image/members/16177852396gmLKtDNEfJ9IFBI5345.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Co-Convenor",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-ca"
@@ -92,8 +92,8 @@
     {
         "id": "1010",
         "code": "av2231fwg",
-        "name": "Ahsanul Haque Mahim",
-        "image": "./assets/image/members/16177852793o7PQ654mjrii4Zm401.jpg",
+        "name": "Alicia R. Fisher",
+        "image": "./assets/image/YCAbout/memberdummyimglady.jpg",
         "designation": "Co-Convenor",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-gb"
@@ -101,82 +101,10 @@
     {
         "id": "1011",
         "code": "av2231fwg",
-        "name": "Tabassum Mustafa Authoy",
-        "image": "./assets/image/members/1617785325vGoHHs9Gj6SiPIXf7608.jpg",
+        "name": "Ricky S. Stormer",
+        "image": "./assets/image/YCAbout/ycdummymember.png",
         "designation": "Co-convenor",
         "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
         "country": "fi-dk"
-    },
-    {
-        "id": "1012",
-        "code": "av2231fwg",
-        "name": "Md. Manirul Islam",
-        "image": "./assets/image/members/1617785345WJnwLjR82UzqXCbe4905.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-us"
-    },
-    {
-        "id": "1013",
-        "code": "av2231fwg",
-        "name": "M0hammad Sohag Rana",
-        "image": "./assets/image/members/1617785377TAwdHw4Is4OWm6zY5317.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-ca"
-    },
-    {
-        "id": "1014",
-        "code": "av2231fwg",
-        "name": "Md. Fahim Faysal",
-        "image": "./assets/image/members/1617785403JlAFKbmgn0rMSR258328.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-us"
-    },
-    {
-        "id": "1015",
-        "code": "av2231fwg",
-        "name": "Mst Mithila Farzana",
-        "image": "./assets/image/members/1617785426sy69Z7843qUcjytX465.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-us"
-    },
-    {
-        "id": "1016",
-        "code": "av2231fwg",
-        "name": "Mahmudus Sobhan Khan",
-        "image": "./assets/image/members/1617785488oy3rjFv7R9T5DC4k7182.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-us"
-    },
-    {
-        "id": "1017",
-        "code": "av2231fwg",
-        "name": "Shahria Tanzil",
-        "image": "./assets/image/members/1617785507ygi1eL9xIbsJeeLm1283.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-us"
-    },
-    {
-        "id": "1018",
-        "code": "av2231fwg",
-        "name": "Xannat Swimy",
-        "image": "./assets/image/members/16177855306kOaXcLn7X71FEUX2178.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-us"
-    },
-    {
-        "id": "1019",
-        "code": "av2231fwg",
-        "name": "Redia Afrose Raka",
-        "image": "./assets/image/members/1617785549OZ0IgeR476qf0Ngm5184.jpg",
-        "designation": "Co-Convenor",
-        "thumb": "./assets/image/blogs/5fc9f32a7a44d-bpfull.jpg",
-        "country": "fi-ca"
     }
 ]
