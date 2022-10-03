@@ -434,3 +434,22 @@ cursor: pointer;
   }
  
 }
+
+
+/* video component   */
+
+.ycPhotoContestAboutContainer{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.ycPhotoContestAboutHeader{
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.contestAboutText{
+  font-family: 'Cookie', cursive;
+}
