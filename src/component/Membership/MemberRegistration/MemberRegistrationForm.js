@@ -20,6 +20,14 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
   // const [formData, setFormData] = useState({});
 
+  //console.log(props);
+  const genMember = props.member === 'General Member';
+  const [disablePaymentType, setDisablePaymentType] = useState(false);
+
+  useEffect(() => {
+    genMember && setDisablePaymentType(true);
+  }, [genMember]);
+
   const org = props.memberType === 'Organization';
   // console.log(org, 'ORG');
 
@@ -39,7 +47,12 @@ const MemberRegistrationForm = (props) => {
     gender: '',
     designation: '',
     paymentType: '',
-    paymentFee: props.memberType === 'Individual' ? '200' : '300',
+    paymentFee:
+      props.member === 'General Member'
+        ? '0'
+        : props.memberType === 'Individual'
+        ? '200'
+        : '300',
     picture: {},
     birthday: null,
     category:
@@ -62,7 +75,7 @@ const MemberRegistrationForm = (props) => {
   const onSubmit = async (data) => {
     // setFormData({ formData, ...data });
     // console.log(data.picture);
-    console.log(data);
+    //console.log(data);
 
     const formData = new FormData();
     formData.append('name', data.name);
@@ -722,6 +735,7 @@ const MemberRegistrationForm = (props) => {
                           control={control}
                           render={({ field }) => (
                             <Dropdown
+                              disabled={disablePaymentType}
                               id={field.name}
                               value={field.value}
                               placeholder='Select Your Payment Type'
@@ -776,10 +790,16 @@ const MemberRegistrationForm = (props) => {
                   </div>
                   {/* fee declaration paragraph  */}
                   <div className='mb-4'>
-                    <span className='text-green-500'>
-                      Membership fee {org ? '300.00$' : '200.00$'} for{' '}
-                      {org ? 'Organization' : 'Individual'}
-                    </span>
+                    {props.member === 'General Member' ? (
+                      <span className='text-green-500'>
+                        General Members can register free of cost.
+                      </span>
+                    ) : (
+                      <span className='text-green-500'>
+                        Membership fee {org ? '300.00$' : '200.00$'} for{' '}
+                        {org ? 'Organization' : 'Individual'}
+                      </span>
+                    )}
                   </div>
                   {/* accept field  */}
                   <div className='field-checkbox'>
@@ -806,7 +826,7 @@ const MemberRegistrationForm = (props) => {
                     </label>
                   </div>
                   {/* submit button  */}
-                  {paymentMethod === 'Hands On' ? (
+                  {paymentMethod === 'Hands On' || paymentMethod === '' ? (
                     <Button type='submit' label='Submit' className='mt-2' />
                   ) : (
                     <Button
