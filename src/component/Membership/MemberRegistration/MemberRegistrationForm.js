@@ -53,7 +53,6 @@ const MemberRegistrationForm = (props) => {
         : props.memberType === 'Individual'
         ? '200'
         : '300',
-    //paymentFee: props.memberType === 'Individual' ? '200' : '300',
     picture: {},
     birthday: null,
     category:
@@ -76,7 +75,7 @@ const MemberRegistrationForm = (props) => {
   const onSubmit = async (data) => {
     // setFormData({ formData, ...data });
     // console.log(data.picture);
-    console.log(data);
+    //console.log(data);
 
     const formData = new FormData();
     formData.append('name', data.name);
@@ -793,8 +792,7 @@ const MemberRegistrationForm = (props) => {
                   <div className='mb-4'>
                     {props.member === 'General Member' ? (
                       <span className='text-green-500'>
-                        Membership fee is not applicable for the general
-                        members.
+                        General Members can register free of cost.
                       </span>
                     ) : (
                       <span className='text-green-500'>
