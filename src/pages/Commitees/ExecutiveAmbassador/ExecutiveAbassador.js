@@ -9,7 +9,7 @@ function ExecutiveAbassador() {
       {/* <ExecutiveAbassadorProfile /> */}
       <ExOverlayCard />
       <div className='executive-memberBtn'>
-        <Button label='Become a Executive Ambassador' />
+        <Button label='Become an Executive Ambassador' />
       </div>
     </div>
   );
