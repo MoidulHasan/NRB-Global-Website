@@ -90,18 +90,8 @@ const Header = () => {
       cName: 'nav-links',
       subMenu: [
         {
-          title: 'Member List',
-          path: '/memberList',
-          cName: 'dropdown-link',
-        },
-        {
-          title: 'Member Services',
-          path: '/memberservices',
-          cName: 'dropdown-link',
-        },
-        {
-          title: 'General Members',
-          path: '/generalMembers',
+          title: 'Membership Process',
+          path: '/membershipProcess',
           cName: 'dropdown-link',
         },
         {
@@ -120,8 +110,18 @@ const Header = () => {
           cName: 'dropdown-link',
         },
         {
-          title: 'Membership Process',
-          path: '/membershipProcess',
+          title: 'Member Services',
+          path: '/memberservices',
+          cName: 'dropdown-link',
+        },
+        {
+          title: 'General Members',
+          path: '/generalMembers',
+          cName: 'dropdown-link',
+        },
+        {
+          title: 'Member List',
+          path: '/memberList',
           cName: 'dropdown-link',
         },
       ],
