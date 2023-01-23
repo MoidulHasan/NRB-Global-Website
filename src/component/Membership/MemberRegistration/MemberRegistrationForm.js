@@ -20,7 +20,13 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
   // const [formData, setFormData] = useState({});
 
-  console.log(props);
+  //console.log(props);
+  const genMember = props.member === 'General Member';
+  const [disablePaymentType, setDisablePaymentType] = useState(false);
+
+  useEffect(() => {
+    genMember && setDisablePaymentType(true);
+  }, [genMember]);
 
   const org = props.memberType === 'Organization';
   // console.log(org, 'ORG');
@@ -41,7 +47,13 @@ const MemberRegistrationForm = (props) => {
     gender: '',
     designation: '',
     paymentType: '',
-    paymentFee: props.memberType === 'Individual' ? '200' : '300',
+    paymentFee:
+      props.member === 'General Member'
+        ? '0'
+        : props.memberType === 'Individual'
+        ? '200'
+        : '300',
+    //paymentFee: props.memberType === 'Individual' ? '200' : '300',
     picture: {},
     birthday: null,
     category:
@@ -724,6 +736,7 @@ const MemberRegistrationForm = (props) => {
                           control={control}
                           render={({ field }) => (
                             <Dropdown
+                              disabled={disablePaymentType}
                               id={field.name}
                               value={field.value}
                               placeholder='Select Your Payment Type'
