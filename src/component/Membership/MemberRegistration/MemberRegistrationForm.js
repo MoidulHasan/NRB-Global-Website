@@ -20,6 +20,8 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
   // const [formData, setFormData] = useState({});
 
+  console.log(props);
+
   const org = props.memberType === 'Organization';
   // console.log(org, 'ORG');
 
@@ -776,10 +778,17 @@ const MemberRegistrationForm = (props) => {
                   </div>
                   {/* fee declaration paragraph  */}
                   <div className='mb-4'>
-                    <span className='text-green-500'>
-                      Membership fee {org ? '300.00$' : '200.00$'} for{' '}
-                      {org ? 'Organization' : 'Individual'}
-                    </span>
+                    {props.member === 'General Member' ? (
+                      <span className='text-green-500'>
+                        Membership fee is not applicable for the general
+                        members.
+                      </span>
+                    ) : (
+                      <span className='text-green-500'>
+                        Membership fee {org ? '300.00$' : '200.00$'} for{' '}
+                        {org ? 'Organization' : 'Individual'}
+                      </span>
+                    )}
                   </div>
                   {/* accept field  */}
                   <div className='field-checkbox'>
