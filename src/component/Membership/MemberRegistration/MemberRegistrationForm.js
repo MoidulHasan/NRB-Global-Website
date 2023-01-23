@@ -806,7 +806,7 @@ const MemberRegistrationForm = (props) => {
                     </label>
                   </div>
                   {/* submit button  */}
-                  {paymentMethod === 'Hands On' ? (
+                  {paymentMethod === 'Hands On' || paymentMethod === '' ? (
                     <Button type='submit' label='Submit' className='mt-2' />
                   ) : (
                     <Button
