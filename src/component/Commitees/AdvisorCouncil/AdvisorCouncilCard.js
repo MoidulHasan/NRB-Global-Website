@@ -42,7 +42,7 @@ function AdvisorCouncilCard() {
                   </a>
                   {/* <a href={advisor.linkedinlink}> <i className="pi pi-linkedin" style={{ color: '#4267B2' }} /></a> */}
                   <a href={advisor.weblink} target="_blank" rel="noreferrer">
-                    <i className="pi pi-link" style={{ color: "blue" }} />
+                    <i className="pi pi-envelope" style={{ color: "blue" }} />
                   </a>
                 </div>
               </div>

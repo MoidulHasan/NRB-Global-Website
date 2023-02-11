@@ -59,7 +59,7 @@ function ExecutiveAbassadorProfile() {
                         rel="noreferrer"
                       >
                         <i
-                          className="pi pi-link"
+                          className="pi pi-envelope"
                           style={{ color: "#ffffff" }}
                         />
                       </a>
@@ -69,16 +69,16 @@ function ExecutiveAbassadorProfile() {
                     <p className="overlay-executive-ambassador-name">
                       {excutive.name}
                     </p>
-
-                    <h5 className="overlay-executive-ambassador-title">
-                      {excutive.description}
-                    </h5>
                     <div className="overlay-executive-ambassador-address">
-                      <i className="pi pi-map-marker" />
+                      <i className="pi pi-map-marker text-xs font-bold social_Icon" />
                       <span className="overlay-executive-ambassador-address-span">
                         {excutive.address}
                       </span>
                     </div>
+
+                    <h5 className="overlay-executive-ambassador-title">
+                      {excutive.description}
+                    </h5>
                   </div>
                 </div>
               </Card>

@@ -124,7 +124,10 @@ function CabinateCard() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="pi pi-link" style={{ color: "#EEC137" }} />
+                      <i
+                        className="pi pi-envelope"
+                        style={{ color: "#EEC137" }}
+                      />
                     </a>
                   </div>
                 </div>
