@@ -38,18 +38,18 @@ const BlogCarousel = () => {
       //     <div className='infoDetails flex align-items-center justify-content-start my-3 font-semibold text-gray-700'>
       //       <span>{blog.date}</span>
       //       <span className='flex align-items-center justify-content-center ml-3'>
-      //         <span class='material-icons-sharp'>visibility</span>{' '}
+      //         <span className='material-icons-sharp'>visibility</span>{' '}
       //         <span className='ml-1'>{blog.view} views</span>
       //       </span>
       //       <span className='flex align-items-center justify-content-center ml-3'>
-      //         <span class='material-icons-sharp'>
-      //           <span class='material-icons-sharp'>schedule</span>
+      //         <span className='material-icons-sharp'>
+      //           <span className='material-icons-sharp'>schedule</span>
       //         </span>{' '}
       //         <span className='ml-1'>{blog.time} min read</span>
       //       </span>
       //       <span className='flex align-items-center justify-content-center ml-3'>
-      //         <span class='material-icons-sharp'>
-      //           <span class='material-icons-sharp'>favorite</span>
+      //         <span className='material-icons-sharp'>
+      //           <span className='material-icons-sharp'>favorite</span>
       //         </span>{' '}
       //         <span className='ml-1'>{blog.like} likes</span>
       //       </span>
@@ -97,18 +97,18 @@ const BlogCarousel = () => {
           <div className='hidden md:flex  align-items-center justify-content-start my-3 font-semibold text-gray-700'>
             <span>{blog.date}</span>
             <span className='flex align-items-center justify-content-center ml-3'>
-              <span class='material-icons-sharp'>visibility</span>{' '}
+              <span className='material-icons-sharp'>visibility</span>{' '}
               <span className='ml-1'>{blog.view} views</span>
             </span>
             <span className='flex align-items-center justify-content-center ml-3'>
-              <span class='material-icons-sharp'>
-                <span class='material-icons-sharp'>schedule</span>
+              <span className='material-icons-sharp'>
+                <span className='material-icons-sharp'>schedule</span>
               </span>{' '}
               <span className='ml-1'>{blog.time} min read</span>
             </span>
             <span className='flex align-items-center justify-content-center ml-3'>
-              <span class='material-icons-sharp'>
-                <span class='material-icons-sharp'>favorite</span>
+              <span className='material-icons-sharp'>
+                <span className='material-icons-sharp'>favorite</span>
               </span>{' '}
               <span className='ml-1'>{blog.like} likes</span>
             </span>
@@ -119,7 +119,7 @@ const BlogCarousel = () => {
             </div>
             <div className='col-6'>
               <span className='flex align-items-center justify-content-center exclusiveVisibilityField'>
-                <span class='material-icons-sharp exclusiveVisibilityFieldIcon'>
+                <span className='material-icons-sharp exclusiveVisibilityFieldIcon'>
                   visibility
                 </span>{' '}
                 <span className='ml-1'>{blog.view}</span>
@@ -127,16 +127,16 @@ const BlogCarousel = () => {
             </div>
             <div className='col-6'>
               <span className='flex align-items-center justify-content-center text-xs scheduleMobile'>
-                <span class='material-icons-sharp'>
-                  <span class='material-icons-sharp'>schedule</span>
+                <span className='material-icons-sharp'>
+                  <span className='material-icons-sharp'>schedule</span>
                 </span>{' '}
                 <span className='ml-1'>{blog.time} min read</span>
               </span>
             </div>
             <div className='col-6'>
               <span className='flex align-items-center justify-content-center text-xs'>
-                <span class='material-icons-sharp'>
-                  <span class='material-icons-sharp'>favorite</span>
+                <span className='material-icons-sharp'>
+                  <span className='material-icons-sharp'>favorite</span>
                 </span>{' '}
                 <span className='ml-1'>{blog.like} likes</span>
               </span>

@@ -18,7 +18,9 @@ const SingleServiceOtherDetails = ({ singleService }) => {
                   <Link to='/contact' className='linkDecoration'>
                     <h2 className='text-blue-900 text-base cursor-pointer d-flex align-items-center justify-content-center'>
                       <span>Contact NRB</span>{' '}
-                      <span class='material-icons-sharp'>contact_support</span>
+                      <span className='material-icons-sharp'>
+                        contact_support
+                      </span>
                     </h2>
                   </Link>
                 </div>
@@ -31,7 +33,7 @@ const SingleServiceOtherDetails = ({ singleService }) => {
             <Link to='/contact' className='linkDecoration'>
               <h1 className='text-blue-900 text-bold cursor-pointer text-3xl d-flex align-items-center justify-content-center my-6 text-center'>
                 <span>Contact NRB Globals for More Detials</span>{' '}
-                <span class='material-icons-sharp'>contact_support</span>
+                <span className='material-icons-sharp'>contact_support</span>
               </h1>
             </Link>{' '}
           </>

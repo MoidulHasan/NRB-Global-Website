@@ -35,7 +35,7 @@ const AnnirversaryModal = (props) => {
               onClick={props.onClose}
               className='closeButtonContainer flex align-items-end justify-content-end mr-2'
             >
-              <i class='pi pi-times' style={{ fontSize: '1.5rem' }}></i>
+              <i className='pi pi-times' style={{ fontSize: '1.5rem' }}></i>
             </span>
           </div>
           <div className='modal-body'>

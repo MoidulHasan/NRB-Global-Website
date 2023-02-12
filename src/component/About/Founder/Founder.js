@@ -19,7 +19,7 @@ const Founder = () => {
                   height='50'
                   viewBox='0 0 12 10'
                   xmlns='http://www.w3.org/2000/svg'
-                  class='flex-shrink-0 fill-orange-600'
+                  className='flex-shrink-0 fill-orange-600'
                 >
                   <path
                     fill-rule='evenodd'
@@ -45,7 +45,9 @@ const Founder = () => {
 
                 <div className='founderNameDiv flex align-items-center justify-content-end text-blue-900'>
                   <div className='founderDetail flex'>
-                    <span class='material-icons-sharp text-5xl '>remove</span>
+                    <span className='material-icons-sharp text-5xl '>
+                      remove
+                    </span>
                     <div className='founderNameDesignation ml-2'>
                       <h5 className='text-3xl font-bold my-1 text-center'>
                         Tarik Babu

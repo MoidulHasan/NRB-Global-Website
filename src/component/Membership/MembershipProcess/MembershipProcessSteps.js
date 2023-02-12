@@ -14,7 +14,7 @@ const MembershipProcessSteps = () => {
         <div className='col-12 md:col-6 stepToMemberOne'>
           <div className='d-flex flex-column justify-content-start p-3'>
             <span className='profileProcessSpan flex align-items-center justify-content-center mt-3 md:mt-4'>
-              <span class='material-icons-sharp text-white text-5xl'>
+              <span className='material-icons-sharp text-white text-5xl'>
                 person
               </span>
             </span>
@@ -114,7 +114,7 @@ const MembershipProcessSteps = () => {
         <div className='col-12 md:col-6 stepToMemberTwo flex-order-1 md:flex-order-2'>
           <div className='d-flex flex-column justify-content-start p-3'>
             <span className='profileTwoProcessSpan flex align-items-center justify-content-center mt-3 md:mt-4'>
-              <span class='material-icons-sharp text-white text-5xl'>
+              <span className='material-icons-sharp text-white text-5xl'>
                 groups
               </span>
             </span>
@@ -132,7 +132,7 @@ const MembershipProcessSteps = () => {
         <div className='col-12 md:col-6 stepToMemberThree'>
           <div className='d-flex flex-column justify-content-start p-3'>
             <span className='profileProcessSpanCommon flex align-items-center justify-content-center mt-3 md:mt-4'>
-              <span class='material-icons-sharp text-white text-5xl'>
+              <span className='material-icons-sharp text-white text-5xl'>
                 wb_incandescent
               </span>
             </span>

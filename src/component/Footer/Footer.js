@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
         <div className='hidden md:flex copywrite mt-2 mb-0 align-items-center justify-content-between'>
           <h4 className='text-bold text-xl flex align-items-center '>
-            <span class='material-icons-sharp mr-2'>copyright</span> 2022,
+            <span className='material-icons-sharp mr-2'>copyright</span> 2022,
             <span className='footerLogoColor ml-2 mr-1'>NRB Global. </span> All
             rights reserved.
           </h4>
@@ -127,7 +127,7 @@ const Footer = () => {
         <div className='grid md:hidden copywrite mt-2 mb-0'>
           <div className='col-12'>
             <h4 className='text-bold text-base flex align-items-center justify-content-center'>
-              <span class='material-icons-sharp mr-1'>copyright</span> 2022,
+              <span className='material-icons-sharp mr-1'>copyright</span> 2022,
               <span className='orangeTextOrg ml-2 mr-1'>NRB Global. </span> All
               rights reserved.
             </h4>

@@ -17,22 +17,20 @@ import memberImg from '../../../assets/image/topmembers/img6.jpg';
 import useDataContexts from '../../../hooks/useDataContexts';
 
 const MemberRegistrationForm = (props) => {
-  // const [countries, setCountries] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
-  // const [formData, setFormData] = useState({});
 
-  //console.log(props);
   const genMember = props.member === 'General Member';
   const [disablePaymentType, setDisablePaymentType] = useState(false);
 
   const { countries } = useDataContexts();
+
+  console.log(countries, 'countries form the context');
 
   useEffect(() => {
     genMember && setDisablePaymentType(true);
   }, [genMember]);
 
   const org = props.memberType === 'Organization';
-  // console.log(org, 'ORG');
 
   const url = process.env.REACT_APP_BACKEND_URL;
   /*
@@ -565,22 +563,12 @@ const MemberRegistrationForm = (props) => {
                                 value={field.value}
                                 placeholder='Select Your country'
                                 onChange={(e) => field.onChange(e.value)}
-                                options={[
-                                  { name: 'Male', value: 'Male' },
-                                  {
-                                    name: 'Female',
-                                    value: 'Female',
-                                  },
-                                  {
-                                    name: 'Other',
-                                    value: 'Other',
-                                  },
-                                ]}
+                                options={countries}
                                 optionLabel='name'
                               />
                             )}
                           />
-                          <label htmlFor='gender'>Gender</label>
+                          <label htmlFor='country'>Country</label>
                         </span>
                       </div>
                       <div className='field col-12 md:col-6'>
