@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Swal from 'sweetalert2';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm, Controller, FormProvider } from 'react-hook-form';
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
@@ -20,19 +20,18 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
 
   const genMember = props.member === 'General Member';
-  const [disablePaymentType, setDisablePaymentType] = useState(false);
+  const [disablemethod, setDisablemethod] = useState(false);
 
   const { countries } = useDataContexts();
 
-  console.log(countries, 'countries form the context');
-
   useEffect(() => {
-    genMember && setDisablePaymentType(true);
+    genMember && setDisablemethod(true);
   }, [genMember]);
 
   const org = props.memberType === 'Organization';
 
   const url = process.env.REACT_APP_BACKEND_URL;
+  const token = process.env.REACT_APP_TOKEN;
   /*
   {
     "name": "Najim Uddin",
@@ -68,26 +67,46 @@ const MemberRegistrationForm = (props) => {
 
 */
 
+  const todayDate = new Date();
+  let day = todayDate.getDate();
+  let month = todayDate.getMonth() + 1;
+  let year = todayDate.getFullYear();
+
+  let currentDate = `${day}/${month}/${year}`;
+  console.log(currentDate);
+
   const defaultValues = {
     name: '',
     email: '',
     phone: '',
-    presentAddress: '',
-    addressInBangladesh: '',
+    country: '',
+    address: '',
+    presentAddress: {},
+    socialLinks: {},
+    payment: {},
+    facebook: '',
+    linkedIn: '',
+    whatsapp: '',
+    website: '',
+    bdAddress: '',
     otherContact: '',
     placeOfBirth: '',
     nationality: '',
-    spouceOrChild: '',
-    intro: '',
+    otherContact: '',
+    about: '',
     gender: '',
     designation: '',
-    paymentType: '',
-    paymentFee:
+    //these three are for payment
+    status: '',
+    method: '',
+    date: currentDate,
+    amount:
       props.member === 'General Member'
         ? '0'
         : props.memberType === 'Individual'
         ? '200'
         : '300',
+
     picture: {},
     birthday: null,
     category:
@@ -108,7 +127,7 @@ const MemberRegistrationForm = (props) => {
   // console.log(formData);
 
   const onSubmit = async (data) => {
-    // setFormData({ formData, ...data });
+    //setFormData({ formData, ...data });
     // console.log(data.picture);
     console.log(data);
 
@@ -116,23 +135,46 @@ const MemberRegistrationForm = (props) => {
     formData.append('name', data.name);
     formData.append('email', data.email);
     formData.append('phone', data.phone);
-    formData.append('presentAddress', data.presentAddress);
-    formData.append('addressInBangladesh', data.addressInBangladesh);
+    formData.append('country', data.country);
+    formData.append('address', data.address);
+    formData.append('facebook', data.facebook);
+    formData.append('linkedIn', data.linedIn);
+    formData.append('whatsapp', data.whatsapp);
+    formData.append('website', data.website);
+
+    formData.append('presentAddress', {
+      country: data.country,
+      address: data.address,
+    });
+    formData.append('socialLinks', {
+      facebook: data.facebook,
+      whatsapp: data.whatsapp,
+      linkedIn: data.linkedIn,
+      website: data.website,
+    });
+    formData.append('bdAddress', data.bdAddress);
     formData.append('otherContact', data.otherContact);
     formData.append('placeOfBirth', data.placeOfBirth);
     formData.append('nationality', data.nationality);
-    formData.append('spouceOrChild', data.spouceOrChild);
-    formData.append('intro', data.intro);
+    formData.append('otherContact', data.otherContact);
+    formData.append('about', data.about);
     formData.append('gender', data.gender);
+
     formData.append('designation', data.designation);
-    formData.append('paymentType', data.paymentType);
-    formData.append('paymentFee', data.paymentFee);
+    formData.append('status', data.status);
+    formData.append('method', data.method);
+    formData.append('amount', data.amount);
+    formData.append('payment', {
+      status: data.status,
+      method: data.method,
+      amount: data.amount,
+      date: currentDate,
+    });
     formData.append('birthday', data.birthday);
     formData.append('category', data.category);
     formData.append('tosAgreement', data.tosAgreement);
     formData.append('picture', data.picture[0], data.picture[0].name);
-
-    console.log(formData);
+    formData.append('registrationDate', currentDate);
 
     Swal.fire({
       icon: 'warning',
@@ -143,6 +185,7 @@ const MemberRegistrationForm = (props) => {
       if (result.isConfirmed) {
         const requestOptions = {
           method: 'POST',
+          headers: { Authorization: `Bearer ${token}` },
           body: formData,
         };
 
@@ -156,7 +199,7 @@ const MemberRegistrationForm = (props) => {
                 setShowMessage(true);
                 Swal.fire('Your Registration Form Submitted!', '', 'success');
 
-                if (data?.data?.paymentType === 'PayPal') {
+                if (data?.data?.method === 'PayPal') {
                   window.open = ('https://kajkaminitiative.com', '_blank');
                 }
               } else {
@@ -193,7 +236,6 @@ const MemberRegistrationForm = (props) => {
         }
       }
     });
-    // console.log(pictureRef);
   };
 
   const getFormErrorMessage = (name) => {
@@ -471,7 +513,10 @@ const MemberRegistrationForm = (props) => {
                                 id={field.name}
                                 value={field.value}
                                 placeholder='Select Your Gender'
-                                onChange={(e) => field.onChange(e.value)}
+                                onChange={(e) => {
+                                  field.onChange(e.value);
+                                  console.log(e);
+                                }}
                                 options={[
                                   { name: 'Male', value: 'Male' },
                                   {
@@ -561,10 +606,14 @@ const MemberRegistrationForm = (props) => {
                               <Dropdown
                                 id={field.name}
                                 value={field.value}
-                                placeholder='Select Your country'
-                                onChange={(e) => field.onChange(e.value)}
+                                placeholder='Select Your Country'
+                                onChange={(e) => {
+                                  field.onChange(e.value);
+                                  console.log(e);
+                                }}
                                 options={countries}
-                                optionLabel='name'
+                                optionLabel='name.common'
+                                optionValue='name.common'
                               />
                             )}
                           />
@@ -619,7 +668,7 @@ const MemberRegistrationForm = (props) => {
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='addressInBangladesh'
+                        name='bdAddress'
                         control={control}
                         // rules={{ required: 'Name is required.' }}
                         render={({ field, fieldState }) => (
@@ -634,15 +683,15 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='addressInBangladesh'
+                        htmlFor='bdAddress'
                         className={classNames({
-                          'p-error': errors.addressInBangladesh,
+                          'p-error': errors.bdAddress,
                         })}
                       >
                         Address In Bangladesh (If Any)
                       </label>
                     </span>
-                    {getFormErrorMessage('addressInBangladesh')}
+                    {getFormErrorMessage('bdAddress')}
                   </div>
                   {/* other contact  */}
                   <div className='field mb-5'>
@@ -745,7 +794,7 @@ const MemberRegistrationForm = (props) => {
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='spouceOrChild'
+                        name='otherContact'
                         control={control}
                         // rules={{ required: 'Spouce is required.' }}
                         render={({ field, fieldState }) => (
@@ -760,9 +809,9 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='spouceOrChild'
+                        htmlFor='otherContact'
                         className={classNames({
-                          'p-error': errors.spouceOrChild,
+                          'p-error': errors.otherContact,
                         })}
                       >
                         If preferred,{' '}
@@ -771,13 +820,13 @@ const MemberRegistrationForm = (props) => {
                           : 'Name of Spouce, Child(ren)'}
                       </label>
                     </span>
-                    {getFormErrorMessage('spouceOrChild')}
+                    {getFormErrorMessage('otherContact')}
                   </div>
-                  {/* short intro  */}
+                  {/* short about  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='intro'
+                        name='about'
                         control={control}
                         // rules={{ required: 'Name is required.' }}
                         render={({ field, fieldState }) => (
@@ -794,13 +843,129 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='intro'
-                        className={classNames({ 'p-error': errors.intro })}
+                        htmlFor='about'
+                        className={classNames({ 'p-error': errors.about })}
                       >
-                        Brief Intro
+                        About You
                       </label>
                     </span>
-                    {getFormErrorMessage('intro')}
+                    {getFormErrorMessage('about')}
+                  </div>
+                  <div className='mb-5'>
+                    <label className='block text-gray-600 mb-4 ml-2'>
+                      Social Links
+                    </label>
+                    <div className='grid'>
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='facebook'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='facebook'
+                            className={classNames({
+                              'p-error': errors.facebook,
+                            })}
+                          >
+                            <span class='pi pi-facebook mr-1'></span>
+                            Facebook
+                          </label>
+                        </span>
+                      </div>{' '}
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='whatsapp'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='whatsapp'
+                            className={classNames({
+                              'p-error': errors.whatsapp,
+                            })}
+                          >
+                            <span class='pi pi-whatsapp mr-1'></span>
+                            Whatsapp
+                          </label>
+                        </span>
+                      </div>{' '}
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='linkedIn'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='linkedIn'
+                            className={classNames({
+                              'p-error': errors.linkedIn,
+                            })}
+                          >
+                            <span class='pi pi-linkedin mr-1'></span>
+                            LinkedIn
+                          </label>
+                        </span>
+                      </div>
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='website'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='website'
+                            className={classNames({
+                              'p-error': errors.website,
+                            })}
+                          >
+                            <span class='pi pi-globe mr-1'></span>
+                            Website
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                    {getFormErrorMessage('website')}
                   </div>
                   {/* payment section  */}
                   <div className='grid'>
@@ -808,13 +973,13 @@ const MemberRegistrationForm = (props) => {
                     <div className='field col-12 md:col-8 mb-5'>
                       <span className='p-float-label'>
                         <Controller
-                          name='paymentType'
+                          name='method'
                           control={control}
                           render={({ field }) => (
                             <Dropdown
-                              disabled={disablePaymentType}
+                              disabled={disablemethod}
                               id={field.name}
-                              value={field.value}
+                              value={disablemethod ? 'Hands On' : field.value}
                               placeholder='Select Your Payment Type'
                               onChange={(e) => {
                                 field.onChange(e.value);
@@ -831,7 +996,36 @@ const MemberRegistrationForm = (props) => {
                             />
                           )}
                         />
-                        <label htmlFor='paymentType'>Payment Type</label>
+                        <label htmlFor='method'>Payment Type</label>
+                      </span>
+                    </div>
+                    <div className='field col-12 md:col-4'>
+                      <span className='p-float-label'>
+                        <Controller
+                          name='status'
+                          control={control}
+                          render={({ field }) => (
+                            <Dropdown
+                              id={field.name}
+                              disabled={disablemethod}
+                              value={disablemethod ? 'N/A' : field.value}
+                              placeholder='Status'
+                              onChange={(e) => {
+                                field.onChange(e.value);
+                                console.log(e);
+                              }}
+                              options={[
+                                { name: 'N/A', value: 'N/A' },
+                                {
+                                  name: 'Applicable',
+                                  value: 'Applicable',
+                                },
+                              ]}
+                              optionLabel='name'
+                            />
+                          )}
+                        />
+                        <label htmlFor='status'>Payment Status</label>
                       </span>
                     </div>
                     {/* payment fee  */}
@@ -839,7 +1033,7 @@ const MemberRegistrationForm = (props) => {
                       <span className='p-float-label p-input-icon-right'>
                         <i className='pi pi-dollar' />
                         <Controller
-                          name='paymentFee'
+                          name='amount'
                           control={control}
                           render={({ field, fieldState }) => (
                             <InputText
@@ -854,15 +1048,15 @@ const MemberRegistrationForm = (props) => {
                           )}
                         />
                         <label
-                          htmlFor='paymentFee'
+                          htmlFor='amount'
                           className={classNames({
-                            'p-error': errors.paymentFee,
+                            'p-error': errors.amount,
                           })}
                         >
                           Payment Fee
                         </label>
                       </span>
-                      {getFormErrorMessage('paymentFee')}
+                      {getFormErrorMessage('amount')}
                     </div>
                   </div>
                   {/* fee declaration paragraph  */}
