@@ -14,6 +14,7 @@ import { classNames } from 'primereact/utils';
 import './MemberRegistrationForm.css';
 import nrbLogo from '../../../assets/image/nrblogo.png';
 import memberImg from '../../../assets/image/topmembers/img6.jpg';
+import useDataContexts from '../../../hooks/useDataContexts';
 
 const MemberRegistrationForm = (props) => {
   // const [countries, setCountries] = useState([]);
@@ -23,6 +24,8 @@ const MemberRegistrationForm = (props) => {
   //console.log(props);
   const genMember = props.member === 'General Member';
   const [disablePaymentType, setDisablePaymentType] = useState(false);
+
+  const { countries } = useDataContexts();
 
   useEffect(() => {
     genMember && setDisablePaymentType(true);
@@ -194,12 +197,6 @@ const MemberRegistrationForm = (props) => {
     });
     // console.log(pictureRef);
   };
-
-  // useEffect(() => {
-  //   reset({
-  //     data: '',
-  //   });
-  // }, [isSubmitSuccessful]);
 
   const getFormErrorMessage = (name) => {
     return (
@@ -552,44 +549,83 @@ const MemberRegistrationForm = (props) => {
                     </span>
                   </div>
                   {/* present address  */}
-                  <div className='field mb-5'>
-                    <span className='p-float-label'>
-                      <Controller
-                        name='presentAddress'
-                        control={control}
-                        // rules={{ props.memberType === 'Individual' ? ' ' : '' }}
-                        rules={{
-                          validate: {
-                            required: (value) => {
-                              if (props.memberType === 'Individual' && !value)
-                                return 'Present Address Required';
-                              return true;
-                            },
-                          },
-                        }}
-                        render={({ field, fieldState }) => (
-                          <InputText
-                            id={field.name}
-                            {...field}
-                            autoFocus
-                            className={classNames({
-                              'p-invalid': fieldState.invalid,
-                            })}
+                  <div className='mb-5'>
+                    <label className='block text-gray-600 mb-4 ml-2'>
+                      Present Address
+                    </label>
+                    <div className='grid'>
+                      <div className='field col-12 md:col-6'>
+                        <span className='p-float-label'>
+                          <Controller
+                            name='country'
+                            control={control}
+                            render={({ field }) => (
+                              <Dropdown
+                                id={field.name}
+                                value={field.value}
+                                placeholder='Select Your country'
+                                onChange={(e) => field.onChange(e.value)}
+                                options={[
+                                  { name: 'Male', value: 'Male' },
+                                  {
+                                    name: 'Female',
+                                    value: 'Female',
+                                  },
+                                  {
+                                    name: 'Other',
+                                    value: 'Other',
+                                  },
+                                ]}
+                                optionLabel='name'
+                              />
+                            )}
                           />
-                        )}
-                      />
-                      <label
-                        htmlFor='presentAddress'
-                        className={classNames({
-                          'p-error': errors.presentAddress,
-                        })}
-                      >
-                        {props.memberType === 'Individual'
-                          ? 'Present Address*'
-                          : 'Present Address'}
-                      </label>
-                    </span>
-                    {getFormErrorMessage('presentAddress')}
+                          <label htmlFor='gender'>Gender</label>
+                        </span>
+                      </div>
+                      <div className='field col-12 md:col-6'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='address'
+                            control={control}
+                            // rules={{ props.memberType === 'Individual' ? ' ' : '' }}
+                            rules={{
+                              validate: {
+                                required: (value) => {
+                                  if (
+                                    props.memberType === 'Individual' &&
+                                    !value
+                                  )
+                                    return 'Present Address Required';
+                                  return true;
+                                },
+                              },
+                            }}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='address'
+                            className={classNames({
+                              'p-error': errors.address,
+                            })}
+                          >
+                            {props.memberType === 'Individual'
+                              ? 'Address*'
+                              : 'Address'}
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                    {getFormErrorMessage('address')}
                   </div>
                   {/* address in bangladesh  */}
                   <div className='field mb-5'>
