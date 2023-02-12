@@ -32,40 +32,6 @@ const MemberRegistrationForm = (props) => {
 
   const url = process.env.REACT_APP_BACKEND_URL;
   const token = process.env.REACT_APP_TOKEN;
-  /*
-  {
-    "name": "Najim Uddin",
-    "email": "najim@gmail.com",
-    "phone": "0137068201",
-    "membermemberCategory": "generalMember",
-    "gender": "Male",
-    "designation": "Software Engineer",
-    "birthday": "01/01/1998",
-    "presentAddress": {
-        "country": "USA",
-        "address": "New York"
-    },
-    "bdAddress": "Comilla, Bangladesh",
-    "otherContact": "01734617323",
-    "placeOfBirth": "Cumilla",
-    "nationality": "Bangladeshi",
-    "about": "This is Najim Uddin",
-    "socialLinks": {
-        "facebook": "https://www.facebook.com/profile.php?id=100007063217231",
-        "whatsapp": "01734617323",
-        "linkedIn": "https://www.linkedin.com/in/najim-uddin/",
-        "website": "www.najimuddin.com"
-    },
-    "payment": {
-        "method": "N/A",
-        "amount": 0,
-        "date": "11/02/2022"
-    },
-    "tosAgreement": true,
-    "registrationDate": "11/02/2022"
-}
-
-*/
 
   const todayDate = new Date();
   let day = todayDate.getDate();
