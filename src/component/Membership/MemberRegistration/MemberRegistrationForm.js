@@ -32,6 +32,40 @@ const MemberRegistrationForm = (props) => {
   // console.log(org, 'ORG');
 
   const url = process.env.REACT_APP_BACKEND_URL;
+  /*
+  {
+    "name": "Najim Uddin",
+    "email": "najim@gmail.com",
+    "phone": "0137068201",
+    "memberCategory": "generalMember",
+    "gender": "Male",
+    "designation": "Software Engineer",
+    "birthday": "01/01/1998",
+    "presentAddress": {
+        "country": "USA",
+        "address": "New York"
+    },
+    "bdAddress": "Comilla, Bangladesh",
+    "otherContact": "01734617323",
+    "placeOfBirth": "Cumilla",
+    "nationality": "Bangladeshi",
+    "about": "This is Najim Uddin",
+    "socialLinks": {
+        "facebook": "https://www.facebook.com/profile.php?id=100007063217231",
+        "whatsapp": "01734617323",
+        "linkedIn": "https://www.linkedin.com/in/najim-uddin/",
+        "website": "www.najimuddin.com"
+    },
+    "payment": {
+        "method": "N/A",
+        "amount": 0,
+        "date": "11/02/2022"
+    },
+    "tosAgreement": true,
+    "registrationDate": "11/02/2022"
+}
+
+*/
 
   const defaultValues = {
     name: '',
@@ -75,7 +109,7 @@ const MemberRegistrationForm = (props) => {
   const onSubmit = async (data) => {
     // setFormData({ formData, ...data });
     // console.log(data.picture);
-    //console.log(data);
+    console.log(data);
 
     const formData = new FormData();
     formData.append('name', data.name);
@@ -94,8 +128,10 @@ const MemberRegistrationForm = (props) => {
     formData.append('paymentFee', data.paymentFee);
     formData.append('birthday', data.birthday);
     formData.append('category', data.category);
-    formData.append('accept', data.accept);
+    formData.append('tosAgreement', data.tosAgreement);
     formData.append('picture', data.picture[0], data.picture[0].name);
+
+    console.log(formData);
 
     Swal.fire({
       icon: 'warning',
@@ -120,8 +156,7 @@ const MemberRegistrationForm = (props) => {
                 Swal.fire('Your Registration Form Submitted!', '', 'success');
 
                 if (data?.data?.paymentType === 'PayPal') {
-                  // window.location.href = 'https://stackoverflow.com';
-                  window.open = ('https://stackoverflow.com', '_blank');
+                  window.open = ('https://kajkaminitiative.com', '_blank');
                 }
               } else {
                 Swal.fire({
@@ -176,6 +211,16 @@ const MemberRegistrationForm = (props) => {
 
   const onPaymentMethodChanged = (e) => {
     setPaymentMethod(e.target.value);
+  };
+
+  const [loading, setLoading] = useState(false);
+
+  const load = () => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   };
 
   return (
@@ -307,15 +352,16 @@ const MemberRegistrationForm = (props) => {
                   </div>
                   {/* picture  */}
                   <div className='field mb-5'>
-                    <span className='p-label p-input-icon-right'>
-                      <i className='pi pi-pi-file' />
-                      <label
-                        htmlFor='picture'
-                        className='block text-gray-600 mb-1 ml-2'
-                      >
-                        Picture*
-                      </label>
-                      {/* <Controller
+                    <div className='flex  justify-content-between'>
+                      <span className='p-label p-input-icon-right'>
+                        <i className='pi pi-pi-file' />
+                        <label
+                          htmlFor='picture'
+                          className='block text-gray-600 mb-1 ml-2'
+                        >
+                          Picture*
+                        </label>
+                        {/* <Controller
                         name='picture'
                         control={control}
                         rules={{
@@ -337,14 +383,21 @@ const MemberRegistrationForm = (props) => {
                           />
                         )}
                       /> */}
-                      <input
-                        type='file'
-                        name='picture'
-                        {...register('picture', {
-                          required: 'Picture is required.',
-                        })}
+                        <input
+                          type='file'
+                          name='picture'
+                          {...register('picture', {
+                            required: 'Picture is required.',
+                          })}
+                        />
+                      </span>
+                      <Button
+                        className='my-2 photoUploadButton'
+                        label='Upload'
+                        loading={loading}
+                        onClick={load}
                       />
-                    </span>
+                    </div>
                     {getFormErrorMessage('picture')}
                   </div>
                   {/* email  */}
@@ -801,10 +854,10 @@ const MemberRegistrationForm = (props) => {
                       </span>
                     )}
                   </div>
-                  {/* accept field  */}
+                  {/* tosAgreement field  */}
                   <div className='field-checkbox'>
                     <Controller
-                      name='accept'
+                      name='tosAgreement'
                       control={control}
                       rules={{ required: true }}
                       render={({ field, fieldState }) => (
@@ -819,8 +872,8 @@ const MemberRegistrationForm = (props) => {
                       )}
                     />
                     <label
-                      htmlFor='accept'
-                      className={classNames({ 'p-error': errors.accept })}
+                      htmlFor='tosAgreement'
+                      className={classNames({ 'p-error': errors.tosAgreement })}
                     >
                       I agree to the terms and conditions*
                     </label>
