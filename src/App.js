@@ -47,6 +47,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import ScrollToTopComp from './component/ScrollToTopComp/ScrollToTopComp';
 import YCPhotoContest from './pages/YoungCongress/YCPhotoContest/YCPhotoContest';
+import YoungCongressMemberRegistration from './pages/YoungCongress/YoungCongressMemberRegistration/YoungCongressMemberRegistration';
 function App() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -79,7 +80,10 @@ function App() {
               <Route path='advisoryCouncil' element={<AdvisorCouncil />} />
               {/* Young Congress  */}
               <Route path='YoungCongressAbout' element={<YCAbout />} />
-              <Route path='YoungCongressRegistration' element={<YCAbout />} />
+              <Route
+                path='YoungCongressRegistration'
+                element={<YoungCongressMemberRegistration />}
+              />
               <Route path='YoungCongressPrograms' element={<YCProgram />} />
               <Route path='YoungCongressActivities' element={<YCAtivities />} />
               <Route path='YoungCongressMembers' element={<YCMembers />} />

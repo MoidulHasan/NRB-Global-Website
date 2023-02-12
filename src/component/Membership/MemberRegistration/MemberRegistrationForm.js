@@ -20,6 +20,7 @@ const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
 
   const genMember = props.member === 'General Member';
+
   const [disablemethod, setDisablemethod] = useState(false);
 
   const { countries } = useDataContexts();
@@ -65,11 +66,15 @@ const MemberRegistrationForm = (props) => {
     picture: {},
     designation: '',
     //these three are for payment
-    status: props.member === 'General Member' ? 'N/A' : 'Pending',
-    method: 'Hands On',
+    status:
+      props.member === 'General Member' || 'Young Congress' ? 'N/A' : 'Pending',
+    method:
+      props.member === 'General Member' || 'Young Congress'
+        ? 'N/A'
+        : 'Hands On',
     date: currentDate,
     amount:
-      props.member === 'General Member'
+      props.member === 'General Member' || 'Young Congress'
         ? '0'
         : props.memberType === 'Individual'
         ? '200'
@@ -80,6 +85,8 @@ const MemberRegistrationForm = (props) => {
     memberCategory:
       props.member === 'General Member'
         ? 'generalMember'
+        : props.member === 'Young Congress'
+        ? 'youngcongressMember'
         : props.memberType === 'Individual'
         ? 'Executive Individual'
         : 'Executive Organization',
@@ -97,6 +104,8 @@ const MemberRegistrationForm = (props) => {
   //image upload
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState({});
+
+  console.log(file);
 
   const [imageURL, setImageURL] = useState('');
   // console.log(imageURL);
@@ -122,9 +131,9 @@ const MemberRegistrationForm = (props) => {
         data.success && setLoading(false);
       });
 
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 2000);
   };
 
   const onSubmit = async (data) => {
@@ -333,6 +342,10 @@ const MemberRegistrationForm = (props) => {
                                 value: 'generalMember',
                               },
                               {
+                                name: 'Young Congress Member',
+                                value: 'youngcongressMember',
+                              },
+                              {
                                 name: 'Executive Individual',
                                 value: 'Executive Individual',
                               },
@@ -513,8 +526,8 @@ const MemberRegistrationForm = (props) => {
                                     value: 'Female',
                                   },
                                   {
-                                    name: 'Other',
-                                    value: 'Other',
+                                    name: 'Others',
+                                    value: 'Others',
                                   },
                                 ]}
                                 optionLabel='name'
@@ -591,6 +604,18 @@ const MemberRegistrationForm = (props) => {
                           <Controller
                             name='country'
                             control={control}
+                            rules={{
+                              validate: {
+                                required: (value) => {
+                                  if (
+                                    props.memberType === 'Individual' &&
+                                    !value
+                                  )
+                                    return 'Present Address Required';
+                                  return true;
+                                },
+                              },
+                            }}
                             render={({ field }) => (
                               <Dropdown
                                 id={field.name}
@@ -606,7 +631,7 @@ const MemberRegistrationForm = (props) => {
                               />
                             )}
                           />
-                          <label htmlFor='country'>Country</label>
+                          <label htmlFor='country'>Country*</label>
                         </span>
                       </div>
                       <div className='field col-12 md:col-6'>
@@ -780,7 +805,7 @@ const MemberRegistrationForm = (props) => {
                     {getFormErrorMessage('nationality')}
                   </div>
                   {/* spouce or children or refered person  */}
-                  <div className='field mb-5'>
+                  {/* <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
                         name='otherContact'
@@ -810,7 +835,7 @@ const MemberRegistrationForm = (props) => {
                       </label>
                     </span>
                     {getFormErrorMessage('otherContact')}
-                  </div>
+                  </div> */}
                   {/* short about  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
