@@ -63,6 +63,11 @@ const Header = () => {
           cName: 'dropdown-link',
         },
         {
+          title: 'Be a Young Congress',
+          path: '/YoungCongressRegistration',
+          cName: 'dropdown-link',
+        },
+        {
           title: 'Programs',
           path: '/YoungCongressPrograms',
           cName: 'dropdown-link',

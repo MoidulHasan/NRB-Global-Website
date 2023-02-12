@@ -37,7 +37,7 @@ const MemberRegistrationForm = (props) => {
     "name": "Najim Uddin",
     "email": "najim@gmail.com",
     "phone": "0137068201",
-    "memberCategory": "generalMember",
+    "membermemberCategory": "generalMember",
     "gender": "Male",
     "designation": "Software Engineer",
     "birthday": "01/01/1998",
@@ -93,12 +93,14 @@ const MemberRegistrationForm = (props) => {
     placeOfBirth: '',
     nationality: '',
     otherContact: '',
+    tosAgreement: '',
     about: '',
     gender: '',
+    picture: {},
     designation: '',
     //these three are for payment
-    status: '',
-    method: '',
+    status: props.member === 'General Member' ? 'N/A' : 'Pending',
+    method: 'Hands On',
     date: currentDate,
     amount:
       props.member === 'General Member'
@@ -107,11 +109,11 @@ const MemberRegistrationForm = (props) => {
         ? '200'
         : '300',
 
-    picture: {},
+    imageUrl: '',
     birthday: null,
-    category:
+    memberCategory:
       props.member === 'General Member'
-        ? 'General'
+        ? 'generalMember'
         : props.memberType === 'Individual'
         ? 'Executive Individual'
         : 'Executive Organization',
@@ -126,55 +128,78 @@ const MemberRegistrationForm = (props) => {
   } = useForm({ defaultValues });
   // console.log(formData);
 
+  //image upload
+  const [loading, setLoading] = useState(false);
+  const [file, setFile] = useState({});
+
+  const [imageURL, setImageURL] = useState('');
+  // console.log(imageURL);
+
+  const load = () => {
+    setLoading(true);
+
+    const formData = new FormData();
+    formData.append('member', file[0], file[0].name);
+
+    const OtherRequestOptions = {
+      method: 'POST',
+      headers: {
+        'Access-Control-Allow-Origin': 'no-cors',
+      },
+      body: formData,
+    };
+
+    fetch(`${url}/public/images/`, OtherRequestOptions)
+      .then((res) => res.json())
+      .then((data) => {
+        setImageURL(data.url);
+        data.success && setLoading(false);
+      });
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
+
   const onSubmit = async (data) => {
     //setFormData({ formData, ...data });
     // console.log(data.picture);
     console.log(data);
 
-    const formData = new FormData();
-    formData.append('name', data.name);
-    formData.append('email', data.email);
-    formData.append('phone', data.phone);
-    formData.append('country', data.country);
-    formData.append('address', data.address);
-    formData.append('facebook', data.facebook);
-    formData.append('linkedIn', data.linedIn);
-    formData.append('whatsapp', data.whatsapp);
-    formData.append('website', data.website);
+    const formData = {
+      tosAgreement: data.tosAgreement,
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      presentAddress: { country: data.country, address: data.address },
+      socialLinks: {
+        facebook: data.facebook,
+        linkedIn: data.linkedIn,
+        whatsapp: data.facebook,
+        website: data.website,
+      },
+      payment: {
+        status: data.status,
+        method: data.method,
+        amount: data.amount,
+        date: currentDate,
+      },
+      bdAddress: data.bdAddress,
+      otherContact: data.otherContact,
+      placeOfBirth: data.placeOfBirth,
+      nationality: data.nationality,
+      otherContact: data.otherContact,
+      about: data.about,
+      gender: data.gender,
+      designation: data.designation,
 
-    formData.append('presentAddress', {
-      country: data.country,
-      address: data.address,
-    });
-    formData.append('socialLinks', {
-      facebook: data.facebook,
-      whatsapp: data.whatsapp,
-      linkedIn: data.linkedIn,
-      website: data.website,
-    });
-    formData.append('bdAddress', data.bdAddress);
-    formData.append('otherContact', data.otherContact);
-    formData.append('placeOfBirth', data.placeOfBirth);
-    formData.append('nationality', data.nationality);
-    formData.append('otherContact', data.otherContact);
-    formData.append('about', data.about);
-    formData.append('gender', data.gender);
+      imageUrl: imageURL,
+      birthday: data.birthday,
+      memberCategory: data.memberCategory,
+      registrationDate: currentDate,
+    };
 
-    formData.append('designation', data.designation);
-    formData.append('status', data.status);
-    formData.append('method', data.method);
-    formData.append('amount', data.amount);
-    formData.append('payment', {
-      status: data.status,
-      method: data.method,
-      amount: data.amount,
-      date: currentDate,
-    });
-    formData.append('birthday', data.birthday);
-    formData.append('category', data.category);
-    formData.append('tosAgreement', data.tosAgreement);
-    formData.append('picture', data.picture[0], data.picture[0].name);
-    formData.append('registrationDate', currentDate);
+    //console.log(formData);
 
     Swal.fire({
       icon: 'warning',
@@ -185,16 +210,20 @@ const MemberRegistrationForm = (props) => {
       if (result.isConfirmed) {
         const requestOptions = {
           method: 'POST',
-          headers: { Authorization: `Bearer ${token}` },
-          body: formData,
+
+          headers: {
+            'Access-Control-Allow-Origin': 'no-cors',
+            'content-type': 'application/json',
+          },
+          body: JSON.stringify(formData),
         };
 
         try {
-          fetch(`${url}/api/register`, requestOptions)
+          fetch(`${url}/public/members/`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
               console.log(data);
-              if (data?.data?._id) {
+              if (data?.success) {
                 reset();
                 setShowMessage(true);
                 Swal.fire('Your Registration Form Submitted!', '', 'success');
@@ -248,16 +277,6 @@ const MemberRegistrationForm = (props) => {
 
   const onPaymentMethodChanged = (e) => {
     setPaymentMethod(e.target.value);
-  };
-
-  const [loading, setLoading] = useState(false);
-
-  const load = () => {
-    setLoading(true);
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
   };
 
   return (
@@ -330,11 +349,11 @@ const MemberRegistrationForm = (props) => {
                   className='p-fluid'
                   encType='multipart/form-data'
                 >
-                  {/* category  */}
+                  {/* memberCategory  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='category'
+                        name='memberCategory'
                         control={control}
                         render={({ field }) => (
                           <Dropdown
@@ -343,7 +362,10 @@ const MemberRegistrationForm = (props) => {
                             value={field.value}
                             onChange={(e) => field.onChange(e.value)}
                             options={[
-                              { name: 'General', value: 'General' },
+                              {
+                                name: 'General Member',
+                                value: 'generalMember',
+                              },
                               {
                                 name: 'Executive Individual',
                                 value: 'Executive Individual',
@@ -357,7 +379,7 @@ const MemberRegistrationForm = (props) => {
                           />
                         )}
                       />
-                      <label htmlFor='category'>Category</label>
+                      <label htmlFor='memberCategory'>Member Category</label>
                     </span>
                   </div>
                   {/* name  */}
@@ -426,6 +448,7 @@ const MemberRegistrationForm = (props) => {
                           {...register('picture', {
                             required: 'Picture is required.',
                           })}
+                          onChange={(e) => setFile(e.target.files)}
                         />
                       </span>
                       <Button
@@ -972,14 +995,14 @@ const MemberRegistrationForm = (props) => {
                     {/* payment type  */}
                     <div className='field col-12 md:col-8 mb-5'>
                       <span className='p-float-label'>
-                        <Controller
+                        {/* <Controller
                           name='method'
                           control={control}
                           render={({ field }) => (
                             <Dropdown
                               disabled={disablemethod}
                               id={field.name}
-                              value={disablemethod ? 'Hands On' : field.value}
+                              value={field.value}
                               placeholder='Select Your Payment Type'
                               onChange={(e) => {
                                 field.onChange(e.value);
@@ -996,19 +1019,43 @@ const MemberRegistrationForm = (props) => {
                             />
                           )}
                         />
-                        <label htmlFor='method'>Payment Type</label>
+                        <label htmlFor='method'>Payment Type</label> */}
+                        <Controller
+                          name='method'
+                          control={control}
+                          render={({ field, fieldState }) => (
+                            <InputText
+                              disabled
+                              id={field.name}
+                              {...field}
+                              autoFocus
+                              className={classNames({
+                                'p-invalid': fieldState.invalid,
+                              })}
+                            />
+                          )}
+                        />
+                        <label
+                          htmlFor='method'
+                          className={classNames({
+                            'p-error': errors.method,
+                          })}
+                        >
+                          Payment Method
+                        </label>
                       </span>
+                      {getFormErrorMessage('method')}
                     </div>
                     <div className='field col-12 md:col-4'>
                       <span className='p-float-label'>
-                        <Controller
+                        {/* <Controller
                           name='status'
                           control={control}
                           render={({ field }) => (
                             <Dropdown
                               id={field.name}
                               disabled={disablemethod}
-                              value={disablemethod ? 'N/A' : field.value}
+                              value={field.value}
                               placeholder='Status'
                               onChange={(e) => {
                                 field.onChange(e.value);
@@ -1017,16 +1064,44 @@ const MemberRegistrationForm = (props) => {
                               options={[
                                 { name: 'N/A', value: 'N/A' },
                                 {
-                                  name: 'Applicable',
-                                  value: 'Applicable',
+                                  name: 'Paid',
+                                  value: 'Paid',
+                                },
+                                {
+                                  name: 'Pending',
+                                  value: 'Pending',
                                 },
                               ]}
                               optionLabel='name'
                             />
                           )}
                         />
-                        <label htmlFor='status'>Payment Status</label>
+                        <label htmlFor='status'>Payment Status</label> */}
+                        <Controller
+                          name='status'
+                          control={control}
+                          render={({ field, fieldState }) => (
+                            <InputText
+                              disabled
+                              id={field.name}
+                              {...field}
+                              autoFocus
+                              className={classNames({
+                                'p-invalid': fieldState.invalid,
+                              })}
+                            />
+                          )}
+                        />
+                        <label
+                          htmlFor='status'
+                          className={classNames({
+                            'p-error': errors.status,
+                          })}
+                        >
+                          Payment Status
+                        </label>
                       </span>
+                      {getFormErrorMessage('status')}
                     </div>
                     {/* payment fee  */}
                     <div className='field mb-5 col-12 md:col-6'>
