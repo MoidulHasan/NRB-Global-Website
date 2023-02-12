@@ -70,7 +70,7 @@ const CommunityReviews = () => {
                       height='16'
                       viewBox='0 0 12 10'
                       xmlns='http://www.w3.org/2000/svg'
-                      class='flex-shrink-0 fill-orange-600'
+                      className='flex-shrink-0 fill-orange-600'
                     >
                       <path
                         fill-rule='evenodd'
@@ -109,7 +109,7 @@ const CommunityReviews = () => {
                       height='16'
                       viewBox='0 0 12 10'
                       xmlns='http://www.w3.org/2000/svg'
-                      class='flex-shrink-0 fill-orange-600'
+                      className='flex-shrink-0 fill-orange-600'
                     >
                       <path
                         fill-rule='evenodd'
@@ -147,7 +147,7 @@ const CommunityReviews = () => {
                       height='16'
                       viewBox='0 0 12 10'
                       xmlns='http://www.w3.org/2000/svg'
-                      class='flex-shrink-0 fill-orange-600'
+                      className='flex-shrink-0 fill-orange-600'
                     >
                       <path
                         fill-rule='evenodd'

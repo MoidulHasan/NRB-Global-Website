@@ -16,7 +16,7 @@ const NrbService = ({ singleService }) => {
         </Link>
         <Link to={`/allservices/${singleService.id}`} className='toLinkText'>
           <p className=' ml-4 md:ml-8 textPrimeService flex align-items-center'>
-            <span class='material-icons-sharp mr-2'>info</span>See Details
+            <span className='material-icons-sharp mr-2'>info</span>See Details
           </p>
         </Link>
       </div>

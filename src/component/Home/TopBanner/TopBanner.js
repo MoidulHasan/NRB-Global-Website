@@ -17,28 +17,28 @@ const TopBanner = () => {
             real life skills, hang out on our discord server to make new friends
             and have fun!
           </p>
-          <div class='mt-8 mb-4 flex w-full flex-column gap-4 md:flex-row'>
+          <div className='mt-8 mb-4 flex w-full flex-column gap-4 md:flex-row'>
             <Link to='/gmRegistration' className='linkDecoration '>
               <button
-                class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
+                className='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
                 type='button'
               >
                 Join NRB Global
-                <span class='material-icons-sharp'>public</span>
+                <span className='material-icons-sharp'>public</span>
               </button>
             </Link>
             <Link to='/about' className='linkDecoration '>
               <button
-                class='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
+                className='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton w-full'
                 type='button'
               >
                 Explore Community
-                <span class='material-icons-sharp'>groups</span>
+                <span className='material-icons-sharp'>groups</span>
               </button>
             </Link>
           </div>
         </div>
-        <div class='mx-auto basis-auto '>
+        <div className='mx-auto basis-auto '>
           {/* -mt-6 was in the upper div class  */}
           <div
             className='imageTop flex align-items-center justify-content-center'

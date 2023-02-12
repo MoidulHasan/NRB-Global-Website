@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import useBlog from '../hooks/useBlog';
 import useCommitteeMembers from '../hooks/useCommitteeMembers';
+import useCountries from '../hooks/useCountries';
 import useEvent from '../hooks/useEvent';
 import useNrbMembers from '../hooks/useNrbMembers';
 import useServices from '../hooks/useServices';
@@ -19,6 +20,8 @@ const ContextProvider = ({ children }) => {
   const { nrbBlogs } = useBlog();
   const { nrbEvents } = useEvent();
 
+  const { countries } = useCountries();
+
   const { committeeMembers } = useCommitteeMembers();
 
   const data = {
@@ -26,6 +29,7 @@ const ContextProvider = ({ children }) => {
     setHoverMenu,
     nrbMembers,
     nrbServices,
+    countries,
     nrbBlogs,
     nrbEvents,
     committeeMembers,

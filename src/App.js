@@ -79,6 +79,7 @@ function App() {
               <Route path='advisoryCouncil' element={<AdvisorCouncil />} />
               {/* Young Congress  */}
               <Route path='YoungCongressAbout' element={<YCAbout />} />
+              <Route path='YoungCongressRegistration' element={<YCAbout />} />
               <Route path='YoungCongressPrograms' element={<YCProgram />} />
               <Route path='YoungCongressActivities' element={<YCAtivities />} />
               <Route path='YoungCongressMembers' element={<YCMembers />} />

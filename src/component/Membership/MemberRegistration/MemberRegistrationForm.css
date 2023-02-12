@@ -33,3 +33,17 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 input#file-upload-button{
         padding-left: 6rem;
 }
+
+.photoUploadButton{
+        width: 20% !important;
+        height: 60% !important;
+}
+
+
+@media screen and (max-width: 960px) {
+
+        .photoUploadButton{
+                width: 40% !important;
+        }
+        
+    }

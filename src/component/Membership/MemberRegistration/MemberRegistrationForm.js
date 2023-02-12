@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Swal from 'sweetalert2';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm, Controller, FormProvider } from 'react-hook-form';
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
@@ -14,50 +14,106 @@ import { classNames } from 'primereact/utils';
 import './MemberRegistrationForm.css';
 import nrbLogo from '../../../assets/image/nrblogo.png';
 import memberImg from '../../../assets/image/topmembers/img6.jpg';
+import useDataContexts from '../../../hooks/useDataContexts';
 
 const MemberRegistrationForm = (props) => {
-  // const [countries, setCountries] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
-  // const [formData, setFormData] = useState({});
 
-  //console.log(props);
   const genMember = props.member === 'General Member';
-  const [disablePaymentType, setDisablePaymentType] = useState(false);
+  const [disablemethod, setDisablemethod] = useState(false);
+
+  const { countries } = useDataContexts();
 
   useEffect(() => {
-    genMember && setDisablePaymentType(true);
+    genMember && setDisablemethod(true);
   }, [genMember]);
 
   const org = props.memberType === 'Organization';
-  // console.log(org, 'ORG');
 
   const url = process.env.REACT_APP_BACKEND_URL;
+  const token = process.env.REACT_APP_TOKEN;
+  /*
+  {
+    "name": "Najim Uddin",
+    "email": "najim@gmail.com",
+    "phone": "0137068201",
+    "membermemberCategory": "generalMember",
+    "gender": "Male",
+    "designation": "Software Engineer",
+    "birthday": "01/01/1998",
+    "presentAddress": {
+        "country": "USA",
+        "address": "New York"
+    },
+    "bdAddress": "Comilla, Bangladesh",
+    "otherContact": "01734617323",
+    "placeOfBirth": "Cumilla",
+    "nationality": "Bangladeshi",
+    "about": "This is Najim Uddin",
+    "socialLinks": {
+        "facebook": "https://www.facebook.com/profile.php?id=100007063217231",
+        "whatsapp": "01734617323",
+        "linkedIn": "https://www.linkedin.com/in/najim-uddin/",
+        "website": "www.najimuddin.com"
+    },
+    "payment": {
+        "method": "N/A",
+        "amount": 0,
+        "date": "11/02/2022"
+    },
+    "tosAgreement": true,
+    "registrationDate": "11/02/2022"
+}
+
+*/
+
+  const todayDate = new Date();
+  let day = todayDate.getDate();
+  let month = todayDate.getMonth() + 1;
+  let year = todayDate.getFullYear();
+
+  let currentDate = `${day}/${month}/${year}`;
+  console.log(currentDate);
 
   const defaultValues = {
     name: '',
     email: '',
     phone: '',
-    presentAddress: '',
-    addressInBangladesh: '',
+    country: '',
+    address: '',
+    presentAddress: {},
+    socialLinks: {},
+    payment: {},
+    facebook: '',
+    linkedIn: '',
+    whatsapp: '',
+    website: '',
+    bdAddress: '',
     otherContact: '',
     placeOfBirth: '',
     nationality: '',
-    spouceOrChild: '',
-    intro: '',
+    otherContact: '',
+    tosAgreement: '',
+    about: '',
     gender: '',
+    picture: {},
     designation: '',
-    paymentType: '',
-    paymentFee:
+    //these three are for payment
+    status: props.member === 'General Member' ? 'N/A' : 'Pending',
+    method: 'Hands On',
+    date: currentDate,
+    amount:
       props.member === 'General Member'
         ? '0'
         : props.memberType === 'Individual'
         ? '200'
         : '300',
-    picture: {},
+
+    imageUrl: '',
     birthday: null,
-    category:
+    memberCategory:
       props.member === 'General Member'
-        ? 'General'
+        ? 'generalMember'
         : props.memberType === 'Individual'
         ? 'Executive Individual'
         : 'Executive Organization',
@@ -72,30 +128,78 @@ const MemberRegistrationForm = (props) => {
   } = useForm({ defaultValues });
   // console.log(formData);
 
-  const onSubmit = async (data) => {
-    // setFormData({ formData, ...data });
-    // console.log(data.picture);
-    //console.log(data);
+  //image upload
+  const [loading, setLoading] = useState(false);
+  const [file, setFile] = useState({});
+
+  const [imageURL, setImageURL] = useState('');
+  // console.log(imageURL);
+
+  const load = () => {
+    setLoading(true);
 
     const formData = new FormData();
-    formData.append('name', data.name);
-    formData.append('email', data.email);
-    formData.append('phone', data.phone);
-    formData.append('presentAddress', data.presentAddress);
-    formData.append('addressInBangladesh', data.addressInBangladesh);
-    formData.append('otherContact', data.otherContact);
-    formData.append('placeOfBirth', data.placeOfBirth);
-    formData.append('nationality', data.nationality);
-    formData.append('spouceOrChild', data.spouceOrChild);
-    formData.append('intro', data.intro);
-    formData.append('gender', data.gender);
-    formData.append('designation', data.designation);
-    formData.append('paymentType', data.paymentType);
-    formData.append('paymentFee', data.paymentFee);
-    formData.append('birthday', data.birthday);
-    formData.append('category', data.category);
-    formData.append('accept', data.accept);
-    formData.append('picture', data.picture[0], data.picture[0].name);
+    formData.append('member', file[0], file[0].name);
+
+    const OtherRequestOptions = {
+      method: 'POST',
+      headers: {
+        'Access-Control-Allow-Origin': 'no-cors',
+      },
+      body: formData,
+    };
+
+    fetch(`${url}/public/images/`, OtherRequestOptions)
+      .then((res) => res.json())
+      .then((data) => {
+        setImageURL(data.url);
+        data.success && setLoading(false);
+      });
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
+
+  const onSubmit = async (data) => {
+    //setFormData({ formData, ...data });
+    // console.log(data.picture);
+    console.log(data);
+
+    const formData = {
+      tosAgreement: data.tosAgreement,
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      presentAddress: { country: data.country, address: data.address },
+      socialLinks: {
+        facebook: data.facebook,
+        linkedIn: data.linkedIn,
+        whatsapp: data.facebook,
+        website: data.website,
+      },
+      payment: {
+        status: data.status,
+        method: data.method,
+        amount: data.amount,
+        date: currentDate,
+      },
+      bdAddress: data.bdAddress,
+      otherContact: data.otherContact,
+      placeOfBirth: data.placeOfBirth,
+      nationality: data.nationality,
+      otherContact: data.otherContact,
+      about: data.about,
+      gender: data.gender,
+      designation: data.designation,
+
+      imageUrl: imageURL,
+      birthday: data.birthday,
+      memberCategory: data.memberCategory,
+      registrationDate: currentDate,
+    };
+
+    //console.log(formData);
 
     Swal.fire({
       icon: 'warning',
@@ -106,22 +210,26 @@ const MemberRegistrationForm = (props) => {
       if (result.isConfirmed) {
         const requestOptions = {
           method: 'POST',
-          body: formData,
+
+          headers: {
+            'Access-Control-Allow-Origin': 'no-cors',
+            'content-type': 'application/json',
+          },
+          body: JSON.stringify(formData),
         };
 
         try {
-          fetch(`${url}/api/register`, requestOptions)
+          fetch(`${url}/public/members/`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
               console.log(data);
-              if (data?.data?._id) {
+              if (data?.success) {
                 reset();
                 setShowMessage(true);
                 Swal.fire('Your Registration Form Submitted!', '', 'success');
 
-                if (data?.data?.paymentType === 'PayPal') {
-                  // window.location.href = 'https://stackoverflow.com';
-                  window.open = ('https://stackoverflow.com', '_blank');
+                if (data?.data?.method === 'PayPal') {
+                  window.open = ('https://kajkaminitiative.com', '_blank');
                 }
               } else {
                 Swal.fire({
@@ -157,14 +265,7 @@ const MemberRegistrationForm = (props) => {
         }
       }
     });
-    // console.log(pictureRef);
   };
-
-  // useEffect(() => {
-  //   reset({
-  //     data: '',
-  //   });
-  // }, [isSubmitSuccessful]);
 
   const getFormErrorMessage = (name) => {
     return (
@@ -248,11 +349,11 @@ const MemberRegistrationForm = (props) => {
                   className='p-fluid'
                   encType='multipart/form-data'
                 >
-                  {/* category  */}
+                  {/* memberCategory  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='category'
+                        name='memberCategory'
                         control={control}
                         render={({ field }) => (
                           <Dropdown
@@ -261,7 +362,10 @@ const MemberRegistrationForm = (props) => {
                             value={field.value}
                             onChange={(e) => field.onChange(e.value)}
                             options={[
-                              { name: 'General', value: 'General' },
+                              {
+                                name: 'General Member',
+                                value: 'generalMember',
+                              },
                               {
                                 name: 'Executive Individual',
                                 value: 'Executive Individual',
@@ -275,7 +379,7 @@ const MemberRegistrationForm = (props) => {
                           />
                         )}
                       />
-                      <label htmlFor='category'>Category</label>
+                      <label htmlFor='memberCategory'>Member Category</label>
                     </span>
                   </div>
                   {/* name  */}
@@ -307,15 +411,16 @@ const MemberRegistrationForm = (props) => {
                   </div>
                   {/* picture  */}
                   <div className='field mb-5'>
-                    <span className='p-label p-input-icon-right'>
-                      <i className='pi pi-pi-file' />
-                      <label
-                        htmlFor='picture'
-                        className='block text-gray-600 mb-1 ml-2'
-                      >
-                        Picture*
-                      </label>
-                      {/* <Controller
+                    <div className='flex  justify-content-between'>
+                      <span className='p-label p-input-icon-right'>
+                        <i className='pi pi-pi-file' />
+                        <label
+                          htmlFor='picture'
+                          className='block text-gray-600 mb-1 ml-2'
+                        >
+                          Picture*
+                        </label>
+                        {/* <Controller
                         name='picture'
                         control={control}
                         rules={{
@@ -337,14 +442,22 @@ const MemberRegistrationForm = (props) => {
                           />
                         )}
                       /> */}
-                      <input
-                        type='file'
-                        name='picture'
-                        {...register('picture', {
-                          required: 'Picture is required.',
-                        })}
+                        <input
+                          type='file'
+                          name='picture'
+                          {...register('picture', {
+                            required: 'Picture is required.',
+                          })}
+                          onChange={(e) => setFile(e.target.files)}
+                        />
+                      </span>
+                      <Button
+                        className='my-2 photoUploadButton'
+                        label='Upload'
+                        loading={loading}
+                        onClick={load}
                       />
-                    </span>
+                    </div>
                     {getFormErrorMessage('picture')}
                   </div>
                   {/* email  */}
@@ -423,7 +536,10 @@ const MemberRegistrationForm = (props) => {
                                 id={field.name}
                                 value={field.value}
                                 placeholder='Select Your Gender'
-                                onChange={(e) => field.onChange(e.value)}
+                                onChange={(e) => {
+                                  field.onChange(e.value);
+                                  console.log(e);
+                                }}
                                 options={[
                                   { name: 'Male', value: 'Male' },
                                   {
@@ -499,50 +615,83 @@ const MemberRegistrationForm = (props) => {
                     </span>
                   </div>
                   {/* present address  */}
-                  <div className='field mb-5'>
-                    <span className='p-float-label'>
-                      <Controller
-                        name='presentAddress'
-                        control={control}
-                        // rules={{ props.memberType === 'Individual' ? ' ' : '' }}
-                        rules={{
-                          validate: {
-                            required: (value) => {
-                              if (props.memberType === 'Individual' && !value)
-                                return 'Present Address Required';
-                              return true;
-                            },
-                          },
-                        }}
-                        render={({ field, fieldState }) => (
-                          <InputText
-                            id={field.name}
-                            {...field}
-                            autoFocus
-                            className={classNames({
-                              'p-invalid': fieldState.invalid,
-                            })}
+                  <div className='mb-5'>
+                    <label className='block text-gray-600 mb-4 ml-2'>
+                      Present Address
+                    </label>
+                    <div className='grid'>
+                      <div className='field col-12 md:col-6'>
+                        <span className='p-float-label'>
+                          <Controller
+                            name='country'
+                            control={control}
+                            render={({ field }) => (
+                              <Dropdown
+                                id={field.name}
+                                value={field.value}
+                                placeholder='Select Your Country'
+                                onChange={(e) => {
+                                  field.onChange(e.value);
+                                  console.log(e);
+                                }}
+                                options={countries}
+                                optionLabel='name.common'
+                                optionValue='name.common'
+                              />
+                            )}
                           />
-                        )}
-                      />
-                      <label
-                        htmlFor='presentAddress'
-                        className={classNames({
-                          'p-error': errors.presentAddress,
-                        })}
-                      >
-                        {props.memberType === 'Individual'
-                          ? 'Present Address*'
-                          : 'Present Address'}
-                      </label>
-                    </span>
-                    {getFormErrorMessage('presentAddress')}
+                          <label htmlFor='country'>Country</label>
+                        </span>
+                      </div>
+                      <div className='field col-12 md:col-6'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='address'
+                            control={control}
+                            // rules={{ props.memberType === 'Individual' ? ' ' : '' }}
+                            rules={{
+                              validate: {
+                                required: (value) => {
+                                  if (
+                                    props.memberType === 'Individual' &&
+                                    !value
+                                  )
+                                    return 'Present Address Required';
+                                  return true;
+                                },
+                              },
+                            }}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='address'
+                            className={classNames({
+                              'p-error': errors.address,
+                            })}
+                          >
+                            {props.memberType === 'Individual'
+                              ? 'Address*'
+                              : 'Address'}
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                    {getFormErrorMessage('address')}
                   </div>
                   {/* address in bangladesh  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='addressInBangladesh'
+                        name='bdAddress'
                         control={control}
                         // rules={{ required: 'Name is required.' }}
                         render={({ field, fieldState }) => (
@@ -557,15 +706,15 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='addressInBangladesh'
+                        htmlFor='bdAddress'
                         className={classNames({
-                          'p-error': errors.addressInBangladesh,
+                          'p-error': errors.bdAddress,
                         })}
                       >
                         Address In Bangladesh (If Any)
                       </label>
                     </span>
-                    {getFormErrorMessage('addressInBangladesh')}
+                    {getFormErrorMessage('bdAddress')}
                   </div>
                   {/* other contact  */}
                   <div className='field mb-5'>
@@ -668,7 +817,7 @@ const MemberRegistrationForm = (props) => {
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='spouceOrChild'
+                        name='otherContact'
                         control={control}
                         // rules={{ required: 'Spouce is required.' }}
                         render={({ field, fieldState }) => (
@@ -683,9 +832,9 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='spouceOrChild'
+                        htmlFor='otherContact'
                         className={classNames({
-                          'p-error': errors.spouceOrChild,
+                          'p-error': errors.otherContact,
                         })}
                       >
                         If preferred,{' '}
@@ -694,13 +843,13 @@ const MemberRegistrationForm = (props) => {
                           : 'Name of Spouce, Child(ren)'}
                       </label>
                     </span>
-                    {getFormErrorMessage('spouceOrChild')}
+                    {getFormErrorMessage('otherContact')}
                   </div>
-                  {/* short intro  */}
+                  {/* short about  */}
                   <div className='field mb-5'>
                     <span className='p-float-label'>
                       <Controller
-                        name='intro'
+                        name='about'
                         control={control}
                         // rules={{ required: 'Name is required.' }}
                         render={({ field, fieldState }) => (
@@ -717,25 +866,141 @@ const MemberRegistrationForm = (props) => {
                         )}
                       />
                       <label
-                        htmlFor='intro'
-                        className={classNames({ 'p-error': errors.intro })}
+                        htmlFor='about'
+                        className={classNames({ 'p-error': errors.about })}
                       >
-                        Brief Intro
+                        About You
                       </label>
                     </span>
-                    {getFormErrorMessage('intro')}
+                    {getFormErrorMessage('about')}
+                  </div>
+                  <div className='mb-5'>
+                    <label className='block text-gray-600 mb-4 ml-2'>
+                      Social Links
+                    </label>
+                    <div className='grid'>
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='facebook'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='facebook'
+                            className={classNames({
+                              'p-error': errors.facebook,
+                            })}
+                          >
+                            <span class='pi pi-facebook mr-1'></span>
+                            Facebook
+                          </label>
+                        </span>
+                      </div>{' '}
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='whatsapp'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='whatsapp'
+                            className={classNames({
+                              'p-error': errors.whatsapp,
+                            })}
+                          >
+                            <span class='pi pi-whatsapp mr-1'></span>
+                            Whatsapp
+                          </label>
+                        </span>
+                      </div>{' '}
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='linkedIn'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='linkedIn'
+                            className={classNames({
+                              'p-error': errors.linkedIn,
+                            })}
+                          >
+                            <span class='pi pi-linkedin mr-1'></span>
+                            LinkedIn
+                          </label>
+                        </span>
+                      </div>
+                      <div className='field col-12 md:col-6 lg:md-3'>
+                        <span className='p-float-label '>
+                          <Controller
+                            name='website'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                          <label
+                            htmlFor='website'
+                            className={classNames({
+                              'p-error': errors.website,
+                            })}
+                          >
+                            <span class='pi pi-globe mr-1'></span>
+                            Website
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                    {getFormErrorMessage('website')}
                   </div>
                   {/* payment section  */}
                   <div className='grid'>
                     {/* payment type  */}
                     <div className='field col-12 md:col-8 mb-5'>
                       <span className='p-float-label'>
-                        <Controller
-                          name='paymentType'
+                        {/* <Controller
+                          name='method'
                           control={control}
                           render={({ field }) => (
                             <Dropdown
-                              disabled={disablePaymentType}
+                              disabled={disablemethod}
                               id={field.name}
                               value={field.value}
                               placeholder='Select Your Payment Type'
@@ -754,15 +1019,9 @@ const MemberRegistrationForm = (props) => {
                             />
                           )}
                         />
-                        <label htmlFor='paymentType'>Payment Type</label>
-                      </span>
-                    </div>
-                    {/* payment fee  */}
-                    <div className='field mb-5 col-12 md:col-6'>
-                      <span className='p-float-label p-input-icon-right'>
-                        <i className='pi pi-dollar' />
+                        <label htmlFor='method'>Payment Type</label> */}
                         <Controller
-                          name='paymentFee'
+                          name='method'
                           control={control}
                           render={({ field, fieldState }) => (
                             <InputText
@@ -777,15 +1036,102 @@ const MemberRegistrationForm = (props) => {
                           )}
                         />
                         <label
-                          htmlFor='paymentFee'
+                          htmlFor='method'
                           className={classNames({
-                            'p-error': errors.paymentFee,
+                            'p-error': errors.method,
+                          })}
+                        >
+                          Payment Method
+                        </label>
+                      </span>
+                      {getFormErrorMessage('method')}
+                    </div>
+                    <div className='field col-12 md:col-4'>
+                      <span className='p-float-label'>
+                        {/* <Controller
+                          name='status'
+                          control={control}
+                          render={({ field }) => (
+                            <Dropdown
+                              id={field.name}
+                              disabled={disablemethod}
+                              value={field.value}
+                              placeholder='Status'
+                              onChange={(e) => {
+                                field.onChange(e.value);
+                                console.log(e);
+                              }}
+                              options={[
+                                { name: 'N/A', value: 'N/A' },
+                                {
+                                  name: 'Paid',
+                                  value: 'Paid',
+                                },
+                                {
+                                  name: 'Pending',
+                                  value: 'Pending',
+                                },
+                              ]}
+                              optionLabel='name'
+                            />
+                          )}
+                        />
+                        <label htmlFor='status'>Payment Status</label> */}
+                        <Controller
+                          name='status'
+                          control={control}
+                          render={({ field, fieldState }) => (
+                            <InputText
+                              disabled
+                              id={field.name}
+                              {...field}
+                              autoFocus
+                              className={classNames({
+                                'p-invalid': fieldState.invalid,
+                              })}
+                            />
+                          )}
+                        />
+                        <label
+                          htmlFor='status'
+                          className={classNames({
+                            'p-error': errors.status,
+                          })}
+                        >
+                          Payment Status
+                        </label>
+                      </span>
+                      {getFormErrorMessage('status')}
+                    </div>
+                    {/* payment fee  */}
+                    <div className='field mb-5 col-12 md:col-6'>
+                      <span className='p-float-label p-input-icon-right'>
+                        <i className='pi pi-dollar' />
+                        <Controller
+                          name='amount'
+                          control={control}
+                          render={({ field, fieldState }) => (
+                            <InputText
+                              disabled
+                              id={field.name}
+                              {...field}
+                              autoFocus
+                              className={classNames({
+                                'p-invalid': fieldState.invalid,
+                              })}
+                            />
+                          )}
+                        />
+                        <label
+                          htmlFor='amount'
+                          className={classNames({
+                            'p-error': errors.amount,
                           })}
                         >
                           Payment Fee
                         </label>
                       </span>
-                      {getFormErrorMessage('paymentFee')}
+                      {getFormErrorMessage('amount')}
                     </div>
                   </div>
                   {/* fee declaration paragraph  */}
@@ -801,10 +1147,10 @@ const MemberRegistrationForm = (props) => {
                       </span>
                     )}
                   </div>
-                  {/* accept field  */}
+                  {/* tosAgreement field  */}
                   <div className='field-checkbox'>
                     <Controller
-                      name='accept'
+                      name='tosAgreement'
                       control={control}
                       rules={{ required: true }}
                       render={({ field, fieldState }) => (
@@ -819,8 +1165,8 @@ const MemberRegistrationForm = (props) => {
                       )}
                     />
                     <label
-                      htmlFor='accept'
-                      className={classNames({ 'p-error': errors.accept })}
+                      htmlFor='tosAgreement'
+                      className={classNames({ 'p-error': errors.tosAgreement })}
                     >
                       I agree to the terms and conditions*
                     </label>

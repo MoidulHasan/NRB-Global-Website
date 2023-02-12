@@ -63,6 +63,11 @@ const Header = () => {
           cName: 'dropdown-link',
         },
         {
+          title: 'Be a Young Congress',
+          path: '/YoungCongressRegistration',
+          cName: 'dropdown-link',
+        },
+        {
           title: 'Programs',
           path: '/YoungCongressPrograms',
           cName: 'dropdown-link',
@@ -197,7 +202,7 @@ const Header = () => {
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           {/* NRB GLobal
-          <i class='fab fa-firstdraft' /> */}
+          <i className='fab fa-firstdraft' /> */}
           <img
             src={nrbLogo}
             alt='logo of NRB'

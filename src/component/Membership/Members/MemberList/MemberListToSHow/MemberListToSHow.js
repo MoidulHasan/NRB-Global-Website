@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './MemberListToShow.css';
 import useDataContexts from '../../../../../hooks/useDataContexts';
 
@@ -28,7 +28,7 @@ const MemberListToSHow = () => {
                 <div className='country flex sm:align-items-end justify-content-end mt-2 sm:mt-0 '>
                   {/* {`fi ${} text-3xl`} */}
                   {/* 'fi fi-gr text-3xl' */}
-                  <span class={`fi ${member.country} text-3xl`}></span>{' '}
+                  <span className={`fi ${member.country} text-3xl`}></span>{' '}
                 </div>
               </div>
             </div>
