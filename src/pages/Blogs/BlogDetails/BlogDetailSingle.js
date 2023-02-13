@@ -1,17 +1,29 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import BlogDetailsCard from "../../../component/Blogs/BlogDetails/BlogDetailsCard";
-import useDataContexts from "../../../hooks/useDataContexts";
+import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import BlogDetailsCard from '../../../component/Blogs/BlogDetails/BlogDetailsCard';
+import BlogPage from '../../../component/Blogs/BlogPage/BlogPage';
+import useDataContexts from '../../../hooks/useDataContexts';
 
 const BlogDetailSingle = () => {
   const { id } = useParams();
+
+  const url = 'http://localhost:3005/v1';
   // console.log(id);
 
-  const { nrbBlogs } = useDataContexts();
-  // console.log("nrb", nrbBlogs);
+  const [blogInfo, setBlogInfo]= useState([]);
 
-  const singleBlog = nrbBlogs?.find((blog) => blog.id === id);
-  // console.log("Blog-matched", singleBlog);
+  useEffect(()=>{
+    fetch(`${url}/public/blogs/`)
+    .then(res =>res.json())
+    .then(data => setBlogInfo(data?.data?.results))
+  },[])
+
+  console.log('nrb', blogInfo?.results);
+
+  const singleBlog = blogInfo?.find((blog) => blog.id === id);
+  console.log('Blog-matched', singleBlog);
 
   return (
     <div>
