@@ -1,14 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import './MemberListToShow.css';
 import useDataContexts from '../../../../../hooks/useDataContexts';
+import { Paginator } from 'primereact/paginator';
 
 const MemberListToSHow = () => {
-  const { nrbMembers } = useDataContexts();
+  const [nrbMembers, setNrbMembers] = useState({});
+  const [page, setPage] = useState(1);
+
+  const url = 'http://localhost:3005';
+
+  useEffect(() => {
+    fetch(`${url}/v1/public/members?page=${page}`)
+      .then((res) => res.json())
+      .then((data) => setNrbMembers(data.data));
+  }, [page]);
+
+  console.log(nrbMembers);
+
+  const [basicFirst, setBasicFirst] = useState(0);
+  const [basicRows, setBasicRows] = useState(10);
+
+  const onPageChange = (event) => {
+    setPage(event.page + 1);
+    setBasicFirst(event.first);
+    setBasicRows(event.rows);
+  };
 
   return (
     <div className='p-container mb-4 mt-3'>
       <div className='grid'>
-        {nrbMembers.map((member) => (
+        {nrbMembers?.results?.map((member) => (
           <div
             key={member.id}
             member={member}
@@ -16,7 +37,7 @@ const MemberListToSHow = () => {
           >
             <div className='nrbMemberCard p-2 md:p-3 m-1'>
               <div className='memberImgHolder'>
-                <img src={member.image} alt='membership' />
+                <img src={`${url}${member.image}`} alt='membership' />
               </div>
               <div className='nrbMemberDetail sm:flex justify-content-between'>
                 <div className='nrbPersonalInfo'>
@@ -28,13 +49,23 @@ const MemberListToSHow = () => {
                 <div className='country flex sm:align-items-end justify-content-end mt-2 sm:mt-0 '>
                   {/* {`fi ${} text-3xl`} */}
                   {/* 'fi fi-gr text-3xl' */}
-                  <span className={`fi ${member.country} text-3xl`}></span>{' '}
+                  <span
+                    className={`fi ${member.presentAddress.country} text-3xl`}
+                  ></span>{' '}
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
+
+      <Paginator
+        totalRecords={nrbMembers?.totalResults}
+        onPageChange={onPageChange}
+        first={basicFirst}
+        rows={basicRows}
+        rowsPerPageOptions={nrbMembers?.limit}
+      />
     </div>
   );
 };
