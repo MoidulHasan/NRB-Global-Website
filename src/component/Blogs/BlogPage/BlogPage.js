@@ -12,12 +12,17 @@ const BlogPage = () => {
   const [blogInfo, setBlogInfo] = useState([]);
   const [page, setPage] = useState(1);
 
-  //console.log(blogInfo.results);
+  //console.log(blogInfo);
   useEffect(() => {
     fetch(`${url}/public/blogs?page=${page}`)
       .then((res) => res.json())
       .then((data) => setBlogInfo(data?.data));
   }, []);
+
+  const blogsToShare = blogInfo?.results?.filter(
+    (blogs) => blogs.status === 'Published'
+  );
+  console.log(blogsToShare);
 
   const [basicFirst, setBasicFirst] = useState(0);
   const [basicRows, setBasicRows] = useState(10);
@@ -40,7 +45,7 @@ const BlogPage = () => {
             </h1>
           </div>
           <div className='grid'>
-            {blogInfo?.results?.map((blogsinfo) => (
+            {blogsToShare?.map((blogsinfo) => (
               <Blog key={blogsinfo.id} blogsinfo={blogsinfo} page={page}></Blog>
             ))}
           </div>

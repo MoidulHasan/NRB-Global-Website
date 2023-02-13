@@ -5,6 +5,11 @@ import './BlogDetailsCard.css';
 const BlogDetailsCard = (singleBlog) => {
   console.log('single-Blog-Find', singleBlog?.singleBlog?.id);
 
+  const blog_date = new Date(singleBlog?.singleBlog?.publishDate);
+  let day = blog_date.getDate();
+  let month = blog_date.getMonth() + 1;
+  let year = blog_date.getFullYear();
+
   return (
     <div className='p-container '>
       <div className='p-4 my-4 blogDetailsPageContainer'>
@@ -22,9 +27,7 @@ const BlogDetailsCard = (singleBlog) => {
                 className='pi pi-calendar-plus font-bold mr-2 text-orange-500'
                 style={{ fontSize: '1.2em' }}
               ></i>
-              <span className='font-semibold'>
-                {singleBlog?.singleBlog?.publishDate}
-              </span>
+              <span className='font-semibold'>{`${day}/${month}/${year}`}</span>
             </div>
             <div className='flex align-items-center mr-5'>
               <i
