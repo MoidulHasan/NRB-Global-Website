@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom';
 const Blog = (props) => {
   const { id, title, authorName, publishDate, content, coverImage, page } =
     props.blogsinfo;
-  // const newDescription = description;
+
   const newDescription = content.slice(0, 201);
-  // console.log("new-description :-", newDescription);
 
   const blog_date = new Date(publishDate);
   let day = blog_date.getDate();

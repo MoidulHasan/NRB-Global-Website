@@ -12,7 +12,6 @@ const BlogPage = () => {
   const [blogInfo, setBlogInfo] = useState([]);
   const [page, setPage] = useState(1);
 
-  //console.log(blogInfo);
   useEffect(() => {
     fetch(`${url}/public/blogs?page=${page}`)
       .then((res) => res.json())
@@ -22,7 +21,6 @@ const BlogPage = () => {
   const blogsToShare = blogInfo?.results?.filter(
     (blogs) => blogs.status === 'Published'
   );
-  console.log(blogsToShare);
 
   const [basicFirst, setBasicFirst] = useState(0);
   const [basicRows, setBasicRows] = useState(10);

@@ -8,7 +8,6 @@ import './AnnirversaryModal.css';
 import anniversaryImg3 from '../../assets/image/anniversarymodal3.png';
 
 const AnnirversaryModal = (props) => {
-  console.log(props.show);
   const closeOnEscapeKeyDown = (e) => {
     if ((e.charCode || e.keyCode) === 27) {
       props.onClose();
