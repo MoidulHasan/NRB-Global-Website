@@ -4,18 +4,10 @@ import useDataContexts from '../../../../../hooks/useDataContexts';
 import { Paginator } from 'primereact/paginator';
 
 const MemberListToSHow = () => {
-  const [nrbMembers, setNrbMembers] = useState({});
+  const { nrbMembers } = useDataContexts();
   const [page, setPage] = useState(1);
 
   const url = process.env.REACT_APP_BACKEND_URL;
-
-  useEffect(() => {
-    fetch(`${url}/public/members?page=${page}`)
-      .then((res) => res.json())
-      .then((data) => setNrbMembers(data.data));
-  }, [page]);
-
-  // console.log(nrbMembers);
 
   const [basicFirst, setBasicFirst] = useState(0);
   const [basicRows, setBasicRows] = useState(10);
