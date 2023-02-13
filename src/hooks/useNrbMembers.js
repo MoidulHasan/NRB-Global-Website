@@ -10,7 +10,14 @@ const useNrbMembers = () => {
       .then((res) => res.json())
       .then((data) => setNrbMembers(data.data));
   }, []);
-  return { nrbMembers, setNrbMembers };
+
+  const generalMembers = nrbMembers?.results?.filter(
+    (member) => member.memberCategory === 'generalMember'
+  );
+  const youngCongressMembers = nrbMembers?.results?.filter(
+    (member) => member.memberCategory === 'youngcongressMember'
+  );
+  return { nrbMembers, setNrbMembers, generalMembers, youngCongressMembers };
 };
 
 export default useNrbMembers;

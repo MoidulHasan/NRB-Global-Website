@@ -7,7 +7,8 @@ import './YCMembersStyle.css';
 import useDataContexts from '../../../hooks/useDataContexts';
 // import { Link } from 'react-router-dom';
 function YCMembersCard() {
-  const { nrbMembers } = useDataContexts();
+  const { youngCongressMembers } = useDataContexts();
+
   return (
     <div className='ycm-container'>
       {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
@@ -29,12 +30,10 @@ function YCMembersCard() {
         </div>
       </div>
       <div className='ycm grid'>
-        {nrbMembers.map((acateam, i) => (
+        {youngCongressMembers?.map((acateam, i) => (
           <div className='ycm-profile lg:col-3 md:col-6 py-3'>
             <div className='ycm-profile-flex-container flex align-items-cetner justify-content-center'>
               <Card className='ycm-card' style={{ width: '17em' }} key={i}>
-                {/* <p className="cabinetcardquote" style={{ lineHeight: '1.5' }}> {acateam.description}
-                        </p> */}
                 <div className='ycm-flex'>
                   <img src={acateam.image} alt='img' />
                   <div className='ycm-flex1'>

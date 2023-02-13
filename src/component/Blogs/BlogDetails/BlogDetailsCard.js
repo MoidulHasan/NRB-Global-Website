@@ -1,14 +1,12 @@
 import React from 'react';
 import { Divider } from 'primereact/divider';
 import './BlogDetailsCard.css';
+import { formateDate } from '../../../utils/formateDate';
 
 const BlogDetailsCard = (singleBlog) => {
   console.log('single-Blog-Find', singleBlog?.singleBlog?.id);
 
-  const blog_date = new Date(singleBlog?.singleBlog?.publishDate);
-  let day = blog_date.getDate();
-  let month = blog_date.getMonth() + 1;
-  let year = blog_date.getFullYear();
+  const blog_date = formateDate(singleBlog?.singleBlog?.publishDate);
 
   return (
     <div className='p-container '>
@@ -27,7 +25,7 @@ const BlogDetailsCard = (singleBlog) => {
                 className='pi pi-calendar-plus font-bold mr-2 text-orange-500'
                 style={{ fontSize: '1.2em' }}
               ></i>
-              <span className='font-semibold'>{`${day}/${month}/${year}`}</span>
+              <span className='font-semibold'>{blog_date}</span>
             </div>
             <div className='flex align-items-center mr-5'>
               <i
