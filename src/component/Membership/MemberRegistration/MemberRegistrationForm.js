@@ -40,7 +40,7 @@ const MemberRegistrationForm = (props) => {
   let year = todayDate.getFullYear();
 
   let currentDate = `${day}/${month}/${year}`;
-  console.log(currentDate);
+  // console.log(currentDate);
 
   const defaultValues = {
     name: '',
@@ -105,7 +105,7 @@ const MemberRegistrationForm = (props) => {
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState({});
 
-  console.log(file);
+  //console.log(file);
 
   const [imageURL, setImageURL] = useState('');
   // console.log(imageURL);
@@ -139,7 +139,7 @@ const MemberRegistrationForm = (props) => {
   const onSubmit = async (data) => {
     //setFormData({ formData, ...data });
     // console.log(data.picture);
-    console.log(data);
+    //console.log(data);
 
     const formData = {
       tosAgreement: data.tosAgreement,
@@ -197,7 +197,6 @@ const MemberRegistrationForm = (props) => {
           fetch(`${url}/public/members/`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
-              console.log(data);
               if (data?.success) {
                 reset();
                 setShowMessage(true);
@@ -517,7 +516,6 @@ const MemberRegistrationForm = (props) => {
                                 placeholder='Select Your Gender'
                                 onChange={(e) => {
                                   field.onChange(e.value);
-                                  console.log(e);
                                 }}
                                 options={[
                                   { name: 'Male', value: 'Male' },
@@ -623,7 +621,6 @@ const MemberRegistrationForm = (props) => {
                                 placeholder='Select Your Country'
                                 onChange={(e) => {
                                   field.onChange(e.value);
-                                  console.log(e);
                                 }}
                                 options={countries}
                                 optionLabel='name.common'

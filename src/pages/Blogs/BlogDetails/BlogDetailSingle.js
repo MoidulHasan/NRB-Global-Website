@@ -20,10 +20,10 @@ const BlogDetailSingle = () => {
       .then((data) => setBlogInfo(data?.data?.results));
   }, []);
 
-  console.log('nrb', blogInfo?.results);
+  //console.log('nrb', blogInfo?.results);
 
   const singleBlog = blogInfo?.find((blog) => blog.id === id);
-  console.log('Blog-matched', singleBlog);
+  //console.log('Blog-matched', singleBlog);
 
   return (
     <div>

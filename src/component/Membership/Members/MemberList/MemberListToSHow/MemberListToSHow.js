@@ -15,7 +15,7 @@ const MemberListToSHow = () => {
       .then((data) => setNrbMembers(data.data));
   }, [page]);
 
-  console.log(nrbMembers);
+  // console.log(nrbMembers);
 
   const [basicFirst, setBasicFirst] = useState(0);
   const [basicRows, setBasicRows] = useState(10);
