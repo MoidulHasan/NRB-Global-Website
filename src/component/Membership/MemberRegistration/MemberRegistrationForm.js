@@ -15,6 +15,7 @@ import './MemberRegistrationForm.css';
 import nrbLogo from '../../../assets/image/nrblogo.png';
 import memberImg from '../../../assets/image/topmembers/img6.jpg';
 import useDataContexts from '../../../hooks/useDataContexts';
+import { formateDate } from '../../../utils/formateDate';
 
 const MemberRegistrationForm = (props) => {
   const [showMessage, setShowMessage] = useState(false);
@@ -34,12 +35,7 @@ const MemberRegistrationForm = (props) => {
   const url = process.env.REACT_APP_BACKEND_URL;
   const token = process.env.REACT_APP_TOKEN;
 
-  const todayDate = new Date();
-  let day = todayDate.getDate();
-  let month = todayDate.getMonth() + 1;
-  let year = todayDate.getFullYear();
-
-  let currentDate = `${day}/${month}/${year}`;
+  let currentDate = formateDate(new Date());
   // console.log(currentDate);
 
   const defaultValues = {

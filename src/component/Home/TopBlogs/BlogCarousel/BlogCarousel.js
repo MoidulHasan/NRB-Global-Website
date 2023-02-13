@@ -2,6 +2,7 @@ import { Carousel } from 'primereact/carousel';
 import React, { useEffect, useState } from 'react';
 import './BlogCarousel.css';
 import thumb from '../../../../assets/image/blogs/5fc9f284bfe27-bpfull.jpg';
+import { formateDate } from '../../../../utils/formateDate';
 const BlogCarousel = () => {
   const [blogs, setBlogs] = useState([]);
   const responsiveOptions = [
@@ -31,10 +32,8 @@ const BlogCarousel = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const blogTemplate = (blog) => {
-    const blog_date = new Date(blog?.publishDate);
-    let day = blog_date.getDate();
-    let month = blog_date.getMonth() + 1;
-    let year = blog_date.getFullYear();
+    const blog_date_string = formateDate(blog?.publishDate);
+
     return (
       <div className='blogCard'>
         <div className='blogImgDiv'>
@@ -42,7 +41,7 @@ const BlogCarousel = () => {
         </div>
         <div className='blogDetail'>
           <div className='hidden md:flex  align-items-center justify-content-start my-3 font-semibold text-gray-700'>
-            <span>{`${day}-${month}-${year}`}</span>
+            <span>{blog_date_string}</span>
             <span className='flex align-items-center justify-content-center ml-3'>
               <span className='material-icons-sharp'>visibility</span>{' '}
               <span className='ml-1'>{blog.view} views</span>
@@ -62,7 +61,7 @@ const BlogCarousel = () => {
           </div>
           <div className=' md:hidden grid my-3 font-semibold text-gray-700'>
             <div className='col-6'>
-              <span className='exclusiveDateField'>{`${day}-${month}-${year}`}</span>
+              <span className='exclusiveDateField'>{blog_date_string}</span>
             </div>
             <div className='col-6'>
               <span className='flex align-items-center justify-content-center exclusiveVisibilityField'>
