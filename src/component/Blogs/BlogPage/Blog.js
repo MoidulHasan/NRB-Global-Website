@@ -10,6 +10,11 @@ const Blog = (props) => {
   const newDescription = content.slice(0, 201);
   // console.log("new-description :-", newDescription);
 
+  const blog_date = new Date(publishDate);
+  let day = blog_date.getDate();
+  let month = blog_date.getMonth() + 1;
+  let year = blog_date.getFullYear();
+
   return (
     <div className='col-12 md:col-6 lg:col-4 xl:col-4 pb-3'>
       <Link to={`/blogs/${id}`} className='no-underline'>
@@ -33,7 +38,7 @@ const Blog = (props) => {
                 style={{ fontSize: '1.2em' }}
               ></i>
               <span className='font-semibold' style={{ fontSize: '1.2em' }}>
-                {publishDate}
+                {`${day}/${month}/${year}`}
               </span>
             </div>
           </div>
