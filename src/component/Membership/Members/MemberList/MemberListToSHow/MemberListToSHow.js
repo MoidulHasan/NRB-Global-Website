@@ -7,10 +7,10 @@ const MemberListToSHow = () => {
   const [nrbMembers, setNrbMembers] = useState({});
   const [page, setPage] = useState(1);
 
-  const url = 'http://localhost:3005';
+  const url = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    fetch(`${url}/v1/public/members?page=${page}`)
+    fetch(`${url}/public/members?page=${page}`)
       .then((res) => res.json())
       .then((data) => setNrbMembers(data.data));
   }, [page]);

@@ -7,7 +7,7 @@ import './BlogPage.css';
 import { Paginator } from 'primereact/paginator';
 
 const BlogPage = () => {
-  const url = 'http://localhost:3005/v1';
+  const url = process.env.REACT_APP_BACKEND_URL;
 
   const [blogInfo, setBlogInfo] = useState([]);
   const [page, setPage] = useState(1);

@@ -9,16 +9,16 @@ import useDataContexts from '../../../hooks/useDataContexts';
 const BlogDetailSingle = () => {
   const { id } = useParams();
 
-  const url = 'http://localhost:3005/v1';
+  const url = process.env.REACT_APP_BACKEND_URL;
   // console.log(id);
 
-  const [blogInfo, setBlogInfo]= useState([]);
+  const [blogInfo, setBlogInfo] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch(`${url}/public/blogs/`)
-    .then(res =>res.json())
-    .then(data => setBlogInfo(data?.data?.results))
-  },[])
+      .then((res) => res.json())
+      .then((data) => setBlogInfo(data?.data?.results));
+  }, []);
 
   console.log('nrb', blogInfo?.results);
 
