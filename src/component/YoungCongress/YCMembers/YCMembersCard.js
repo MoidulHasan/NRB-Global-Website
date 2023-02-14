@@ -9,6 +9,10 @@ import useDataContexts from '../../../hooks/useDataContexts';
 function YCMembersCard() {
   const { youngCongressMembers } = useDataContexts();
 
+  const url = process.env.REACT_APP_BACKEND_CORE_URL;
+
+  console.log(youngCongressMembers);
+
   return (
     <div className='ycm-container'>
       {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
@@ -35,14 +39,14 @@ function YCMembersCard() {
             <div className='ycm-profile-flex-container flex align-items-cetner justify-content-center'>
               <Card className='ycm-card' style={{ width: '17em' }} key={i}>
                 <div className='ycm-flex'>
-                  <img src={acateam.image} alt='img' />
+                  <img src={`${url}${acateam.imageUrl}`} alt='img' />
                   <div className='ycm-flex1'>
                     <p className='ycm-name'>{acateam.name}</p>
                     <h5 className='ycm-title'>{acateam.designation}</h5>
                     <div className='ycm-flexSocialandFlagicons'>
                       <div className='ycm-socialicons'>
                         <a
-                          href={acateam.fblink}
+                          href={acateam?.socialLinks?.facebook}
                           target='_blank'
                           rel='noreferrer'
                         >
@@ -52,7 +56,7 @@ function YCMembersCard() {
                           />
                         </a>
                         <a
-                          href={acateam.wtapplink}
+                          href={acateam?.socialLinks?.whatsapp}
                           target='_blank'
                           rel='noreferrer'
                         >
@@ -62,7 +66,7 @@ function YCMembersCard() {
                           />
                         </a>
                         <a
-                          href={acateam.linkedinlink}
+                          href={acateam?.socialLinks?.linkedIn}
                           target='_blank'
                           rel='noreferrer'
                         >
@@ -73,7 +77,7 @@ function YCMembersCard() {
                         </a>
                         {/* <a href={acateam.linkedinlink}> <i className="pi pi-linkedin" style={{ color: '#333' }} /></a> */}
                         <a
-                          href={acateam.weblink}
+                          href={acateam?.socialLinks?.website}
                           target='_blank'
                           rel='noreferrer'
                         >
