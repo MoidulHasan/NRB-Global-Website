@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'primereact/button';
 import './BlogPage.css';
 import { Link } from 'react-router-dom';
+import { formateDate } from '../../../utils/formateDate';
 
 const Blog = (props) => {
   const { id, title, authorName, publishDate, content, coverImage, page } =
@@ -9,16 +10,20 @@ const Blog = (props) => {
 
   const newDescription = content.slice(0, 201);
 
-  const blog_date = new Date(publishDate);
-  let day = blog_date.getDate();
-  let month = blog_date.getMonth() + 1;
-  let year = blog_date.getFullYear();
+  // const blog_date = new Date(publishDate);
+  // let day = blog_date.getDate();
+  // let month = blog_date.getMonth() + 1;
+  // let year = blog_date.getFullYear();
+
+  const blog_date = formateDate(publishDate);
+
+  const urlImg = process.env.REACT_APP_BACKEND_CORE_URL;
 
   return (
     <div className='col-12 md:col-6 lg:col-4 xl:col-4 pb-3'>
       <Link to={`/blogs/${id}`} className='no-underline'>
         <div className='BlogImgContainer'>
-          <img src={coverImage} alt='' className='w-full' />
+          <img src={`${urlImg}${coverImage}`} alt='' className='w-full' />
         </div>
         <div className='blogPageDetails'>
           <div className='flex justify-content-between pt-1'>
@@ -37,7 +42,7 @@ const Blog = (props) => {
                 style={{ fontSize: '1.2em' }}
               ></i>
               <span className='font-semibold' style={{ fontSize: '1.2em' }}>
-                {`${day}/${month}/${year}`}
+                {blog_date}
               </span>
             </div>
           </div>

@@ -34,10 +34,14 @@ const BlogCarousel = () => {
   const blogTemplate = (blog) => {
     const blog_date_string = formateDate(blog?.publishDate);
 
+    const urlImg = process.env.REACT_APP_BACKEND_CORE_URL;
+
+    console.log(urlImg, blogs);
+
     return (
       <div className='blogCard'>
         <div className='blogImgDiv'>
-          <img src={blog.coverImage} alt='blog pic' />
+          <img src={`${urlImg}${blog?.coverImage}`} alt='blog pic' />
         </div>
         <div className='blogDetail'>
           <div className='hidden md:flex  align-items-center justify-content-start my-3 font-semibold text-gray-700'>
