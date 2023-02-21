@@ -11,8 +11,6 @@ function YCMembersCard() {
 
   const url = process.env.REACT_APP_BACKEND_CORE_URL;
 
-  console.log(youngCongressMembers);
-
   return (
     <div className='ycm-container'>
       {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}

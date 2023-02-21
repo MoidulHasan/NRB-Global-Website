@@ -249,8 +249,24 @@ const MemberRegistrationForm = (props) => {
     setPaymentMethod(e.target.value);
   };
 
+  console.log(props.member);
+
   return (
     <div className='p-container my-4'>
+      {props.member === 'General Member' ? (
+        <h1 className='neon py-2 text-center' data-text='U'>
+          Free <span className='flicker-slow'> Registration </span> for
+          <span className='flicker-fast'> General </span> Members.
+        </h1>
+      ) : props.member === 'Young Congress' ? (
+        <h1 className='neon py-2 text-center' data-text='U'>
+          Free <span className='flicker-slow'> Registration </span> for
+          <span className='flicker-fast'> Young </span> Congress{' '}
+          <span className='flicker-slow'>Members</span>.
+        </h1>
+      ) : (
+        ''
+      )}
       <div className='registrationContainer py-2 px-2'>
         <div className='grid'>
           <div className='col-12 md:col-4 flex-order-2 md:flex-order-1 mt-6 md:mt-0'>
@@ -885,7 +901,7 @@ const MemberRegistrationForm = (props) => {
                               'p-error': errors.facebook,
                             })}
                           >
-                            <span class='pi pi-facebook mr-1'></span>
+                            <span className='pi pi-facebook mr-1'></span>
                             Facebook
                           </label>
                         </span>
@@ -912,7 +928,7 @@ const MemberRegistrationForm = (props) => {
                               'p-error': errors.whatsapp,
                             })}
                           >
-                            <span class='pi pi-whatsapp mr-1'></span>
+                            <span className='pi pi-whatsapp mr-1'></span>
                             Whatsapp
                           </label>
                         </span>
@@ -939,7 +955,7 @@ const MemberRegistrationForm = (props) => {
                               'p-error': errors.linkedIn,
                             })}
                           >
-                            <span class='pi pi-linkedin mr-1'></span>
+                            <span className='pi pi-linkedin mr-1'></span>
                             LinkedIn
                           </label>
                         </span>
@@ -966,7 +982,7 @@ const MemberRegistrationForm = (props) => {
                               'p-error': errors.website,
                             })}
                           >
-                            <span class='pi pi-globe mr-1'></span>
+                            <span className='pi pi-globe mr-1'></span>
                             Website
                           </label>
                         </span>

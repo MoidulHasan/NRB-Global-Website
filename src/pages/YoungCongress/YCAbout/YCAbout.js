@@ -12,7 +12,7 @@ function YCAbout() {
       <YCMisssion />
       {/* <YCVision /> */}
       <YCObjective />
-      <YCATeam />
+      {/* <YCATeam /> */}
       <YCPhotoContestComponent />
     </div>
   );
