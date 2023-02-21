@@ -225,6 +225,16 @@ const Header = () => {
               About
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/gmRegistration'
+              className=' btn-join lg:block sm:hidden'
+              onClick={closeMobileMenu}
+            >
+              <span>Click!</span>
+              <span>Join NRB</span>
+            </Link>
+          </li>
           {menuList.map((menu) => (
             <MenuList
               key={menu.title}

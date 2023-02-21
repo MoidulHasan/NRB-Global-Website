@@ -4,13 +4,13 @@ import { Card } from 'primereact/card';
 import { Link } from 'react-router-dom';
 import useDataContexts from '../../../hooks/useDataContexts';
 function YCATeam() {
-  const { nrbMembers } = useDataContexts();
+  const { youngCongressMembers } = useDataContexts();
   return (
     <div className='ycateam-container'>
       {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
       <h1 className='ycateam-header'>Young congress members</h1>
       <div className='ycm grid'>
-        {nrbMembers.slice(0, 8).map((acateam, i) => (
+        {youngCongressMembers.slice(0, 8).map((acateam, i) => (
           <div className='ycm-profile lg:col-3 md:col-6 py-3'>
             <div className='ycm-profile-flex-container flex align-items-cetner justify-content-center'>
               <Card className='ycm-card' style={{ width: '17em' }} key={i}>
