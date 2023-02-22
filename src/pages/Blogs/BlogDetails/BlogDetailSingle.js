@@ -22,7 +22,7 @@ const BlogDetailSingle = () => {
 
   //console.log('nrb', blogInfo?.results);
 
-  const singleBlog = blogInfo?.find((blog) => blog.id === id);
+  const singleBlog = blogInfo?.filter((blog) => blog.id === id);
   //console.log('Blog-matched', singleBlog);
 
   return (
