@@ -1,5 +1,5 @@
 import React from 'react';
-import FloatJoinNRB from '../../../../component/';
+import FloatJoinNRB from '../../../../component/FloatJoinNRB/FloatJoinNRB';
 import WhyJoinNRB from '../../../../component/Home/WhyJoinNRB/WhyJoinNRB';
 import MemberServiceList from '../../../../component/Membership/Members/MemberServices/MemberServicesHeader/MemberServiceList';
 import MemberServicesHeader from '../../../../component/Membership/Members/MemberServices/MemberServicesHeader/MemberServicesHeader';
