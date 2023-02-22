@@ -7,6 +7,7 @@ import Objective from '../../component/About/Objective/Objective';
 import Intro from '../../component/About/Intro/Intro';
 import Founder from '../../component/About/Founder/Founder';
 import MoreInfo from '../../component/About/MoreInfo/MoreInfo';
+import FloatJoinNRB from '../../component/FloatJoinNRB/FloatJoinNRB';
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
       <Objective />
       <Counter />
       <Founder />
+      <FloatJoinNRB />
       <MoreInfo />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import FloatJoinNRB from '../../../../component/FloatJoinNRB/FloatJoinNRB';
 import WhyJoinNRB from '../../../../component/Home/WhyJoinNRB/WhyJoinNRB';
 import MemberServiceList from '../../../../component/Membership/Members/MemberServices/MemberServicesHeader/MemberServiceList';
 import MemberServicesHeader from '../../../../component/Membership/Members/MemberServices/MemberServicesHeader/MemberServicesHeader';
@@ -13,6 +14,9 @@ const MemberServices = ({ location }) => {
       </section>
       <section>
         <MemberServiceList location={location} />
+      </section>
+      <section className='floatNRB mb-8'>
+        <FloatJoinNRB />
       </section>
       {pathAllService && (
         <section>

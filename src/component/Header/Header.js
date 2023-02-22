@@ -247,6 +247,16 @@ const Header = () => {
               Contact
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/gmRegistration'
+              className='btn-join lg:block sm:hidden text-white'
+              onClick={closeMobileMenu}
+            >
+              <span>Click!</span>
+              <span>Join NRB</span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </>
