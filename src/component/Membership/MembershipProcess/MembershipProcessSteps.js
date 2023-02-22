@@ -1,4 +1,5 @@
 import React from 'react';
+import FloatJoinNRB from '../../FloatJoinNRB/FloatJoinNRB';
 
 const MembershipProcessSteps = () => {
   return (
@@ -187,6 +188,7 @@ const MembershipProcessSteps = () => {
           </div>
         </div>
       </div>
+      <FloatJoinNRB />
     </div>
   );
 };
