@@ -16,7 +16,7 @@ const BlogPage = () => {
     fetch(`${url}/public/blogs?page=${page}`)
       .then((res) => res.json())
       .then((data) => setBlogInfo(data?.data));
-  }, []);
+  }, [page]);
 
   const blogsToShare = blogInfo?.results?.filter(
     (blogs) => blogs.status === 'Published'
