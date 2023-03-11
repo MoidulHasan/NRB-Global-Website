@@ -1,8 +1,24 @@
-import ContactForm from './ContactForm';
+import { useEffect, useState } from "react";
 import './ContactInfo.css';
 import GMapbn from './ContactInfoBanMap';
 import GMapus from './ContactInfoUsMap';
 function ContactInfo() {
+  const url = process.env.REACT_APP_BACKEND_URL;
+  const [contact, setContact] = useState([]);
+  useEffect(() => {
+    fetch(`${url}/contacts`)
+      .then((res) => res.json())
+      .then((data) => setContact(data?.data?.results));
+  }, []);
+  const bd = contact?.filter(
+    (country) => country.countryName === "Bangladesh"
+  )[0];
+  const usa = contact?.filter(
+    (country) => country.countryName === "Malaysia"
+  )[0];
+  // console.log(`${bd.address}`)
+  // console.log(bd?.countryName);
+  // console.log(usa?.countryName);
   return (
     <div className='contactinfo-container '>
       <div className='contactinfo-grid-container'>
@@ -12,7 +28,7 @@ function ContactInfo() {
               <div className='contactinfo-bn-title'>
                 <h2>
                   <span className='contactinfo-bn-title-span'>
-                    Bangladesh Office
+                    {bd?.countryName} Office
                   </span>
                 </h2>
               </div>
@@ -20,26 +36,25 @@ function ContactInfo() {
                 <span className='material-icons-sharp'>location_on</span>
                 <h2>
                   <span>Address : </span>
-                  Bijoy Nagar, Shaheed Syed Nazrul Islam Sarani ,<br></br>{' '}
-                  <br></br>Dhaka-1000, Bangladesh
-                </h2>{' '}
+                  {bd?.address}
+                </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>call</span>
                 <h2>
-                  <span>Phone : </span>+8801715411141
+                  <span>Phone : </span>{bd?.phone}
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>smartphone</span>
                 <h2>
-                  <span>WhatsApp :</span> +8801715411141
+                  <span>WhatsApp :</span> {bd?.whatsApp}
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>email</span>
                 <h2>
-                  <span>E-mail :</span> nrbglobal20@gmail.com
+                  <span>E-mail :</span>{bd?.email}
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
@@ -63,32 +78,32 @@ function ContactInfo() {
             <div className='contactinfo-us-details'>
               <div className='contactinfo-us-title'>
                 <h2>
-                  <span className='contactinfo-us-title-span'>USA Office</span>
+                  <span className='contactinfo-us-title-span'>{usa?.countryName}  Office</span>
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>location_on</span>
                 <h2>
                   <span>Address : </span>
-                  542 N Normandy Avenue Unit #106 Los Angeles Ca 90004
-                </h2>{' '}
+                  {usa?.address}
+                </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>call</span>
                 <h2>
-                  <span>Phone : </span>+8801715411141
+                  <span>Phone : </span> {usa?.phone}
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>smartphone</span>
                 <h2>
-                  <span>WhatsApp :</span> +8801715411141
+                  <span>WhatsApp :</span>  {usa?.whatsApp}
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
                 <span className='material-icons-sharp'>email</span>
                 <h2>
-                  <span>E-mail :</span> nrbglobal20@gmail.com
+                  <span>E-mail :</span> {usa?.email}
                 </h2>
               </div>
               <div className='contactinfo-location-icon'>
@@ -101,7 +116,6 @@ function ContactInfo() {
           </div>
         </div>
       </div>
-      <ContactForm />
     </div>
   );
 }
