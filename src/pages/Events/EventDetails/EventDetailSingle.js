@@ -21,10 +21,10 @@ const EventDetailSingle = () => {
 
   console.log(cardDetailsInfo);
 
-  const { nrbEvents } = useDataContexts();
+  //const { nrbEvents } = useDataContexts();
   // console.log("nrbEvents", nrbEvents);
 
-  const singleEvent = nrbEvents?.find((event) => event.id === id);
+  //const singleEvent = nrbEvents?.find((event) => event.id === id);
 
   // console.log("Event-matched", singleEvent);
 

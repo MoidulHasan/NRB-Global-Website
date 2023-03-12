@@ -1,10 +1,10 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import BlogDetailsCard from '../../../component/Blogs/BlogDetails/BlogDetailsCard';
-import BlogPage from '../../../component/Blogs/BlogPage/BlogPage';
-import useDataContexts from '../../../hooks/useDataContexts';
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import BlogDetailsCard from "../../../component/Blogs/BlogDetails/BlogDetailsCard";
+import BlogPage from "../../../component/Blogs/BlogPage/BlogPage";
+import useDataContexts from "../../../hooks/useDataContexts";
 
 const BlogDetailSingle = () => {
   const { id } = useParams();
@@ -15,19 +15,20 @@ const BlogDetailSingle = () => {
   const [blogInfo, setBlogInfo] = useState([]);
 
   useEffect(() => {
-    fetch(`${url}/public/blogs/`)
+    fetch(`${url}/blogs/${id}`)
       .then((res) => res.json())
-      .then((data) => setBlogInfo(data?.data?.results));
+      .then((data) => setBlogInfo(data?.data?.blog));
   }, []);
 
-  //console.log('nrb', blogInfo?.results);
+  console.log(blogInfo);
+  //console.log("nrb", blogInfo?.results);
 
-  const singleBlog = blogInfo?.filter((blog) => blog.id === id);
+  //const singleBlog = blogInfo?.filter((blog) => blog.id === id);
   //console.log('Blog-matched', singleBlog);
 
   return (
     <div>
-      <BlogDetailsCard singleBlog={singleBlog} />
+      <BlogDetailsCard singleBlog={blogInfo} />
     </div>
   );
 };

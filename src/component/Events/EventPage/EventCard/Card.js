@@ -8,7 +8,7 @@ const Card = (props) => {
 
   const newDescription = overview.slice(0, 201);
 
-  const nullImg = "https://i.ibb.co/jMLdXJH/nrb-image.png";
+  const nullImg = "https://i.ibb.co/X2Sk3kR/nrb-image-2.png";
 
   return (
     <div className="sm:col-12 md:col-6 lg:col-4 xl:col-4 pb-3">
