@@ -5,7 +5,6 @@ import blog from '../../../assets/image/about/BLOG.jpg';
 
 import './BlogPage.css';
 import { Paginator } from 'primereact/paginator';
-
 const BlogPage = () => {
   const url = process.env.REACT_APP_BACKEND_URL;
 

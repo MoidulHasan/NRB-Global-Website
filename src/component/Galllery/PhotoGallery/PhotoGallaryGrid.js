@@ -1,14 +1,26 @@
 import "./PhotoGallaryGrid.css";
 import { Image } from "primereact/image";
 import { useState, useEffect } from "react";
+import { Paginator } from 'primereact/paginator';
+
 function PhotoGallaryGrid() {
     const url = process.env.REACT_APP_BACKEND_URL;
     const [gallary, setGallery] = useState([]);
+    const [page, setPage] = useState(1);
+
     useEffect(() => {
-        fetch(`${url}/gallery`)
+        fetch(`${url}/gallery?page=${page}`)
             .then((res) => res.json())
             .then((data) => setGallery(data?.data?.results));
-    }, []);
+    }, [page]);
+    const [basicFirst, setBasicFirst] = useState(0);
+    const [basicRows, setBasicRows] = useState(10);
+    const onPageChange = (e) => {
+        setPage(e.page + 1);
+        setBasicFirst(e.first);
+        setBasicRows(e.rows);
+    }
+    console.log(page)
     const galleryImg = gallary?.filter((img) => img.type === "Photo");
     return (
         <div className="photo-Gallary p-container">
@@ -22,6 +34,13 @@ function PhotoGallaryGrid() {
                     ))}
                 </div>
             </div>
+            <Paginator
+                totalRecords={gallary?.totalResults}
+                onPageChange={onPageChange}
+                first={basicFirst}
+                rows={basicRows}
+                rowsPerPageOptions={gallary?.limit}
+            />
         </div>
     );
 }
