@@ -15,10 +15,10 @@ function PhotoGallaryGrid() {
     }, [page]);
     const [basicFirst, setBasicFirst] = useState(0);
     const [basicRows, setBasicRows] = useState(10);
-    const onPageChange = (e) => {
-        setPage(e.page + 1);
-        setBasicFirst(e.first);
-        setBasicRows(e.rows);
+    const onPageChange = (event) => {
+        setPage(event.page + 1);
+        setBasicFirst(event.first);
+        setBasicRows(event.rows);
     }
     console.log(page)
     const galleryImg = gallary?.filter((img) => img.type === "Photo");
