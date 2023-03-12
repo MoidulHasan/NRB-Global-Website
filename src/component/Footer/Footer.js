@@ -29,6 +29,16 @@ const Footer = () => {
               <Link to='/about' className='linkDecoration my-2'>
                 <li>Terms & Condition</li>
               </Link>
+              <Link
+                to='/gmRegistration'
+                className='linkDecoration JoinButtonOnFooter mt-2'
+              >
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                Join NRB GLobal
+              </Link>
             </div>
           </div>
           <div className='col-12 md:col-3'>
