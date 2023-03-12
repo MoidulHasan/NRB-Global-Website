@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './ContactInfo.css';
 const ContactCard = ({ contact }) => {
     return (
         <div className='contactinfo-bn-txt  '>
