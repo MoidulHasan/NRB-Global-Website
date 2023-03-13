@@ -1,11 +1,11 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import Blog from "./Blog";
-import blog from "../../../assets/image/about/BLOG.jpg";
+import React from 'react';
+import { useEffect, useState } from 'react';
+import Blog from './Blog';
+import blog from '../../../assets/image/about/BLOG.jpg';
 
-import "./BlogPage.css";
-//import { Paginator } from "primereact/paginator";
-const url = process.env.REACT_APP_BACKEND_URL;
+import './BlogPage.css';
+import { Paginator } from 'primereact/paginator';
+
 const BlogPage = () => {
   const [blogInfo, setBlogInfo] = useState([]);
   useEffect(() => {
