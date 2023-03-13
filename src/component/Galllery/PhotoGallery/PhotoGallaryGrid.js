@@ -1,27 +1,32 @@
 import "./PhotoGallaryGrid.css";
 import { Image } from "primereact/image";
 import { useState, useEffect } from "react";
-import { Paginator } from 'primereact/paginator';
-
+import { slice } from "lodash";
+import { Button } from "primereact/button";
 function PhotoGallaryGrid() {
     const url = process.env.REACT_APP_BACKEND_URL;
-    const [gallary, setGallery] = useState([]);
-    const [page, setPage] = useState(1);
-
-    useEffect(() => {
-        fetch(`${url}/gallery?page=${page}`)
+    const [currentItem, setCurrentItem] = useState([]);
+    const [isCompleted, setIsCompleted] = useState(false);
+    const [index, setIndex] = useState(8);
+    const initialImg = slice(currentItem, 0, index)
+    const imgData = () => {
+        fetch(`${url}/gallery`)
             .then((res) => res.json())
-            .then((data) => setGallery(data?.data?.results));
-    }, [page]);
-    const [basicFirst, setBasicFirst] = useState(0);
-    const [basicRows, setBasicRows] = useState(10);
-    const onPageChange = (event) => {
-        setPage(event.page + 1);
-        setBasicFirst(event.first);
-        setBasicRows(event.rows);
+            .then((data) => setCurrentItem(data?.data?.results));
     }
-    console.log(page)
-    const galleryImg = gallary?.filter((img) => img.type === "Photo");
+    const galleryImg = initialImg?.filter((img) => img.type === "Photo");
+    const loadMore = () => {
+        setIndex(index + 5);
+        console.log(index);
+        if (index >= currentItem.length) {
+            setIsCompleted(true);
+        } else {
+            setIsCompleted(false);
+        }
+    };
+    useEffect(() => {
+        imgData();
+    }, []);
     return (
         <div className="photo-Gallary p-container">
             <div className="photo-gallary-row">
@@ -33,14 +38,24 @@ function PhotoGallaryGrid() {
                         </div>
                     ))}
                 </div>
+                <div className="flex align-items-center justify-content-center my-4">
+                    {isCompleted ? (
+                        <Button
+                            onClick={loadMore}
+                            label="That's It"
+                        />
+
+
+                    ) : (
+                        <Button
+                            onClick={loadMore}
+                            label="Load More"
+                            severity="secondary"
+
+                        />
+                    )}
+                </div>
             </div>
-            <Paginator
-                totalRecords={gallary?.totalResults}
-                onPageChange={onPageChange}
-                first={basicFirst}
-                rows={basicRows}
-                rowsPerPageOptions={gallary?.limit}
-            />
         </div>
     );
 }
