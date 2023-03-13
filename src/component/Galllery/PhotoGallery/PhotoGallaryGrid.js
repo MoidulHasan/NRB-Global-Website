@@ -7,7 +7,7 @@ function PhotoGallaryGrid() {
     const url = process.env.REACT_APP_BACKEND_URL;
     const [currentItem, setCurrentItem] = useState([]);
     const [isCompleted, setIsCompleted] = useState(false);
-    const [index, setIndex] = useState(8);
+    const [index, setIndex] = useState(5);
     const initialImg = slice(currentItem, 0, index)
     const imgData = () => {
         fetch(`${url}/gallery`)
@@ -32,7 +32,7 @@ function PhotoGallaryGrid() {
             <div className="photo-gallary-row">
                 <h3>Photo Gallary</h3>
                 <div className="phtoto-gallary-column grid">
-                    {galleryImg.map((item, i) => (
+                    {galleryImg.slice(0, 4).map((item, i) => (
                         <div className="col-12 md:col-3" key={i}>
                             <Image src={item.url} alt="Image" width="250" preview />
                         </div>
