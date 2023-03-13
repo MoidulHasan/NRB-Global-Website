@@ -3,8 +3,7 @@
 background-color: #FFFFFF; */
 background-color: #FFFFFF;
 border-radius: 10px;
-/* margin: 20px 0px; */
-/* padding-bottom: 3rem; */
+position: relative;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .registrationInfo{
@@ -38,6 +37,37 @@ input#file-upload-button{
         width: 20% !important;
         height: 60% !important;
 }
+
+
+.neon{
+        font-size:50px;
+        color: #3BD16F;
+        /* position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        font-weight: 400;
+        letter-spacing: 8px;
+        text-shadow: 1px 0px 4px #3BD16F, 2px 0px 4px #3BD16F, 3px 0px 4px #01B636, 2px 0px 3px #01B636, 2px 3px 15px #01B636, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #01B636,40px 0vw 200px #01B636;
+      }
+      
+      .flicker-slow{
+        animation: flicker 3s linear infinite;
+      }
+      
+      .flicker-fast{
+        animation: flicker 1s linear infinite;
+      }
+      
+      @keyframes flicker {
+              0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+          opacity: .99;
+                      
+              }
+              20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                      opacity: 0.4;
+              }
+      }
 
 
 @media screen and (max-width: 960px) {

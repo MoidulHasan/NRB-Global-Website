@@ -3,6 +3,7 @@ import './WhyJoinHome.css';
 import whyJoin from '../../../assets/image/whyJoin/whyJoin11.png';
 import { Button } from 'primereact/button';
 import { Link } from 'react-router-dom';
+import FloatJoinNRB from '../../FloatJoinNRB/FloatJoinNRB';
 
 const WhyJoinHome = () => {
   return (
@@ -71,6 +72,9 @@ const WhyJoinHome = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <FloatJoinNRB />
         </div>
       </div>
     </div>

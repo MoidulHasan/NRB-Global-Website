@@ -12,6 +12,7 @@ import TopBlogs from '../../component/Home/TopBlogs/TopBlogs';
 import WhyJoinHome from '../../component/Home/WhyJoinHome/WhyJoinHome';
 import ExecutiveCommitteeMembers from '../../component/Home/ExecutiveCommitteeMembers/ExecutiveCommitteeMembers';
 import ThirdAnniversarySection from '../../component/Home/ThirdAnniversarySection/ThirdAnniversarySection';
+import JoinNRBButton from '../../component/JoinNRBButton/JoinNRBButton';
 
 const Home = () => {
   return (
@@ -57,6 +58,7 @@ const Home = () => {
       <section>
         <TopBlogs />
       </section>
+      <JoinNRBButton />
     </div>
   );
 };

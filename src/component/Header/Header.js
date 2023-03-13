@@ -216,11 +216,6 @@ const Header = () => {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li>
-          <li className='nav-item'>
             <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
               About
             </Link>
@@ -245,6 +240,16 @@ const Header = () => {
           <li className='nav-item'>
             <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
               Contact
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/gmRegistration'
+              className='btn-join lg:block sm:hidden text-white'
+              onClick={closeMobileMenu}
+            >
+              <span>Click!</span>
+              <span>Join NRB</span>
             </Link>
           </li>
         </ul>

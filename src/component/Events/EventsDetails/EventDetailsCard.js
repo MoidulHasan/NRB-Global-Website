@@ -3,12 +3,13 @@ import { Divider } from "primereact/divider";
 import "./EventDetailsCard.css";
 
 const EventDetailsCard = (singleEvent) => {
+  const nullImg = "https://i.ibb.co/jMLdXJH/nrb-image.png";
   return (
     <div className="p-container">
       <div className="p-4 my-4 eventDetailsDiv">
         <div className="">
           <img
-            src={singleEvent.singleEvent.img}
+            src={singleEvent?.singleEvent?.coverImage ?? nullImg}
             alt=""
             className=" w-full eventDetailsImg"
           />
@@ -19,14 +20,16 @@ const EventDetailsCard = (singleEvent) => {
               className="pt-2 text-center text-2xl md:text-5xl sm:font-normal md:font-semibold lg:font-bold"
               style={{ color: "#195283" }}
             >
-              {singleEvent.singleEvent.name}
+              {singleEvent?.singleEvent?.title}
             </h1>
-            <p
-              className="text-center text-lg md:text-2xl font-normal eventSubject"
-              style={{ color: "#F4AA0B" }}
-            >
-              {singleEvent.singleEvent.subject}
-            </p>
+            {singleEvent?.singleEvent?.subtitle && (
+              <p
+                className="text-center text-lg md:text-2xl font-normal eventSubject"
+                style={{ color: "#F4AA0B" }}
+              >
+                {singleEvent?.singleEvent?.subtitle}
+              </p>
+            )}
             <Divider />
           </div>
 
@@ -47,7 +50,7 @@ const EventDetailsCard = (singleEvent) => {
                     ></path>
                   </svg>
                   <h1 className="text-3xl font-bold my-1">
-                    {singleEvent.singleEvent.date}
+                    {singleEvent?.singleEvent?.date}
                   </h1>
                   <p className="text-xl mt-1">Event Date</p>
                 </div>
@@ -67,9 +70,9 @@ const EventDetailsCard = (singleEvent) => {
                     ></path>
                   </svg>
                   <h1 className="text-3xl font-bold my-1">
-                    {singleEvent.singleEvent.venu}
+                    {singleEvent?.singleEvent?.venue}
                   </h1>
-                  <p className="text-xl mt-1">Event Venu</p>
+                  <p className="text-xl mt-1">Event Venue</p>
                 </div>
               </div>
               <div className="col-12 md:col-4 text-center">
@@ -87,7 +90,7 @@ const EventDetailsCard = (singleEvent) => {
                     ></path>
                   </svg>
                   <h1 className="text-3xl font-bold my-1">
-                    {singleEvent.singleEvent.orginazer}
+                    {singleEvent?.singleEvent?.organizedby}
                   </h1>
                   <p className="text-xl mt-1">Organized By</p>
                 </div>
@@ -104,7 +107,7 @@ const EventDetailsCard = (singleEvent) => {
               Event Overview:
             </p>
             <p className="px-2 md:px-4 lg:px-6 xl:px-6 pt-2 eventDetailsText">
-              {singleEvent.singleEvent.description}
+              {singleEvent?.singleEvent?.overview}
             </p>
           </div>
         </div>
