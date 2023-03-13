@@ -73,7 +73,9 @@ const WhyJoinHome = () => {
             </div>
           </div>
         </div>
-        <FloatJoinNRB />
+        <div>
+          <FloatJoinNRB />
+        </div>
       </div>
     </div>
   );
