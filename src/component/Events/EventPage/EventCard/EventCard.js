@@ -5,12 +5,15 @@ import Card from "./Card";
 import "./EventCard.css";
 
 const EventCard = () => {
+  const url = process.env.REACT_APP_BACKEND_URL;
+
   const [cardInfo, setCardInfo] = useState([]);
   useEffect(() => {
-    fetch("/EventCard.json")
+    fetch(`${url}/events`)
       .then((res) => res.json())
-      .then((data) => setCardInfo(data));
+      .then((data) => setCardInfo(data?.data?.results));
   }, []);
+  console.log(cardInfo);
   return (
     <div className="px-3">
       <div className="p-container my-6 eventCardDiv ">
