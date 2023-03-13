@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useEvent = () => {
   const [nrbEvents, setNrbEvents] = useState([]);
 
   useEffect(() => {
-    fetch("/EventCard.json")
+    fetch('/EventCard.json')
       .then((res) => res.json())
       .then((data) => setNrbEvents(data));
   }, []);
