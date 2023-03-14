@@ -995,46 +995,48 @@ const MemberRegistrationForm = (props) => {
                     {/* payment type  */}
                     <div className='field col-12 md:col-8 mb-5'>
                       <span className='p-float-label'>
-                        {/* <Controller
-                          name='method'
-                          control={control}
-                          render={({ field }) => (
-                            <Dropdown
-                              disabled={disablemethod}
-                              id={field.name}
-                              value={field.value}
-                              placeholder='Select Your Payment Type'
-                              onChange={(e) => {
-                                field.onChange(e.value);
-                                onPaymentMethodChanged(e);
-                              }}
-                              options={[
-                                { name: 'Hands On', value: 'Hands On' },
-                                {
-                                  name: 'Paypal',
-                                  value: 'Paypal',
-                                },
-                              ]}
-                              optionLabel='name'
-                            />
-                          )}
-                        />
-                        <label htmlFor='method'>Payment Type</label> */}
-                        <Controller
-                          name='method'
-                          control={control}
-                          render={({ field, fieldState }) => (
-                            <InputText
-                              disabled
-                              id={field.name}
-                              {...field}
-                              autoFocus
-                              className={classNames({
-                                'p-invalid': fieldState.invalid,
-                              })}
-                            />
-                          )}
-                        />
+                        {disablemethod ? (
+                          <Controller
+                            name='method'
+                            control={control}
+                            render={({ field, fieldState }) => (
+                              <InputText
+                                id={field.name}
+                                {...field}
+                                autoFocus
+                                className={classNames({
+                                  'p-invalid': fieldState.invalid,
+                                })}
+                              />
+                            )}
+                          />
+                        ) : (
+                          <Controller
+                            name='method'
+                            control={control}
+                            render={({ field }) => (
+                              <Dropdown
+                                // disabled={disablemethod}
+                                id={field.name}
+                                value={field.value}
+                                placeholder='Select Your Payment Type'
+                                onChange={(e) => {
+                                  field.onChange(e.value);
+                                  onPaymentMethodChanged(e);
+                                }}
+                                options={[
+                                  { name: 'Hands On', value: 'Hands On' },
+                                  {
+                                    name: 'Paypal',
+                                    value: 'Paypal',
+                                  },
+                                ]}
+                                optionLabel='name'
+                              />
+                            )}
+                          />
+                        )}
+
                         <label
                           htmlFor='method'
                           className={classNames({
@@ -1112,7 +1114,7 @@ const MemberRegistrationForm = (props) => {
                           control={control}
                           render={({ field, fieldState }) => (
                             <InputText
-                              disabled
+                              disabled={disablemethod}
                               id={field.name}
                               {...field}
                               autoFocus
