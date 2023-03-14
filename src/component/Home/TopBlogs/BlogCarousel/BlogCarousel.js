@@ -29,7 +29,9 @@ const BlogCarousel = () => {
     fetch(`${url}/public/blogs`)
       .then((res) => res.json())
       .then((data) => setBlogs(data?.data?.results.slice(0, 6)));
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
+
+  console.log(blogs);
 
   const blogTemplate = (blog) => {
     const blog_date_string = formateDate(blog?.publishDate);
@@ -41,7 +43,7 @@ const BlogCarousel = () => {
     return (
       <div className='blogCard'>
         <div className='blogImgDiv'>
-          <img src={`${urlImg}${blog?.coverImage}`} alt='blog pic' />
+          <img src={blog?.coverImage} alt='blog pic' />
         </div>
         <div className='blogDetail'>
           <div className='hidden md:flex  align-items-center justify-content-start my-3 font-semibold text-gray-700'>
@@ -98,7 +100,7 @@ const BlogCarousel = () => {
             {blog.title}
           </h2>
           <span className='text-gray-700 text-xl blogDescription hidden md:block'>
-            {blog.content}
+            {blog.content.slice(0, 600)} ...
           </span>
           <div className='hidden md:flex align-items-center justify-content-between mt-3'>
             <div className='author mb-2 flex align-items-center justify-content-start'>
