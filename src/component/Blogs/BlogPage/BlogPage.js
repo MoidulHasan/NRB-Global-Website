@@ -3,17 +3,33 @@ import { useEffect, useState } from "react";
 import Blog from "./Blog";
 import blog from "../../../assets/image/about/BLOG.jpg";
 import "./BlogPage.css";
+import { Button } from "primereact/button";
 
 const BlogPage = () => {
   const url = process.env.REACT_APP_BACKEND_URL;
 
   const [blogInfo, setBlogInfo] = useState([]);
 
-  useEffect(() => {
-    fetch(`${url}/blogs`)
+  const [page, setPage] = useState(1);
+  const [totalpage, setTotalPage] = useState();
+
+  const blogAllData = () => {
+    if (page > totalpage) return;
+    fetch(`${url}/blogs?limit=6&page=${page}`)
       .then((res) => res.json())
-      .then((data) => setBlogInfo(data?.data?.results));
-  }, []);
+      .then((data) => {
+        setBlogInfo([...blogInfo, ...data?.data?.results]);
+        setTotalPage(data?.data?.totalPages);
+      });
+  };
+
+  const loadMore = () => {
+    setPage(page + 1);
+  };
+
+  useEffect(() => {
+    blogAllData();
+  }, [page]);
 
   return (
     <div className="p-container mb-4">
@@ -30,6 +46,11 @@ const BlogPage = () => {
           {blogInfo.map((blogsinfo) => (
             <Blog key={blogsinfo._id} blogsinfo={blogsinfo}></Blog>
           ))}
+        </div>
+        <div className="flex align-items-center justify-content-center my-6">
+          {page < totalpage && (
+            <Button onClick={loadMore} label="Load More" severity="secondary" />
+          )}
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Blog = (props) => {
 
   const nullImg = "https://i.ibb.co/JmcNkYW/nrb-image-1.png";
 
-  const newDescription = content.slice(0, 201);
+  const newDescription = content.slice(0, 130);
 
   const blog_date = formateDate(publishDate);
 
@@ -41,7 +41,7 @@ const Blog = (props) => {
               </span>
             </div>
           </div>
-          <span className="block text-xl font-bold mb-1 pb-3 pt-4 ">
+          <span className="block text-md font-bold mb-1 pb-3 pt-4 ">
             {title}
           </span>
           <span className="block text-l text-gray-700 text-justify">
