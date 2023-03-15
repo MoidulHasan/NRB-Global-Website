@@ -17,14 +17,14 @@ const EventDetailsCard = (singleEvent) => {
         <div className="">
           <div className="pb-4">
             <h1
-              className="pt-2 text-center text-2xl md:text-5xl sm:font-normal md:font-semibold lg:font-bold"
+              className="pt-2 pb-2 text-center text-lg sm:text-lg md:text-2xl lg:text-3xl xl:text-3xl sm:font-normal md:font-semibold lg:font-bold"
               style={{ color: "#195283" }}
             >
               {singleEvent?.singleEvent?.title}
             </h1>
             {singleEvent?.singleEvent?.subtitle && (
               <p
-                className="text-center text-lg md:text-2xl font-normal eventSubject"
+                className="text-center text-sm sm:text-sm  md:text-lg lg:text-lg font-normal eventSubject"
                 style={{ color: "#F4AA0B" }}
               >
                 {singleEvent?.singleEvent?.subtitle}
@@ -33,13 +33,13 @@ const EventDetailsCard = (singleEvent) => {
             <Divider />
           </div>
 
-          <div className="border-round-lg surface-100 py-4 ">
+          <div className="border-round-lg surface-100 py-3 ">
             <div className="grid mx-1 md:mx-3">
               <div className="col-12 md:col-4 ">
                 <div className="flex flex-column align-items-center justify-content-center bg-green-100 border-round-2xl mx-3 my-2 p-4">
                   <svg
-                    width="68"
-                    height="66"
+                    width="63"
+                    height="60"
                     fill="none"
                     viewBox="0 0 448 512"
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const EventDetailsCard = (singleEvent) => {
                       fill="#153854"
                     ></path>
                   </svg>
-                  <h1 className="text-3xl font-bold my-1">
+                  <h1 className="text-2xl font-bold my-1">
                     {singleEvent?.singleEvent?.date}
                   </h1>
                   <p className="text-xl mt-1">Event Date</p>
@@ -58,8 +58,8 @@ const EventDetailsCard = (singleEvent) => {
               <div className="col-12 md:col-4">
                 <div className="flex flex-column align-items-center justify-content-center bg-green-100 border-round-2xl mx-3 my-2 p-4">
                   <svg
-                    width="68"
-                    height="70"
+                    width="63"
+                    height="65"
                     fill="none"
                     viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const EventDetailsCard = (singleEvent) => {
                       fill="#153854"
                     ></path>
                   </svg>
-                  <h1 className="text-3xl font-bold my-1">
+                  <h1 className="text-2xl font-bold my-1">
                     {singleEvent?.singleEvent?.venue}
                   </h1>
                   <p className="text-xl mt-1">Event Venue</p>
@@ -78,8 +78,8 @@ const EventDetailsCard = (singleEvent) => {
               <div className="col-12 md:col-4 text-center">
                 <div className="flex flex-column align-items-center justify-content-center bg-green-100 border-round-2xl mx-3 my-2 p-4">
                   <svg
-                    width="68"
-                    height="70"
+                    width="63"
+                    height="65"
                     fill="none"
                     viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const EventDetailsCard = (singleEvent) => {
                       fill="#153854"
                     ></path>
                   </svg>
-                  <h1 className="text-3xl font-bold my-1">
+                  <h1 className="text-2xl font-bold my-1">
                     {singleEvent?.singleEvent?.organizedby}
                   </h1>
                   <p className="text-xl mt-1">Organized By</p>
@@ -101,7 +101,7 @@ const EventDetailsCard = (singleEvent) => {
 
           <div className="pt-2">
             <p
-              className="px-2 md:px-4 lg:px-6 xl:px-6 text-3xl font-bold eventOverView"
+              className="px-2 md:px-4 lg:px-6 xl:px-6 text-lg md:text-2xl lg:text-2xl font-bold eventOverView"
               style={{ color: "#195283" }}
             >
               Event Overview:
