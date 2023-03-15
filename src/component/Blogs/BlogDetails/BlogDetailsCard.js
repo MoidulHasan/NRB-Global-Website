@@ -27,15 +27,7 @@ const BlogDetailsCard = (singleBlog) => {
               ></i>
               <span className="font-semibold">{blog_date}</span>
             </div>
-            <div className="flex align-items-center mr-5">
-              <i
-                className="pi pi-eye font-bold mr-2 text-orange-500"
-                style={{ fontSize: "1.2em" }}
-              ></i>
-              <span className="font-semibold">
-                {singleBlog?.singleBlog?.view}
-              </span>
-            </div>
+
             <div className="flex align-items-center mr-5">
               <i
                 className="pi pi-clock font-bold mr-2 text-orange-500"
@@ -47,19 +39,19 @@ const BlogDetailsCard = (singleBlog) => {
             </div>
           </div>
         </div>
-        <div className="mt-6">
-          <p className="text-lg md:text-2xl lg:text-5xl font-bold text ml-2 md:ml-5 blogDetailsTitle">
+        <div className="mt-4">
+          <p className="text-md md:text-2xl lg:text-2xl font-bold text ml-2 md:ml-5 blogDetailsTitle">
             {singleBlog?.singleBlog?.title}
           </p>
           <div className="flex align-items-center  ml-2 md:ml-5 mr-5">
             <i className="pi pi-user font-bold mr-3 blogUserIcon"></i>
-            <span className="text-md md:text-3xl font-bold text-orange-500">
+            <span className="text-md md:text-lg lg:text-lg font-bold text-orange-500">
               By {singleBlog?.singleBlog?.authorName}
             </span>
           </div>
 
           <Divider style={{ color: "#ff0000" }} />
-          <p className="px-2 md:px-5 lg:px-5 xl:px-5 text-xl md:text-3xl lg:text-3xl xl:text-3xl font-bold blogOverview">
+          <p className="px-2 md:px-5 lg:px-5 xl:px-5 text-md md:text-lg lg:text-xl xl:text-xxl font-bold blogOverview">
             Blog Overview:
           </p>
           <p className="px-2 md:px-5 lg:px-5 xl:px-5 text-justify blogDetailsContent">

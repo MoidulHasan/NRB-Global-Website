@@ -20,7 +20,7 @@ const TopBanner = () => {
           <div className='mt-8 mb-4 flex w-full flex-column gap-4 md:flex-row'>
             <Link to='/gmRegistration' className='linkDecoration '>
               <button
-                className='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100 joiButtonAnimation w-full'
+                className='flex select-none justify-content-center align-items-center font-semibold px-7 py-3 text-lg  gap-4 text-gray-100  joinButton joiButtonAnimation w-full'
                 type='button'
               >
                 Join NRB Global

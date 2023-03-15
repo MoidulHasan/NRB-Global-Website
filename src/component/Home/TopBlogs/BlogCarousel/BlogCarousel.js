@@ -38,7 +38,7 @@ const BlogCarousel = () => {
 
     const urlImg = process.env.REACT_APP_BACKEND_CORE_URL;
 
-    //console.log(urlImg, blogs);
+    console.log(urlImg, blogs);
 
     return (
       <div className='blogCard'>

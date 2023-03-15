@@ -20,8 +20,6 @@
 .topPhotoCarouselCard{
     max-height: 85vh;
     overflow: hidden;
-    top: -20px;
-    position: relative;
 }
 
 @keyframes zoomInImageFeature {

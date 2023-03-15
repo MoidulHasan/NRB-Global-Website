@@ -38,13 +38,11 @@ const Gallery = () => {
     <div className='gallary-container p-container'>
       <div className='gallary-event-img'>
         <h3>Our Event Pictures</h3>
-
         <div className='photo-gallary-row'>
           <div className='phtoto-gallary-column grid'>
             {galleryImg?.slice(1, 10).map((item, i) => (
               <div className='col-12 md:col-3' key={i}>
                 <Image src={item.url} alt='Image' width='250' preview />
-
               </div>
             ))}
           </div>
@@ -58,13 +56,11 @@ const Gallery = () => {
       </div>
       <div className='gallary-event-video'>
         <h3>Our Event Videos</h3>
-
         <div className='gallary-video'>
           <div className='gallary-video-row'>
             <div className='gallary-video-column grid'>
               {galleryVideo.slice(0, 8).map((item, i) => (
                 <div className='col-12 md:col-4' key={i}>
-
                   <iframe
                     width='640'
                     height='360'
