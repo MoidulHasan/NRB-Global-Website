@@ -6,7 +6,7 @@ import "./EventCard.css";
 const Card = (props) => {
   const { id, title, overview, coverImage } = props.cardsinfo;
 
-  const newDescription = overview.slice(0, 201);
+  const newDescription = overview.slice(0, 130);
 
   const nullImg = "https://i.ibb.co/X2Sk3kR/nrb-image-2.png";
 
@@ -21,7 +21,7 @@ const Card = (props) => {
           />
         </div>
         <div className="eventCardDetails">
-          <span className="block text-xl font-bold  pb-4 ">{title}</span>
+          <span className="block text-md font-bold  pb-4 ">{title}</span>
           <span className="block text-justify">{newDescription}</span>
           <div className="pt-5">
             <div className="text-right">
