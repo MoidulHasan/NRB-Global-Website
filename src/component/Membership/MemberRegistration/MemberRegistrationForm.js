@@ -120,9 +120,10 @@ const MemberRegistrationForm = (props) => {
       body: formData,
     };
 
-    fetch(`${url}/public/images/`, OtherRequestOptions)
+    fetch(`${url}public/images/`, OtherRequestOptions)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setImageURL(data.url);
         data.success && setLoading(false);
       });

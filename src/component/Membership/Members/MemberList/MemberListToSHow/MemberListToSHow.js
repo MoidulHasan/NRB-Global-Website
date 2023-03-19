@@ -1,22 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import './MemberListToShow.css';
 import useDataContexts from '../../../../../hooks/useDataContexts';
-import { Paginator } from 'primereact/paginator';
+import { Button } from 'primereact/button';
 
 const MemberListToSHow = () => {
-  const { nrbMembers, generalMembers } = useDataContexts();
-  const [page, setPage] = useState(1);
+  const {
+    nrbMembers,
+    setNrbMember,
+    generalMembers,
+    loadMoreNrbMember,
+    totalNrbpage,
+    nrbMemberPage,
+  } = useDataContexts();
 
-  const url = process.env.REACT_APP_BACKEND_CORE_URL;
+  console.log(generalMembers, 'geenral');
 
-  const [basicFirst, setBasicFirst] = useState(0);
-  const [basicRows, setBasicRows] = useState(10);
+  // const [basicFirst, setBasicFirst] = useState(0);
+  // const [basicRows, setBasicRows] = useState(10);
 
-  const onPageChange = (event) => {
-    setPage(event.page + 1);
-    setBasicFirst(event.first);
-    setBasicRows(event.rows);
-  };
+  // const onPageChange = (event) => {
+  //   setPage(event.page + 1);
+  //   setBasicFirst(event.first);
+  //   setBasicRows(event.rows);
+  // };
+
+  // const [currentItem, setCurrentItem] = useState([]);
+  // const [page, setPage] = useState(1);
+  // const [totalpage, setTotalPage] = useState();
+  // const imgData = () => {
+  //     if (totalpage === page) return;
+  //     fetch(`${url}/gallery?type=Photo&limit=20&page=${page}`)
+  //         .then((res) => res.json())
+  //         .then((data) => {
+  //             setCurrentItem([...currentItem, ...data?.data?.results]);
+  //             setTotalPage(data?.data?.totalPages);
+  //         });
+  // };
+  // const loadMore = () => {
+  //     setPage(page + 1);
+  // };
+  // useEffect(() => {
+  //     imgData();
+  // }, [page]);
 
   return (
     <div className='p-container mb-4 mt-3'>
@@ -29,7 +54,7 @@ const MemberListToSHow = () => {
           >
             <div className='nrbMemberCard p-2 md:p-3 m-1'>
               <div className='memberImgHolder'>
-                <img src={`${url}${member.imageUrl}`} alt='membership' />
+                <img src={member.imageUrl} alt='membership' />
               </div>
               <div className>
                 <div className='nrbMemberDetail sm:flex justify-content-between'>
@@ -84,13 +109,17 @@ const MemberListToSHow = () => {
         ))}
       </div>
 
-      <Paginator
-        totalRecords={nrbMembers?.totalResults}
-        onPageChange={onPageChange}
-        first={basicFirst}
-        rows={basicRows}
-        rowsPerPageOptions={nrbMembers?.limit}
-      />
+      <div className='flex align-items-center justify-content-center my-4'>
+        {totalNrbpage >= nrbMemberPage && (
+          <Button
+            onClick={() => loadMoreNrbMember()}
+            label='See More Members'
+            className='p-button-rounded p-button-help p-button-outlined'
+            icon='pi pi-angle-right'
+            iconPos='right'
+          />
+        )}
+      </div>
     </div>
   );
 };

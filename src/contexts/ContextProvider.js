@@ -15,7 +15,15 @@ const ContextProvider = ({ children }) => {
      then members will be in data.
     */
   const [hoverMenu, setHoverMenu] = useState(false);
-  const { nrbMembers, generalMembers, youngCongressMembers } = useNrbMembers();
+  const {
+    nrbMembers,
+    setNrbMember,
+    generalMembers,
+    youngCongressMembers,
+    totalNrbpage,
+    nrbMemberPage,
+    loadMoreNrbMember,
+  } = useNrbMembers();
   const { nrbServices } = useServices();
   const { nrbBlogs } = useBlog();
   const { nrbEvents } = useEvent();
@@ -35,6 +43,9 @@ const ContextProvider = ({ children }) => {
     committeeMembers,
     generalMembers,
     youngCongressMembers,
+    loadMoreNrbMember,
+    totalNrbpage,
+    nrbMemberPage,
   };
 
   return <ContextApi.Provider value={data}>{children}</ContextApi.Provider>;

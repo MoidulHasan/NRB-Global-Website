@@ -11,6 +11,8 @@ function YCMembersCard() {
 
   const url = process.env.REACT_APP_BACKEND_CORE_URL;
 
+  console.log(youngCongressMembers);
+
   return (
     <div className='ycm-container'>
       {/* <Card title="Simple Card" style={{ width: '25rem', marginBottom: '2em' }}> */}
@@ -37,7 +39,7 @@ function YCMembersCard() {
             <div className='ycm-profile-flex-container flex align-items-cetner justify-content-center'>
               <Card className='ycm-card' style={{ width: '17em' }} key={i}>
                 <div className='ycm-flex'>
-                  <img src={`${url}${acateam.imageUrl}`} alt='img' />
+                  <img src={acateam.imageUrl} alt='img' />
                   <div className='ycm-flex1'>
                     <p className='ycm-name'>{acateam.name}</p>
                     <h5 className='ycm-title'>{acateam.designation}</h5>
