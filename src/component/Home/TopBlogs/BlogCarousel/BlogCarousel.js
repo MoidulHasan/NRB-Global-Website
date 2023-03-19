@@ -40,10 +40,12 @@ const BlogCarousel = () => {
 
     console.log(urlImg, blogs);
 
+    const nullImg = 'https://i.ibb.co/JmcNkYW/nrb-image-1.png';
+
     return (
       <div className='blogCard'>
         <div className='blogImgDiv'>
-          <img src={blog?.coverImage} alt='blog pic' />
+          <img src={blog?.coverImage ?? nullImg} alt='blog pic' />
         </div>
         <div className='blogDetail'>
           <div className='hidden md:flex  align-items-center justify-content-start my-3 font-semibold text-gray-700'>
