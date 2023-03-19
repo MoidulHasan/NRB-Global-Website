@@ -17,7 +17,11 @@ import memberImg from '../../../assets/image/topmembers/img6.jpg';
 import useDataContexts from '../../../hooks/useDataContexts';
 import { formateDate } from '../../../utils/formateDate';
 
+import { countriesToForm } from '../../../utils/countriesToForm';
+
 const MemberRegistrationForm = (props) => {
+  console.log(countriesToForm);
+
   const [showMessage, setShowMessage] = useState(false);
 
   const genMember = props.member === 'General Member';
@@ -635,9 +639,9 @@ const MemberRegistrationForm = (props) => {
                                 onChange={(e) => {
                                   field.onChange(e.value);
                                 }}
-                                options={countries}
-                                optionLabel='name.common'
-                                optionValue='name.common'
+                                options={countriesToForm}
+                                optionLabel='name'
+                                optionValue='name'
                               />
                             )}
                           />
