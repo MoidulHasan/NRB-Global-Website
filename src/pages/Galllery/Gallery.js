@@ -14,7 +14,7 @@ const Gallery = () => {
   const [galleryToShow, setGalleryToShow] = useState([]);
 
   useEffect(() => {
-    fetch(`${url}/gallery?page=${page}`)
+    fetch(`${url}/gallery?page=${page}`, { redirect: 'follow' })
       .then((res) => res.json())
       .then((data) => {
         setGallery(data?.data);
